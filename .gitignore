@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+.sites-runtime/
+coverage/
+# dist/ is the authored app source and must remain tracked.
