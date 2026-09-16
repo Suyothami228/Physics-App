@@ -1,0 +1,68 @@
+[
+  {
+    "key": "section-1",
+    "position": 1,
+    "published": true,
+    "kind": "theory",
+    "title_en": "Choose an instrument for the job",
+    "title_ta": "தேவைக்கேற்ற கருவியைத் தேர்ந்தெடுக்கவும்",
+    "body_en": "Consider range, resolution and the shape of the object. A ruler suits larger lengths; vernier callipers can measure external/internal diameters and depth; a micrometer suits small thicknesses. Check zero before use and read scales without parallax.\n\nFor a direct vernier with 10 vernier divisions equal to 9 main-scale divisions of 1 mm, the least count is 1.0 − 0.9 = 0.1 mm. Other instruments have different least counts: read their scale specification.",
+    "body_ta": "வீச்சு, பிரிதிறன் மற்றும் பொருளின் வடிவத்தைக் கருத்தில் கொள்க. பெரிய நீளங்களுக்கு அடிக்கோலும், வெளி/உள் விட்டம் மற்றும் ஆழத்திற்கு வேர்னியர் அளவியும், சிறிய தடிப்புகளுக்கு நுண்மானியும் பொருத்தமானவை. பயன்படுத்துவதற்கு முன் பூச்சியத்தைச் சோதித்து இடமாறு தோற்றமின்றி வாசிக்கவும்.\n\n10 வேர்னியர் பிரிவுகள் 1 mm கொண்ட 9 முதன்மை அளவுப் பிரிவுகளுக்குச் சமமெனில் சிற்றளவு 1.0 − 0.9 = 0.1 mm. மற்ற கருவிகளின் சிற்றளவுகள் வேறுபடலாம்; கருவியின் அளவுக் குறிப்பைப் பார்க்கவும்.",
+    "formula": ""
+  },
+  {
+    "key": "section-2",
+    "position": 2,
+    "published": true,
+    "kind": "example",
+    "title_en": "Read, then correct",
+    "title_ta": "வாசித்துப் பின்னர் திருத்துக",
+    "body_en": "Vernier: the main scale just before the vernier zero reads 12 mm; the 7th division aligns. Observed reading = 12 + 7 × 0.1 = 12.7 mm. With a +0.2 mm zero error, corrected reading = 12.7 − 0.2 = 12.5 mm.\n\nMicrometer: pitch 0.5 mm and 50 divisions give a least count of 0.01 mm. A sleeve reading of 5.5 mm plus 28 divisions gives 5.78 mm before zero correction.\n\nA spherometer measures small heights. With an equilateral three-leg spacing l and sagitta h, the spherical radius is R = l²/(6h) + h/2. Use consistent length units.",
+    "body_ta": "வேர்னியர்: வேர்னியர் பூச்சியத்திற்கு முன்னுள்ள முதன்மை வாசிப்பு 12 mm; 7ஆம் பிரிவு பொருந்துகிறது. அவதானித்த வாசிப்பு = 12 + 7 × 0.1 = 12.7 mm. பூச்சிய வழு +0.2 mm எனில் திருத்திய வாசிப்பு = 12.7 − 0.2 = 12.5 mm.\n\nநுண்மானி: புரியிடைத் தூரம் 0.5 mm மற்றும் 50 பிரிவுகள் எனில் சிற்றளவு 0.01 mm. உறை வாசிப்பு 5.5 mm உடன் 28 பிரிவுகளைச் சேர்த்தால் பூச்சியத் திருத்தத்திற்கு முன் 5.78 mm கிடைக்கும்.\n\nகோளமானி சிறிய உயரங்களை அளக்கும். சமபக்க முக்கோணத்தில் கால்களுக்கு இடையிலான தூரம் l, உயரம் h எனில் கோள ஆரை R = l²/(6h) + h/2. ஒரே நீள அலகைப் பயன்படுத்துக.",
+    "formula": "Corrected reading = observed reading − zero error"
+  },
+  {
+    "key": "section-3",
+    "position": 3,
+    "published": true,
+    "kind": "activity",
+    "title_en": "Read the vernier",
+    "title_ta": "வேர்னியரை வாசிக்கவும்",
+    "body_en": "Move the virtual scale and identify the matching line before revealing the reading. This teaching model has 10 vernier divisions spanning 9 mm, so its least count is 0.1 mm.",
+    "body_ta": "மெய்நிகர் அளவியை நகர்த்தி விடையைப் பார்ப்பதற்கு முன் பொருந்தும் கோட்டைக் கண்டறிக. இக்கற்றல் மாதிரியில் 10 வேர்னியர் பிரிவுகள் 9 mm பரவியுள்ளன; அதன் சிற்றளவு 0.1 mm.",
+    "formula": "",
+    "activity": "vernier"
+  },
+  {
+    "key": "section-4",
+    "position": 4,
+    "published": true,
+    "kind": "check",
+    "title_en": "Observed length is 8.6 mm; zero error is −0.2 mm. Corrected length?",
+    "title_ta": "அவதானித்த நீளம் 8.6 mm; பூச்சிய வழு −0.2 mm. திருத்திய நீளம்?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "8.4 mm\n8.6 mm\n8.8 mm",
+    "options_ta": "8.4 mm\n8.6 mm\n8.8 mm",
+    "correct_option": 3,
+    "explanation_en": "Subtract the signed zero error: 8.6 − (−0.2) = 8.8 mm.",
+    "explanation_ta": "குறியுடன் பூச்சிய வழுவைக் கழிக்கவும்: 8.6 − (−0.2) = 8.8 mm."
+  },
+  {
+    "key": "section-5",
+    "position": 5,
+    "published": true,
+    "kind": "check",
+    "title_en": "Pitch 0.5 mm, 50 thimble divisions: least count?",
+    "title_ta": "புரியிடைத் தூரம் 0.5 mm, 50 பிரிவுகள்: சிற்றளவு?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "0.1 mm\n0.01 mm\n0.001 mm",
+    "options_ta": "0.1 mm\n0.01 mm\n0.001 mm",
+    "correct_option": 2,
+    "explanation_en": "Least count = pitch / divisions = 0.5 / 50 = 0.01 mm.",
+    "explanation_ta": "சிற்றளவு = புரியிடைத் தூரம் / பிரிவுகள் = 0.5 / 50 = 0.01 mm."
+  }
+]

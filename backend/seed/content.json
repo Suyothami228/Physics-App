@@ -1,0 +1,2942 @@
+{
+  "chapters": [
+    {
+      "id": "01",
+      "slug": "measurement",
+      "ta": "அளவீடு",
+      "en": "Measurement",
+      "description": {
+        "en": "Measure the world. Question the precision.",
+        "ta": "உலகை அளவிடுங்கள். துல்லியத்தை ஆராயுங்கள்."
+      },
+      "formula": "Δx",
+      "color": "#5465ed",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "01/introduction",
+          "slug": "introduction",
+          "ta": "பௌதிகவியல் அறிமுகம்",
+          "en": "Introduction to physics",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "01/quantities",
+          "slug": "quantities",
+          "ta": "பௌதிகக் கணியங்களும் அலகுகளும்",
+          "en": "Physical quantities & units",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "01/dimensions",
+          "slug": "dimensions",
+          "ta": "பரிமாணங்கள்",
+          "en": "Dimensions",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "01/uncertainty",
+          "slug": "uncertainty",
+          "ta": "அளவீட்டு வழுக்கள்",
+          "en": "Measurement uncertainty",
+          "index": 4,
+          "available": false
+        },
+        {
+          "id": "01/instruments",
+          "slug": "instruments",
+          "ta": "அளவீட்டு உபகரணங்கள்",
+          "en": "Measuring instruments",
+          "index": 5,
+          "available": false
+        },
+        {
+          "id": "01/vectors",
+          "slug": "vectors",
+          "ta": "காவிக் கணியங்கள்",
+          "en": "Vectors",
+          "index": 6,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "slug": "mechanics",
+      "ta": "பொறியியல்",
+      "en": "Mechanics",
+      "description": {
+        "en": "Turn motion into something you can explain.",
+        "ta": "இயக்கத்தைக் கவனித்து விளக்கக் கற்றுக்கொள்ளுங்கள்."
+      },
+      "formula": "F = ma",
+      "color": "#356cf3",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "02/motion",
+          "slug": "motion",
+          "ta": "நேர்கோட்டு இயக்கம்",
+          "en": "Linear motion",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "02/projectile",
+          "slug": "projectile",
+          "ta": "எறிய இயக்கம்",
+          "en": "Projectile motion",
+          "index": 2,
+          "available": true
+        },
+        {
+          "id": "02/forces",
+          "slug": "forces",
+          "ta": "விசைகளும் விளையுளும்",
+          "en": "Forces & resultants",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "02/newton",
+          "slug": "newton",
+          "ta": "நியூட்டனின் இயக்க விதிகள்",
+          "en": "Newton’s laws",
+          "index": 4,
+          "available": false
+        },
+        {
+          "id": "02/momentum",
+          "slug": "momentum",
+          "ta": "உந்தமும் மோதுகைகளும்",
+          "en": "Momentum & collisions",
+          "index": 5,
+          "available": false
+        },
+        {
+          "id": "02/equilibrium",
+          "slug": "equilibrium",
+          "ta": "சமநிலையும் புவியீர்ப்பு மையமும்",
+          "en": "Equilibrium & centre of gravity",
+          "index": 6,
+          "available": false
+        },
+        {
+          "id": "02/energy",
+          "slug": "energy",
+          "ta": "வேலை, சக்தி மற்றும் வலு",
+          "en": "Work, energy & power",
+          "index": 7,
+          "available": false
+        },
+        {
+          "id": "02/rotation",
+          "slug": "rotation",
+          "ta": "சுழற்சி இயக்கமும் கோண உந்தமும்",
+          "en": "Rotation & angular momentum",
+          "index": 8,
+          "available": false
+        },
+        {
+          "id": "02/hydrostatics",
+          "slug": "hydrostatics",
+          "ta": "நீர் நிலையியல்",
+          "en": "Hydrostatics",
+          "index": 9,
+          "available": false
+        },
+        {
+          "id": "02/fluids",
+          "slug": "fluids",
+          "ta": "பாயிகளின் இயக்கம்",
+          "en": "Fluid dynamics",
+          "index": 10,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "slug": "waves",
+      "ta": "அலைவுகளும் அலைகளும்",
+      "en": "Oscillations & waves",
+      "description": {
+        "en": "Find the patterns behind sound and light.",
+        "ta": "ஒலியிலும் ஒளியிலும் உள்ள ஒழுங்கைக் கண்டறியுங்கள்."
+      },
+      "formula": "fλ = v",
+      "color": "#9c50d6",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "03/oscillations",
+          "slug": "oscillations",
+          "ta": "எளிய இசை இயக்கம்",
+          "en": "Simple harmonic motion",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "03/pendulum",
+          "slug": "pendulum",
+          "ta": "ஊசலும் சுருளிவில்லும்",
+          "en": "Pendulums & springs",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "03/progressive",
+          "slug": "progressive",
+          "ta": "விருத்தியலைகள்",
+          "en": "Progressive waves",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "03/properties",
+          "slug": "properties",
+          "ta": "அலைகளின் இயல்புகள்",
+          "en": "Wave properties",
+          "index": 4,
+          "available": false
+        },
+        {
+          "id": "03/superposition",
+          "slug": "superposition",
+          "ta": "மேற்பொருந்துகையும் நிலையலைகளும்",
+          "en": "Superposition & standing waves",
+          "index": 5,
+          "available": false
+        },
+        {
+          "id": "03/strings",
+          "slug": "strings",
+          "ta": "இழைகளிலும் கோல்களிலும் அலைகள்",
+          "en": "Waves in strings & rods",
+          "index": 6,
+          "available": false
+        },
+        {
+          "id": "03/sound",
+          "slug": "sound",
+          "ta": "ஒலியும் வாயுக்களில் அலைகளும்",
+          "en": "Sound & waves in gases",
+          "index": 7,
+          "available": false
+        },
+        {
+          "id": "03/doppler",
+          "slug": "doppler",
+          "ta": "தொப்ளரின் விளைவு",
+          "en": "Doppler effect",
+          "index": 8,
+          "available": false
+        },
+        {
+          "id": "03/electromagnetic",
+          "slug": "electromagnetic",
+          "ta": "மின்காந்த அலைகள்",
+          "en": "Electromagnetic waves",
+          "index": 9,
+          "available": false
+        },
+        {
+          "id": "03/optics",
+          "slug": "optics",
+          "ta": "ஒளிமுறிவும் முழுவுட்தெறிப்பும்",
+          "en": "Refraction & total internal reflection",
+          "index": 10,
+          "available": false
+        },
+        {
+          "id": "03/lenses",
+          "slug": "lenses",
+          "ta": "வில்லைகளும் அரியங்களும்",
+          "en": "Lenses & prisms",
+          "index": 11,
+          "available": false
+        },
+        {
+          "id": "03/instruments",
+          "slug": "instruments",
+          "ta": "ஒளியியற் கருவிகளும் மனிதக் கண்ணும்",
+          "en": "Optical instruments & the eye",
+          "index": 12,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "slug": "thermal",
+      "ta": "வெப்பப் பௌதிகவியல்",
+      "en": "Thermal physics",
+      "description": {
+        "en": "Connect tiny particles to everyday heat.",
+        "ta": "சிறு துணிக்கைகளையும் வெப்பத்தையும் தொடர்புபடுத்துங்கள்."
+      },
+      "formula": "Q = mcΔT",
+      "color": "#dd783a",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "04/temperature",
+          "slug": "temperature",
+          "ta": "வெப்பநிலையும் வெப்பமானிகளும்",
+          "en": "Temperature & thermometry",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "04/expansion",
+          "slug": "expansion",
+          "ta": "வெப்பவிரிவு",
+          "en": "Thermal expansion",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "04/gas-laws",
+          "slug": "gas-laws",
+          "ta": "வாயு விதிகள்",
+          "en": "Gas laws",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "04/kinetic",
+          "slug": "kinetic",
+          "ta": "வாயுக்களின் இயக்கப்பாட்டுக் கொள்கை",
+          "en": "Kinetic theory",
+          "index": 4,
+          "available": false
+        },
+        {
+          "id": "04/capacity",
+          "slug": "capacity",
+          "ta": "வெப்பக் கொள்ளளவு",
+          "en": "Heat capacity",
+          "index": 5,
+          "available": false
+        },
+        {
+          "id": "04/changes",
+          "slug": "changes",
+          "ta": "நிலைமாற்றம்",
+          "en": "Changes of state",
+          "index": 6,
+          "available": false
+        },
+        {
+          "id": "04/humidity",
+          "slug": "humidity",
+          "ta": "ஆவியும் ஈரப்பதனியலும்",
+          "en": "Vapour & humidity",
+          "index": 7,
+          "available": false
+        },
+        {
+          "id": "04/thermodynamics",
+          "slug": "thermodynamics",
+          "ta": "வெப்பவியக்கவியல்",
+          "en": "Thermodynamics",
+          "index": 8,
+          "available": false
+        },
+        {
+          "id": "04/transfer",
+          "slug": "transfer",
+          "ta": "வெப்பம் இடம்மாறும் முறைகள்",
+          "en": "Heat transfer",
+          "index": 9,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "slug": "gravity",
+      "ta": "ஈர்ப்புப் புலம்",
+      "en": "Gravitational field",
+      "description": {
+        "en": "Follow the force that shapes an orbit.",
+        "ta": "சுற்றுப்பாதையை உருவாக்கும் விசையை ஆராயுங்கள்."
+      },
+      "formula": "GM/r²",
+      "color": "#5765bc",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "05/gravitation",
+          "slug": "gravitation",
+          "ta": "ஈர்ப்பு விதி",
+          "en": "Law of gravitation",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "05/strength",
+          "slug": "strength",
+          "ta": "ஈர்ப்புப் புலச் செறிவு",
+          "en": "Gravitational field strength",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "05/potential",
+          "slug": "potential",
+          "ta": "ஈர்ப்பழுத்தமும் சக்தியும்",
+          "en": "Gravitational potential & energy",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "05/orbits",
+          "slug": "orbits",
+          "ta": "சுற்றுப்பாதைகளும் செய்மதிகளும்",
+          "en": "Orbits & satellites",
+          "index": 4,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "slug": "electric-fields",
+      "ta": "மின் புலம்",
+      "en": "Electric field",
+      "description": {
+        "en": "Make invisible forces understandable.",
+        "ta": "கண்ணுக்குத் தெரியாத விசைகளைப் புரிந்துகொள்ளுங்கள்."
+      },
+      "formula": "E = F/q",
+      "color": "#bc5985",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "06/charge",
+          "slug": "charge",
+          "ta": "மின்னேற்றமும் கூலோமின் விதியும்",
+          "en": "Charge & Coulomb’s law",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "06/field",
+          "slug": "field",
+          "ta": "மின் புலச் செறிவு",
+          "en": "Electric field strength",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "06/gauss",
+          "slug": "gauss",
+          "ta": "மின் பாயமும் கோசுவின் தேற்றமும்",
+          "en": "Electric flux & Gauss’s law",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "06/potential",
+          "slug": "potential",
+          "ta": "மின்னழுத்தமும் அழுத்த வேறுபாடும்",
+          "en": "Electric potential & potential difference",
+          "index": 4,
+          "available": false
+        },
+        {
+          "id": "06/equipotential",
+          "slug": "equipotential",
+          "ta": "சம அழுத்த மேற்பரப்புக்கள்",
+          "en": "Equipotential surfaces",
+          "index": 5,
+          "available": false
+        },
+        {
+          "id": "06/capacitors",
+          "slug": "capacitors",
+          "ta": "மின் கொள்ளளவம்",
+          "en": "Capacitance",
+          "index": 6,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "slug": "magnetism",
+      "ta": "காந்தப் புலம்",
+      "en": "Magnetic field",
+      "description": {
+        "en": "Explore moving charges and changing fields.",
+        "ta": "இயங்கும் மின்னேற்றங்களையும் மாறும் புலங்களையும் ஆராயுங்கள்."
+      },
+      "formula": "F = Bqv",
+      "color": "#369383",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "07/fields",
+          "slug": "fields",
+          "ta": "காந்தப்புலச் செறிவு",
+          "en": "Magnetic field strength",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "07/forces",
+          "slug": "forces",
+          "ta": "காந்த விசை",
+          "en": "Magnetic force",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "07/torque",
+          "slug": "torque",
+          "ta": "மின்னோட்டத் தடத்தில் முறுக்கம்",
+          "en": "Torque on a current loop",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "07/induction",
+          "slug": "induction",
+          "ta": "மின்காந்தத் தூண்டல்",
+          "en": "Electromagnetic induction",
+          "index": 4,
+          "available": false
+        },
+        {
+          "id": "07/alternating",
+          "slug": "alternating",
+          "ta": "மாறோட்டமும் மின்மாற்றிகளும்",
+          "en": "Alternating current & transformers",
+          "index": 5,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "slug": "electricity",
+      "ta": "ஓட்ட மின்னியல்",
+      "en": "Current electricity",
+      "description": {
+        "en": "Build a clear picture of a working circuit.",
+        "ta": "மின்சுற்றின் செயற்பாட்டைத் தெளிவாகப் புரிந்துகொள்ளுங்கள்."
+      },
+      "formula": "V = IR",
+      "color": "#467cba",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "08/current",
+          "slug": "current",
+          "ta": "மின்னோட்டம்",
+          "en": "Electric current",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "08/resistance",
+          "slug": "resistance",
+          "ta": "தடை, தடைத்திறன், ஓமின் விதி",
+          "en": "Resistance, resistivity & Ohm’s law",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "08/networks",
+          "slug": "networks",
+          "ta": "தடைகளின் இணைப்புக்கள்",
+          "en": "Resistor networks",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "08/emf",
+          "slug": "emf",
+          "ta": "மின்னியக்க விசையும் அகத்தடையும்",
+          "en": "EMF & internal resistance",
+          "index": 4,
+          "available": false
+        },
+        {
+          "id": "08/kirchhoff",
+          "slug": "kirchhoff",
+          "ta": "கிர்ச்சொப்பின் விதிகள்",
+          "en": "Kirchhoff’s laws",
+          "index": 5,
+          "available": false
+        },
+        {
+          "id": "08/power",
+          "slug": "power",
+          "ta": "மின்சக்தியும் மின்வலுவும்",
+          "en": "Electrical energy & power",
+          "index": 6,
+          "available": false
+        },
+        {
+          "id": "08/measurements",
+          "slug": "measurements",
+          "ta": "மின்னியல் அளவீடுகள்",
+          "en": "Electrical measurements",
+          "index": 7,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "slug": "electronics",
+      "ta": "இலத்திரனியல்",
+      "en": "Electronics",
+      "description": {
+        "en": "Understand the ideas inside modern devices.",
+        "ta": "நவீன சாதனங்களின் அடிப்படைக் கருத்துகளை அறியுங்கள்."
+      },
+      "formula": "0 → 1",
+      "color": "#a26c35",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "09/semiconductors",
+          "slug": "semiconductors",
+          "ta": "குறைகடத்திகளும் இருவாயிகளும்",
+          "en": "Semiconductors & diodes",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "09/transistors",
+          "slug": "transistors",
+          "ta": "திரான்சிஸ்டர்கள்",
+          "en": "Transistors",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "09/amplifiers",
+          "slug": "amplifiers",
+          "ta": "செயற்பாட்டு விரிவாக்கிகள்",
+          "en": "Operational amplifiers",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "09/digital",
+          "slug": "digital",
+          "ta": "இலக்கமுறை இலத்திரனியல்",
+          "en": "Digital electronics",
+          "index": 4,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "slug": "matter-properties",
+      "ta": "சடத்தின் பொறியியல் இயல்புகள்",
+      "en": "Mechanical properties of matter",
+      "description": {
+        "en": "Discover why materials stretch, flow and hold.",
+        "ta": "பொருட்கள் நீள்வதும் பாய்வதும் எவ்வாறு என ஆராயுங்கள்."
+      },
+      "formula": "σ / ε",
+      "color": "#568752",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "10/elasticity",
+          "slug": "elasticity",
+          "ta": "மீள்தன்மை",
+          "en": "Elasticity",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "10/surface",
+          "slug": "surface",
+          "ta": "மேற்பரப்பு இழுவிசை",
+          "en": "Surface tension",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "10/viscosity",
+          "slug": "viscosity",
+          "ta": "பாகுத்தன்மை",
+          "en": "Viscosity",
+          "index": 3,
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "slug": "matter-radiation",
+      "ta": "சடமும் கதிர்ப்பும்",
+      "en": "Matter & radiation",
+      "description": {
+        "en": "Step into the physics of atoms and quanta.",
+        "ta": "அணுக்களினதும் சக்திச் சொட்டுகளினதும் உலகிற்குள் செல்லுங்கள்."
+      },
+      "formula": "E = hf",
+      "color": "#7858c1",
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
+      "lessons": [
+        {
+          "id": "11/quantum",
+          "slug": "quantum",
+          "ta": "சக்திச் சொட்டுகளும் கதிர்ப்பும்",
+          "en": "Quanta & radiation",
+          "index": 1,
+          "available": false
+        },
+        {
+          "id": "11/photoelectric",
+          "slug": "photoelectric",
+          "ta": "ஒளிமின் விளைவு",
+          "en": "Photoelectric effect",
+          "index": 2,
+          "available": false
+        },
+        {
+          "id": "11/atomic",
+          "slug": "atomic",
+          "ta": "அணு மாதிரிகளும் சக்தி மட்டங்களும்",
+          "en": "Atomic models & energy levels",
+          "index": 3,
+          "available": false
+        },
+        {
+          "id": "11/waves",
+          "slug": "waves",
+          "ta": "துணிக்கைகளின் அலை இயல்பு",
+          "en": "Wave nature of particles",
+          "index": 4,
+          "available": false
+        },
+        {
+          "id": "11/nuclear",
+          "slug": "nuclear",
+          "ta": "அணுக்கருவும் கதிரியக்கமும்",
+          "en": "Nuclei & radioactivity",
+          "index": 5,
+          "available": false
+        },
+        {
+          "id": "11/energy",
+          "slug": "energy",
+          "ta": "அணுக்கருச் சக்தி",
+          "en": "Nuclear energy",
+          "index": 6,
+          "available": false
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "independence-1",
+      "variant": 0,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Two balls leave the same height simultaneously: one is dropped, the other launched horizontally. Which reaches level ground first? Ignore air resistance.",
+        "ta": "ஒரே உயரத்திலிருந்து ஒரே நேரத்தில் ஒரு பந்து விடப்படுகிறது; மற்றொன்று கிடையாக எறியப்படுகிறது. வளித்தடையைப் புறக்கணித்தால் எது முதலில் தரையை அடையும்?"
+      },
+      "options": [
+        {
+          "en": "The dropped ball",
+          "ta": "விடப்பட்ட பந்து"
+        },
+        {
+          "en": "The launched ball",
+          "ta": "எறியப்பட்ட பந்து"
+        },
+        {
+          "en": "Both together",
+          "ta": "இரண்டும் ஒரே நேரத்தில்"
+        },
+        {
+          "en": "It depends on their masses",
+          "ta": "திணிவுகளில் தங்கியுள்ளது"
+        },
+        {
+          "en": "It depends on horizontal speed",
+          "ta": "கிடை வேகத்தில் தங்கியுள்ளது"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Both have the same initial vertical velocity (zero) and vertical acceleration. Their vertical journeys take the same time.",
+        "ta": "இரண்டினதும் ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம்; நிலைக்குத்து ஆர்முடுகலும் சமம். ஆகவே விழும் நேரம் சமம்."
+      }
+    },
+    {
+      "id": "independence-1",
+      "variant": 1,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Two balls leave the same height simultaneously: one is dropped, the other launched horizontally. Which reaches level ground first? Ignore air resistance.",
+        "ta": "ஒரே உயரத்திலிருந்து ஒரே நேரத்தில் ஒரு பந்து விடப்படுகிறது; மற்றொன்று கிடையாக எறியப்படுகிறது. வளித்தடையைப் புறக்கணித்தால் எது முதலில் தரையை அடையும்?"
+      },
+      "options": [
+        {
+          "en": "The dropped ball",
+          "ta": "விடப்பட்ட பந்து"
+        },
+        {
+          "en": "The launched ball",
+          "ta": "எறியப்பட்ட பந்து"
+        },
+        {
+          "en": "Both together",
+          "ta": "இரண்டும் ஒரே நேரத்தில்"
+        },
+        {
+          "en": "It depends on their masses",
+          "ta": "திணிவுகளில் தங்கியுள்ளது"
+        },
+        {
+          "en": "It depends on horizontal speed",
+          "ta": "கிடை வேகத்தில் தங்கியுள்ளது"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Both have the same initial vertical velocity (zero) and vertical acceleration. Their vertical journeys take the same time.",
+        "ta": "இரண்டினதும் ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம்; நிலைக்குத்து ஆர்முடுகலும் சமம். ஆகவே விழும் நேரம் சமம்."
+      }
+    },
+    {
+      "id": "independence-1",
+      "variant": 2,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Two balls leave the same height simultaneously: one is dropped, the other launched horizontally. Which reaches level ground first? Ignore air resistance.",
+        "ta": "ஒரே உயரத்திலிருந்து ஒரே நேரத்தில் ஒரு பந்து விடப்படுகிறது; மற்றொன்று கிடையாக எறியப்படுகிறது. வளித்தடையைப் புறக்கணித்தால் எது முதலில் தரையை அடையும்?"
+      },
+      "options": [
+        {
+          "en": "The dropped ball",
+          "ta": "விடப்பட்ட பந்து"
+        },
+        {
+          "en": "The launched ball",
+          "ta": "எறியப்பட்ட பந்து"
+        },
+        {
+          "en": "Both together",
+          "ta": "இரண்டும் ஒரே நேரத்தில்"
+        },
+        {
+          "en": "It depends on their masses",
+          "ta": "திணிவுகளில் தங்கியுள்ளது"
+        },
+        {
+          "en": "It depends on horizontal speed",
+          "ta": "கிடை வேகத்தில் தங்கியுள்ளது"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Both have the same initial vertical velocity (zero) and vertical acceleration. Their vertical journeys take the same time.",
+        "ta": "இரண்டினதும் ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம்; நிலைக்குத்து ஆர்முடுகலும் சமம். ஆகவே விழும் நேரம் சமம்."
+      }
+    },
+    {
+      "id": "independence-1",
+      "variant": 3,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Two balls leave the same height simultaneously: one is dropped, the other launched horizontally. Which reaches level ground first? Ignore air resistance.",
+        "ta": "ஒரே உயரத்திலிருந்து ஒரே நேரத்தில் ஒரு பந்து விடப்படுகிறது; மற்றொன்று கிடையாக எறியப்படுகிறது. வளித்தடையைப் புறக்கணித்தால் எது முதலில் தரையை அடையும்?"
+      },
+      "options": [
+        {
+          "en": "The dropped ball",
+          "ta": "விடப்பட்ட பந்து"
+        },
+        {
+          "en": "The launched ball",
+          "ta": "எறியப்பட்ட பந்து"
+        },
+        {
+          "en": "Both together",
+          "ta": "இரண்டும் ஒரே நேரத்தில்"
+        },
+        {
+          "en": "It depends on their masses",
+          "ta": "திணிவுகளில் தங்கியுள்ளது"
+        },
+        {
+          "en": "It depends on horizontal speed",
+          "ta": "கிடை வேகத்தில் தங்கியுள்ளது"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Both have the same initial vertical velocity (zero) and vertical acceleration. Their vertical journeys take the same time.",
+        "ta": "இரண்டினதும் ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம்; நிலைக்குத்து ஆர்முடுகலும் சமம். ஆகவே விழும் நேரம் சமம்."
+      }
+    },
+    {
+      "id": "independence-1",
+      "variant": 4,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Two balls leave the same height simultaneously: one is dropped, the other launched horizontally. Which reaches level ground first? Ignore air resistance.",
+        "ta": "ஒரே உயரத்திலிருந்து ஒரே நேரத்தில் ஒரு பந்து விடப்படுகிறது; மற்றொன்று கிடையாக எறியப்படுகிறது. வளித்தடையைப் புறக்கணித்தால் எது முதலில் தரையை அடையும்?"
+      },
+      "options": [
+        {
+          "en": "The dropped ball",
+          "ta": "விடப்பட்ட பந்து"
+        },
+        {
+          "en": "The launched ball",
+          "ta": "எறியப்பட்ட பந்து"
+        },
+        {
+          "en": "Both together",
+          "ta": "இரண்டும் ஒரே நேரத்தில்"
+        },
+        {
+          "en": "It depends on their masses",
+          "ta": "திணிவுகளில் தங்கியுள்ளது"
+        },
+        {
+          "en": "It depends on horizontal speed",
+          "ta": "கிடை வேகத்தில் தங்கியுள்ளது"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Both have the same initial vertical velocity (zero) and vertical acceleration. Their vertical journeys take the same time.",
+        "ta": "இரண்டினதும் ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம்; நிலைக்குத்து ஆர்முடுகலும் சமம். ஆகவே விழும் நேரம் சமம்."
+      }
+    },
+    {
+      "id": "independence-2",
+      "variant": 0,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the top of an oblique projectile path, which statement is correct? Ignore air resistance.",
+        "ta": "சாய்வாக எறியப்பட்ட பொருளின் பாதையின் உச்சியில் எது சரியானது? வளித்தடையைப் புறக்கணிக்கவும்."
+      },
+      "options": [
+        {
+          "en": "Velocity and acceleration are both zero",
+          "ta": "வேகமும் ஆர்முடுகலும் பூச்சியம்"
+        },
+        {
+          "en": "Vertical velocity is zero; acceleration is downward",
+          "ta": "நிலைக்குத்து வேகம் பூச்சியம்; ஆர்முடுகல் கீழ்நோக்கி"
+        },
+        {
+          "en": "Acceleration is horizontal",
+          "ta": "ஆர்முடுகல் கிடையாக உள்ளது"
+        },
+        {
+          "en": "Horizontal velocity is zero",
+          "ta": "கிடை வேகம் பூச்சியம்"
+        },
+        {
+          "en": "Gravity stops briefly",
+          "ta": "ஈர்ப்பு விசை சிறிது நேரம் நின்றுவிடும்"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Only the vertical velocity becomes zero. Horizontal velocity remains, and gravity still acts downward.",
+        "ta": "நிலைக்குத்து வேகம் மட்டுமே பூச்சியமாகிறது. கிடை வேகம் தொடர்கிறது; ஈர்ப்பு விசை கீழ்நோக்கிச் செயல்படுகிறது."
+      }
+    },
+    {
+      "id": "independence-2",
+      "variant": 1,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the top of an oblique projectile path, which statement is correct? Ignore air resistance.",
+        "ta": "சாய்வாக எறியப்பட்ட பொருளின் பாதையின் உச்சியில் எது சரியானது? வளித்தடையைப் புறக்கணிக்கவும்."
+      },
+      "options": [
+        {
+          "en": "Velocity and acceleration are both zero",
+          "ta": "வேகமும் ஆர்முடுகலும் பூச்சியம்"
+        },
+        {
+          "en": "Vertical velocity is zero; acceleration is downward",
+          "ta": "நிலைக்குத்து வேகம் பூச்சியம்; ஆர்முடுகல் கீழ்நோக்கி"
+        },
+        {
+          "en": "Acceleration is horizontal",
+          "ta": "ஆர்முடுகல் கிடையாக உள்ளது"
+        },
+        {
+          "en": "Horizontal velocity is zero",
+          "ta": "கிடை வேகம் பூச்சியம்"
+        },
+        {
+          "en": "Gravity stops briefly",
+          "ta": "ஈர்ப்பு விசை சிறிது நேரம் நின்றுவிடும்"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Only the vertical velocity becomes zero. Horizontal velocity remains, and gravity still acts downward.",
+        "ta": "நிலைக்குத்து வேகம் மட்டுமே பூச்சியமாகிறது. கிடை வேகம் தொடர்கிறது; ஈர்ப்பு விசை கீழ்நோக்கிச் செயல்படுகிறது."
+      }
+    },
+    {
+      "id": "independence-2",
+      "variant": 2,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the top of an oblique projectile path, which statement is correct? Ignore air resistance.",
+        "ta": "சாய்வாக எறியப்பட்ட பொருளின் பாதையின் உச்சியில் எது சரியானது? வளித்தடையைப் புறக்கணிக்கவும்."
+      },
+      "options": [
+        {
+          "en": "Velocity and acceleration are both zero",
+          "ta": "வேகமும் ஆர்முடுகலும் பூச்சியம்"
+        },
+        {
+          "en": "Vertical velocity is zero; acceleration is downward",
+          "ta": "நிலைக்குத்து வேகம் பூச்சியம்; ஆர்முடுகல் கீழ்நோக்கி"
+        },
+        {
+          "en": "Acceleration is horizontal",
+          "ta": "ஆர்முடுகல் கிடையாக உள்ளது"
+        },
+        {
+          "en": "Horizontal velocity is zero",
+          "ta": "கிடை வேகம் பூச்சியம்"
+        },
+        {
+          "en": "Gravity stops briefly",
+          "ta": "ஈர்ப்பு விசை சிறிது நேரம் நின்றுவிடும்"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Only the vertical velocity becomes zero. Horizontal velocity remains, and gravity still acts downward.",
+        "ta": "நிலைக்குத்து வேகம் மட்டுமே பூச்சியமாகிறது. கிடை வேகம் தொடர்கிறது; ஈர்ப்பு விசை கீழ்நோக்கிச் செயல்படுகிறது."
+      }
+    },
+    {
+      "id": "independence-2",
+      "variant": 3,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the top of an oblique projectile path, which statement is correct? Ignore air resistance.",
+        "ta": "சாய்வாக எறியப்பட்ட பொருளின் பாதையின் உச்சியில் எது சரியானது? வளித்தடையைப் புறக்கணிக்கவும்."
+      },
+      "options": [
+        {
+          "en": "Velocity and acceleration are both zero",
+          "ta": "வேகமும் ஆர்முடுகலும் பூச்சியம்"
+        },
+        {
+          "en": "Vertical velocity is zero; acceleration is downward",
+          "ta": "நிலைக்குத்து வேகம் பூச்சியம்; ஆர்முடுகல் கீழ்நோக்கி"
+        },
+        {
+          "en": "Acceleration is horizontal",
+          "ta": "ஆர்முடுகல் கிடையாக உள்ளது"
+        },
+        {
+          "en": "Horizontal velocity is zero",
+          "ta": "கிடை வேகம் பூச்சியம்"
+        },
+        {
+          "en": "Gravity stops briefly",
+          "ta": "ஈர்ப்பு விசை சிறிது நேரம் நின்றுவிடும்"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Only the vertical velocity becomes zero. Horizontal velocity remains, and gravity still acts downward.",
+        "ta": "நிலைக்குத்து வேகம் மட்டுமே பூச்சியமாகிறது. கிடை வேகம் தொடர்கிறது; ஈர்ப்பு விசை கீழ்நோக்கிச் செயல்படுகிறது."
+      }
+    },
+    {
+      "id": "independence-2",
+      "variant": 4,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the top of an oblique projectile path, which statement is correct? Ignore air resistance.",
+        "ta": "சாய்வாக எறியப்பட்ட பொருளின் பாதையின் உச்சியில் எது சரியானது? வளித்தடையைப் புறக்கணிக்கவும்."
+      },
+      "options": [
+        {
+          "en": "Velocity and acceleration are both zero",
+          "ta": "வேகமும் ஆர்முடுகலும் பூச்சியம்"
+        },
+        {
+          "en": "Vertical velocity is zero; acceleration is downward",
+          "ta": "நிலைக்குத்து வேகம் பூச்சியம்; ஆர்முடுகல் கீழ்நோக்கி"
+        },
+        {
+          "en": "Acceleration is horizontal",
+          "ta": "ஆர்முடுகல் கிடையாக உள்ளது"
+        },
+        {
+          "en": "Horizontal velocity is zero",
+          "ta": "கிடை வேகம் பூச்சியம்"
+        },
+        {
+          "en": "Gravity stops briefly",
+          "ta": "ஈர்ப்பு விசை சிறிது நேரம் நின்றுவிடும்"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Only the vertical velocity becomes zero. Horizontal velocity remains, and gravity still acts downward.",
+        "ta": "நிலைக்குத்து வேகம் மட்டுமே பூச்சியமாகிறது. கிடை வேகம் தொடர்கிறது; ஈர்ப்பு விசை கீழ்நோக்கிச் செயல்படுகிறது."
+      }
+    },
+    {
+      "id": "independence-3",
+      "variant": 0,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile is replaced with one of twice the mass. Launch velocity and height stay the same. Without air resistance, its path will…",
+        "ta": "ஆரம்ப வேகமும் உயரமும் மாறாமல் திணிவு இரட்டிப்பாக்கப்படுகிறது. வளித்தடை இல்லாதபோது பாதை…"
+      },
+      "options": [
+        {
+          "en": "Have twice the range",
+          "ta": "இரு மடங்கு வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the range",
+          "ta": "அரை வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the flight time",
+          "ta": "அரைப் பறக்கும் நேரத்தைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Remain unchanged",
+          "ta": "மாறாது"
+        },
+        {
+          "en": "Become a straight line",
+          "ta": "நேர்கோடாகும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "Mass cancels from F = ma with gravitational force mg. Acceleration and the trajectory are unchanged.",
+        "ta": "F = ma இல் ஈர்ப்பு விசை mg என இடும்போது திணிவு நீங்குகிறது. ஆர்முடுகலும் பாதையும் மாறாது."
+      }
+    },
+    {
+      "id": "independence-3",
+      "variant": 1,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile is replaced with one of twice the mass. Launch velocity and height stay the same. Without air resistance, its path will…",
+        "ta": "ஆரம்ப வேகமும் உயரமும் மாறாமல் திணிவு இரட்டிப்பாக்கப்படுகிறது. வளித்தடை இல்லாதபோது பாதை…"
+      },
+      "options": [
+        {
+          "en": "Have twice the range",
+          "ta": "இரு மடங்கு வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the range",
+          "ta": "அரை வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the flight time",
+          "ta": "அரைப் பறக்கும் நேரத்தைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Remain unchanged",
+          "ta": "மாறாது"
+        },
+        {
+          "en": "Become a straight line",
+          "ta": "நேர்கோடாகும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "Mass cancels from F = ma with gravitational force mg. Acceleration and the trajectory are unchanged.",
+        "ta": "F = ma இல் ஈர்ப்பு விசை mg என இடும்போது திணிவு நீங்குகிறது. ஆர்முடுகலும் பாதையும் மாறாது."
+      }
+    },
+    {
+      "id": "independence-3",
+      "variant": 2,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile is replaced with one of twice the mass. Launch velocity and height stay the same. Without air resistance, its path will…",
+        "ta": "ஆரம்ப வேகமும் உயரமும் மாறாமல் திணிவு இரட்டிப்பாக்கப்படுகிறது. வளித்தடை இல்லாதபோது பாதை…"
+      },
+      "options": [
+        {
+          "en": "Have twice the range",
+          "ta": "இரு மடங்கு வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the range",
+          "ta": "அரை வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the flight time",
+          "ta": "அரைப் பறக்கும் நேரத்தைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Remain unchanged",
+          "ta": "மாறாது"
+        },
+        {
+          "en": "Become a straight line",
+          "ta": "நேர்கோடாகும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "Mass cancels from F = ma with gravitational force mg. Acceleration and the trajectory are unchanged.",
+        "ta": "F = ma இல் ஈர்ப்பு விசை mg என இடும்போது திணிவு நீங்குகிறது. ஆர்முடுகலும் பாதையும் மாறாது."
+      }
+    },
+    {
+      "id": "independence-3",
+      "variant": 3,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile is replaced with one of twice the mass. Launch velocity and height stay the same. Without air resistance, its path will…",
+        "ta": "ஆரம்ப வேகமும் உயரமும் மாறாமல் திணிவு இரட்டிப்பாக்கப்படுகிறது. வளித்தடை இல்லாதபோது பாதை…"
+      },
+      "options": [
+        {
+          "en": "Have twice the range",
+          "ta": "இரு மடங்கு வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the range",
+          "ta": "அரை வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the flight time",
+          "ta": "அரைப் பறக்கும் நேரத்தைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Remain unchanged",
+          "ta": "மாறாது"
+        },
+        {
+          "en": "Become a straight line",
+          "ta": "நேர்கோடாகும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "Mass cancels from F = ma with gravitational force mg. Acceleration and the trajectory are unchanged.",
+        "ta": "F = ma இல் ஈர்ப்பு விசை mg என இடும்போது திணிவு நீங்குகிறது. ஆர்முடுகலும் பாதையும் மாறாது."
+      }
+    },
+    {
+      "id": "independence-3",
+      "variant": 4,
+      "family": "independence",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile is replaced with one of twice the mass. Launch velocity and height stay the same. Without air resistance, its path will…",
+        "ta": "ஆரம்ப வேகமும் உயரமும் மாறாமல் திணிவு இரட்டிப்பாக்கப்படுகிறது. வளித்தடை இல்லாதபோது பாதை…"
+      },
+      "options": [
+        {
+          "en": "Have twice the range",
+          "ta": "இரு மடங்கு வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the range",
+          "ta": "அரை வீச்சைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Have half the flight time",
+          "ta": "அரைப் பறக்கும் நேரத்தைக் கொண்டிருக்கும்"
+        },
+        {
+          "en": "Remain unchanged",
+          "ta": "மாறாது"
+        },
+        {
+          "en": "Become a straight line",
+          "ta": "நேர்கோடாகும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "Mass cancels from F = ma with gravitational force mg. Acceleration and the trajectory are unchanged.",
+        "ta": "F = ma இல் ஈர்ப்பு விசை mg என இடும்போது திணிவு நீங்குகிறது. ஆர்முடுகலும் பாதையும் மாறாது."
+      }
+    },
+    {
+      "id": "components-1",
+      "variant": 0,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 10 m/s, 60° above horizontal. Find its horizontal velocity.",
+        "ta": "10 m/s வேகத்தில் கிடையுடன் 60° கோணத்தில் பந்து எறியப்படுகிறது. கிடை வேகத்தைக் காண்க."
+      },
+      "value": 5,
+      "explain": {
+        "en": "uₓ = u cos 60° = 10 × 0.5 = 5 m/s.",
+        "ta": "uₓ = u cos 60° = 10 × 0.5 = 5 m/s."
+      }
+    },
+    {
+      "id": "components-1",
+      "variant": 1,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 15 m/s, 60° above horizontal. Find its horizontal velocity.",
+        "ta": "15 m/s வேகத்தில் கிடையுடன் 60° கோணத்தில் பந்து எறியப்படுகிறது. கிடை வேகத்தைக் காண்க."
+      },
+      "value": 7.5,
+      "explain": {
+        "en": "uₓ = u cos 60° = 15 × 0.5 = 7.5 m/s.",
+        "ta": "uₓ = u cos 60° = 15 × 0.5 = 7.5 m/s."
+      }
+    },
+    {
+      "id": "components-1",
+      "variant": 2,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 20 m/s, 60° above horizontal. Find its horizontal velocity.",
+        "ta": "20 m/s வேகத்தில் கிடையுடன் 60° கோணத்தில் பந்து எறியப்படுகிறது. கிடை வேகத்தைக் காண்க."
+      },
+      "value": 10,
+      "explain": {
+        "en": "uₓ = u cos 60° = 20 × 0.5 = 10 m/s.",
+        "ta": "uₓ = u cos 60° = 20 × 0.5 = 10 m/s."
+      }
+    },
+    {
+      "id": "components-1",
+      "variant": 3,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 25 m/s, 60° above horizontal. Find its horizontal velocity.",
+        "ta": "25 m/s வேகத்தில் கிடையுடன் 60° கோணத்தில் பந்து எறியப்படுகிறது. கிடை வேகத்தைக் காண்க."
+      },
+      "value": 12.5,
+      "explain": {
+        "en": "uₓ = u cos 60° = 25 × 0.5 = 12.5 m/s.",
+        "ta": "uₓ = u cos 60° = 25 × 0.5 = 12.5 m/s."
+      }
+    },
+    {
+      "id": "components-1",
+      "variant": 4,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 30 m/s, 60° above horizontal. Find its horizontal velocity.",
+        "ta": "30 m/s வேகத்தில் கிடையுடன் 60° கோணத்தில் பந்து எறியப்படுகிறது. கிடை வேகத்தைக் காண்க."
+      },
+      "value": 15,
+      "explain": {
+        "en": "uₓ = u cos 60° = 30 × 0.5 = 15 m/s.",
+        "ta": "uₓ = u cos 60° = 30 × 0.5 = 15 m/s."
+      }
+    },
+    {
+      "id": "components-2",
+      "variant": 0,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 10 m/s, 30° above horizontal. Find its initial upward velocity.",
+        "ta": "10 m/s வேகத்தில் கிடையுடன் 30° கோணத்தில் பந்து எறியப்படுகிறது. ஆரம்ப மேல்நோக்கிய வேகத்தைக் காண்க."
+      },
+      "value": 5,
+      "explain": {
+        "en": "uᵧ = u sin 30° = 10 × 0.5 = 5 m/s.",
+        "ta": "uᵧ = u sin 30° = 10 × 0.5 = 5 m/s."
+      }
+    },
+    {
+      "id": "components-2",
+      "variant": 1,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 15 m/s, 30° above horizontal. Find its initial upward velocity.",
+        "ta": "15 m/s வேகத்தில் கிடையுடன் 30° கோணத்தில் பந்து எறியப்படுகிறது. ஆரம்ப மேல்நோக்கிய வேகத்தைக் காண்க."
+      },
+      "value": 7.5,
+      "explain": {
+        "en": "uᵧ = u sin 30° = 15 × 0.5 = 7.5 m/s.",
+        "ta": "uᵧ = u sin 30° = 15 × 0.5 = 7.5 m/s."
+      }
+    },
+    {
+      "id": "components-2",
+      "variant": 2,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 20 m/s, 30° above horizontal. Find its initial upward velocity.",
+        "ta": "20 m/s வேகத்தில் கிடையுடன் 30° கோணத்தில் பந்து எறியப்படுகிறது. ஆரம்ப மேல்நோக்கிய வேகத்தைக் காண்க."
+      },
+      "value": 10,
+      "explain": {
+        "en": "uᵧ = u sin 30° = 20 × 0.5 = 10 m/s.",
+        "ta": "uᵧ = u sin 30° = 20 × 0.5 = 10 m/s."
+      }
+    },
+    {
+      "id": "components-2",
+      "variant": 3,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 25 m/s, 30° above horizontal. Find its initial upward velocity.",
+        "ta": "25 m/s வேகத்தில் கிடையுடன் 30° கோணத்தில் பந்து எறியப்படுகிறது. ஆரம்ப மேல்நோக்கிய வேகத்தைக் காண்க."
+      },
+      "value": 12.5,
+      "explain": {
+        "en": "uᵧ = u sin 30° = 25 × 0.5 = 12.5 m/s.",
+        "ta": "uᵧ = u sin 30° = 25 × 0.5 = 12.5 m/s."
+      }
+    },
+    {
+      "id": "components-2",
+      "variant": 4,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 30 m/s, 30° above horizontal. Find its initial upward velocity.",
+        "ta": "30 m/s வேகத்தில் கிடையுடன் 30° கோணத்தில் பந்து எறியப்படுகிறது. ஆரம்ப மேல்நோக்கிய வேகத்தைக் காண்க."
+      },
+      "value": 15,
+      "explain": {
+        "en": "uᵧ = u sin 30° = 30 × 0.5 = 15 m/s.",
+        "ta": "uᵧ = u sin 30° = 30 × 0.5 = 15 m/s."
+      }
+    },
+    {
+      "id": "components-3",
+      "variant": 0,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A launch velocity has components 3 m/s horizontally and 4 m/s upward. Find its magnitude.",
+        "ta": "ஆரம்ப வேகக் கூறுகள் கிடையாக 3 m/s, மேல்நோக்கி 4 m/s. வேகத்தின் பருமனைக் காண்க."
+      },
+      "value": 5,
+      "explain": {
+        "en": "u = √(uₓ² + uᵧ²) = √(3² + 4²) = 5 m/s.",
+        "ta": "u = √(uₓ² + uᵧ²) = √(3² + 4²) = 5 m/s."
+      }
+    },
+    {
+      "id": "components-3",
+      "variant": 1,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A launch velocity has components 6 m/s horizontally and 8 m/s upward. Find its magnitude.",
+        "ta": "ஆரம்ப வேகக் கூறுகள் கிடையாக 6 m/s, மேல்நோக்கி 8 m/s. வேகத்தின் பருமனைக் காண்க."
+      },
+      "value": 10,
+      "explain": {
+        "en": "u = √(uₓ² + uᵧ²) = √(6² + 8²) = 10 m/s.",
+        "ta": "u = √(uₓ² + uᵧ²) = √(6² + 8²) = 10 m/s."
+      }
+    },
+    {
+      "id": "components-3",
+      "variant": 2,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A launch velocity has components 9 m/s horizontally and 12 m/s upward. Find its magnitude.",
+        "ta": "ஆரம்ப வேகக் கூறுகள் கிடையாக 9 m/s, மேல்நோக்கி 12 m/s. வேகத்தின் பருமனைக் காண்க."
+      },
+      "value": 15,
+      "explain": {
+        "en": "u = √(uₓ² + uᵧ²) = √(9² + 12²) = 15 m/s.",
+        "ta": "u = √(uₓ² + uᵧ²) = √(9² + 12²) = 15 m/s."
+      }
+    },
+    {
+      "id": "components-3",
+      "variant": 3,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A launch velocity has components 12 m/s horizontally and 16 m/s upward. Find its magnitude.",
+        "ta": "ஆரம்ப வேகக் கூறுகள் கிடையாக 12 m/s, மேல்நோக்கி 16 m/s. வேகத்தின் பருமனைக் காண்க."
+      },
+      "value": 20,
+      "explain": {
+        "en": "u = √(uₓ² + uᵧ²) = √(12² + 16²) = 20 m/s.",
+        "ta": "u = √(uₓ² + uᵧ²) = √(12² + 16²) = 20 m/s."
+      }
+    },
+    {
+      "id": "components-3",
+      "variant": 4,
+      "family": "components",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A launch velocity has components 15 m/s horizontally and 20 m/s upward. Find its magnitude.",
+        "ta": "ஆரம்ப வேகக் கூறுகள் கிடையாக 15 m/s, மேல்நோக்கி 20 m/s. வேகத்தின் பருமனைக் காண்க."
+      },
+      "value": 25,
+      "explain": {
+        "en": "u = √(uₓ² + uᵧ²) = √(15² + 20²) = 25 m/s.",
+        "ta": "u = √(uₓ² + uᵧ²) = √(15² + 20²) = 25 m/s."
+      }
+    },
+    {
+      "id": "time-1",
+      "variant": 0,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves a 5 m ledge horizontally. How long until it reaches the ground?",
+        "ta": "ஒரு பந்து 5 m உயரத்திலிருந்து கிடையாக எறியப்படுகிறது. தரையை அடைய எவ்வளவு நேரம் எடுக்கும்?"
+      },
+      "value": 1,
+      "explain": {
+        "en": "Initial vertical velocity is zero. t = √(2h/g) = √(2 × 5/10) = 1 s.",
+        "ta": "ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம். t = √(2h/g) = √(2 × 5/10) = 1 s."
+      }
+    },
+    {
+      "id": "time-1",
+      "variant": 1,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves a 20 m ledge horizontally. How long until it reaches the ground?",
+        "ta": "ஒரு பந்து 20 m உயரத்திலிருந்து கிடையாக எறியப்படுகிறது. தரையை அடைய எவ்வளவு நேரம் எடுக்கும்?"
+      },
+      "value": 2,
+      "explain": {
+        "en": "Initial vertical velocity is zero. t = √(2h/g) = √(2 × 20/10) = 2 s.",
+        "ta": "ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம். t = √(2h/g) = √(2 × 20/10) = 2 s."
+      }
+    },
+    {
+      "id": "time-1",
+      "variant": 2,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves a 45 m ledge horizontally. How long until it reaches the ground?",
+        "ta": "ஒரு பந்து 45 m உயரத்திலிருந்து கிடையாக எறியப்படுகிறது. தரையை அடைய எவ்வளவு நேரம் எடுக்கும்?"
+      },
+      "value": 3,
+      "explain": {
+        "en": "Initial vertical velocity is zero. t = √(2h/g) = √(2 × 45/10) = 3 s.",
+        "ta": "ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம். t = √(2h/g) = √(2 × 45/10) = 3 s."
+      }
+    },
+    {
+      "id": "time-1",
+      "variant": 3,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves a 80 m ledge horizontally. How long until it reaches the ground?",
+        "ta": "ஒரு பந்து 80 m உயரத்திலிருந்து கிடையாக எறியப்படுகிறது. தரையை அடைய எவ்வளவு நேரம் எடுக்கும்?"
+      },
+      "value": 4,
+      "explain": {
+        "en": "Initial vertical velocity is zero. t = √(2h/g) = √(2 × 80/10) = 4 s.",
+        "ta": "ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம். t = √(2h/g) = √(2 × 80/10) = 4 s."
+      }
+    },
+    {
+      "id": "time-1",
+      "variant": 4,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves a 125 m ledge horizontally. How long until it reaches the ground?",
+        "ta": "ஒரு பந்து 125 m உயரத்திலிருந்து கிடையாக எறியப்படுகிறது. தரையை அடைய எவ்வளவு நேரம் எடுக்கும்?"
+      },
+      "value": 5,
+      "explain": {
+        "en": "Initial vertical velocity is zero. t = √(2h/g) = √(2 × 125/10) = 5 s.",
+        "ta": "ஆரம்ப நிலைக்குத்து வேகம் பூச்சியம். t = √(2h/g) = √(2 × 125/10) = 5 s."
+      }
+    },
+    {
+      "id": "time-2",
+      "variant": 0,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches from the ground with an upward velocity component of 10 m/s. Find the time to return to launch level.",
+        "ta": "தரையிலிருந்து எறியப்பட்ட பந்தின் ஆரம்ப மேல்நோக்கிய வேகக் கூறு 10 m/s. மீண்டும் அதே மட்டத்தை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 2,
+      "explain": {
+        "en": "For equal launch and landing heights, T = 2uᵧ/g = 2 × 10/10 = 2 s.",
+        "ta": "ஆரம்பமும் முடிவும் ஒரே மட்டத்தில்: T = 2uᵧ/g = 2 × 10/10 = 2 s."
+      }
+    },
+    {
+      "id": "time-2",
+      "variant": 1,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches from the ground with an upward velocity component of 15 m/s. Find the time to return to launch level.",
+        "ta": "தரையிலிருந்து எறியப்பட்ட பந்தின் ஆரம்ப மேல்நோக்கிய வேகக் கூறு 15 m/s. மீண்டும் அதே மட்டத்தை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 3,
+      "explain": {
+        "en": "For equal launch and landing heights, T = 2uᵧ/g = 2 × 15/10 = 3 s.",
+        "ta": "ஆரம்பமும் முடிவும் ஒரே மட்டத்தில்: T = 2uᵧ/g = 2 × 15/10 = 3 s."
+      }
+    },
+    {
+      "id": "time-2",
+      "variant": 2,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches from the ground with an upward velocity component of 20 m/s. Find the time to return to launch level.",
+        "ta": "தரையிலிருந்து எறியப்பட்ட பந்தின் ஆரம்ப மேல்நோக்கிய வேகக் கூறு 20 m/s. மீண்டும் அதே மட்டத்தை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 4,
+      "explain": {
+        "en": "For equal launch and landing heights, T = 2uᵧ/g = 2 × 20/10 = 4 s.",
+        "ta": "ஆரம்பமும் முடிவும் ஒரே மட்டத்தில்: T = 2uᵧ/g = 2 × 20/10 = 4 s."
+      }
+    },
+    {
+      "id": "time-2",
+      "variant": 3,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches from the ground with an upward velocity component of 25 m/s. Find the time to return to launch level.",
+        "ta": "தரையிலிருந்து எறியப்பட்ட பந்தின் ஆரம்ப மேல்நோக்கிய வேகக் கூறு 25 m/s. மீண்டும் அதே மட்டத்தை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 5,
+      "explain": {
+        "en": "For equal launch and landing heights, T = 2uᵧ/g = 2 × 25/10 = 5 s.",
+        "ta": "ஆரம்பமும் முடிவும் ஒரே மட்டத்தில்: T = 2uᵧ/g = 2 × 25/10 = 5 s."
+      }
+    },
+    {
+      "id": "time-2",
+      "variant": 4,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches from the ground with an upward velocity component of 30 m/s. Find the time to return to launch level.",
+        "ta": "தரையிலிருந்து எறியப்பட்ட பந்தின் ஆரம்ப மேல்நோக்கிய வேகக் கூறு 30 m/s. மீண்டும் அதே மட்டத்தை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 6,
+      "explain": {
+        "en": "For equal launch and landing heights, T = 2uᵧ/g = 2 × 30/10 = 6 s.",
+        "ta": "ஆரம்பமும் முடிவும் ஒரே மட்டத்தில்: T = 2uᵧ/g = 2 × 30/10 = 6 s."
+      }
+    },
+    {
+      "id": "time-3",
+      "variant": 0,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball starts 10 m above ground with upward velocity 5 m/s. Find the positive time at which it reaches the ground.",
+        "ta": "தரையிலிருந்து 10 m உயரத்தில் உள்ள பந்து 5 m/s மேல்நோக்கிய வேகத்துடன் எறியப்படுகிறது. தரையை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 2,
+      "explain": {
+        "en": "Set y = 0: 0 = 10 + 5t − 5t². The physical (positive) root is 2 s.",
+        "ta": "y = 0 என இடுக: 0 = 10 + 5t − 5t². பொருத்தமான நேர்மூலம் 2 s."
+      }
+    },
+    {
+      "id": "time-3",
+      "variant": 1,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball starts 40 m above ground with upward velocity 10 m/s. Find the positive time at which it reaches the ground.",
+        "ta": "தரையிலிருந்து 40 m உயரத்தில் உள்ள பந்து 10 m/s மேல்நோக்கிய வேகத்துடன் எறியப்படுகிறது. தரையை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 4,
+      "explain": {
+        "en": "Set y = 0: 0 = 40 + 10t − 5t². The physical (positive) root is 4 s.",
+        "ta": "y = 0 என இடுக: 0 = 40 + 10t − 5t². பொருத்தமான நேர்மூலம் 4 s."
+      }
+    },
+    {
+      "id": "time-3",
+      "variant": 2,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball starts 90 m above ground with upward velocity 15 m/s. Find the positive time at which it reaches the ground.",
+        "ta": "தரையிலிருந்து 90 m உயரத்தில் உள்ள பந்து 15 m/s மேல்நோக்கிய வேகத்துடன் எறியப்படுகிறது. தரையை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 6,
+      "explain": {
+        "en": "Set y = 0: 0 = 90 + 15t − 5t². The physical (positive) root is 6 s.",
+        "ta": "y = 0 என இடுக: 0 = 90 + 15t − 5t². பொருத்தமான நேர்மூலம் 6 s."
+      }
+    },
+    {
+      "id": "time-3",
+      "variant": 3,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball starts 160 m above ground with upward velocity 20 m/s. Find the positive time at which it reaches the ground.",
+        "ta": "தரையிலிருந்து 160 m உயரத்தில் உள்ள பந்து 20 m/s மேல்நோக்கிய வேகத்துடன் எறியப்படுகிறது. தரையை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 8,
+      "explain": {
+        "en": "Set y = 0: 0 = 160 + 20t − 5t². The physical (positive) root is 8 s.",
+        "ta": "y = 0 என இடுக: 0 = 160 + 20t − 5t². பொருத்தமான நேர்மூலம் 8 s."
+      }
+    },
+    {
+      "id": "time-3",
+      "variant": 4,
+      "family": "time",
+      "type": "numeric",
+      "unit": "s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball starts 250 m above ground with upward velocity 25 m/s. Find the positive time at which it reaches the ground.",
+        "ta": "தரையிலிருந்து 250 m உயரத்தில் உள்ள பந்து 25 m/s மேல்நோக்கிய வேகத்துடன் எறியப்படுகிறது. தரையை அடையும் நேரத்தைக் காண்க."
+      },
+      "value": 10,
+      "explain": {
+        "en": "Set y = 0: 0 = 250 + 25t − 5t². The physical (positive) root is 10 s.",
+        "ta": "y = 0 என இடுக: 0 = 250 + 25t − 5t². பொருத்தமான நேர்மூலம் 10 s."
+      }
+    },
+    {
+      "id": "range-1",
+      "variant": 0,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal launch has speed 10 m/s and remains airborne for 1 s. Find the horizontal distance.",
+        "ta": "கிடையாக 10 m/s வேகத்தில் எறியப்பட்ட பந்து 1 s காற்றில் உள்ளது. கிடைத் தூரத்தைக் காண்க."
+      },
+      "value": 10,
+      "explain": {
+        "en": "R = uₓT = 10 × 1 = 10 m.",
+        "ta": "R = uₓT = 10 × 1 = 10 m."
+      }
+    },
+    {
+      "id": "range-1",
+      "variant": 1,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal launch has speed 15 m/s and remains airborne for 2 s. Find the horizontal distance.",
+        "ta": "கிடையாக 15 m/s வேகத்தில் எறியப்பட்ட பந்து 2 s காற்றில் உள்ளது. கிடைத் தூரத்தைக் காண்க."
+      },
+      "value": 30,
+      "explain": {
+        "en": "R = uₓT = 15 × 2 = 30 m.",
+        "ta": "R = uₓT = 15 × 2 = 30 m."
+      }
+    },
+    {
+      "id": "range-1",
+      "variant": 2,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal launch has speed 20 m/s and remains airborne for 3 s. Find the horizontal distance.",
+        "ta": "கிடையாக 20 m/s வேகத்தில் எறியப்பட்ட பந்து 3 s காற்றில் உள்ளது. கிடைத் தூரத்தைக் காண்க."
+      },
+      "value": 60,
+      "explain": {
+        "en": "R = uₓT = 20 × 3 = 60 m.",
+        "ta": "R = uₓT = 20 × 3 = 60 m."
+      }
+    },
+    {
+      "id": "range-1",
+      "variant": 3,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal launch has speed 25 m/s and remains airborne for 4 s. Find the horizontal distance.",
+        "ta": "கிடையாக 25 m/s வேகத்தில் எறியப்பட்ட பந்து 4 s காற்றில் உள்ளது. கிடைத் தூரத்தைக் காண்க."
+      },
+      "value": 100,
+      "explain": {
+        "en": "R = uₓT = 25 × 4 = 100 m.",
+        "ta": "R = uₓT = 25 × 4 = 100 m."
+      }
+    },
+    {
+      "id": "range-1",
+      "variant": 4,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal launch has speed 30 m/s and remains airborne for 5 s. Find the horizontal distance.",
+        "ta": "கிடையாக 30 m/s வேகத்தில் எறியப்பட்ட பந்து 5 s காற்றில் உள்ளது. கிடைத் தூரத்தைக் காண்க."
+      },
+      "value": 150,
+      "explain": {
+        "en": "R = uₓT = 30 × 5 = 150 m.",
+        "ta": "R = uₓT = 30 × 5 = 150 m."
+      }
+    },
+    {
+      "id": "range-2",
+      "variant": 0,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 10 m/s at 45° and lands at the same level. Find its range.",
+        "ta": "10 m/s வேகத்தில் 45° கோணத்தில் எறியப்பட்ட பந்து அதே மட்டத்தில் விழுகிறது. வீச்சைக் காண்க."
+      },
+      "value": 10,
+      "explain": {
+        "en": "R = u² sin(2θ)/g = 10² × sin 90°/10 = 10 m.",
+        "ta": "R = u² sin(2θ)/g = 10² × sin 90°/10 = 10 m."
+      }
+    },
+    {
+      "id": "range-2",
+      "variant": 1,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 15 m/s at 45° and lands at the same level. Find its range.",
+        "ta": "15 m/s வேகத்தில் 45° கோணத்தில் எறியப்பட்ட பந்து அதே மட்டத்தில் விழுகிறது. வீச்சைக் காண்க."
+      },
+      "value": 22.5,
+      "explain": {
+        "en": "R = u² sin(2θ)/g = 15² × sin 90°/10 = 22.5 m.",
+        "ta": "R = u² sin(2θ)/g = 15² × sin 90°/10 = 22.5 m."
+      }
+    },
+    {
+      "id": "range-2",
+      "variant": 2,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 20 m/s at 45° and lands at the same level. Find its range.",
+        "ta": "20 m/s வேகத்தில் 45° கோணத்தில் எறியப்பட்ட பந்து அதே மட்டத்தில் விழுகிறது. வீச்சைக் காண்க."
+      },
+      "value": 40,
+      "explain": {
+        "en": "R = u² sin(2θ)/g = 20² × sin 90°/10 = 40 m.",
+        "ta": "R = u² sin(2θ)/g = 20² × sin 90°/10 = 40 m."
+      }
+    },
+    {
+      "id": "range-2",
+      "variant": 3,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 25 m/s at 45° and lands at the same level. Find its range.",
+        "ta": "25 m/s வேகத்தில் 45° கோணத்தில் எறியப்பட்ட பந்து அதே மட்டத்தில் விழுகிறது. வீச்சைக் காண்க."
+      },
+      "value": 62.5,
+      "explain": {
+        "en": "R = u² sin(2θ)/g = 25² × sin 90°/10 = 62.5 m.",
+        "ta": "R = u² sin(2θ)/g = 25² × sin 90°/10 = 62.5 m."
+      }
+    },
+    {
+      "id": "range-2",
+      "variant": 4,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball is launched at 30 m/s at 45° and lands at the same level. Find its range.",
+        "ta": "30 m/s வேகத்தில் 45° கோணத்தில் எறியப்பட்ட பந்து அதே மட்டத்தில் விழுகிறது. வீச்சைக் காண்க."
+      },
+      "value": 90,
+      "explain": {
+        "en": "R = u² sin(2θ)/g = 30² × sin 90°/10 = 90 m.",
+        "ta": "R = u² sin(2θ)/g = 30² × sin 90°/10 = 90 m."
+      }
+    },
+    {
+      "id": "range-3",
+      "variant": 0,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches horizontally at 10 m/s from a 10 m ledge. What is its height above ground after 1 s?",
+        "ta": "ஒரு பந்து 10 m உயரத்திலிருந்து 10 m/s கிடை வேகத்தில் எறியப்படுகிறது. 1 s இன் பின் தரையிலிருந்து அதன் உயரம் என்ன?"
+      },
+      "value": 5,
+      "explain": {
+        "en": "y = h − ½gt² = 10 − 5 × 1² = 5 m. Horizontal speed does not enter this equation.",
+        "ta": "y = h − ½gt² = 10 − 5 × 1² = 5 m. கிடை வேகம் இச்சமன்பாட்டில் இல்லை."
+      }
+    },
+    {
+      "id": "range-3",
+      "variant": 1,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches horizontally at 15 m/s from a 40 m ledge. What is its height above ground after 2 s?",
+        "ta": "ஒரு பந்து 40 m உயரத்திலிருந்து 15 m/s கிடை வேகத்தில் எறியப்படுகிறது. 2 s இன் பின் தரையிலிருந்து அதன் உயரம் என்ன?"
+      },
+      "value": 20,
+      "explain": {
+        "en": "y = h − ½gt² = 40 − 5 × 2² = 20 m. Horizontal speed does not enter this equation.",
+        "ta": "y = h − ½gt² = 40 − 5 × 2² = 20 m. கிடை வேகம் இச்சமன்பாட்டில் இல்லை."
+      }
+    },
+    {
+      "id": "range-3",
+      "variant": 2,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches horizontally at 20 m/s from a 90 m ledge. What is its height above ground after 3 s?",
+        "ta": "ஒரு பந்து 90 m உயரத்திலிருந்து 20 m/s கிடை வேகத்தில் எறியப்படுகிறது. 3 s இன் பின் தரையிலிருந்து அதன் உயரம் என்ன?"
+      },
+      "value": 45,
+      "explain": {
+        "en": "y = h − ½gt² = 90 − 5 × 3² = 45 m. Horizontal speed does not enter this equation.",
+        "ta": "y = h − ½gt² = 90 − 5 × 3² = 45 m. கிடை வேகம் இச்சமன்பாட்டில் இல்லை."
+      }
+    },
+    {
+      "id": "range-3",
+      "variant": 3,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches horizontally at 25 m/s from a 160 m ledge. What is its height above ground after 4 s?",
+        "ta": "ஒரு பந்து 160 m உயரத்திலிருந்து 25 m/s கிடை வேகத்தில் எறியப்படுகிறது. 4 s இன் பின் தரையிலிருந்து அதன் உயரம் என்ன?"
+      },
+      "value": 80,
+      "explain": {
+        "en": "y = h − ½gt² = 160 − 5 × 4² = 80 m. Horizontal speed does not enter this equation.",
+        "ta": "y = h − ½gt² = 160 − 5 × 4² = 80 m. கிடை வேகம் இச்சமன்பாட்டில் இல்லை."
+      }
+    },
+    {
+      "id": "range-3",
+      "variant": 4,
+      "family": "range",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball launches horizontally at 30 m/s from a 250 m ledge. What is its height above ground after 5 s?",
+        "ta": "ஒரு பந்து 250 m உயரத்திலிருந்து 30 m/s கிடை வேகத்தில் எறியப்படுகிறது. 5 s இன் பின் தரையிலிருந்து அதன் உயரம் என்ன?"
+      },
+      "value": 125,
+      "explain": {
+        "en": "y = h − ½gt² = 250 − 5 × 5² = 125 m. Horizontal speed does not enter this equation.",
+        "ta": "y = h − ½gt² = 250 − 5 × 5² = 125 m. கிடை வேகம் இச்சமன்பாட்டில் இல்லை."
+      }
+    },
+    {
+      "id": "graphs-1",
+      "variant": 0,
+      "family": "graphs",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Which describes the horizontal velocity–time graph of an airborne projectile without drag?",
+        "ta": "வளித்தடை இல்லாத எறிய இயக்கத்தில் கிடை வேகம்–நேரம் வரைபு எவ்வாறு இருக்கும்?"
+      },
+      "options": [
+        {
+          "en": "A line sloping upward",
+          "ta": "மேல்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A line sloping downward",
+          "ta": "கீழ்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A horizontal line",
+          "ta": "கிடைக் கோடு"
+        },
+        {
+          "en": "A parabola",
+          "ta": "பரவளையம்"
+        },
+        {
+          "en": "A vertical line",
+          "ta": "நிலைக்குத்துக் கோடு"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Zero horizontal acceleration means horizontal velocity is constant. The graph has zero slope.",
+        "ta": "கிடை ஆர்முடுகல் பூச்சியம்; ஆகவே கிடை வேகம் மாறாது. வரைபின் சரிவு பூச்சியம்."
+      }
+    },
+    {
+      "id": "graphs-1",
+      "variant": 1,
+      "family": "graphs",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Which describes the horizontal velocity–time graph of an airborne projectile without drag?",
+        "ta": "வளித்தடை இல்லாத எறிய இயக்கத்தில் கிடை வேகம்–நேரம் வரைபு எவ்வாறு இருக்கும்?"
+      },
+      "options": [
+        {
+          "en": "A line sloping upward",
+          "ta": "மேல்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A line sloping downward",
+          "ta": "கீழ்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A horizontal line",
+          "ta": "கிடைக் கோடு"
+        },
+        {
+          "en": "A parabola",
+          "ta": "பரவளையம்"
+        },
+        {
+          "en": "A vertical line",
+          "ta": "நிலைக்குத்துக் கோடு"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Zero horizontal acceleration means horizontal velocity is constant. The graph has zero slope.",
+        "ta": "கிடை ஆர்முடுகல் பூச்சியம்; ஆகவே கிடை வேகம் மாறாது. வரைபின் சரிவு பூச்சியம்."
+      }
+    },
+    {
+      "id": "graphs-1",
+      "variant": 2,
+      "family": "graphs",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Which describes the horizontal velocity–time graph of an airborne projectile without drag?",
+        "ta": "வளித்தடை இல்லாத எறிய இயக்கத்தில் கிடை வேகம்–நேரம் வரைபு எவ்வாறு இருக்கும்?"
+      },
+      "options": [
+        {
+          "en": "A line sloping upward",
+          "ta": "மேல்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A line sloping downward",
+          "ta": "கீழ்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A horizontal line",
+          "ta": "கிடைக் கோடு"
+        },
+        {
+          "en": "A parabola",
+          "ta": "பரவளையம்"
+        },
+        {
+          "en": "A vertical line",
+          "ta": "நிலைக்குத்துக் கோடு"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Zero horizontal acceleration means horizontal velocity is constant. The graph has zero slope.",
+        "ta": "கிடை ஆர்முடுகல் பூச்சியம்; ஆகவே கிடை வேகம் மாறாது. வரைபின் சரிவு பூச்சியம்."
+      }
+    },
+    {
+      "id": "graphs-1",
+      "variant": 3,
+      "family": "graphs",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Which describes the horizontal velocity–time graph of an airborne projectile without drag?",
+        "ta": "வளித்தடை இல்லாத எறிய இயக்கத்தில் கிடை வேகம்–நேரம் வரைபு எவ்வாறு இருக்கும்?"
+      },
+      "options": [
+        {
+          "en": "A line sloping upward",
+          "ta": "மேல்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A line sloping downward",
+          "ta": "கீழ்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A horizontal line",
+          "ta": "கிடைக் கோடு"
+        },
+        {
+          "en": "A parabola",
+          "ta": "பரவளையம்"
+        },
+        {
+          "en": "A vertical line",
+          "ta": "நிலைக்குத்துக் கோடு"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Zero horizontal acceleration means horizontal velocity is constant. The graph has zero slope.",
+        "ta": "கிடை ஆர்முடுகல் பூச்சியம்; ஆகவே கிடை வேகம் மாறாது. வரைபின் சரிவு பூச்சியம்."
+      }
+    },
+    {
+      "id": "graphs-1",
+      "variant": 4,
+      "family": "graphs",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "Which describes the horizontal velocity–time graph of an airborne projectile without drag?",
+        "ta": "வளித்தடை இல்லாத எறிய இயக்கத்தில் கிடை வேகம்–நேரம் வரைபு எவ்வாறு இருக்கும்?"
+      },
+      "options": [
+        {
+          "en": "A line sloping upward",
+          "ta": "மேல்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A line sloping downward",
+          "ta": "கீழ்நோக்கிச் சாயும் கோடு"
+        },
+        {
+          "en": "A horizontal line",
+          "ta": "கிடைக் கோடு"
+        },
+        {
+          "en": "A parabola",
+          "ta": "பரவளையம்"
+        },
+        {
+          "en": "A vertical line",
+          "ta": "நிலைக்குத்துக் கோடு"
+        }
+      ],
+      "correct": 2,
+      "explain": {
+        "en": "Zero horizontal acceleration means horizontal velocity is constant. The graph has zero slope.",
+        "ta": "கிடை ஆர்முடுகல் பூச்சியம்; ஆகவே கிடை வேகம் மாறாது. வரைபின் சரிவு பூச்சியம்."
+      }
+    },
+    {
+      "id": "graphs-2",
+      "variant": 0,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m/s²",
+      "tolerance": 0.06,
+      "source": null,
+      "graph": {
+        "start": 10,
+        "end": -10,
+        "duration": 2
+      },
+      "prompt": {
+        "en": "The vertical velocity–time graph below uses upward as positive. Find its gradient, including the sign.",
+        "ta": "கீழுள்ள நிலைக்குத்து வேகம்–நேரம் வரைபில் மேல்நோக்கி நேராகக் கொள்ளப்பட்டுள்ளது. குறியுடன் சரிவைக் காண்க."
+      },
+      "value": -10,
+      "explain": {
+        "en": "Gradient = Δv/Δt = (-10 − 10)/2 = −10 m/s². This is downward acceleration.",
+        "ta": "சரிவு = Δv/Δt = (-10 − 10)/2 = −10 m/s². இது கீழ்நோக்கிய ஆர்முடுகல்."
+      }
+    },
+    {
+      "id": "graphs-2",
+      "variant": 1,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m/s²",
+      "tolerance": 0.06,
+      "source": null,
+      "graph": {
+        "start": 15,
+        "end": -5,
+        "duration": 2
+      },
+      "prompt": {
+        "en": "The vertical velocity–time graph below uses upward as positive. Find its gradient, including the sign.",
+        "ta": "கீழுள்ள நிலைக்குத்து வேகம்–நேரம் வரைபில் மேல்நோக்கி நேராகக் கொள்ளப்பட்டுள்ளது. குறியுடன் சரிவைக் காண்க."
+      },
+      "value": -10,
+      "explain": {
+        "en": "Gradient = Δv/Δt = (-5 − 15)/2 = −10 m/s². This is downward acceleration.",
+        "ta": "சரிவு = Δv/Δt = (-5 − 15)/2 = −10 m/s². இது கீழ்நோக்கிய ஆர்முடுகல்."
+      }
+    },
+    {
+      "id": "graphs-2",
+      "variant": 2,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m/s²",
+      "tolerance": 0.06,
+      "source": null,
+      "graph": {
+        "start": 20,
+        "end": 0,
+        "duration": 2
+      },
+      "prompt": {
+        "en": "The vertical velocity–time graph below uses upward as positive. Find its gradient, including the sign.",
+        "ta": "கீழுள்ள நிலைக்குத்து வேகம்–நேரம் வரைபில் மேல்நோக்கி நேராகக் கொள்ளப்பட்டுள்ளது. குறியுடன் சரிவைக் காண்க."
+      },
+      "value": -10,
+      "explain": {
+        "en": "Gradient = Δv/Δt = (0 − 20)/2 = −10 m/s². This is downward acceleration.",
+        "ta": "சரிவு = Δv/Δt = (0 − 20)/2 = −10 m/s². இது கீழ்நோக்கிய ஆர்முடுகல்."
+      }
+    },
+    {
+      "id": "graphs-2",
+      "variant": 3,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m/s²",
+      "tolerance": 0.06,
+      "source": null,
+      "graph": {
+        "start": 25,
+        "end": 5,
+        "duration": 2
+      },
+      "prompt": {
+        "en": "The vertical velocity–time graph below uses upward as positive. Find its gradient, including the sign.",
+        "ta": "கீழுள்ள நிலைக்குத்து வேகம்–நேரம் வரைபில் மேல்நோக்கி நேராகக் கொள்ளப்பட்டுள்ளது. குறியுடன் சரிவைக் காண்க."
+      },
+      "value": -10,
+      "explain": {
+        "en": "Gradient = Δv/Δt = (5 − 25)/2 = −10 m/s². This is downward acceleration.",
+        "ta": "சரிவு = Δv/Δt = (5 − 25)/2 = −10 m/s². இது கீழ்நோக்கிய ஆர்முடுகல்."
+      }
+    },
+    {
+      "id": "graphs-2",
+      "variant": 4,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m/s²",
+      "tolerance": 0.06,
+      "source": null,
+      "graph": {
+        "start": 30,
+        "end": 10,
+        "duration": 2
+      },
+      "prompt": {
+        "en": "The vertical velocity–time graph below uses upward as positive. Find its gradient, including the sign.",
+        "ta": "கீழுள்ள நிலைக்குத்து வேகம்–நேரம் வரைபில் மேல்நோக்கி நேராகக் கொள்ளப்பட்டுள்ளது. குறியுடன் சரிவைக் காண்க."
+      },
+      "value": -10,
+      "explain": {
+        "en": "Gradient = Δv/Δt = (10 − 30)/2 = −10 m/s². This is downward acceleration.",
+        "ta": "சரிவு = Δv/Δt = (10 − 30)/2 = −10 m/s². இது கீழ்நோக்கிய ஆர்முடுகல்."
+      }
+    },
+    {
+      "id": "graphs-3",
+      "variant": 0,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal velocity–time graph is a constant 10 m/s from t = 0 to 1 s. What displacement does its area represent?",
+        "ta": "கிடை வேகம்–நேரம் வரைபில் t = 0 முதல் 1 s வரை வேகம் 10 m/s என மாறாமல் உள்ளது. வரைபின் கீழுள்ள பரப்பளவு காட்டும் இடப்பெயர்ச்சி என்ன?"
+      },
+      "value": 10,
+      "explain": {
+        "en": "Displacement is the area under the velocity graph: 10 × 1 = 10 m.",
+        "ta": "வேகம்–நேரம் வரைபின் கீழுள்ள பரப்பளவு இடப்பெயர்ச்சி: 10 × 1 = 10 m."
+      }
+    },
+    {
+      "id": "graphs-3",
+      "variant": 1,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal velocity–time graph is a constant 15 m/s from t = 0 to 2 s. What displacement does its area represent?",
+        "ta": "கிடை வேகம்–நேரம் வரைபில் t = 0 முதல் 2 s வரை வேகம் 15 m/s என மாறாமல் உள்ளது. வரைபின் கீழுள்ள பரப்பளவு காட்டும் இடப்பெயர்ச்சி என்ன?"
+      },
+      "value": 30,
+      "explain": {
+        "en": "Displacement is the area under the velocity graph: 15 × 2 = 30 m.",
+        "ta": "வேகம்–நேரம் வரைபின் கீழுள்ள பரப்பளவு இடப்பெயர்ச்சி: 15 × 2 = 30 m."
+      }
+    },
+    {
+      "id": "graphs-3",
+      "variant": 2,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal velocity–time graph is a constant 20 m/s from t = 0 to 3 s. What displacement does its area represent?",
+        "ta": "கிடை வேகம்–நேரம் வரைபில் t = 0 முதல் 3 s வரை வேகம் 20 m/s என மாறாமல் உள்ளது. வரைபின் கீழுள்ள பரப்பளவு காட்டும் இடப்பெயர்ச்சி என்ன?"
+      },
+      "value": 60,
+      "explain": {
+        "en": "Displacement is the area under the velocity graph: 20 × 3 = 60 m.",
+        "ta": "வேகம்–நேரம் வரைபின் கீழுள்ள பரப்பளவு இடப்பெயர்ச்சி: 20 × 3 = 60 m."
+      }
+    },
+    {
+      "id": "graphs-3",
+      "variant": 3,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal velocity–time graph is a constant 25 m/s from t = 0 to 4 s. What displacement does its area represent?",
+        "ta": "கிடை வேகம்–நேரம் வரைபில் t = 0 முதல் 4 s வரை வேகம் 25 m/s என மாறாமல் உள்ளது. வரைபின் கீழுள்ள பரப்பளவு காட்டும் இடப்பெயர்ச்சி என்ன?"
+      },
+      "value": 100,
+      "explain": {
+        "en": "Displacement is the area under the velocity graph: 25 × 4 = 100 m.",
+        "ta": "வேகம்–நேரம் வரைபின் கீழுள்ள பரப்பளவு இடப்பெயர்ச்சி: 25 × 4 = 100 m."
+      }
+    },
+    {
+      "id": "graphs-3",
+      "variant": 4,
+      "family": "graphs",
+      "type": "numeric",
+      "unit": "m",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A horizontal velocity–time graph is a constant 30 m/s from t = 0 to 5 s. What displacement does its area represent?",
+        "ta": "கிடை வேகம்–நேரம் வரைபில் t = 0 முதல் 5 s வரை வேகம் 30 m/s என மாறாமல் உள்ளது. வரைபின் கீழுள்ள பரப்பளவு காட்டும் இடப்பெயர்ச்சி என்ன?"
+      },
+      "value": 150,
+      "explain": {
+        "en": "Displacement is the area under the velocity graph: 30 × 5 = 150 m.",
+        "ta": "வேகம்–நேரம் வரைபின் கீழுள்ள பரப்பளவு இடப்பெயர்ச்சி: 30 × 5 = 150 m."
+      }
+    },
+    {
+      "id": "energy-1",
+      "variant": 0,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "°",
+      "tolerance": 0.06,
+      "source": "https://e-thaksalawa.moe.gov.lk/lcms/pluginfile.php/51563/mod_resource/content/1/eal_phy_pp_p12_ans_2024.pdf#page=1",
+      "prompt": {
+        "en": "At the highest point, a projectile retains ¼ of its launch kinetic energy. Neglecting drag, determine the launch angle above horizontal.",
+        "ta": "பாதையின் உச்சியில் எறியப்பட்ட பொருளின் இயக்கச் சக்தி ஆரம்ப இயக்கச் சக்தியின் ¼ பங்காக உள்ளது. வளித்தடையைப் புறக்கணித்து எறிகோணத்தைக் காண்க."
+      },
+      "value": 60,
+      "explain": {
+        "en": "At the top, vᵧ = 0. Ktop/Kinitial = cos²θ = ¼, so θ = 60°.",
+        "ta": "உச்சியில் vᵧ = 0. Kஉச்சி/Kஆரம்பம் = cos²θ = ¼. எனவே θ = 60°."
+      }
+    },
+    {
+      "id": "energy-1",
+      "variant": 1,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "°",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the highest point, a projectile retains ½ of its launch kinetic energy. Neglecting drag, determine the launch angle above horizontal.",
+        "ta": "பாதையின் உச்சியில் எறியப்பட்ட பொருளின் இயக்கச் சக்தி ஆரம்ப இயக்கச் சக்தியின் ½ பங்காக உள்ளது. வளித்தடையைப் புறக்கணித்து எறிகோணத்தைக் காண்க."
+      },
+      "value": 45,
+      "explain": {
+        "en": "At the top, vᵧ = 0. Ktop/Kinitial = cos²θ = ½, so θ = 45°.",
+        "ta": "உச்சியில் vᵧ = 0. Kஉச்சி/Kஆரம்பம் = cos²θ = ½. எனவே θ = 45°."
+      }
+    },
+    {
+      "id": "energy-1",
+      "variant": 2,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "°",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the highest point, a projectile retains ¾ of its launch kinetic energy. Neglecting drag, determine the launch angle above horizontal.",
+        "ta": "பாதையின் உச்சியில் எறியப்பட்ட பொருளின் இயக்கச் சக்தி ஆரம்ப இயக்கச் சக்தியின் ¾ பங்காக உள்ளது. வளித்தடையைப் புறக்கணித்து எறிகோணத்தைக் காண்க."
+      },
+      "value": 30,
+      "explain": {
+        "en": "At the top, vᵧ = 0. Ktop/Kinitial = cos²θ = ¾, so θ = 30°.",
+        "ta": "உச்சியில் vᵧ = 0. Kஉச்சி/Kஆரம்பம் = cos²θ = ¾. எனவே θ = 30°."
+      }
+    },
+    {
+      "id": "energy-1",
+      "variant": 3,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "°",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the highest point, a projectile retains ¼ of its launch kinetic energy. Neglecting drag, determine the launch angle above horizontal.",
+        "ta": "பாதையின் உச்சியில் எறியப்பட்ட பொருளின் இயக்கச் சக்தி ஆரம்ப இயக்கச் சக்தியின் ¼ பங்காக உள்ளது. வளித்தடையைப் புறக்கணித்து எறிகோணத்தைக் காண்க."
+      },
+      "value": 60,
+      "explain": {
+        "en": "At the top, vᵧ = 0. Ktop/Kinitial = cos²θ = ¼, so θ = 60°.",
+        "ta": "உச்சியில் vᵧ = 0. Kஉச்சி/Kஆரம்பம் = cos²θ = ¼. எனவே θ = 60°."
+      }
+    },
+    {
+      "id": "energy-1",
+      "variant": 4,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "°",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "At the highest point, a projectile retains ½ of its launch kinetic energy. Neglecting drag, determine the launch angle above horizontal.",
+        "ta": "பாதையின் உச்சியில் எறியப்பட்ட பொருளின் இயக்கச் சக்தி ஆரம்ப இயக்கச் சக்தியின் ½ பங்காக உள்ளது. வளித்தடையைப் புறக்கணித்து எறிகோணத்தைக் காண்க."
+      },
+      "value": 45,
+      "explain": {
+        "en": "At the top, vᵧ = 0. Ktop/Kinitial = cos²θ = ½, so θ = 45°.",
+        "ta": "உச்சியில் vᵧ = 0. Kஉச்சி/Kஆரம்பம் = cos²θ = ½. எனவே θ = 45°."
+      }
+    },
+    {
+      "id": "energy-2",
+      "variant": 0,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves ground at 10 m/s and lands on a platform 5 m higher. What is its speed on arrival? Assume the trajectory reaches the platform and ignore drag.",
+        "ta": "தரையிலிருந்து 10 m/s வேகத்தில் எறியப்பட்ட பந்து 5 m உயரமான மேடையை அடைகிறது. மேடையை அடையக்கூடிய பாதை எனக் கொண்டு, வளித்தடையைப் புறக்கணித்து அங்கு வேகத்தைக் காண்க."
+      },
+      "value": 0,
+      "explain": {
+        "en": "Conservation of energy gives v² = u² − 2gh = 100 − 100. Thus v = 0.00 m/s.",
+        "ta": "சக்திக் காப்பு: v² = u² − 2gh = 100 − 100. ஆகவே v = 0.00 m/s."
+      }
+    },
+    {
+      "id": "energy-2",
+      "variant": 1,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves ground at 15 m/s and lands on a platform 10 m higher. What is its speed on arrival? Assume the trajectory reaches the platform and ignore drag.",
+        "ta": "தரையிலிருந்து 15 m/s வேகத்தில் எறியப்பட்ட பந்து 10 m உயரமான மேடையை அடைகிறது. மேடையை அடையக்கூடிய பாதை எனக் கொண்டு, வளித்தடையைப் புறக்கணித்து அங்கு வேகத்தைக் காண்க."
+      },
+      "value": 5,
+      "explain": {
+        "en": "Conservation of energy gives v² = u² − 2gh = 225 − 200. Thus v = 5.00 m/s.",
+        "ta": "சக்திக் காப்பு: v² = u² − 2gh = 225 − 200. ஆகவே v = 5.00 m/s."
+      }
+    },
+    {
+      "id": "energy-2",
+      "variant": 2,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves ground at 20 m/s and lands on a platform 15 m higher. What is its speed on arrival? Assume the trajectory reaches the platform and ignore drag.",
+        "ta": "தரையிலிருந்து 20 m/s வேகத்தில் எறியப்பட்ட பந்து 15 m உயரமான மேடையை அடைகிறது. மேடையை அடையக்கூடிய பாதை எனக் கொண்டு, வளித்தடையைப் புறக்கணித்து அங்கு வேகத்தைக் காண்க."
+      },
+      "value": 10,
+      "explain": {
+        "en": "Conservation of energy gives v² = u² − 2gh = 400 − 300. Thus v = 10.00 m/s.",
+        "ta": "சக்திக் காப்பு: v² = u² − 2gh = 400 − 300. ஆகவே v = 10.00 m/s."
+      }
+    },
+    {
+      "id": "energy-2",
+      "variant": 3,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves ground at 25 m/s and lands on a platform 20 m higher. What is its speed on arrival? Assume the trajectory reaches the platform and ignore drag.",
+        "ta": "தரையிலிருந்து 25 m/s வேகத்தில் எறியப்பட்ட பந்து 20 m உயரமான மேடையை அடைகிறது. மேடையை அடையக்கூடிய பாதை எனக் கொண்டு, வளித்தடையைப் புறக்கணித்து அங்கு வேகத்தைக் காண்க."
+      },
+      "value": 15,
+      "explain": {
+        "en": "Conservation of energy gives v² = u² − 2gh = 625 − 400. Thus v = 15.00 m/s.",
+        "ta": "சக்திக் காப்பு: v² = u² − 2gh = 625 − 400. ஆகவே v = 15.00 m/s."
+      }
+    },
+    {
+      "id": "energy-2",
+      "variant": 4,
+      "family": "energy",
+      "type": "numeric",
+      "unit": "m/s",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A ball leaves ground at 30 m/s and lands on a platform 25 m higher. What is its speed on arrival? Assume the trajectory reaches the platform and ignore drag.",
+        "ta": "தரையிலிருந்து 30 m/s வேகத்தில் எறியப்பட்ட பந்து 25 m உயரமான மேடையை அடைகிறது. மேடையை அடையக்கூடிய பாதை எனக் கொண்டு, வளித்தடையைப் புறக்கணித்து அங்கு வேகத்தைக் காண்க."
+      },
+      "value": 20,
+      "explain": {
+        "en": "Conservation of energy gives v² = u² − 2gh = 900 − 500. Thus v = 20.00 m/s.",
+        "ta": "சக்திக் காப்பு: v² = u² − 2gh = 900 − 500. ஆகவே v = 20.00 m/s."
+      }
+    },
+    {
+      "id": "energy-3",
+      "variant": 0,
+      "family": "energy",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile lands at its original height without air resistance. How does its landing speed compare with its launch speed?",
+        "ta": "வளித்தடை இல்லாமல் எறியப்பட்ட பொருள் ஆரம்ப உயரத்திலேயே விழுகிறது. விழும் வேகத்தின் பருமன் ஆரம்ப வேகத்துடன் ஒப்பிடும்போது…"
+      },
+      "options": [
+        {
+          "en": "It is zero",
+          "ta": "பூச்சியமாகும்"
+        },
+        {
+          "en": "It is smaller",
+          "ta": "குறைவாகும்"
+        },
+        {
+          "en": "It is larger",
+          "ta": "அதிகமாகும்"
+        },
+        {
+          "en": "It is equal",
+          "ta": "சமமாகும்"
+        },
+        {
+          "en": "Mass is needed to decide",
+          "ta": "திணிவு தெரிந்திருக்க வேண்டும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "At the same height, gravitational potential energy is unchanged. Conservation of mechanical energy gives the same speed; the vertical velocity direction is reversed.",
+        "ta": "அதே உயரத்தில் நிலைச் சக்தி சமம். பொறிமுறைச் சக்திக் காப்பினால் வேகத்தின் பருமன் சமம்; நிலைக்குத்து வேகத்தின் திசை மாறியிருக்கும்."
+      }
+    },
+    {
+      "id": "energy-3",
+      "variant": 1,
+      "family": "energy",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile lands at its original height without air resistance. How does its landing speed compare with its launch speed?",
+        "ta": "வளித்தடை இல்லாமல் எறியப்பட்ட பொருள் ஆரம்ப உயரத்திலேயே விழுகிறது. விழும் வேகத்தின் பருமன் ஆரம்ப வேகத்துடன் ஒப்பிடும்போது…"
+      },
+      "options": [
+        {
+          "en": "It is zero",
+          "ta": "பூச்சியமாகும்"
+        },
+        {
+          "en": "It is smaller",
+          "ta": "குறைவாகும்"
+        },
+        {
+          "en": "It is larger",
+          "ta": "அதிகமாகும்"
+        },
+        {
+          "en": "It is equal",
+          "ta": "சமமாகும்"
+        },
+        {
+          "en": "Mass is needed to decide",
+          "ta": "திணிவு தெரிந்திருக்க வேண்டும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "At the same height, gravitational potential energy is unchanged. Conservation of mechanical energy gives the same speed; the vertical velocity direction is reversed.",
+        "ta": "அதே உயரத்தில் நிலைச் சக்தி சமம். பொறிமுறைச் சக்திக் காப்பினால் வேகத்தின் பருமன் சமம்; நிலைக்குத்து வேகத்தின் திசை மாறியிருக்கும்."
+      }
+    },
+    {
+      "id": "energy-3",
+      "variant": 2,
+      "family": "energy",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile lands at its original height without air resistance. How does its landing speed compare with its launch speed?",
+        "ta": "வளித்தடை இல்லாமல் எறியப்பட்ட பொருள் ஆரம்ப உயரத்திலேயே விழுகிறது. விழும் வேகத்தின் பருமன் ஆரம்ப வேகத்துடன் ஒப்பிடும்போது…"
+      },
+      "options": [
+        {
+          "en": "It is zero",
+          "ta": "பூச்சியமாகும்"
+        },
+        {
+          "en": "It is smaller",
+          "ta": "குறைவாகும்"
+        },
+        {
+          "en": "It is larger",
+          "ta": "அதிகமாகும்"
+        },
+        {
+          "en": "It is equal",
+          "ta": "சமமாகும்"
+        },
+        {
+          "en": "Mass is needed to decide",
+          "ta": "திணிவு தெரிந்திருக்க வேண்டும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "At the same height, gravitational potential energy is unchanged. Conservation of mechanical energy gives the same speed; the vertical velocity direction is reversed.",
+        "ta": "அதே உயரத்தில் நிலைச் சக்தி சமம். பொறிமுறைச் சக்திக் காப்பினால் வேகத்தின் பருமன் சமம்; நிலைக்குத்து வேகத்தின் திசை மாறியிருக்கும்."
+      }
+    },
+    {
+      "id": "energy-3",
+      "variant": 3,
+      "family": "energy",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile lands at its original height without air resistance. How does its landing speed compare with its launch speed?",
+        "ta": "வளித்தடை இல்லாமல் எறியப்பட்ட பொருள் ஆரம்ப உயரத்திலேயே விழுகிறது. விழும் வேகத்தின் பருமன் ஆரம்ப வேகத்துடன் ஒப்பிடும்போது…"
+      },
+      "options": [
+        {
+          "en": "It is zero",
+          "ta": "பூச்சியமாகும்"
+        },
+        {
+          "en": "It is smaller",
+          "ta": "குறைவாகும்"
+        },
+        {
+          "en": "It is larger",
+          "ta": "அதிகமாகும்"
+        },
+        {
+          "en": "It is equal",
+          "ta": "சமமாகும்"
+        },
+        {
+          "en": "Mass is needed to decide",
+          "ta": "திணிவு தெரிந்திருக்க வேண்டும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "At the same height, gravitational potential energy is unchanged. Conservation of mechanical energy gives the same speed; the vertical velocity direction is reversed.",
+        "ta": "அதே உயரத்தில் நிலைச் சக்தி சமம். பொறிமுறைச் சக்திக் காப்பினால் வேகத்தின் பருமன் சமம்; நிலைக்குத்து வேகத்தின் திசை மாறியிருக்கும்."
+      }
+    },
+    {
+      "id": "energy-3",
+      "variant": 4,
+      "family": "energy",
+      "type": "choice",
+      "unit": "",
+      "tolerance": 0.06,
+      "source": null,
+      "prompt": {
+        "en": "A projectile lands at its original height without air resistance. How does its landing speed compare with its launch speed?",
+        "ta": "வளித்தடை இல்லாமல் எறியப்பட்ட பொருள் ஆரம்ப உயரத்திலேயே விழுகிறது. விழும் வேகத்தின் பருமன் ஆரம்ப வேகத்துடன் ஒப்பிடும்போது…"
+      },
+      "options": [
+        {
+          "en": "It is zero",
+          "ta": "பூச்சியமாகும்"
+        },
+        {
+          "en": "It is smaller",
+          "ta": "குறைவாகும்"
+        },
+        {
+          "en": "It is larger",
+          "ta": "அதிகமாகும்"
+        },
+        {
+          "en": "It is equal",
+          "ta": "சமமாகும்"
+        },
+        {
+          "en": "Mass is needed to decide",
+          "ta": "திணிவு தெரிந்திருக்க வேண்டும்"
+        }
+      ],
+      "correct": 3,
+      "explain": {
+        "en": "At the same height, gravitational potential energy is unchanged. Conservation of mechanical energy gives the same speed; the vertical velocity direction is reversed.",
+        "ta": "அதே உயரத்தில் நிலைச் சக்தி சமம். பொறிமுறைச் சக்திக் காப்பினால் வேகத்தின் பருமன் சமம்; நிலைக்குத்து வேகத்தின் திசை மாறியிருக்கும்."
+      }
+    }
+  ]
+}

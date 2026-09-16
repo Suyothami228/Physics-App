@@ -1,0 +1,84 @@
+.instrument-overview {
+  padding: 26px;
+  border: 1px solid #dbe4f1;
+  border-radius: 22px;
+  background: linear-gradient(125deg, #eef3ff, #f2f6e6);
+  margin-bottom: 24px;
+  line-height: 1.9;
+}
+.instrument-overview h2 {
+  margin: 10px 0;
+}
+.instrument-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+.instrument-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  background: white;
+  border: 1px solid #dae2ef;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.18s,
+    border-color 0.18s;
+}
+.instrument-card:hover {
+  transform: translateY(-4px);
+  border-color: #7185be;
+}
+.instrument-symbol {
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 16px;
+  background: #e9effc;
+  color: #506ba7;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+.instrument-card:nth-child(even) .instrument-symbol {
+  background: #e8efcf;
+  color: #667e3c;
+}
+.instrument-card h3 {
+  margin: 16px 0 8px;
+}
+.instrument-card p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #61708a;
+  flex: 1;
+}
+.instrument-card-link {
+  font-weight: 650;
+  color: #526aa9;
+}
+.instrument-card small {
+  margin-top: 10px;
+  color: #657e3a;
+}
+.instrument-intro {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 22px 0;
+  line-height: 1.8;
+}
+.instrument-intro h2 {
+  margin: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .instrument-card {
+    transition: none;
+  }
+  .instrument-card:hover {
+    transform: none;
+  }
+}

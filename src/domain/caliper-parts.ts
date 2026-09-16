@@ -1,0 +1,66 @@
+export const caliperParts = [
+  {
+    id: "AB",
+    en: "External jaws",
+    ta: "புறத்தாடைகள்",
+    detail: "Measure external diameter or length.",
+    detailTa: "வெளிவிட்டம், பொருளின் நீளம் ஆகியவற்றை அளப்பதற்குப் பயன்படும்.",
+    photo: [155, 380],
+    photoTargets: [
+      [60, 350],
+      [250, 350],
+    ],
+    position: [0, -20, 5],
+  },
+  {
+    id: "CD",
+    en: "Internal jaws",
+    ta: "அகத்தாடைகள்",
+    detail: "Measure the inside diameter of a tube.",
+    detailTa: "குழாய் ஒன்றின் உள் விட்டத்தை அளப்பதற்குப் பயன்படும்.",
+    photo: [115, 50],
+    photoTargets: [
+      [57, 57],
+      [168, 57],
+    ],
+    position: [0, 14, 4],
+  },
+  {
+    id: "S",
+    en: "Locking screw",
+    ta: "திருகு (S)",
+    detail: "Tighten to hold the sliding unit stationary.",
+    detailTa:
+      "இயங்கும் அலகுகளின் இயக்கத்தை அசையாமல் செய்ய திருகு S ஐ இறுக்கலாம்.",
+    photo: [395, 70],
+    position: [5, 13, 4],
+  },
+  {
+    id: "M",
+    en: "Main scale",
+    ta: "பிரதான அளவிடை",
+    detail: "Read the main division immediately before vernier zero.",
+    detailTa: "வேணியரின் பூச்சியத்திற்கு முன் உள்ள பிரதான பிரிவை வாசிக்கவும்.",
+    photo: [1000, 165],
+    position: [49, 4, 4],
+  },
+  {
+    id: "V",
+    en: "Vernier scale",
+    ta: "வேணியர் அளவிடை",
+    detail: "Find the vernier division that aligns with a main division.",
+    detailTa: "பிரதான பிரிவுடன் பொருந்தும் வேணியர் பிரிவைக் கண்டறிக.",
+    photo: [375, 225],
+    position: [6, -1, 6],
+  },
+  {
+    id: "D",
+    en: "Depth rod",
+    ta: "ஆழம் அளக்கும் கோல்",
+    detail: "Measure depth with the end face resting on the rim.",
+    detailTa:
+      "விளிம்பில் கருவியின் முனையை வைத்து ஆழத்தை அளப்பதற்குப் பயன்படும்.",
+    photo: [1410, 172],
+    position: [85, 2, 2],
+  },
+];

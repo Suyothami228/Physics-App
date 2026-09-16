@@ -1,0 +1,179 @@
+.concept-art .art-vibrate {
+  animation: concept-vibrate 3s ease-in-out infinite;
+}
+.concept-art .art-breathe {
+  animation: concept-breathe 4s ease-in-out infinite;
+}
+.concept-art .art-glow {
+  animation: concept-glow 4s ease-in-out infinite;
+}
+.concept-art .art-draw {
+  stroke-dasharray: 1;
+  animation: concept-draw 6s ease-in-out infinite;
+}
+.concept-art .art-current {
+  animation: concept-current 4s linear infinite;
+}
+.concept-art .art-fall {
+  animation: concept-fall 3s ease-in infinite;
+}
+.concept-art .art-orbit {
+  transform-origin: 162px 58px;
+  animation: concept-orbit 12s linear infinite;
+}
+.concept-art .art-particle-a {
+  animation: concept-particle 4s linear alternate infinite;
+}
+.concept-art .art-particle-b {
+  animation: concept-particle 3s linear alternate-reverse infinite;
+}
+.concept-art .art-wave {
+  animation: concept-wave 3.5s ease-in-out infinite;
+}
+.concept-art .art-specimen {
+  animation: concept-specimen 6s ease-in-out infinite;
+}
+.concept-art .art-spring {
+  transform-origin: 34px 61px;
+  animation: concept-spring 4s ease-in-out infinite;
+}
+.concept-art .art-transition {
+  animation: concept-transition 6s steps(1, end) infinite;
+}
+.concept-art .art-photon {
+  animation: concept-photon 6s linear infinite;
+}
+.concept-motion-paused .concept-art * {
+  animation-play-state: paused !important;
+}
+.motion-control {
+  margin-left: auto;
+  font-size: 0.85rem;
+}
+@keyframes concept-vibrate {
+  0%,
+  100% {
+    transform: translate(-1px, 1px);
+  }
+  50% {
+    transform: translate(1px, -1px);
+  }
+}
+@keyframes concept-breathe {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes concept-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes concept-draw {
+  0%,
+  10% {
+    stroke-dashoffset: 1;
+  }
+  60%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes concept-current {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+@keyframes concept-fall {
+  0%,
+  15% {
+    transform: translateY(0);
+  }
+  75%,
+  100% {
+    transform: translateY(57px);
+  }
+}
+@keyframes concept-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes concept-particle {
+  0% {
+    transform: translate(-6px, -6px);
+  }
+  50% {
+    transform: translate(8px, 4px);
+  }
+  100% {
+    transform: translate(-3px, 8px);
+  }
+}
+@keyframes concept-wave {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  40%,
+  60% {
+    opacity: 1;
+  }
+}
+@keyframes concept-specimen {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+@keyframes concept-spring {
+  0%,
+  100% {
+    transform: scaleX(0.85);
+  }
+  50% {
+    transform: scaleX(1.15);
+  }
+}
+@keyframes concept-transition {
+  0%,
+  25% {
+    transform: translateY(0);
+  }
+  26%,
+  100% {
+    transform: translateY(67px);
+  }
+}
+@keyframes concept-photon {
+  0%,
+  25% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  26% {
+    opacity: 1;
+    transform: translateX(-15px);
+  }
+  75%,
+  100% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .concept-art * {
+    animation: none !important;
+  }
+}

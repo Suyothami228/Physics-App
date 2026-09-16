@@ -1,0 +1,67 @@
+[
+  {
+    "key": "section-1",
+    "position": 1,
+    "published": true,
+    "kind": "theory",
+    "title_en": "Physics begins with a question",
+    "title_ta": "ஒரு கேள்வியிலிருந்து பௌதிகவியல் தொடங்குகிறது",
+    "body_en": "Physics uses observations, measurements and models to explain patterns in nature. A model makes predictions that can be tested. When reliable evidence disagrees with a prediction, we review the assumptions or improve the model.\n\nA measurement combines a numerical value with a unit. Record what was measured, the instrument and the conditions so another learner can repeat your investigation.",
+    "body_ta": "இயற்கையின் ஒழுங்குகளை விளக்க அவதானிப்புகள், அளவீடுகள் மற்றும் மாதிரிகளைப் பௌதிகவியல் பயன்படுத்துகிறது. ஒரு மாதிரி சோதிக்கக்கூடிய எதிர்வுகூறல்களை வழங்கும். நம்பகமான சான்றுகள் எதிர்வுகூறலுடன் முரண்பட்டால், எடுகோள்களை மீளாய்வு செய்து மாதிரியை மேம்படுத்த வேண்டும்.\n\nஓர் அளவீடு எண் பெறுமானத்தையும் அலகையும் கொண்டது. அளந்த கணியம், கருவி மற்றும் நிலைமைகளைப் பதிவு செய்தால் பிறரும் பரிசோதனையை மீண்டும் செய்யலாம்.",
+    "formula": ""
+  },
+  {
+    "key": "section-2",
+    "position": 2,
+    "published": true,
+    "kind": "theory",
+    "title_en": "Plan a fair investigation",
+    "title_ta": "நியாயமான பரிசோதனையைத் திட்டமிடுக",
+    "body_en": "To investigate whether pendulum length affects its period, change the length, measure the period and keep the starting angle small and similar. Time several oscillations and divide by their number. Repeat the measurement.\n\nThe variable you change is independent; the response you measure is dependent. Other influential conditions should be controlled. Repetition helps reveal scatter but does not remove a consistent timing bias.",
+    "body_ta": "ஊசலின் நீளம் அதன் ஆவர்த்தன காலத்தைப் பாதிக்கிறதா என்பதை அறிய நீளத்தை மாற்றி, காலத்தை அளந்து, ஆரம்பக் கோணத்தைச் சிறியதாகவும் ஒரே மாதிரியாகவும் வைத்திருக்கவும். பல அலைவுகளுக்கான நேரத்தை அளந்து அலைவுகளின் எண்ணிக்கையால் வகுக்கவும். அளவீட்டை மீண்டும் செய்யவும்.\n\nநீங்கள் மாற்றுவது சாரா மாறி; அளக்கும் விளைவு சார் மாறி. ஏனைய செல்வாக்குள்ள நிலைமைகள் கட்டுப்படுத்தப்பட வேண்டும். மீளளவீடு சிதறலைக் காட்டும்; ஒரே திசையில் ஏற்படும் வழுவை நீக்காது.",
+    "formula": ""
+  },
+  {
+    "key": "section-3",
+    "position": 3,
+    "published": true,
+    "kind": "example",
+    "title_en": "Measure ten, then divide",
+    "title_ta": "பத்தை அளந்து பின்னர் வகுக்கவும்",
+    "body_en": "Ten complete oscillations take 20.4 s. The estimated period is 20.4 / 10 = 2.04 s. Timing several oscillations reduces the relative effect of a fixed start/stop reaction-time error. It does not make the stopwatch perfectly accurate.",
+    "body_ta": "பத்து முழு அலைவுகளுக்கு 20.4 s தேவைப்படுகிறது. மதிப்பிடப்பட்ட ஆவர்த்தன காலம் 20.4 / 10 = 2.04 s. பல அலைவுகளை அளப்பதால் தொடக்கம் மற்றும் நிறுத்தத்தில் உள்ள ஒரு நிலையான துலங்கல் நேர வழுவின் சார்பு விளைவு குறைகிறது. இதனால் கருவி முற்றிலும் செம்மையானதாக மாறாது.",
+    "formula": "T = total time / number of oscillations"
+  },
+  {
+    "key": "section-4",
+    "position": 4,
+    "published": true,
+    "kind": "check",
+    "title_en": "Which result is a complete length measurement?",
+    "title_ta": "எது முழுமையான நீள அளவீடு?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "12.4\n12.4 cm\nLong",
+    "options_ta": "12.4\n12.4 cm\nநீளமானது",
+    "correct_option": 2,
+    "explanation_en": "A numerical measurement needs a value and a unit. Instrument uncertainty can then be stated separately.",
+    "explanation_ta": "எண்ணியல் அளவீட்டிற்கு பெறுமானமும் அலகும் தேவை. கருவியின் நிச்சயமின்மையைத் தனியாகக் குறிப்பிடலாம்."
+  },
+  {
+    "key": "section-5",
+    "position": 5,
+    "published": true,
+    "kind": "check",
+    "title_en": "Which change best tests the effect of length on period?",
+    "title_ta": "காலத்தில் நீளத்தின் விளைவைச் சோதிக்க ஏற்ற மாற்றம் எது?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "Change length and starting angle together\nChange length while keeping other conditions comparable\nUse one reading without recording length",
+    "options_ta": "நீளத்தையும் ஆரம்பக் கோணத்தையும் ஒரே நேரத்தில் மாற்றுதல்\nஏனைய நிலைமைகளை ஒத்ததாக வைத்து நீளத்தை மாற்றுதல்\nநீளத்தைப் பதிவு செய்யாமல் ஒரு வாசிப்பை எடுப்பது",
+    "correct_option": 2,
+    "explanation_en": "Changing one relevant variable while controlling others makes the comparison easier to interpret.",
+    "explanation_ta": "ஏனைய மாறிகளைக் கட்டுப்படுத்தி ஒரு தொடர்புடைய மாறியை மாற்றுவது ஒப்பீட்டை விளக்க உதவுகிறது."
+  }
+]

@@ -7,4 +7,10 @@ Thumbs.db
 *.log
 .sites-runtime/
 coverage/
-# dist/ is the authored app source and must remain tracked.
+dist/
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+backend/staticfiles/
+LOCAL-ACCESS.md

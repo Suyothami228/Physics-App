@@ -1,0 +1,68 @@
+[
+  {
+    "key": "section-1",
+    "position": 1,
+    "published": true,
+    "kind": "theory",
+    "title_en": "Accuracy, precision and uncertainty",
+    "title_ta": "செம்மை, நுட்பம் மற்றும் நிச்சயமின்மை",
+    "body_en": "Accuracy describes closeness to a reference value; precision describes how closely repeated results agree. Random effects cause scatter. A systematic effect, such as a zero offset, can shift all readings together.\n\nA mean can reduce the influence of random scatter. It cannot remove a systematic offset. State the method used to estimate uncertainty: instrument resolution, repeated-reading spread or another justified procedure. Half the smallest scale division is a common starting estimate for an ideal analogue reading, not a universal rule.",
+    "body_ta": "செம்மை என்பது ஒப்பீட்டுப் பெறுமானத்திற்கு அண்மையாக இருப்பதைக் குறிக்கும்; நுட்பம் என்பது மீளளவீடுகள் ஒன்றுக்கொன்று அண்மையாக இருப்பதைக் குறிக்கும். எழுமாற்று விளைவுகள் சிதறலை ஏற்படுத்துகின்றன. பூச்சிய வழு போன்ற முறையான விளைவு எல்லா வாசிப்புகளையும் ஒரே திசையில் நகர்த்தலாம்.\n\nசராசரி எழுமாற்றுச் சிதறலின் விளைவைக் குறைக்கலாம்; முறையான வழுவை நீக்காது. நிச்சயமின்மையை மதிப்பிட்ட முறையைக் குறிப்பிடவும். சிறிய அளவுப் பிரிவின் பாதி இலட்சியமான ஒப்புமைக் கருவி வாசிப்பிற்கான ஒரு பொதுவான ஆரம்ப மதிப்பீடு; எல்லா நிலைமைகளுக்குமான விதி அல்ல.",
+    "formula": ""
+  },
+  {
+    "key": "section-2",
+    "position": 2,
+    "published": true,
+    "kind": "example",
+    "title_en": "Estimate uncertainty in an area",
+    "title_ta": "பரப்பளவின் நிச்சயமின்மையை மதிப்பிடுக",
+    "body_en": "For L = (20.0 ± 0.1) cm and W = (10.0 ± 0.1) cm, A = 200 cm². For small bounded uncertainties, add fractional uncertainties for a product: 0.1/20.0 + 0.1/10.0 = 0.015. Hence ΔA ≈ 3 cm².\n\nThis is a first-order worst-case estimate, not a statistical confidence interval. For sums and differences, add absolute uncertainty bounds.",
+    "body_ta": "L = (20.0 ± 0.1) cm மற்றும் W = (10.0 ± 0.1) cm எனில் A = 200 cm². சிறிய வரம்பிட்ட நிச்சயமின்மைகளுடன் பெருக்கும்போது சார்பு நிச்சயமின்மைகளைக் கூட்டுக: 0.1/20.0 + 0.1/10.0 = 0.015. எனவே ΔA ≈ 3 cm².\n\nஇது முதலாம் அண்மிப்பிலான அதிகபட்ச வழு மதிப்பீடு; புள்ளிவிபர நம்பக இடைவெளி அல்ல. கூட்டல் மற்றும் கழித்தலுக்கு தனி நிச்சயமின்மை வரம்புகளைக் கூட்டுக.",
+    "formula": "ΔA/A ≈ ΔL/L + ΔW/W"
+  },
+  {
+    "key": "section-3",
+    "position": 3,
+    "published": true,
+    "kind": "activity",
+    "title_en": "Compare repeated readings",
+    "title_ta": "மீளளவீடுகளை ஒப்பிடுக",
+    "body_en": "Adjust three length readings. Compare their mean and half-range. Here half-range is only a simple spread indicator; real uncertainty must also consider resolution and systematic effects.",
+    "body_ta": "மூன்று நீள வாசிப்புகளை மாற்றுக. சராசரியையும் வீச்சின் பாதியையும் ஒப்பிடுக. இங்கு வீச்சின் பாதி சிதறலுக்கான எளிய காட்டி மட்டுமே; உண்மையான நிச்சயமின்மையில் கருவிப் பிரிதிறனும் முறையான விளைவுகளும் கருதப்பட வேண்டும்.",
+    "formula": "",
+    "activity": "uncertainty"
+  },
+  {
+    "key": "section-4",
+    "position": 4,
+    "published": true,
+    "kind": "check",
+    "title_en": "What is the percentage uncertainty in (50.0 ± 0.5) cm?",
+    "title_ta": "(50.0 ± 0.5) cm இன் சதவீத நிச்சயமின்மை என்ன?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "0.1%\n1%\n10%",
+    "options_ta": "0.1%\n1%\n10%",
+    "correct_option": 2,
+    "explanation_en": "(0.5/50.0) × 100 = 1%.",
+    "explanation_ta": "(0.5/50.0) × 100 = 1%."
+  },
+  {
+    "key": "section-5",
+    "position": 5,
+    "published": true,
+    "kind": "check",
+    "title_en": "Which action addresses a constant zero offset?",
+    "title_ta": "நிலையான பூச்சிய வழுவை எந்த நடவடிக்கை சரிசெய்யும்?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "Repeat without adjusting anything\nCheck and apply the zero correction\nRound every reading upwards",
+    "options_ta": "எந்த மாற்றமுமின்றி மீண்டும் அளத்தல்\nபூச்சியத் திருத்தத்தைச் சோதித்து பயன்படுத்துதல்\nஒவ்வொரு வாசிப்பையும் மேல்நோக்கி முழுமையாக்குதல்",
+    "correct_option": 2,
+    "explanation_en": "Repetition alone preserves the offset. Calibration or a justified zero correction addresses it.",
+    "explanation_ta": "மீளளவீடு மட்டும் பூச்சிய வழுவைப் பேணும். அளவுத்திருத்தம் அல்லது பொருத்தமான பூச்சியத் திருத்தம் அதனைச் சரிசெய்யும்."
+  }
+]

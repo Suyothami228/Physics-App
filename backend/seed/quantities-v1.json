@@ -1,0 +1,68 @@
+[
+  {
+    "key": "section-1",
+    "position": 1,
+    "published": true,
+    "kind": "theory",
+    "title_en": "The seven SI base quantities",
+    "title_ta": "ஏழு SI அடிப்படைக் கணியங்கள்",
+    "body_en": "Length — metre (m)\nMass — kilogram (kg)\nTime — second (s)\nElectric current — ampere (A)\nThermodynamic temperature — kelvin (K)\nAmount of substance — mole (mol)\nLuminous intensity — candela (cd)\n\nDerived quantities combine base quantities: speed uses m/s, density uses kg/m³ and force uses kg·m/s², also called the newton (N). Unit symbols are case-sensitive: m is metre; M as a prefix means mega.",
+    "body_ta": "நீளம் — மீற்றர் (m)\nதிணிவு — கிலோகிராம் (kg)\nநேரம் — செக்கன் (s)\nமின்னோட்டம் — அம்பியர் (A)\nவெப்பவியக்கவியல் வெப்பநிலை — கெல்வின் (K)\nபொருளின் அளவு — மோல் (mol)\nஒளிச் செறிவு — கந்தெலா (cd)\n\nவழிவந்த கணியங்கள் அடிப்படைக் கணியங்களை இணைக்கின்றன: கதி m/s; அடர்த்தி kg/m³; விசை kg·m/s² அல்லது நியூட்டன் (N). அலகுக் குறியீடுகளில் பெரிய மற்றும் சிறிய எழுத்துகள் முக்கியம்: m என்பது மீற்றர்; M முன்னொட்டாக மெகாவைக் குறிக்கும்.",
+    "formula": ""
+  },
+  {
+    "key": "section-2",
+    "position": 2,
+    "published": true,
+    "kind": "example",
+    "title_en": "Convert before substituting",
+    "title_ta": "பிரதியிடுவதற்கு முன் அலகை மாற்றுக",
+    "body_en": "A side of 5 mm is 0.005 m. A square with that side has area (0.005 m)² = 0.000025 m². The conversion factor must also be squared.\n\nRemember: milli = 10⁻³, micro = 10⁻⁶, kilo = 10³. 1 cm² is 10⁻⁴ m², not 10⁻² m².",
+    "body_ta": "5 mm பக்க நீளம் 0.005 m ஆகும். அப்பக்கமுள்ள சதுரத்தின் பரப்பளவு (0.005 m)² = 0.000025 m². மாற்றுக் காரணியும் வர்க்கப்படுத்தப்பட வேண்டும்.\n\nமில்லி = 10⁻³, மைக்ரோ = 10⁻⁶, கிலோ = 10³. 1 cm² என்பது 10⁻⁴ m²; 10⁻² m² அல்ல.",
+    "formula": "A = length × width"
+  },
+  {
+    "key": "section-3",
+    "position": 3,
+    "published": true,
+    "kind": "activity",
+    "title_en": "Build a feeling for scale",
+    "title_ta": "அளவின் பருமனை உணர்க",
+    "body_en": "Predict the answer before switching between millimetres, centimetres and metres. Then change from length to area and explain why the power changes.",
+    "body_ta": "மில்லிமீற்றர், சென்ரிமீற்றர் மற்றும் மீற்றருக்கு இடையில் மாற்றுவதற்கு முன் விடையை ஊகிக்கவும். பின்னர் நீளத்திலிருந்து பரப்பளவிற்கு மாற்றி அடுக்கின் மாற்றத்தை விளக்கவும்.",
+    "formula": "",
+    "activity": "units"
+  },
+  {
+    "key": "section-4",
+    "position": 4,
+    "published": true,
+    "kind": "check",
+    "title_en": "250 cm is equal to…",
+    "title_ta": "250 cm என்பதற்குச் சமமானது…",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "0.25 m\n2.5 m\n25 m",
+    "options_ta": "0.25 m\n2.5 m\n25 m",
+    "correct_option": 2,
+    "explanation_en": "1 cm = 0.01 m, so 250 × 0.01 = 2.5 m.",
+    "explanation_ta": "1 cm = 0.01 m. எனவே 250 × 0.01 = 2.5 m."
+  },
+  {
+    "key": "section-5",
+    "position": 5,
+    "published": true,
+    "kind": "check",
+    "title_en": "Which is the SI unit of density?",
+    "title_ta": "அடர்த்தியின் SI அலகு எது?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "kg/m³\nkg·m³\nm³/kg",
+    "options_ta": "kg/m³\nkg·m³\nm³/kg",
+    "correct_option": 1,
+    "explanation_en": "Density is mass divided by volume.",
+    "explanation_ta": "அடர்த்தி என்பது திணிவை கனவளவால் வகுத்த பெறுமானம்."
+  }
+]

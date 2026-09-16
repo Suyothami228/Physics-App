@@ -1,0 +1,159 @@
+.dimension-lab {
+  padding: 24px;
+  border: 1px solid #d4def0;
+  border-radius: 22px;
+  background: linear-gradient(125deg, #eef2ff, #f1f6e6);
+  line-height: 1.8;
+}
+.dimension-studio .studio-symbol {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+.dimension-studio .unit-tile-picker strong {
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+.dimension-studio .unit-tile-picker {
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  max-height: 330px;
+  overflow: auto;
+  padding: 4px;
+}
+.dimension-lab label {
+  display: grid;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+.dimension-lab select,
+.dimension-lab input[type="number"] {
+  font: inherit;
+  padding: 10px;
+  border: 1px solid #b8c5df;
+  border-radius: 10px;
+  background: white;
+  color: #30456f;
+}
+.dimension-dials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 20px 0;
+}
+.dimension-dials label {
+  padding: 18px;
+  background: white;
+  border-radius: 16px;
+  text-align: center;
+}
+.dimension-dials strong {
+  font-size: 1.6rem;
+  color: #5266aa;
+}
+.dimension-dials span {
+  font-size: 0.75rem;
+  color: #6b7891;
+}
+.dimension-equation {
+  padding: 24px;
+  text-align: center;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #344f88;
+  overflow-wrap: anywhere;
+}
+.dimension-formula {
+  display: inline-flex;
+  gap: 6px;
+}
+.dimension-formula sup {
+  font-size: 0.65em;
+}
+.dimension-reveal {
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  margin-top: 18px;
+  animation: dimension-appear 0.3s ease-out;
+}
+.dimension-term-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+.dimension-term-grid > div {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+}
+.dimension-match {
+  background: #e3eecb;
+  border: 1px solid #9dbb70;
+}
+.dimension-mismatch {
+  background: #ffebdc;
+  border: 1px solid #d49e78;
+}
+.dimension-ratio {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+}
+.dimension-ratio > div {
+  height: 18px;
+  background: #7c96d9;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+.dimension-art text {
+  fill: #425d9b;
+  stroke: none;
+  font-size: 20px;
+  font-family: inherit;
+}
+.dimension-art .dim-sweep {
+  animation: dim-sweep 4s ease-in-out infinite alternate;
+  transform-origin: 120px 58px;
+}
+@keyframes dimension-appear {
+  from {
+    opacity: 0.2;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes dim-sweep {
+  to {
+    transform: rotate(12deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dimension-reveal {
+    animation: none;
+  }
+  .dimension-ratio > div {
+    transition: none;
+  }
+}
+@media (max-width: 600px) {
+  .dimension-lab {
+    padding: 16px;
+  }
+  .dimension-dials {
+    gap: 8px;
+  }
+  .dimension-dials label {
+    padding: 10px;
+  }
+  .dimension-dials strong {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,315 @@
+.caliper-lab {
+  border: 1px solid #d5dfed;
+  border-radius: 24px;
+  padding: 24px;
+  background: #f5f7fc;
+  line-height: 1.7;
+}
+.caliper-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+.caliper-heading h3 {
+  margin: 8px 0;
+}
+.caliper-badge {
+  background: #dcebaa;
+  color: #3c5920;
+  padding: 8px 16px;
+  border-radius: 24px;
+  white-space: nowrap;
+}
+.caliper-scene {
+  background: radial-gradient(ellipse at center, #405872, #1d3048);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.caliper-toolbar,
+.caliper-reader-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0;
+}
+.caliper-toolbar button,
+.caliper-reader-tools button,
+.caliper-object-grid button {
+  font: inherit;
+  font-size: 0.9rem;
+  border: 1px solid #a9bed2;
+  border-radius: 12px;
+  padding: 10px 16px;
+  background: white;
+  color: #234563;
+  cursor: pointer;
+  min-height: 44px;
+}
+.caliper-toolbar button[aria-pressed="true"],
+.caliper-reader-tools button[aria-pressed="true"],
+.caliper-object-grid button[aria-pressed="true"] {
+  background: #d4f5e5;
+  border-color: #258760;
+  color: #145238;
+}
+.caliper-object-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 10px;
+  padding: 14px;
+  background: #e7edf5;
+  border-radius: 16px;
+}
+.caliper-object-grid button {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 8px;
+}
+.caliper-object-grid button span {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #497c8e;
+}
+.caliper-live-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px 18px;
+  background: #172c42;
+  color: #e1eaf3;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #54728a;
+}
+.caliper-live-contact[data-contact="true"] {
+  background: #123f32;
+  color: #98f8be;
+  border-color: #3cab77;
+}
+.caliper-live-contact span {
+  font-size: 0.875rem;
+}
+.caliper-mode-guide {
+  padding: 12px 16px;
+  background: #e2edf7;
+  border-left: 4px solid #497c8e;
+  border-radius: 10px;
+}
+.caliper-reader {
+  margin: 14px 0;
+  padding: 12px;
+  border: 1px solid #ccdae7;
+  border-radius: 18px;
+  background: #fff;
+}
+.caliper-reader h4 {
+  margin: 8px 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.caliper-reader-tools {
+  margin: 0;
+}
+.caliper-reader-tools > div {
+  display: flex;
+  gap: 6px;
+}
+.caliper-reader .caliper-scale {
+  border: 1px solid #dce5ef;
+}
+.caliper-object-grid button:focus-visible,
+.caliper-toolbar button:focus-visible,
+.caliper-reader-tools button:focus-visible {
+  outline: 3px solid #3a84bc;
+  outline-offset: 2px;
+}
+.caliper-scene svg {
+  display: block;
+  width: 100%;
+  touch-action: none;
+  cursor: grab;
+}
+.caliper-scene svg:active {
+  cursor: grabbing;
+}
+.caliper-jaw-handle {
+  cursor: ew-resize;
+  outline: none;
+}
+.caliper-jaw-handle:focus-visible circle:not(.caliper-touch-target),
+.caliper-jaw-handle:hover circle:not(.caliper-touch-target) {
+  stroke: #fff;
+  stroke-width: 4;
+}
+.caliper-scene-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 18px;
+  right: 18px;
+  color: #e3ebf6;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+.caliper-camera,
+.caliper-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+  margin: 15px 0;
+}
+.caliper-camera button,
+.caliper-notebook button {
+  border: 1px solid #bbc9df;
+  background: white;
+  color: #344d7e;
+  padding: 9px 13px;
+  border-radius: 10px;
+  font: inherit;
+  cursor: pointer;
+}
+.caliper-lab label {
+  display: grid;
+  gap: 7px;
+  font-size: 0.85rem;
+  flex: 1;
+  min-width: 100px;
+}
+.caliper-lab select,
+.caliper-lab input[type="number"] {
+  border: 1px solid #b8c7df;
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+  font: inherit;
+  color: #2d4166;
+  min-width: 0;
+}
+.caliper-lab input[type="range"] {
+  width: 100%;
+  accent-color: #657fc3;
+}
+.caliper-jaw {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+}
+.caliper-contact {
+  padding: 12px;
+  border-radius: 12px;
+  background: #e3edca;
+  color: #355520;
+}
+.caliper-scale {
+  overflow-x: auto;
+  background: white;
+  border-radius: 16px;
+}
+.caliper-scale svg {
+  width: 100%;
+  min-width: 480px;
+  display: block;
+}
+.caliper-scale text {
+  font-size: 13px;
+  fill: #334766;
+}
+.caliper-solution,
+.caliper-notebook {
+  padding: 18px;
+  border-radius: 14px;
+  background: #e5eecf;
+  margin: 18px 0;
+}
+.caliper-notebook {
+  background: white;
+}
+.caliper-lab button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.caliper-lab details {
+  margin-top: 20px;
+  font-size: 0.85rem;
+}
+.caliper-lab summary {
+  cursor: pointer;
+  font-weight: 650;
+}
+@media (max-width: 600px) {
+  .caliper-lab {
+    padding: 14px;
+  }
+  .caliper-heading {
+    align-items: start;
+  }
+  .caliper-scene-caption {
+    font-size: 0.65rem;
+  }
+  .caliper-controls {
+    align-items: stretch;
+  }
+  .caliper-controls > * {
+    flex-basis: 100%;
+  }
+}
+.caliper-anatomy {
+  background: white;
+  border: 1px solid #dbe3ef;
+  border-radius: 20px;
+  padding: 22px;
+  margin-bottom: 24px;
+}
+.caliper-photo {
+  overflow-x: auto;
+  border: 1px solid #e3e8ef;
+  border-radius: 16px;
+}
+.caliper-photo svg {
+  display: block;
+  width: 100%;
+  min-width: 740px;
+}
+.caliper-part-picker {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+.caliper-part-picker button {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 10px 12px;
+  border: 1px solid #c4cfdf;
+  border-radius: 10px;
+  background: white;
+  color: #344f79;
+  cursor: pointer;
+}
+.caliper-part-picker button[aria-pressed="true"] {
+  background: #dfebbf;
+  border-color: #8fa858;
+}
+.caliper-part-detail {
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #edf2fc;
+  line-height: 1.8;
+}
+.caliper-part-detail p {
+  margin: 6px 0;
+}
+.caliper-reference-note {
+  font-size: 0.85rem;
+  color: #60708a;
+  line-height: 1.9;
+}
+.caliper-anatomy .caliper-camera button[aria-pressed="true"] {
+  background: #dce8ba;
+}

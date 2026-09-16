@@ -1,0 +1,2 @@
+# SQLite is ONLY for isolated local tests. The application uses MariaDB.
+Django==5.2.17

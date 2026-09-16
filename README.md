@@ -1,157 +1,160 @@
 # இயல் · Iyal Physics
 
-A Tamil-first learning app prototype for Sri Lankan A/L physics students, initially designed for ages 17–19. Explore chapters, experiment with projectile motion, practise questions, and track evidence of understanding.
+Tamil-first Sri Lankan A/L physics prototype for students aged 17–19.
 
-## Current scope
+## What works
 
-- Home dashboard with browser-local practice activity and accuracy.
-- Chapter explorer with search, filters and saved subchapters.
-- 11 chapter pages and 72 subchapter workspaces.
-- Tamil/English navigation and lesson content.
-- One functioning lesson: projectile motion, with animated trajectories, velocity vectors and adjustable launch conditions.
-- Practice bank: 64 distinct prompts across 18 styles and six skills, including an adapted, sourced 2024 A/L Paper I Question 3.
-- Worked feedback and provisional recommendations about where to focus study time.
+- Progress dashboard, chapter search, bookmarks and Tamil/English switching.
+- 11 chapters and 72 subchapter workspaces, based on a draft grouping of the e-thaksalawa course.
+- Measurement lessons with editable bilingual explanations, animated cards, activities and formative checks.
+- Vernier caliper lab: direct jaw dragging, external/internal/depth exercises, mm/cm labels, magnified scales and contact feedback.
+- Micrometer lab: direct barrel dragging, labelled parts, ratchet/lock controls, two screw types, signed zero-error correction and measurement practice.
+- Projectile motion lab with adjustable parameters, animation and velocity vectors.
+- Admin-managed chapter descriptions, lesson sections, draft/published controls and bilingual quick checks. See [Content editing guide](backend/CONTENT-EDITING.md).
+- 64 distinct practice prompts across 18 styles and six skills, including an adapted 2024 Paper I Question 3.
+- Worked solutions and provisional study recommendations based on independent answers.
 
-**This is a prototype, not a finished course.** The other subchapters are clearly labelled outlines. Their theory, simulations, questions and assessments still need development. Subchapter grouping and Tamil terminology need educator review.
+Other chapters retain their lesson outlines. Tamil terminology, syllabus mapping and assessment thresholds need educator review. This is not a complete course or a validated exam predictor.
 
 ## Tech stack
 
 | Layer | Technology |
 | --- | --- |
-| Interface | HTML5, CSS3, vanilla JavaScript; no frontend framework |
-| Navigation | Client-side hash routes |
-| Simulation | Canvas 2D and `requestAnimationFrame` |
-| Diagrams | Inline SVG |
-| State | Browser `localStorage` |
-| Lesson integration | Same-origin iframe with validated `postMessage` resizing |
-| Development server | Node.js built-in HTTP/file modules |
-| Tests | Node.js test runner, assertions and VM-based rendering checks |
-| Typography | Google Fonts, with local fallback fonts |
-| Hosting | Static files; existing optional Sites metadata |
+| Interface | React 19 + TypeScript, responsive CSS |
+| Build and development | Vite 8, Node.js 22.12+ |
+| Navigation | Hash routes, parsed in TypeScript |
+| State | React context/hooks; MariaDB account history in connected mode; localStorage in standalone mode |
+| Physics | Canvas 2D, projected SVG 3D instrument meshes, CSS animation, typed calculation functions |
+| Curriculum and question engine | JavaScript ES modules with typed application interfaces |
+| Backend | Python 3.12, Django 5.2, mysqlclient |
+| Database | MariaDB (Compose 11.4; native verification on 12.1) |
+| Testing | Vitest, React Testing Library, jsdom, Django tests |
+| Deployment | React static build, Django/Gunicorn, MariaDB; Docker Compose for team development |
 
-There is no database, student authentication, backend API or live AI integration. Questions were AI-authored during development; runtime variants and answers are calculated from templates. No AI API key is required.
+Django and MariaDB are implemented. Connected mode provides sign-in, curriculum loading, server grading and account-scoped practice history. The standalone browser-only mode is preserved. Questions are pre-authored templates; there is no live AI service. See [Django + MariaDB setup](backend/README.md) for Docker, native setup, APIs and deployment boundaries.
 
-## Run locally
+## Full-stack setup
 
-Install Node.js 20 or later. No third-party npm dependencies are required.
+Install Docker Desktop, copy `.env.example` to `.env`, and replace its three placeholder secrets. Then run:
+
+```sh
+docker compose up --build -d
+docker compose exec api python manage.py createsuperuser
+```
+
+Open http://127.0.0.1:8080. Use `/admin/` to create student accounts. The complete instructions and native Python option are in [backend/README.md](backend/README.md).
+
+## Standalone frontend setup
+
+Install Node.js 22.12 or newer and Git, then:
 
 ```sh
 git clone https://github.com/Suyothami228/Physics-App.git
 cd Physics-App
-npm start
+npm ci
+npm run dev
 ```
 
-Open **http://127.0.0.1:4174/#/home**. `npm run dev` runs the same server. Refresh the browser after source edits; this server does not provide hot reload. Stop it with Ctrl+C.
-
-If port 4174 is occupied, choose another port:
-
-```powershell
-# PowerShell
-$env:PORT = '4175'
-npm start
-```
+Open http://127.0.0.1:4174/#/home. Vite updates the page when source files change. Stop with Ctrl+C. If that port is occupied, stop the previous server or run `npm run dev -- --port 4176`.
 
 ```sh
-# macOS / Linux
-PORT=4175 npm start
+npm run format  # format source and tests
+npm test        # scoring, physics, routes and React interaction tests
+npm run build   # TypeScript checks and production build
+npm run preview # serves the built app at http://127.0.0.1:4175
 ```
 
-Keep the same origin and port to retain your existing browser-local progress. Progress does not automatically transfer between local previews, hosted sites, browsers or devices. Use HTTP instead of opening `index.html` directly so storage and iframe messaging behave consistently.
+Standalone mode needs no API key and retains progress on the same browser origin. Connected mode uses `VITE_API_ENABLED=true` and Django sessions; practice history follows the account. Browser-only history is not automatically imported into server evidence. Bookmarks and language remain browser-local.
 
-## Repository structure
+## Structure
 
 ```text
-dist/                 Authored static application source (not disposable build output)
-  index.html          Main app entry point
-  shell.js            Routing, dashboard, explorer, bookmarks and progress views
-  shell.css           Main design system and responsive layouts
-  curriculum.js       Chapters, subchapters, stable IDs and availability metadata
-  lab.html            Working projectile lesson entry point
-  app.js              Projectile simulation and initial conceptual check
-  style.css           Original lesson and practice styles
-  lab-theme.css       Lesson styling inside the new app
-  lab-bridge.js       Language initialization and iframe sizing
-  bank.js             Question templates, grading and recommendation logic
-  practice.js         Practice interface and persistence
-scripts/serve.cjs      Local static server
-tests/                Portable calculation, scoring and app-structure tests
-.openai/hosting.json   Existing Sites project association; no credentials
+backend/                Django application, migrations, API, tests and seed content
+deploy/                 Web container and reverse proxy
+compose.yaml            MariaDB + Django + React local stack
+.github/workflows/      Frontend checks and MariaDB-backed CI tests
+src/
+  main.tsx               React entry point
+  api.ts                 Same-origin Django client and course loading
+  components/BackendGate.tsx  Account sign-in and connected startup
+  App.tsx                Application shell and route rendering
+  state.tsx              Shared state and storage compatibility
+  model.ts               Typed interfaces and route parser
+  physics.ts             Projectile calculations and Canvas drawing
+  components/
+    Pages.tsx            Dashboard, explorer, chapter, outline and progress screens
+    Simulation.tsx       React simulation controls and animation lifecycle
+    Practice.tsx         Question answering and adaptive study plan
+    UI.tsx               Shared UI components
+  domain/
+    curriculum.js        Chapter and lesson metadata
+    bank.js              Question templates, grading and evidence rules
+  styles/
+    shell.css            Responsive application design
+    lesson.css           Lesson styles scoped to .lesson-ui
+index.html               Vite HTML entry
+package-lock.json        Reproducible dependency versions
+vitest.config.ts         Test configuration
+tests/                  Domain and React interaction tests
+.openai/hosting.json      Existing Sites project association
+dist/                   Generated output; do not edit or commit
 ```
 
-**Do not delete or git-ignore `dist/`: it contains the source.** There is currently no compilation or bundling step.
+All screens and lesson controls are React components; there is no iframe integration or legacy HTML renderer. The domain algorithms remain plain JavaScript modules, exposed through typed interfaces, to preserve the existing calculation and scoring behavior.
 
-## Routes
+## Working on features
 
-| Route | View |
-| --- | --- |
-| `#/home` | Dashboard |
-| `#/chapters` | Searchable chapter explorer |
-| `#/chapter/02` | Example chapter: mechanics |
-| `#/chapter/02/projectile` | Working projectile lesson |
-| `#/chapter/{chapterId}/{lessonSlug}` | Subchapter workspace |
-| `#/practice` | Question bank and self-evaluation |
-| `#/progress` | Skill evidence and curriculum coverage |
+1. Pull current changes and create a feature branch: `git switch -c feature/your-change`.
+2. Work in `src/`. Keep dependencies and `package-lock.json` synchronized.
+3. Run tests and the build. Check the affected journey at desktop and mobile widths, with keyboard navigation and both languages.
+4. Submit a pull request describing the student-facing change, validation and remaining limitations.
+5. Deployment is separate from committing or pushing.
 
-The 11 chapters are Measurement; Mechanics; Oscillations and waves; Thermal physics; Gravitational field; Electric field; Magnetic field; Current electricity; Electronics; Mechanical properties of matter; Matter and radiation.
+### New lessons
 
-## Team development workflow
+Edit metadata in `src/domain/curriculum.js`. IDs such as `02/projectile` are saved identifiers; changing them requires a storage migration. Use Django admin to add published content blocks to any lesson; the generic React lesson renderer displays them automatically. New simulation types still require React components. The built-in projectile lab follows the lesson publication status. Extend lesson-scoped questions and dashboard aggregation before assessing another topic. Opening or bookmarking a page must never award mastery.
 
-1. Create a feature branch from `main` and keep each change focused.
-2. Update both Tamil and English text. Preserve UTF-8 and have Tamil scientific terminology reviewed by a local physics educator.
-3. Run `npm test` and manually exercise the changed student journey on desktop and mobile widths, including keyboard navigation.
-4. Submit a pull request explaining the student-facing change, checks performed and remaining limitations.
-5. Treat deployment as a separate step from committing or pushing code.
+### Questions and assessment
 
-### Add or develop a subchapter
+Extend `src/domain/bank.js` with bilingual prompts, units, tolerances, distractors and worked solutions. Keep past-paper adaptations labelled with source/year/paper/question. Verify permissions before importing larger paper collections. Numeric practice uses **g = 10 m/s²**; the simulator uses **g = 9.81 m/s²**.
 
-- Locate its metadata in `dist/curriculum.js`. IDs such as `02/projectile` and lesson slugs are persistent identifiers: avoid renaming them without migrating saved state.
-- Each chapter currently lists a draft learning outline; the source course mixes PDFs, videos and simulations. Confirm syllabus mapping before writing full lessons.
-- The shell's `outline()` and `stageContent()` functions provide the planned Understand, Experiment, Practise and Evaluate sections.
-- **Adding `available: true` alone is not sufficient.** `lesson()` currently embeds the projectile lesson for any available lesson. Before releasing another lesson, introduce an explicit lesson renderer/entry-point mapping and route each lesson to its own content.
-- Likewise, the dashboard and chapter-assessment counts currently map practice evidence only to projectile motion. Extend the data model with lesson-scoped question IDs and aggregation before enabling assessment elsewhere.
-- Keep unfinished material labelled as an outline. Opening or bookmarking a page must never count as completing or mastering it.
+Readiness requires 12 distinct independent question styles, 85% accuracy and two correct styles in each of six skills within 14 days. Exact repeats and solution-assisted answers cannot raise readiness. A fresh numerical variant can replace older evidence for its style without increasing coverage. A short review is due after two days. These are provisional prototype rules, not predicted grades.
 
-### Extend the question bank
+Storage keys remain compatible with the original prototype:
 
-- `bank.js` separates bilingual prompts, question families, numerical solutions, grading and readiness evaluation. It can also be required directly from Node.js tests.
-- Add original question styles with clear assumptions, units, tolerances, distractors and worked explanations in both languages.
-- Keep sourced past-paper adaptations distinct from original practice. Record year, paper, question number and a source link. Verify reproduction/licensing rights before importing larger collections.
-- All practice templates use **g = 10 m/s²**, while the simulator uses **g = 9.81 m/s²**. The UI states this distinction; do not silently mix them.
-- The current template ID pattern, family splitting, variant range, coverage totals and the displayed bank counts are implementation assumptions. Update the evaluator, selection logic, copy and tests together if you change them.
-- Adding live AI requires a server-side integration, secret management, output validation, cost limits and educator review. Never put API keys in browser JavaScript or Git.
+- `iyal-practice-v1`: answer and solution-view history.
+- `iyal-language`: Tamil/English preference.
+- `iyal-saved`: bookmarked lesson IDs.
+- `iyal-last-lesson`: last visited lesson.
 
-### Progress and recommendation rules
+Standalone storage is browser-local and user-editable. Connected mode records answers, correctness, timestamps and solution views on the server; client-supplied correctness is ignored. Local records are not uploaded as trusted evidence. Keep future AI keys on the server.
 
-Browser keys currently used:
+## Tests and deployment
 
-- `iyal-practice-v1`: answer history and solution-view events.
-- `iyal-language`: language preference.
-- `iyal-saved`: saved subchapter IDs.
-- `iyal-last-lesson`: last explored subchapter.
+Tests exercise numerical physics, grading, repeats, assisted answers, evidence expiry, adaptive selection, curriculum routes, saved lessons, language switching and solution exposure across React remounts. jsdom tests verify interactions, not real-browser visual layout. Perform browser and accessibility review before release.
 
-Readiness currently requires at least **12 distinct question styles**, **85% independent accuracy**, and **two correct styles in each of six skills**. Exact repeats and revealed solutions cannot raise readiness. A fresh numerical variant can replace older evidence for its style but does not increase style coverage. Evidence expires after 14 days; a short review is suggested after two days.
+For the standalone frontend, run `npm run build` and deploy the contents of `dist/` to a static host. Hash routes do not need server-side route rewrites. Do not deploy `src/` or use the Vite development server for production. `.openai/hosting.json` retains the existing Sites project association and points to `dist/`. No automatic deployment is configured. Full-stack hosting requires a Python/container host and MariaDB; the Sites manifest does not start the backend. See the backend guide.
 
-These thresholds are **provisional and not educationally validated**. They are not a predicted A/L grade. Other lessons remain unassessed. Local storage can be changed by the user, so these records must not be used as secure exam results.
+## Pushing to GitHub
 
-## Testing
+Authenticate Git with your GitHub account, then review and push:
 
 ```sh
-npm test
+git status
+git diff
+git add src tests backend deploy compose.yaml .dockerignore .github scripts .env.example index.html package.json package-lock.json tsconfig.json vite.config.ts vitest.config.ts README.md .gitignore
+git add -u
+git commit -m "Add React, Django and MariaDB application stack"
+git push -u origin HEAD
 ```
 
-Tests cover physics examples and parameter combinations, grading edge cases, assisted/repeat-attempt exclusion, readiness breadth and expiry, adaptive selection, all chapter/subchapter routes, language switching, bookmarks and source assets.
+Never commit `.env`, `LOCAL-ACCESS.md`, credentials, `.venv/`, `node_modules/` or generated `dist/`. If the remote has new commits, fetch and reconcile them before pushing; do not force-push shared branches.
 
-The shell tests use a lightweight VM harness. They check rendering logic and state, **not real-browser visual layout or end-to-end interaction**. Review responsive layouts, focus behaviour, iframe resizing, reload persistence and both languages manually before releases.
+## References
 
-## Hosting and deployment
+- [Tamil e-thaksalawa A/L physics course](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263): chapter/resource reference. Subchapter grouping is a draft.
+- [2024 A/L Physics paper and answers](https://e-thaksalawa.moe.gov.lk/lcms/pluginfile.php/51563/mod_resource/content/1/eal_phy_pp_p12_ans_2024.pdf#page=1): source of adapted Paper I Question 3.
 
-Serve the contents of `dist/` with a static web server. Hash routing does not require server-side route rewrites. Serve `lab.html` and all scripts/styles from the same origin; retain correct MIME types and do not block the lesson iframe.
+Select a software licence before inviting public reuse. Third-party resources retain their own terms.
 
-`.openai/hosting.json` associates this checkout with the existing privately hosted Sites project. Its project ID is not a credential. Coordinate with the project owner before changing it. For other hosting, deploy `dist/`; do not use the development server as a production service. This repository does not configure automatic deployments.
-
-## References and content status
-
-- [Tamil e-thaksalawa A/L physics course](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263): reference for chapter order and learning resources. This app's subtopic grouping is a draft, not a verbatim official syllabus.
-- [2024 A/L Physics paper](https://e-thaksalawa.moe.gov.lk/lcms/pluginfile.php/51563/mod_resource/content/1/eal_phy_pp_p12_ans_2024.pdf#page=1): source of the adapted Paper I Question 3; the worked explanation is our own.
-
-The owner should select an explicit software licence before encouraging public reuse. Third-party resources retain their own terms. A repository upload does not grant redistribution rights to linked papers or simulation libraries.
+See [source-led lesson workflow](backend/LESSON-DEVELOPMENT.md) for reviewing supplied material and the PDF-based introduction update.

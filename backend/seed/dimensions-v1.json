@@ -1,0 +1,56 @@
+[
+  {
+    "key": "section-1",
+    "position": 1,
+    "published": true,
+    "kind": "theory",
+    "title_en": "Look beneath the unit symbols",
+    "title_ta": "அலகுக் குறியீடுகளுக்குக் கீழுள்ள தொடர்பைப் பாருங்கள்",
+    "body_en": "Dimensions describe the physical nature of a quantity. Write mass as M, length as L and time as T.\n\nSpeed: LT⁻¹\nAcceleration: LT⁻²\nForce: MLT⁻²\nEnergy: ML²T⁻²\nPressure: ML⁻¹T⁻²\n\nTerms added or equated must have matching dimensions. Dimensional consistency is necessary but cannot determine dimensionless numerical factors such as ½.",
+    "body_ta": "பரிமாணங்கள் ஒரு கணியத்தின் பௌதிக இயல்பைக் குறிக்கின்றன. திணிவை M, நீளத்தை L, நேரத்தை T என எழுதுக.\n\nகதி: LT⁻¹\nஆர்முடுகல்: LT⁻²\nவிசை: MLT⁻²\nசக்தி: ML²T⁻²\nஅமுக்கம்: ML⁻¹T⁻²\n\nகூட்டப்படும் அல்லது சமப்படுத்தப்படும் உறுப்புகள் ஒரே பரிமாணத்தைக் கொண்டிருக்க வேண்டும். பரிமாண ஒத்திசைவு அவசியம்; ஆனால் ½ போன்ற பரிமாணமற்ற எண் காரணிகளைத் தீர்மானிக்காது.",
+    "formula": ""
+  },
+  {
+    "key": "section-2",
+    "position": 2,
+    "published": true,
+    "kind": "example",
+    "title_en": "Check s = ut + ½at²",
+    "title_ta": "s = ut + ½at² ஐச் சோதிக்கவும்",
+    "body_en": "The displacement s has dimension L. For ut: (LT⁻¹)(T) = L. For at²: (LT⁻²)(T²) = L. Both terms are lengths, so the equation is dimensionally consistent.\n\nThe alternative s = u + at² fails: a speed cannot be added to a length.",
+    "body_ta": "இடப்பெயர்ச்சி s இன் பரிமாணம் L. ut இற்கு (LT⁻¹)(T) = L. at² இற்கு (LT⁻²)(T²) = L. இரு உறுப்புகளும் நீளங்களாதலால் சமன்பாடு பரிமாண ரீதியில் ஒத்திசைகிறது.\n\ns = u + at² தவறானது: ஒரு கதியை நீளத்துடன் கூட்ட முடியாது.",
+    "formula": "[s] = [ut] = [at²] = L"
+  },
+  {
+    "key": "section-3",
+    "position": 3,
+    "published": true,
+    "kind": "check",
+    "title_en": "What is the dimension of work, force × distance?",
+    "title_ta": "விசை × தூரம் ஆகிய வேலையின் பரிமாணம் என்ன?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "MLT⁻²\nML²T⁻²\nML²T⁻¹",
+    "options_ta": "MLT⁻²\nML²T⁻²\nML²T⁻¹",
+    "correct_option": 2,
+    "explanation_en": "[F][s] = (MLT⁻²)(L) = ML²T⁻².",
+    "explanation_ta": "[F][s] = (MLT⁻²)(L) = ML²T⁻²."
+  },
+  {
+    "key": "section-4",
+    "position": 4,
+    "published": true,
+    "kind": "check",
+    "title_en": "Can dimensional analysis alone choose between mv² and ½mv²?",
+    "title_ta": "பரிமாணப் பகுப்பாய்வு மட்டும் mv² மற்றும் ½mv² இடையே சரியானதைத் தேர்ந்தெடுக்குமா?",
+    "body_en": "",
+    "body_ta": "",
+    "formula": "",
+    "options_en": "Yes\nNo\nOnly if metres are used",
+    "options_ta": "ஆம்\nஇல்லை\nமீற்றர் பயன்படுத்தினால் மட்டும்",
+    "correct_option": 2,
+    "explanation_en": "Both have the same dimensions. The numerical coefficient requires further physics or evidence.",
+    "explanation_ta": "இரண்டுக்கும் ஒரே பரிமாணம் உள்ளது. எண் குணகத்திற்குக் கூடுதல் பௌதிகத் தொடர்பு அல்லது சான்று தேவை."
+  }
+]
