@@ -1,3 +1,5 @@
+import { TravellingLab } from "./TravellingLab";
+import { SpherometerLab } from "./SpherometerLab";
 import { useEffect, useState } from "react";
 import type { Lesson } from "../model";
 import { useApp } from "../state";
@@ -165,6 +167,12 @@ export function ManagedLesson({
       {instrument === "micrometer" &&
         stage === "learn" &&
         blocks.length > 0 && <MicrometerLab anatomy />}
+      {instrument === "spherometer" &&
+        stage === "learn" &&
+        blocks.length > 0 && <SpherometerLab anatomy />}
+      {instrument === "travelling" &&
+        stage === "learn" &&
+        blocks.length > 0 && <TravellingLab anatomy />}
       {filtered.length ? (
         filtered.map((block) => (
           <article

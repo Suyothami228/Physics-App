@@ -1,3 +1,5 @@
+import { TravellingArt } from "./TravellingArt";
+import { SpherometerArt } from "./SpherometerArt";
 import type { ReactNode } from "react";
 import { MicrometerArt } from "./MicrometerArt";
 import { QuantityArt } from "./QuantityArt";
@@ -20,6 +22,10 @@ export function ConceptArt({
   blockKey: string;
   index: number;
 }) {
+  if (blockKey.startsWith("travelling-"))
+    return <TravellingArt blockKey={blockKey} index={index} />;
+  if (blockKey.startsWith("spherometer-"))
+    return <SpherometerArt blockKey={blockKey} index={index} />;
   if (blockKey.startsWith("micrometer-"))
     return <MicrometerArt blockKey={blockKey} index={index} />;
   if (blockKey.startsWith("unc-"))

@@ -17,8 +17,10 @@
     "node": ">=22.12"
   },
   "dependencies": {
+    "@types/three": "^0.186.0",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "three": "^0.186.0"
   },
   "devDependencies": {
     "@testing-library/react": "^16.3.3",

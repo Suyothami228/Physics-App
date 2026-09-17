@@ -1,0 +1,201 @@
+.sphere-lab {
+  background: #101f31;
+  color: #e1eef7;
+  border: 1px solid #36536d;
+  border-radius: 22px;
+  padding: 20px;
+  margin: 18px 0;
+}
+.sphere-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.sphere-lab button {
+  background: #203a50;
+  color: #e1eef7;
+  border: 1px solid #547087;
+  border-radius: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.sphere-lab button[aria-pressed="true"] {
+  border-color: #52e0b2;
+  background: #185444;
+}
+.sphere-lab button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.sphere-contact {
+  color: #53efb0;
+  background: #164c3e;
+  border-radius: 20px;
+  padding: 8px 14px;
+}
+.sphere-scene {
+  background: radial-gradient(ellipse at 50% 35%, #294657, #0d1927 75%);
+  border-radius: 15px;
+  overflow: auto;
+}
+.sphere-scene svg {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-height: 560px;
+}
+.sphere-reader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: #172c40;
+  border-radius: 16px;
+  padding: 16px;
+}
+.sphere-reader > div {
+  text-align: center;
+  flex: 0 1 180px;
+}
+.sphere-reader svg {
+  display: block;
+  height: 160px;
+  width: 100%;
+}
+.sphere-reader.enlarged svg {
+  height: 280px;
+}
+.sphere-reader.enlarged > div {
+  flex-basis: 280px;
+}
+.sphere-reader output {
+  font-size: 1.1rem;
+}
+.sphere-notebook {
+  border-left: 3px solid #4ee2b0;
+  padding: 16px;
+  background: #142e39;
+  margin: 18px 0;
+}
+.sphere-lab p {
+  line-height: 1.8;
+}
+.sphere-lab small {
+  color: #b1c9d9;
+}
+.sphere-lab [role="slider"]:focus {
+  outline: none;
+  filter: drop-shadow(0 0 5px #68ffff);
+}
+.sphere-art {
+  width: 100%;
+  height: 135px;
+  color: #4397b6;
+}
+.sphere-bob {
+  animation: sphere-bob 3s ease-in-out infinite alternate;
+}
+.sphere-spin {
+  animation: sphere-spin 10s linear infinite;
+}
+.sphere-dash {
+  stroke-dasharray: 5 4;
+  animation: sphere-dash 2s linear infinite;
+}
+@keyframes sphere-bob {
+  to {
+    transform: translateY(14px);
+  }
+}
+@keyframes sphere-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sphere-dash {
+  to {
+    stroke-dashoffset: -36;
+  }
+}
+.concept-motion-paused .sphere-art * {
+  animation-play-state: paused !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sphere-art * {
+    animation: none !important;
+  }
+}
+
+.sphere-webgl-wrap {
+  background: radial-gradient(ellipse at 50% 35%, #344b5d, #111e2d 80%);
+  border: 1px solid #426075;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.sphere-webgl {
+  height: 510px;
+  width: 100%;
+  position: relative;
+  outline-offset: -4px;
+  cursor: grab;
+}
+.sphere-webgl canvas {
+  display: block;
+}
+.sphere-view-controls,
+.sphere-parts {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 12px;
+}
+.sphere-view-controls button,
+.sphere-parts button {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+.sphere-part-leader {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.sphere-part-name {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  background: #102738e8;
+  border: 1px solid #72c7cb;
+  padding: 7px 12px;
+  border-radius: 8px;
+  pointer-events: none;
+  font-size: 14px;
+}
+.sphere-orbit-hint {
+  padding: 0 16px;
+  color: #c4dce7;
+  font-size: 14px;
+}
+.sphere-webgl-fallback {
+  padding: 90px 24px;
+}
+.sphere-parts {
+  border-top: 1px solid #426075;
+}
+@media (max-width: 600px) {
+  .sphere-webgl {
+    height: 380px;
+  }
+  .sphere-lab {
+    padding: 12px;
+  }
+  .sphere-view-controls button {
+    padding: 8px;
+    font-size: 13px;
+  }
+}

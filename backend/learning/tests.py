@@ -107,7 +107,7 @@ class ContentTests(TestCase):
         self.assertEqual(self.client.get('/api/lessons/01/quantities/').json()['blocks'],[])
         row=self.client.get('/api/curriculum/').json()['chapters'][0]['lessons'][1]
         self.assertFalse(row['available'])
-        self.assertEqual(LessonBlock.objects.count(),98)
+        self.assertEqual(LessonBlock.objects.count(),118)
 
     def test_admin_forms_update_titles_and_descriptions_without_json(self):
         from .admin import ChapterForm
@@ -249,8 +249,8 @@ class InstrumentTests(TestCase):
         from django.conf import settings
         lesson = Lesson.objects.get(pk='01/instruments')
         data = self.client.get('/api/lessons/01/instruments/').json()['blocks']
-        self.assertEqual(len(data), 20)
-        self.assertEqual([b['activity'] for b in data if b['kind']=='activity'], ['vernier-3d', 'micrometer-3d'])
+        self.assertEqual(len(data), 40)
+        self.assertEqual([b['activity'] for b in data if b['kind']=='activity'], ['vernier-3d', 'micrometer-3d', 'spherometer-3d', 'travelling-3d'])
         self.assertEqual(sum(b['instrument'] == 'vernier' for b in data), 9)
         self.assertEqual(sum(b['instrument'] == 'micrometer' for b in data), 11)
         baseline = json.loads((settings.BASE_DIR/'seed'/'instruments-v1.json').read_text(encoding='utf8'))

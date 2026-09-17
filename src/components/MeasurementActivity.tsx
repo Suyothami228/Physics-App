@@ -1,3 +1,5 @@
+import { TravellingLab } from "./TravellingLab";
+import { SpherometerLab } from "./SpherometerLab";
 import { Caliper3D } from "./Caliper3D";
 import { MicrometerLab } from "./MicrometerLab";
 import { useId, useState } from "react";
@@ -10,6 +12,8 @@ import {
   ParticleExperiment,
 } from "./IntroductionExperiments";
 export function MeasurementActivity({ kind }: { kind: string }) {
+  if (kind === "travelling-3d") return <TravellingLab />;
+  if (kind === "spherometer-3d") return <SpherometerLab />;
   if (kind === "micrometer-3d") return <MicrometerLab />;
   if (kind === "vernier-3d") return <Caliper3D />;
   if (kind.startsWith("error-")) return <UncertaintyLab kind={kind} />;

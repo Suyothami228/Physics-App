@@ -9,6 +9,8 @@ Tamil-first Sri Lankan A/L physics prototype for students aged 17–19.
 - Measurement lessons with editable bilingual explanations, animated cards, activities and formative checks.
 - Vernier caliper lab: direct jaw dragging, external/internal/depth exercises, mm/cm labels, magnified scales and contact feedback.
 - Micrometer lab: direct barrel dragging, labelled parts, ratchet/lock controls, two screw types, signed zero-error correction and measurement practice.
+- Spherometer: solid Three.js model, screw dragging, surface contact, thickness and curvature measurements. See [Spherometer notes](backend/SPHEROMETER.md).
+- Travelling microscope: solid Three.js model with horizontal/vertical dragging, optical focusing, soap-bubble diameter, rubber inner/outer diameters, capillary bore and glass-slab measurements. See [Microscope notes](backend/TRAVELLING-MICROSCOPE.md).
 - Projectile motion lab with adjustable parameters, animation and velocity vectors.
 - Admin-managed chapter descriptions, lesson sections, draft/published controls and bilingual quick checks. See [Content editing guide](backend/CONTENT-EDITING.md).
 - 64 distinct practice prompts across 18 styles and six skills, including an adapted 2024 Paper I Question 3.
@@ -24,7 +26,7 @@ Other chapters retain their lesson outlines. Tamil terminology, syllabus mapping
 | Build and development | Vite 8, Node.js 22.12+ |
 | Navigation | Hash routes, parsed in TypeScript |
 | State | React context/hooks; MariaDB account history in connected mode; localStorage in standalone mode |
-| Physics | Canvas 2D, projected SVG 3D instrument meshes, CSS animation, typed calculation functions |
+| Physics | Three.js/WebGL, Canvas 2D, projected SVG instrument meshes, CSS animation, typed calculation functions |
 | Curriculum and question engine | JavaScript ES modules with typed application interfaces |
 | Backend | Python 3.12, Django 5.2, mysqlclient |
 | Database | MariaDB (Compose 11.4; native verification on 12.1) |
@@ -158,3 +160,7 @@ Never commit `.env`, `LOCAL-ACCESS.md`, credentials, `.venv/`, `node_modules/` o
 Select a software licence before inviting public reuse. Third-party resources retain their own terms.
 
 See [source-led lesson workflow](backend/LESSON-DEVELOPMENT.md) for reviewing supplied material and the PDF-based introduction update.
+
+## Updating an existing installation
+
+After pulling this version, run `npm ci`, apply Django migrations, then run `python manage.py upgrade_spherometer` and `python manage.py upgrade_travelling` from the backend directory. These commands add missing instrument content while preserving educator edits. Restart the Django service and rebuild the frontend with the appropriate API mode. New installations can use the normal content seeding workflow.

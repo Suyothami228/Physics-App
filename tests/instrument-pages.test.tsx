@@ -23,7 +23,7 @@ test("overview offers instrument choices instead of the vernier lab", () => {
     </AppProvider>,
   );
   expect(screen.getByText("What are you measuring?")).toBeTruthy();
-  expect(screen.getAllByRole("link")).toHaveLength(7);
+  expect(screen.getAllByRole("link")).toHaveLength(4);
   expect(
     screen.getByRole("link", { name: /Vernier caliper/ }).getAttribute("href"),
   ).toBe("#/chapter/01/instruments/vernier");
@@ -45,7 +45,7 @@ test("vernier page has its own tabs and existing 3D lab", async () => {
     screen.getAllByRole("button", { name: "Check my answer" }),
   ).toHaveLength(4);
 });
-test("undeveloped instrument keeps its tabs without leaking vernier content", async () => {
+test("spherometer has its own measurement lab", async () => {
   render(
     <AppProvider>
       <InstrumentHub
@@ -55,7 +55,7 @@ test("undeveloped instrument keeps its tabs without leaking vernier content", as
     </AppProvider>,
   );
   fireEvent.click(await screen.findByRole("button", { name: "02 Explore" }));
-  expect(screen.getByText("This section is being prepared")).toBeTruthy();
+  expect(screen.getByRole("button", { name: "Record reference" })).toBeTruthy();
   expect(screen.queryByRole("button", { name: "Place object" })).toBeNull();
   expect(screen.getByRole("button", { name: "03 Quick checks" })).toBeTruthy();
 });
