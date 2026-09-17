@@ -137,6 +137,16 @@ Tests exercise numerical physics, grading, repeats, assisted answers, evidence e
 
 For the standalone frontend, run `npm run build` and deploy the contents of `dist/` to a static host. Hash routes do not need server-side route rewrites. Do not deploy `src/` or use the Vite development server for production. `.openai/hosting.json` retains the existing Sites project association and points to `dist/`. No automatic deployment is configured. Full-stack hosting requires a Python/container host and MariaDB; the Sites manifest does not start the backend. See the backend guide.
 
+### Vercel educator preview
+
+Import this repository with Root Directory `./` (the directory containing `package.json` and `vercel.json`). The committed Vercel configuration selects Vite, installs with `npm ci`, builds with `npm run build`, and serves `dist/`. Do not select Django or use `backend/` as the root for this frontend preview.
+
+Set `VITE_API_ENABLED=false` in Vercel's Preview environment before deploying. Also set it for Production if using the standalone frontend there. Keep `main` as the production branch and create a Preview deployment from `staging`. Later pushes to `staging` update the preview. Changes to environment variables require a new deployment.
+
+This preview includes bundled lessons and simulations with browser-local progress. Django admin, server-edited lessons, accounts, and shared progress require a separately hosted backend and API routing; the local Vite proxy is not part of a static deployment.
+
+If the build runs `uv sync` and fails building `mysqlclient`, check that Root Directory is `./`, Framework Preset is Vite, and the deployed commit includes `vercel.json`. That error comes from attempting a Python backend build rather than the intended frontend preview. Redeploy the corrected branch commit.
+
 ## Pushing to GitHub
 
 Authenticate Git with your GitHub account, then review and push:
