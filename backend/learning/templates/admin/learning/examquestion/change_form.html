@@ -1,0 +1,31 @@
+{% extends "admin/change_form.html" %}
+{% load static %}
+{% block extrahead %}{{ block.super }}
+<script src="{% static 'learning/vendor/tesseract.min.js' %}" defer></script>
+<script src="{% static 'learning/exam-ocr.js' %}" defer></script>
+{% endblock %}
+{% block field_sets %}
+<fieldset class="module aligned" id="exam-ocr" data-worker="{% static 'learning/vendor/worker.min.js' %}">
+  <h2>Photo → editable question / படம் → திருத்தக்கூடிய வினா</h2>
+  <div style="padding:20px;max-width:960px">
+    <p>Type directly in the fields below, or extract one question photo at a time. Include its numbered answer choices. Crop out page headers and author names first.</p>
+    <p>வினா மற்றும் விடைத் தெரிவுகளை நேரடியாகத் தட்டச்சிடலாம்; அல்லது ஒரு வினாவின் படத்திலிருந்து எழுத்துகளைப் பிரித்தெடுத்து திருத்தலாம்.</p>
+    <label for="ocr-photo">Question photo (PNG/JPEG, up to 10 MB)</label>
+    <input id="ocr-photo" type="file" accept="image/png,image/jpeg">
+    <label for="ocr-language">Text language</label>
+    <select id="ocr-language"><option value="ta">தமிழ் + equations</option><option value="en">English</option></select>
+    <button id="ocr-extract" type="button" class="button">Extract text / எழுத்துகளைப் பிரித்தெடு</button>
+    <button id="ocr-cancel" type="button" hidden>Cancel</button>
+    <p id="ocr-status" role="status" aria-live="polite">Extraction runs in your browser. First use downloads OCR language files; the photo is not sent to an OCR service.</p>
+    <div id="ocr-review" hidden>
+      <img id="ocr-preview" alt="Source photo for administrator review" style="max-width:100%;max-height:400px;object-fit:contain">
+      <p>Check Tamil spelling, minus signs, powers, fractions and option order against the photo. Use (1), (2), … before each choice. Correct answers must be entered from the answer key, not guessed by OCR.</p>
+      <label for="ocr-text">Extracted text — edit before transferring</label>
+      <textarea id="ocr-text" rows="14" style="width:95%;line-height:1.8"></textarea>
+      <button id="ocr-apply" type="button" class="button">Fill question and choices / வினாவையும் தெரிவுகளையும் நிரப்பு</button>
+      <p>This fills a draft only. Review all fields below, enter the year and correct answer, then confirm review before publishing.</p>
+    </div>
+  </div>
+</fieldset>
+{{ block.super }}
+{% endblock %}

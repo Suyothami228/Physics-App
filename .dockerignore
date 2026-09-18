@@ -8,3 +8,7 @@ dist
 **/*.sqlite3
 backend/staticfiles
 .sites-runtime
+
+backend/media
+.npm-cache
+*.traineddata

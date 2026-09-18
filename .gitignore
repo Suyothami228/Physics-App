@@ -14,3 +14,8 @@ __pycache__/
 *.sqlite3
 backend/staticfiles/
 LOCAL-ACCESS.md
+
+# Uploaded exam papers are stored outside Git.
+backend/media/
+.npm-cache/
+*.traineddata

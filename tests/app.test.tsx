@@ -35,7 +35,7 @@ test("outline tabs and bookmarks persist without granting mastery", () => {
   expect(screen.getByRole("button", { name: "Saved" })).toBeTruthy();
 });
 test("solution exposure survives reload and excludes later correct answer", () => {
-  location.hash = "#/practice";
+  location.hash = "#/practice/adaptive";
   const view = render(
     <AppProvider>
       <App />

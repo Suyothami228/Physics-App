@@ -66,20 +66,45 @@ export function Heading({
     </div>
   );
 }
-export function ChapterCard({ chapter: c }: { chapter: Chapter }) {
+export function ChapterCard({
+  chapter: c,
+  design,
+}: {
+  chapter: Chapter;
+  design?: "exam";
+}) {
   const { language, T, score } = useApp();
   return (
     <a
-      className="chapter-card"
-      style={{ "--chapter": c.color } as CSSProperties}
+      className={
+        design === "exam"
+          ? "exam-chapter learning-chapter-card"
+          : "chapter-card"
+      }
+      style={
+        { "--chapter": c.color, "--chapter-color": c.color } as CSSProperties
+      }
       href={link(c.id)}
     >
-      <div className="card-top">
+      <div className={design === "exam" ? "exam-card-top" : "card-top"}>
         <span className="chapter-number">{c.id}</span>
-        <span className="formula-mark">{c.formula}</span>
+        {design === "exam" ? (
+          <b aria-hidden="true">{c.formula}</b>
+        ) : (
+          <span className="formula-mark">{c.formula}</span>
+        )}
       </div>
       <h3>{c[language]}</h3>
       <p>{c.description[language]}</p>
+      {design === "exam" && (
+        <div className="exam-mini-types">
+          <span>
+            {c.lessons.some((l) => l.available)
+              ? T("Learning content available", "கற்றல் உள்ளடக்கம் உள்ளது")
+              : T("Chapter outline", "பாட வரைவு")}
+          </span>
+        </div>
+      )}
       <div className="card-footer">
         <span>
           {c.lessons.length} {T("subchapters", "உட்பாடங்கள்")}

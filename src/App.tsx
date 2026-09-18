@@ -1,3 +1,4 @@
+import { ExamPrep } from "./components/ExamPrep";
 import { useEffect, useRef, useState } from "react";
 import { parseRoute, link } from "./model";
 import { useApp } from "./state";
@@ -160,18 +161,12 @@ export default function App() {
           ) : route.type === "progress" ? (
             <Progress />
           ) : route.type === "practice" ? (
-            <>
-              <Heading
-                kicker="EXAM PREP"
-                title={T(
-                  "Make every question count",
-                  "ஒவ்வொரு வினாவிலிருந்தும் கற்றிடுங்கள்",
-                )}
-              />
-              <div className="lesson-ui">
-                <Practice />
-              </div>
-            </>
+            <ExamPrep
+              chapter={route.chapter}
+              kind={route.kind}
+              adaptive={route.adaptive}
+              section={route.section}
+            />
           ) : route.type === "lesson" ? (
             <>
               <a className="breadcrumb" href={link(route.chapter.id)}>

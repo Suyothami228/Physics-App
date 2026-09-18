@@ -1,3 +1,4 @@
+import "../styles/exam.css";
 import { useState, type CSSProperties } from "react";
 import { C, B, link, type Chapter, type Lesson } from "../model";
 import { useApp } from "../state";
@@ -191,29 +192,53 @@ export function Explorer() {
       ),
   );
   return (
-    <>
-      <Heading
-        kicker={T("THE CHAPTER EXPLORER", "பாடங்களை ஆராய்க")}
-        title={T("Follow your curiosity.", "உங்கள் ஆர்வத்தைத் தொடருங்கள்.")}
-        description={T(
-          `11 chapters. ${C.total} subchapter workspaces.`,
-          `11 பாடங்கள். ${C.total} உட்பாடப் பக்கங்கள்.`,
-        )}
-      />
-      <div className="explore-tools">
-        <label className="search-field">
-          <Icon name="search" />
-          <input
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            aria-label={T("Search chapters", "பாடங்களைத் தேடுக")}
-            placeholder={T(
-              "Find a chapter or concept…",
-              "பாடம் அல்லது கருத்தைத் தேடுக…",
+    <section className="exam chapter-explorer">
+      <div className="exam-hero">
+        <div>
+          <span className="exam-eyebrow">
+            {T("THE CHAPTER EXPLORER", "பாடங்களை ஆராய்க")}
+          </span>
+          <h1>
+            {T("Follow your curiosity.", "உங்கள் ஆர்வத்தைத் தொடருங்கள்.")}
+          </h1>
+          <p>
+            {T(
+              "Explore the ideas behind the equations. Choose a chapter and bring physics to life.",
+              "சமன்பாடுகளின் பின்னுள்ள கருத்துகளை ஆராயுங்கள். ஓர் அத்தியாயத்தைத் தெரிவுசெய்து பௌதிகவியலைக் கற்றிடுங்கள்.",
             )}
-          />
-        </label>
+          </p>
+          <div className="exam-chips">
+            <span>
+              {C.chapters.length} {T("chapters", "அத்தியாயங்கள்")}
+            </span>
+            <span>
+              {C.total} {T("subchapters", "உட்பாடங்கள்")}
+            </span>
+            <span>
+              {T("Learn · Explore · Practise", "புரிதல் · ஆராய்தல் · பயிற்சி")}
+            </span>
+          </div>
+        </div>
+        <div className="exam-orbit" aria-hidden="true">
+          <span>F = ma</span>
+          <b>✦</b>
+          <span>E = hν</span>
+        </div>
+      </div>
+      <div className="exam-toolbar">
+        <h2>{T("Find your chapter", "உங்கள் அத்தியாயத்தைத் தெரிவுசெய்க")}</h2>
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          aria-label={T("Search chapters", "பாடங்களைத் தேடுக")}
+          placeholder={T(
+            "Find a chapter or concept…",
+            "பாடம் அல்லது கருத்தைத் தேடுக…",
+          )}
+        />
+      </div>
+      <div className="explore-tools">
         <div className="filters">
           {[
             ["all", "All chapters", "அனைத்தும்"],
@@ -231,18 +256,12 @@ export function Explorer() {
           ))}
         </div>
       </div>
-      <p className="outline-note">
-        {T(
-          "Chapter order follows e-thaksalawa. Subtopics are draft groupings awaiting educator review. Measurement lessons and a projectile lab are available; other pages remain outlines.",
-          "பாட வரிசை e-thaksalawa அடிப்படையிலானது. உட்பாடத் தொகுப்புக்கு ஆசிரியர் மீளாய்வு தேவை. அளவீட்டுப் பாடங்களும் எறிய இயக்க ஆய்வகமும் உள்ளன; ஏனைய பக்கங்கள் வரைவுகள்.",
-        )}
-      </p>
       <p className="results-count" role="status">
         {matches.length} {T("chapters", "பாடங்கள்")}
       </p>
-      <div className="chapter-grid">
+      <div className="exam-chapters">
         {matches.map((c) => (
-          <ChapterCard key={c.id} chapter={c} />
+          <ChapterCard key={c.id} chapter={c} design="exam" />
         ))}
       </div>
       {!matches.length && (
@@ -256,7 +275,13 @@ export function Explorer() {
           </p>
         </div>
       )}
-    </>
+      <p className="outline-note">
+        {T(
+          "Chapter order follows e-thaksalawa. Subtopics are draft groupings awaiting educator review. Measurement lessons and a projectile lab are available; other pages remain outlines.",
+          "பாட வரிசை e-thaksalawa அடிப்படையிலானது. உட்பாடத் தொகுப்புக்கு ஆசிரியர் மீளாய்வு தேவை. அளவீட்டுப் பாடங்களும் எறிய இயக்க ஆய்வகமும் உள்ளன; ஏனைய பக்கங்கள் வரைவுகள்.",
+        )}
+      </p>
+    </section>
   );
 }
 export function ChapterPage({ chapter: c }: { chapter: Chapter }) {
@@ -495,7 +520,7 @@ export function Progress() {
             <p>
               {s.total}/18 · {s.total ? s.accuracy + "%" : "—"}
             </p>
-            <ButtonLink to="#/practice">
+            <ButtonLink to="#/practice/adaptive">
               {T("Continue practice", "பயிற்சியைத் தொடர்க")}
             </ButtonLink>
           </div>

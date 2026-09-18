@@ -12,3 +12,12 @@ urlpatterns = [
     path("api/attempts/", views.attempts),
     path("api/solutions/", views.solution),
 ]
+
+from learning import exam_views
+urlpatterns += [
+    path('media/<path:name>', exam_views.stored_document),
+    path('api/exam/catalog/', exam_views.catalog),
+    path('api/exam/questions/', exam_views.questions),
+    path('api/exam/solutions/<int:pk>/', exam_views.solution),
+    path('api/exam/files/<int:pk>/<str:kind>/', exam_views.document),
+]

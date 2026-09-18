@@ -72,7 +72,14 @@ export const C = curriculum as unknown as {
   getLesson: (id: string, slug: string) => Lesson | undefined;
 };
 export type Route =
-  | { type: "home" | "chapters" | "progress" | "practice" | "missing" }
+  | { type: "home" | "chapters" | "progress" | "missing" }
+  | {
+      type: "practice";
+      chapter?: Chapter;
+      kind?: "mcq" | "structured" | "essay";
+      adaptive?: boolean;
+      section?: string;
+    }
   | { type: "chapter"; chapter: Chapter }
   | { type: "lesson"; chapter: Chapter; lesson: Lesson; instrument?: string };
 export function parseRoute(hash: string): Route {
@@ -80,7 +87,22 @@ export function parseRoute(hash: string): Route {
   if (!p[0] || p[0] === "home") return { type: "home" };
   if (["chapters", "progress", "practice"].includes(p[0]) && p.length === 1)
     return { type: p[0] as "chapters" | "progress" | "practice" };
+  if (p[0] === "practice" && p[1] === "adaptive" && p.length === 2)
+    return { type: "practice", adaptive: true };
   const c = C.getChapter(p[1]);
+  if (p[0] === "practice" && c) {
+    if (p.length === 2) return { type: "practice", chapter: c };
+    if (
+      (p.length === 3 || (p.length === 4 && /^[a-z0-9_-]+$/.test(p[3]))) &&
+      ["mcq", "structured", "essay"].includes(p[2])
+    )
+      return {
+        type: "practice",
+        chapter: c,
+        kind: p[2] as "mcq" | "structured" | "essay",
+        section: p[3],
+      };
+  }
   if (p[0] === "chapter" && c) {
     if (p.length === 2) return { type: "chapter", chapter: c };
     const l = C.getLesson(c.id, p[2]);

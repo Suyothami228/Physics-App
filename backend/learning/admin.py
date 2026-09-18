@@ -96,3 +96,48 @@ class AttemptAdmin(admin.ModelAdmin):
     def has_add_permission(self,request): return False
     def has_change_permission(self,request,obj=None): return False
 
+
+from .models import ExamQuestion, ExamSection
+
+class ExamQuestionForm(forms.ModelForm):
+    confirm_review = forms.BooleanField(required=False, label='I checked the typed question, all choices and the answer key', help_text='Required each time you publish or update a published question. OCR is only a draft.')
+    class Meta:
+        model = ExamQuestion
+        fields = '__all__'
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['question_image'].label = 'Private source photo (admin only)'
+        self.fields['question_image'].help_text = 'Archive/reference only; not displayed to students. Use the extraction panel above to convert a photo to editable text.'
+        self.fields['paper'].help_text = 'Internal provenance / paper name. Not displayed on student question cards.'
+        self.fields['prompt_ta'].help_text = 'Actual question text. Preserve equations with Unicode powers (m², s⁻¹), fractions such as (a+b)/c, and line breaks.'
+        self.fields['options_ta'].help_text = 'Actual answer choices, one per line, in answer-key order. Do not enter Option 1 / Option 2 placeholders.'
+        self.fields['prompt_en'].help_text = 'Optional translation. Tamil is displayed when this is empty.'
+        self.fields['options_en'].help_text = 'Optional translation: same number and order of choices as Tamil.'
+    def clean(self):
+        data = super().clean()
+        if data.get('published') and not data.get('confirm_review'):
+            self.add_error('confirm_review', 'Review the typed question, choices and correct answer before publishing.')
+        return data
+
+@admin.register(ExamQuestion)
+class ExamQuestionAdmin(admin.ModelAdmin):
+    form = ExamQuestionForm
+    list_display = ['title_en','chapter','kind','year','number','published','updated_at']
+    list_filter = ['chapter','section','kind','year','published']
+    search_fields = ['title_en','title_ta','paper','number','prompt_en','prompt_ta']
+    readonly_fields = ['updated_at']
+    fieldsets = [
+        ('Organisation', {'fields': ['chapter','section','kind','year','paper','number','position']}),
+        ('Question', {'fields': ['title_en','title_ta','prompt_en','prompt_ta','question_image','question_pdf','source_url',('marks','minutes')]}),
+        ('MCQ options', {'fields': ['options_en','options_ta','correct_option','accepted_options']}),
+        ('Solution / marking scheme', {'fields': ['solution_en','solution_ta','marking_pdf','updated_at']}),
+        ('Review and publish', {'fields': ['confirm_review','published']}),
+    ]
+
+
+@admin.register(ExamSection)
+class ExamSectionAdmin(admin.ModelAdmin):
+    list_display = ['title_en','title_ta','chapter','slug']
+    list_filter = ['chapter']
+    search_fields = ['title_en','title_ta']
+    prepopulated_fields = {'slug': ('title_en',)}

@@ -1,0 +1,732 @@
+[
+  {
+    "number": 1,
+    "year": 1979,
+    "page": 1,
+    "answers": [
+      4
+    ],
+    "image": "q01.png"
+  },
+  {
+    "number": 2,
+    "year": 1979,
+    "page": 1,
+    "answers": [
+      5
+    ],
+    "image": "q02.png"
+  },
+  {
+    "number": 3,
+    "year": 1979,
+    "page": 1,
+    "answers": [
+      2
+    ],
+    "image": "q03.png"
+  },
+  {
+    "number": 4,
+    "year": 1980,
+    "page": 1,
+    "answers": [
+      2
+    ],
+    "image": "q04.png"
+  },
+  {
+    "number": 5,
+    "year": 1980,
+    "page": 1,
+    "answers": [
+      4
+    ],
+    "image": "q05.png"
+  },
+  {
+    "number": 6,
+    "year": 1980,
+    "page": 1,
+    "answers": [
+      4
+    ],
+    "image": "q06.png"
+  },
+  {
+    "number": 7,
+    "year": 1981,
+    "page": 1,
+    "answers": [
+      5
+    ],
+    "image": "q07.png"
+  },
+  {
+    "number": 8,
+    "year": 1981,
+    "page": 1,
+    "answers": [
+      3,
+      5
+    ],
+    "image": "q08.png"
+  },
+  {
+    "number": 9,
+    "year": 1981,
+    "page": 1,
+    "answers": [
+      2
+    ],
+    "image": "q09.png"
+  },
+  {
+    "number": 10,
+    "year": 1982,
+    "page": 1,
+    "answers": [
+      2
+    ],
+    "image": "q10.png"
+  },
+  {
+    "number": 11,
+    "year": 1982,
+    "page": 2,
+    "answers": [
+      5
+    ],
+    "image": "q11.png"
+  },
+  {
+    "number": 12,
+    "year": 1983,
+    "page": 2,
+    "answers": [
+      5
+    ],
+    "image": "q12.png"
+  },
+  {
+    "number": 13,
+    "year": 1983,
+    "page": 2,
+    "answers": [
+      2
+    ],
+    "image": "q13.png"
+  },
+  {
+    "number": 14,
+    "year": 1984,
+    "page": 2,
+    "answers": [
+      1
+    ],
+    "image": "q14.png"
+  },
+  {
+    "number": 15,
+    "year": 1985,
+    "page": 2,
+    "answers": [
+      4
+    ],
+    "image": "q15.png"
+  },
+  {
+    "number": 16,
+    "year": 1985,
+    "page": 2,
+    "answers": [
+      5
+    ],
+    "image": "q16.png"
+  },
+  {
+    "number": 17,
+    "year": 1986,
+    "page": 2,
+    "answers": [
+      3
+    ],
+    "image": "q17.png"
+  },
+  {
+    "number": 18,
+    "year": 1986,
+    "page": 2,
+    "answers": [
+      5
+    ],
+    "image": "q18.png"
+  },
+  {
+    "number": 19,
+    "year": 1987,
+    "page": 2,
+    "answers": [
+      5
+    ],
+    "image": "q19.png"
+  },
+  {
+    "number": 20,
+    "year": 1987,
+    "page": 2,
+    "answers": [
+      2
+    ],
+    "image": "q20.png"
+  },
+  {
+    "number": 21,
+    "year": 1988,
+    "page": 2,
+    "answers": [
+      2
+    ],
+    "image": "q21.png"
+  },
+  {
+    "number": 22,
+    "year": 1989,
+    "page": 2,
+    "answers": [
+      2
+    ],
+    "image": "q22.png"
+  },
+  {
+    "number": 23,
+    "year": 1989,
+    "page": 3,
+    "answers": [
+      3
+    ],
+    "image": "q23.png"
+  },
+  {
+    "number": 24,
+    "year": 1990,
+    "page": 3,
+    "answers": [
+      5
+    ],
+    "image": "q24.png"
+  },
+  {
+    "number": 25,
+    "year": 1991,
+    "page": 3,
+    "answers": [
+      1
+    ],
+    "image": "q25.png"
+  },
+  {
+    "number": 26,
+    "year": 1991,
+    "page": 3,
+    "answers": [
+      5
+    ],
+    "image": "q26.png"
+  },
+  {
+    "number": 27,
+    "year": 1991,
+    "page": 3,
+    "answers": [
+      4
+    ],
+    "image": "q27.png"
+  },
+  {
+    "number": 28,
+    "year": 1991,
+    "page": 3,
+    "answers": [
+      1
+    ],
+    "image": "q28.png"
+  },
+  {
+    "number": 29,
+    "year": 1991,
+    "page": 3,
+    "answers": [
+      4
+    ],
+    "image": "q29.png"
+  },
+  {
+    "number": 30,
+    "year": 1991,
+    "page": 3,
+    "answers": [
+      2
+    ],
+    "image": "q30.png"
+  },
+  {
+    "number": 31,
+    "year": 1992,
+    "page": 3,
+    "answers": [
+      2
+    ],
+    "image": "q31.png"
+  },
+  {
+    "number": 32,
+    "year": 1992,
+    "page": 3,
+    "answers": [
+      2
+    ],
+    "image": "q32.png"
+  },
+  {
+    "number": 33,
+    "year": 1992,
+    "page": 3,
+    "answers": [
+      1
+    ],
+    "image": "q33.png"
+  },
+  {
+    "number": 34,
+    "year": 1992,
+    "page": 3,
+    "answers": [
+      3
+    ],
+    "image": "q34.png"
+  },
+  {
+    "number": 35,
+    "year": 1992,
+    "page": 3,
+    "answers": [
+      3
+    ],
+    "image": "q35.png"
+  },
+  {
+    "number": 36,
+    "year": 1993,
+    "page": 3,
+    "answers": [
+      3
+    ],
+    "image": "q36.png"
+  },
+  {
+    "number": 37,
+    "year": 1993,
+    "page": 4,
+    "answers": [
+      1
+    ],
+    "image": "q37.png"
+  },
+  {
+    "number": 38,
+    "year": 1994,
+    "page": 4,
+    "answers": [
+      5
+    ],
+    "image": "q38.png"
+  },
+  {
+    "number": 39,
+    "year": 1995,
+    "page": 4,
+    "answers": [
+      4
+    ],
+    "image": "q39.png"
+  },
+  {
+    "number": 40,
+    "year": 1996,
+    "page": 4,
+    "answers": [
+      5
+    ],
+    "image": "q40.png"
+  },
+  {
+    "number": 41,
+    "year": 1996,
+    "page": 4,
+    "answers": [
+      4
+    ],
+    "image": "q41.png"
+  },
+  {
+    "number": 42,
+    "year": 1997,
+    "page": 4,
+    "answers": [
+      3
+    ],
+    "image": "q42.png"
+  },
+  {
+    "number": 43,
+    "year": 1997,
+    "page": 4,
+    "answers": [
+      5
+    ],
+    "image": "q43.png"
+  },
+  {
+    "number": 44,
+    "year": 1998,
+    "page": 4,
+    "answers": [
+      2
+    ],
+    "image": "q44.png"
+  },
+  {
+    "number": 45,
+    "year": 1998,
+    "page": 4,
+    "answers": [
+      4
+    ],
+    "image": "q45.png"
+  },
+  {
+    "number": 46,
+    "year": 1999,
+    "page": 4,
+    "answers": [
+      2
+    ],
+    "image": "q46.png"
+  },
+  {
+    "number": 47,
+    "year": 1999,
+    "page": 4,
+    "answers": [
+      2
+    ],
+    "image": "q47.png"
+  },
+  {
+    "number": 48,
+    "year": 2000,
+    "page": 4,
+    "answers": [
+      2
+    ],
+    "image": "q48.png"
+  },
+  {
+    "number": 49,
+    "year": 2000,
+    "page": 4,
+    "answers": [
+      4
+    ],
+    "image": "q49.png"
+  },
+  {
+    "number": 50,
+    "year": 2001,
+    "page": 4,
+    "answers": [
+      2
+    ],
+    "image": "q50.png"
+  },
+  {
+    "number": 51,
+    "year": 2001,
+    "page": 5,
+    "answers": [
+      3
+    ],
+    "image": "q51.png"
+  },
+  {
+    "number": 52,
+    "year": 2003,
+    "page": 5,
+    "answers": [
+      4
+    ],
+    "image": "q52.png"
+  },
+  {
+    "number": 53,
+    "year": 2003,
+    "page": 5,
+    "answers": [
+      5
+    ],
+    "image": "q53.png"
+  },
+  {
+    "number": 54,
+    "year": 2004,
+    "page": 5,
+    "answers": [
+      5
+    ],
+    "image": "q54.png"
+  },
+  {
+    "number": 55,
+    "year": 2005,
+    "page": 5,
+    "answers": [
+      2
+    ],
+    "image": "q55.png"
+  },
+  {
+    "number": 56,
+    "year": 2005,
+    "page": 5,
+    "answers": [
+      4
+    ],
+    "image": "q56.png"
+  },
+  {
+    "number": 57,
+    "year": 2006,
+    "page": 5,
+    "answers": [
+      5
+    ],
+    "image": "q57.png"
+  },
+  {
+    "number": 58,
+    "year": 2007,
+    "page": 5,
+    "answers": [
+      2
+    ],
+    "image": "q58.png"
+  },
+  {
+    "number": 59,
+    "year": 2007,
+    "page": 5,
+    "answers": [
+      3
+    ],
+    "image": "q59.png"
+  },
+  {
+    "number": 60,
+    "year": 2008,
+    "page": 5,
+    "answers": [
+      1
+    ],
+    "image": "q60.png"
+  },
+  {
+    "number": 61,
+    "year": 2009,
+    "page": 5,
+    "answers": [
+      1
+    ],
+    "image": "q61.png"
+  },
+  {
+    "number": 62,
+    "year": 2010,
+    "page": 5,
+    "answers": [
+      1
+    ],
+    "image": "q62.png"
+  },
+  {
+    "number": 63,
+    "year": 2010,
+    "page": 5,
+    "answers": [
+      4
+    ],
+    "image": "q63.png"
+  },
+  {
+    "number": 64,
+    "year": 2011,
+    "page": 5,
+    "answers": [
+      2
+    ],
+    "image": "q64.png"
+  },
+  {
+    "number": 65,
+    "year": 2010,
+    "page": 5,
+    "answers": [
+      3
+    ],
+    "image": "q65.png"
+  },
+  {
+    "number": 66,
+    "year": 2012,
+    "page": 5,
+    "answers": [
+      2
+    ],
+    "image": "q66.png"
+  },
+  {
+    "number": 67,
+    "year": 2012,
+    "page": 6,
+    "answers": [
+      3
+    ],
+    "image": "q67.png"
+  },
+  {
+    "number": 68,
+    "year": 2012,
+    "page": 6,
+    "answers": [
+      5
+    ],
+    "image": "q68.png"
+  },
+  {
+    "number": 69,
+    "year": 2014,
+    "page": 6,
+    "answers": [
+      5
+    ],
+    "image": "q69.png"
+  },
+  {
+    "number": 70,
+    "year": 2014,
+    "page": 6,
+    "answers": [
+      3
+    ],
+    "image": "q70.png"
+  },
+  {
+    "number": 71,
+    "year": 2015,
+    "page": 6,
+    "answers": [
+      4
+    ],
+    "image": "q71.png"
+  },
+  {
+    "number": 72,
+    "year": 2017,
+    "page": 6,
+    "answers": [
+      3
+    ],
+    "image": "q72.png"
+  },
+  {
+    "number": 73,
+    "year": 2018,
+    "page": 6,
+    "answers": [
+      3
+    ],
+    "image": "q73.png"
+  },
+  {
+    "number": 74,
+    "year": 2018,
+    "page": 6,
+    "answers": [
+      5
+    ],
+    "image": "q74.png"
+  },
+  {
+    "number": 75,
+    "year": 2019,
+    "page": 6,
+    "answers": [
+      2
+    ],
+    "image": "q75.png"
+  },
+  {
+    "number": 76,
+    "year": 2019,
+    "page": 6,
+    "answers": [
+      4
+    ],
+    "image": "q76.png"
+  },
+  {
+    "number": 77,
+    "year": 2020,
+    "page": 6,
+    "answers": [
+      5
+    ],
+    "image": "q77.png"
+  },
+  {
+    "number": 78,
+    "year": 2021,
+    "page": 6,
+    "answers": [
+      2
+    ],
+    "image": "q78.png"
+  },
+  {
+    "number": 79,
+    "year": 2023,
+    "page": 7,
+    "answers": [
+      1
+    ],
+    "image": "q79.png"
+  },
+  {
+    "number": 80,
+    "year": 2023,
+    "page": 7,
+    "answers": [
+      3
+    ],
+    "image": "q80.png"
+  },
+  {
+    "number": 81,
+    "year": 2024,
+    "page": 7,
+    "answers": [
+      5
+    ],
+    "image": "q81.png"
+  }
+]
