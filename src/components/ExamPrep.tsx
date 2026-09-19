@@ -2,6 +2,7 @@ import { useEffect, useState, type CSSProperties } from "react";
 import { C, type Chapter, type Bilingual } from "../model";
 import { useApp } from "../state";
 import { API_ENABLED } from "../api";
+import { readExamReview } from "../exam-review";
 import { Practice } from "./Practice";
 import "../styles/exam.css";
 
@@ -75,6 +76,7 @@ type Results = {
   page: number;
 };
 async function read<T>(url: string, signal?: AbortSignal): Promise<T> {
+  if (!API_ENABLED) return readExamReview<T>(url, signal);
   const response = await fetch(url, { signal, credentials: "same-origin" });
   if (!response.ok) throw new Error("Could not load exam papers");
   return response.json();
@@ -95,10 +97,9 @@ export function ExamPrep({
   const [admin, setAdmin] = useState<string | null>(null);
   const [error, setError] = useState(false);
   const [retry, setRetry] = useState(0);
-  const [loading, setLoading] = useState(API_ENABLED);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   useEffect(() => {
-    if (!API_ENABLED) return;
     const controller = new AbortController();
     setLoading(true);
     setError(false);
@@ -324,10 +325,9 @@ function QuestionLibrary({
     pages: 1,
     page: 1,
   });
-  const [loading, setLoading] = useState(API_ENABLED);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   useEffect(() => {
-    if (!API_ENABLED) return;
     const controller = new AbortController();
     setLoading(true);
     setError(false);
@@ -471,7 +471,7 @@ function QuestionLibrary({
             {T(
               API_ENABLED
                 ? "No published questions here yet. New papers will appear when your educator publishes them."
-                : "Past papers have not been bundled into this preview. The connected app displays questions published by your educator.",
+                : "No published questions in this review snapshot yet.",
               "இங்கே இன்னும் வினாக்கள் வெளியிடப்படவில்லை. ஆசிரியர் வெளியிடும் வினாக்கள் இணைக்கப்பட்ட செயலியில் தோன்றும்.",
             )}
           </p>
@@ -534,11 +534,12 @@ function QuestionCard({ q }: { q: PaperQuestion }) {
         aria-controls={`exam-q-${q.id}`}
         onClick={() => setOpen(!open)}
       >
-        <span className="exam-year">{T("Question", "வினா")} {q.number}</span>
+        <span className="exam-year">
+          {T("Question", "வினா")} {q.number}
+        </span>
         <span>
           <small>
-            {q.marks} {T("marks", "புள்ளிகள்")} · {q.minutes}{" "}
-            {T("min", "நிமி")}
+            {q.marks} {T("marks", "புள்ளிகள்")} · {q.minutes} {T("min", "நிமி")}
           </small>
         </span>
         <b>{open ? "−" : "+"}</b>
@@ -563,25 +564,43 @@ function QuestionCard({ q }: { q: PaperQuestion }) {
             <fieldset disabled={!!solution || busy}>
               <legend>{T("Choose your answer", "விடையைத் தெரிவுசெய்க")}</legend>
               {q.options[language].map((option, i) => {
-                const correct = !!solution && (solution.accepted_options?.length ? solution.accepted_options : [solution.correct_option]).includes(i + 1);
-                const wrong = !!solution && checked && choice === i + 1 && !correct;
+                const correct =
+                  !!solution &&
+                  (solution.accepted_options?.length
+                    ? solution.accepted_options
+                    : [solution.correct_option]
+                  ).includes(i + 1);
+                const wrong =
+                  !!solution && checked && choice === i + 1 && !correct;
                 return (
-                <label
-                  className={`exam-option ${choice === i + 1 ? "selected" : ""} ${correct ? "is-correct" : ""} ${wrong ? "is-wrong" : ""}`}
-                  key={i}
-                >
-                  <span className="exam-option-number">{i + 1}.</span>
-                  <input
-                    type="radio"
-                    name={`q-${q.id}`}
-                    checked={choice === i + 1}
-                    onChange={() => { setChoice(i + 1); void reveal(true); }}
-                  />
-                  <span className="exam-option-text">{option}</span>
-                  {correct && <small className="exam-option-result">✓ {T("Correct", "சரி")}</small>}
-                  {wrong && <small className="exam-option-result">✕ {T("Incorrect", "தவறு")}</small>}
-                </label>
-              );})}
+                  <label
+                    className={`exam-option ${choice === i + 1 ? "selected" : ""} ${correct ? "is-correct" : ""} ${wrong ? "is-wrong" : ""}`}
+                    key={i}
+                  >
+                    <span className="exam-option-number">{i + 1}.</span>
+                    <input
+                      type="radio"
+                      name={`q-${q.id}`}
+                      checked={choice === i + 1}
+                      onChange={() => {
+                        setChoice(i + 1);
+                        void reveal(true);
+                      }}
+                    />
+                    <span className="exam-option-text">{option}</span>
+                    {correct && (
+                      <small className="exam-option-result">
+                        ✓ {T("Correct", "சரி")}
+                      </small>
+                    )}
+                    {wrong && (
+                      <small className="exam-option-result">
+                        ✕ {T("Incorrect", "தவறு")}
+                      </small>
+                    )}
+                  </label>
+                );
+              })}
             </fieldset>
           ) : (
             <label>
@@ -640,9 +659,9 @@ function QuestionCard({ q }: { q: PaperQuestion }) {
               {solution.correct_option && (
                 <p>
                   {T("Correct option", "சரியான தெரிவு")}:{" "}
-                  {(
-                    solution.accepted_options || [solution.correct_option]
-                  ).map((n) => `${n}. ${q.options[language][n - 1] || ""}`).join(" / ")}
+                  {(solution.accepted_options || [solution.correct_option])
+                    .map((n) => `${n}. ${q.options[language][n - 1] || ""}`)
+                    .join(" / ")}
                 </p>
               )}
               <p className="exam-preserve">{solution.solution[language]}</p>
@@ -665,7 +684,9 @@ function QuestionCard({ q }: { q: PaperQuestion }) {
         </div>
       )}
       <footer className="exam-question-reference">
-        <small>{T("Past paper", "கடந்தகால வினா")} · {q.year}</small>
+        <small>
+          {T("Past paper", "கடந்தகால வினா")} · {q.year}
+        </small>
       </footer>
     </article>
   );
