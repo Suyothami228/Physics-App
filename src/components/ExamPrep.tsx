@@ -457,8 +457,16 @@ function QuestionLibrary({
         </>
       ) : data.questions.length ? (
         <div className="exam-question-list">
-          {data.questions.map((q) => (
-            <QuestionCard key={q.id} q={q} />
+          {data.questions.map((q, index) => (
+            <QuestionCard
+              key={q.id}
+              q={q}
+              displayNumber={
+                chapter.id === "01" && kind === "mcq"
+                  ? (data.page - 1) * 12 + index + 1
+                  : undefined
+              }
+            />
           ))}
         </div>
       ) : (
@@ -505,7 +513,13 @@ function QuestionLibrary({
     </section>
   );
 }
-function QuestionCard({ q }: { q: PaperQuestion }) {
+function QuestionCard({
+  q,
+  displayNumber,
+}: {
+  q: PaperQuestion;
+  displayNumber?: number;
+}) {
   const { T, language } = useApp();
   const [open, setOpen] = useState(false);
   const [choice, setChoice] = useState<number | null>(null);
@@ -535,7 +549,7 @@ function QuestionCard({ q }: { q: PaperQuestion }) {
         onClick={() => setOpen(!open)}
       >
         <span className="exam-year">
-          {T("Question", "வினா")} {q.number}
+          {T("Question", "வினா")} {displayNumber ?? q.number}
         </span>
         <span>
           <small>

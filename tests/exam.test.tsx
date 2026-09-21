@@ -98,7 +98,7 @@ test("chapter offers MCQ structured and essay cards", async () => {
 });
 test("MCQ solution loads only on request and does not grant mastery", async () => {
   mount({ chapter: C.chapters[0], kind: "mcq" });
-  fireEvent.click(await screen.findByRole("button", { name: /Question [38]/ }));
+  fireEvent.click(await screen.findByRole("button", { name: /Question 1/ }));
   expect(screen.queryByText("Test question")).toBeNull();
   expect(
     vi
@@ -112,7 +112,7 @@ test("MCQ solution loads only on request and does not grant mastery", async () =
 });
 test("year filter requests selected year and failures offer retry", async () => {
   mount({ chapter: C.chapters[0], kind: "mcq" });
-  await screen.findByRole("button", { name: /Question [38]/ });
+  await screen.findByRole("button", { name: /Question 1/ });
   vi.mocked(fetch).mockRejectedValueOnce(new Error("offline"));
   fireEvent.change(screen.getByRole("combobox"), { target: { value: "2024" } });
   await screen.findByRole("alert");
@@ -122,7 +122,7 @@ test("year filter requests selected year and failures offer retry", async () => 
       .mock.calls.some(([url]) => String(url).includes("year=2024")),
   ).toBe(true);
   fireEvent.click(screen.getByRole("button", { name: "Retry" }));
-  await screen.findByRole("button", { name: /Question [38]/ });
+  await screen.findByRole("button", { name: /Question 1/ });
 });
 
 test("subchapter cards preserve multiple accepted answers without scans", async () => {
@@ -194,10 +194,12 @@ test("subchapter cards preserve multiple accepted answers without scans", async 
     kind: "mcq",
     section: "measurements-dimensions",
   });
-  fireEvent.click(await screen.findByRole("button", { name: /Question [38]/ }));
+  fireEvent.click(await screen.findByRole("button", { name: /Question 1/ }));
   expect(screen.queryByRole("img")).toBeNull();
   expect(screen.queryByText(/Physics I/)).toBeNull();
-  expect(document.querySelector('.exam-question-reference')?.textContent).toContain('2024');
+  expect(
+    document.querySelector(".exam-question-reference")?.textContent,
+  ).toContain("2024");
   fireEvent.click(screen.getByRole("radio", { name: /N m² kg⁻²/ }));
   await screen.findByText("Correct — nicely reasoned!");
   expect(parseRoute("#/practice/01/mcq/measurements-dimensions")).toMatchObject(
@@ -206,13 +208,19 @@ test("subchapter cards preserve multiple accepted answers without scans", async 
 });
 
 test("wrong selection is red, accepted answer is green, and numbers precede selectors", async () => {
-  mount({chapter:C.chapters[0],kind:"mcq"});
-  fireEvent.click(await screen.findByRole("button",{name:/Question 3/}));
-  const wrong=screen.getByRole("radio",{name:/second/});
+  mount({ chapter: C.chapters[0], kind: "mcq" });
+  fireEvent.click(await screen.findByRole("button", { name: /Question 1/ }));
+  const wrong = screen.getByRole("radio", { name: /second/ });
   expect(wrong.previousElementSibling?.textContent).toBe("2.");
   fireEvent.click(wrong);
   await screen.findByText("Not quite — review the explanation");
   expect(wrong.closest("label")?.classList.contains("is-wrong")).toBe(true);
-  expect(screen.getByRole("radio",{name:/metre/}).closest("label")?.classList.contains("is-correct")).toBe(true);
+  expect(
+    screen
+      .getByRole("radio", { name: /metre/ })
+      .closest("label")
+      ?.classList.contains("is-correct"),
+  ).toBe(true);
   expect(screen.getByText("✕ Incorrect")).toBeTruthy();
 });
+
