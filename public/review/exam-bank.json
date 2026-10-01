@@ -5,6 +5,11 @@
         "chapter_id": "01",
         "kind": "mcq",
         "total": 79
+      },
+      {
+        "chapter_id": "01",
+        "kind": "structured",
+        "total": 4
       }
     ],
     "admin_url": null
@@ -19,6 +24,14 @@
             "ta": "அளவீடுகளும் பரிமாணங்களும்"
           },
           "total": 79
+        },
+        {
+          "slug": "measuring-instruments",
+          "title": {
+            "en": "Measuring Instruments",
+            "ta": "அளவிடும் கருவிகள்"
+          },
+          "total": 0
         }
       ],
       "questions": [
@@ -27,12 +40,13 @@
           "year": 2024,
           "number": "81",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 81 · Measurements and Dimensions",
             "ta": "வினா 81 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "அலகு இருக்கின்றபோதிலும் பரிமாணம் இல்லாத பௌதிகக் கணியம் யாது?",
+            "en": "Which physical quantity has a unit but no dimensions?",
             "ta": "அலகு இருக்கின்றபோதிலும் பரிமாணம் இல்லாத பௌதிகக் கணியம் யாது?"
           },
           "marks": 1,
@@ -41,11 +55,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "பிளாங்க் மாறிலி",
-              "பரப்பிழுவை",
-              "சக்தி",
-              "தொடர்பு வேகம்",
-              "ஒலிச் செறிவு மட்டம்"
+              "Planck's constant",
+              "Surface tension",
+              "Energy",
+              "Relative velocity",
+              "Sound intensity level"
             ],
             "ta": [
               "பிளாங்க் மாறிலி",
@@ -62,12 +76,13 @@
           "year": 2023,
           "number": "79",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 79 · Measurements and Dimensions",
             "ta": "வினா 79 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "இலத்திரன் வோல்ற்று (eV) ஆனது,",
+            "en": "An electronvolt (eV) is:",
             "ta": "இலத்திரன் வோல்ற்று (eV) ஆனது,"
           },
           "marks": 1,
@@ -76,11 +91,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "சக்தியின் ஓர் அலகாகும்.",
-              "வலுவின் ஓர் அலகாகும்.",
-              "ஏற்றத்தின் ஓர் அலகாகும்.",
-              "வோல்ற்றளவின் ஓர் அலகாகும்.",
-              "விசையின் ஓர் அலகாகும்."
+              "A unit of energy.",
+              "A unit of power.",
+              "A unit of charge.",
+              "A unit of voltage.",
+              "A unit of force."
             ],
             "ta": [
               "சக்தியின் ஓர் அலகாகும்.",
@@ -97,12 +112,13 @@
           "year": 2023,
           "number": "80",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 80 · Measurements and Dimensions",
             "ta": "வினா 80 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "உள்ளாரை a, நீளம் l உடைய கிடைக் குழாயினூடாக அமுக்க வித்தியாசம் Δp இன் கீழ் செல்லும், பிசுக்குமைக் குணகம் η உடைய திரவத்தின் கதி v = CaⁿΔp/(ηl) என எழுதலாம். C ஒரு பரிமாணமில்லா மாறிலி. n இன் பெறுமானம் யாது?",
+            "en": "The speed of a liquid of viscosity η flowing through a horizontal tube of internal radius a and length l under a pressure difference Δp may be written as v = CaⁿΔp/(ηl), where C is dimensionless. What is the value of n?",
             "ta": "உள்ளாரை a, நீளம் l உடைய கிடைக் குழாயினூடாக அமுக்க வித்தியாசம் Δp இன் கீழ் செல்லும், பிசுக்குமைக் குணகம் η உடைய திரவத்தின் கதி v = CaⁿΔp/(ηl) என எழுதலாம். C ஒரு பரிமாணமில்லா மாறிலி. n இன் பெறுமானம் யாது?"
           },
           "marks": 1,
@@ -132,12 +148,13 @@
           "year": 2021,
           "number": "78",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 78 · Measurements and Dimensions",
             "ta": "வினா 78 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் பௌதிகக் கணியச் சோடிகளில் எதில் ஒரே பரிமாணங்கள் உள்ளன?",
+            "en": "Which pair of physical quantities has the same dimensions?",
             "ta": "பின்வரும் பௌதிகக் கணியச் சோடிகளில் எதில் ஒரே பரிமாணங்கள் உள்ளன?"
           },
           "marks": 1,
@@ -146,11 +163,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "தகைப்பும் விகாரமும்",
-              "வேலையும் சக்தியும்",
-              "வேகமும் இடப்பெயர்ச்சியும்",
-              "நிறையும் திணிவும்",
-              "முறுக்கமும் கோண உந்தமும்"
+              "Stress and strain",
+              "Work and energy",
+              "Velocity and displacement",
+              "Weight and mass",
+              "Torque and angular momentum"
             ],
             "ta": [
               "தகைப்பும் விகாரமும்",
@@ -167,12 +184,13 @@
           "year": 2020,
           "number": "77",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 77 · Measurements and Dimensions",
             "ta": "வினா 77 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பிளாங்கின் மாறிலியின் பரிமாணங்கள் யாவை?",
+            "en": "What are the dimensions of Planck's constant?",
             "ta": "பிளாங்கின் மாறிலியின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -202,12 +220,13 @@
           "year": 2019,
           "number": "75",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 75 · Measurements and Dimensions",
             "ta": "வினா 75 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் அலகுகளில் எது ஓர் அடிப்படை அலகன்று?",
+            "en": "Which of the following is not a base unit?",
             "ta": "பின்வரும் அலகுகளில் எது ஓர் அடிப்படை அலகன்று?"
           },
           "marks": 1,
@@ -237,12 +256,13 @@
           "year": 2019,
           "number": "76",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 76 · Measurements and Dimensions",
             "ta": "வினா 76 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஈர்ப்பு மாறிலி G இன் பரிமாணங்களைத் தருவது எது?",
+            "en": "Which gives the dimensions of the gravitational constant G?",
             "ta": "ஈர்ப்பு மாறிலி G இன் பரிமாணங்களைத் தருவது எது?"
           },
           "marks": 1,
@@ -272,12 +292,13 @@
           "year": 2018,
           "number": "73",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 73 · Measurements and Dimensions",
             "ta": "வினா 73 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "அமுக்கத்தின் அலகு யாது?",
+            "en": "What is the unit of pressure?",
             "ta": "அமுக்கத்தின் அலகு யாது?"
           },
           "marks": 1,
@@ -307,12 +328,13 @@
           "year": 2018,
           "number": "74",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 74 · Measurements and Dimensions",
             "ta": "வினா 74 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "X, Y, Z ஆகியன வெவ்வேறு பரிமாணங்களைக் கொண்ட மூன்று பௌதிகக் கணியங்கள். P = AX + BY + CZ என வேறொரு கணியம் P ஐ ஆக்கலாம். பின்வரும் கோவைகளில் எது ஏனையவற்றிலிருந்து வேறுபட்ட பரிமாணங்களைக் கொண்டுள்ளது?",
+            "en": "X, Y and Z are three physical quantities with different dimensions. Another quantity P is formed as P = AX + BY + CZ. Which expression has dimensions different from those of the others?",
             "ta": "X, Y, Z ஆகியன வெவ்வேறு பரிமாணங்களைக் கொண்ட மூன்று பௌதிகக் கணியங்கள். P = AX + BY + CZ என வேறொரு கணியம் P ஐ ஆக்கலாம். பின்வரும் கோவைகளில் எது ஏனையவற்றிலிருந்து வேறுபட்ட பரிமாணங்களைக் கொண்டுள்ளது?"
           },
           "marks": 1,
@@ -342,12 +364,13 @@
           "year": 2017,
           "number": "72",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 72 · Measurements and Dimensions",
             "ta": "வினா 72 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "a, b, c, d ஆகியன வெவ்வேறு பரிமாணங்களைக் கொண்ட பௌதிகக் கணியங்கள்; k ஒரு பரிமாணமில்லா மாறிலி.\n(A) ka³ = b   (B) d = ac   (C) a = kb\nஇத்தொடர்புடைமைகளில்,",
+            "en": "The physical quantities a, b, c and d have different dimensions, and k is dimensionless.\n(A) ka³ = b   (B) d = ac   (C) a = kb\nWhich of these relations can be dimensionally valid?",
             "ta": "a, b, c, d ஆகியன வெவ்வேறு பரிமாணங்களைக் கொண்ட பௌதிகக் கணியங்கள்; k ஒரு பரிமாணமில்லா மாறிலி.\n(A) ka³ = b   (B) d = ac   (C) a = kb\nஇத்தொடர்புடைமைகளில்,"
           },
           "marks": 1,
@@ -356,11 +379,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "B மாத்திரம் பரிமாணமுறையாகச் செல்லுபடியானது.",
-              "C மாத்திரம் பரிமாணமுறையாகச் செல்லுபடியானது.",
-              "A, B ஆகியன மாத்திரம் பரிமாணமுறையாகச் செல்லுபடியானவை.",
-              "A, C ஆகியன மாத்திரம் பரிமாணமுறையாகச் செல்லுபடியானவை.",
-              "A, B, C ஆகிய எல்லாம் பரிமாணமுறையாகச் செல்லுபடியானவை."
+              "B only",
+              "C only",
+              "A and B only",
+              "A and C only",
+              "All of A, B and C"
             ],
             "ta": [
               "B மாத்திரம் பரிமாணமுறையாகச் செல்லுபடியானது.",
@@ -377,12 +400,13 @@
           "year": 2015,
           "number": "71",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 71 · Measurements and Dimensions",
             "ta": "வினா 71 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "இலத்திரன் வோல்ற்று (eV) என்பது,",
+            "en": "An electronvolt (eV) is:",
             "ta": "இலத்திரன் வோல்ற்று (eV) என்பது,"
           },
           "marks": 1,
@@ -391,11 +415,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "ஏற்றத்தின் அலகு.",
-              "அமுக்கத்தின் அலகு.",
-              "கொள்ளளவின் அலகு.",
-              "சக்தியின் அலகு.",
-              "மின்புலச் செறிவின் அலகு."
+              "A unit of charge.",
+              "A unit of pressure.",
+              "A unit of capacitance.",
+              "A unit of energy.",
+              "A unit of electric field intensity."
             ],
             "ta": [
               "ஏற்றத்தின் அலகு.",
@@ -412,12 +436,13 @@
           "year": 2014,
           "number": "69",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 69 · Measurements and Dimensions",
             "ta": "வினா 69 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "அலகுகளைக் கருத்திற்கொள்ளும்போது பின்வரும் கணியங்களில் எது ஏனையவற்றிலிருந்து வேறுபடுகின்றது?",
+            "en": "Considering their units, which of the following quantities differs from the others?",
             "ta": "அலகுகளைக் கருத்திற்கொள்ளும்போது பின்வரும் கணியங்களில் எது ஏனையவற்றிலிருந்து வேறுபடுகின்றது?"
           },
           "marks": 1,
@@ -426,11 +451,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "சுருளின் நிலைக்காட்டுச் சக்தி",
-              "பொறி அமுக்கச் சக்தி",
-              "அகச் சக்தி",
-              "வேலை",
-              "வலு"
+              "Elastic potential energy of a spring",
+              "Mechanical compression energy",
+              "Internal energy",
+              "Work",
+              "Power"
             ],
             "ta": [
               "சுருளின் நிலைக்காட்டுச் சக்தி",
@@ -447,12 +472,13 @@
           "year": 2014,
           "number": "70",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 70 · Measurements and Dimensions",
             "ta": "வினா 70 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் கணியங்களில் பரிமாணமில்லாதவை எவை?\n(A) தொடர்பு வேகம்   (B) தொடர்பு அடர்த்தி   (C) தொடர்பு ஈர்ப்புத்தன்",
+            "en": "Which of the following quantities are dimensionless?\n(A) Relative velocity   (B) Relative density   (C) Specific gravity",
             "ta": "பின்வரும் கணியங்களில் பரிமாணமில்லாதவை எவை?\n(A) தொடர்பு வேகம்   (B) தொடர்பு அடர்த்தி   (C) தொடர்பு ஈர்ப்புத்தன்"
           },
           "marks": 1,
@@ -461,11 +487,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "A மாத்திரம்",
-              "A, B ஆகியன மாத்திரம்",
-              "B, C ஆகியன மாத்திரம்",
-              "A, C ஆகியன மாத்திரம்",
-              "A, B, C ஆகிய எல்லாம்"
+              "A only",
+              "A and B only",
+              "B and C only",
+              "A and C only",
+              "All of A, B and C"
             ],
             "ta": [
               "A மாத்திரம்",
@@ -482,12 +508,13 @@
           "year": 2012,
           "number": "66",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 66 · Measurements and Dimensions",
             "ta": "வினா 66 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் எது SI தொகுதியில் ஓர் அடிப்படை அலகாக வரையறுக்கப்படவில்லை?",
+            "en": "Which of the following is not defined as a base unit in the SI system?",
             "ta": "பின்வரும் எது SI தொகுதியில் ஓர் அடிப்படை அலகாக வரையறுக்கப்படவில்லை?"
           },
           "marks": 1,
@@ -517,12 +544,13 @@
           "year": 2012,
           "number": "67",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 67 · Measurements and Dimensions",
             "ta": "வினா 67 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பரிமாணப் பகுப்பினின்று பெறக்கூடிய தகவல் பற்றிய கூற்றுக்களைக் கருதுக.\n(A) ஒரு பௌதிகச் சமன்பாட்டில் தோன்றக்கூடிய விகிதசமத்துவ மாறிலியின் எண் பெறுமானத்தைத் துணியலாம்.\n(B) விகிதசமத்துவ மாறிலியின் எண் குறியைத் துணியலாம்.\n(C) விகிதசமத்துவ மாறிலியின் அலகுகளைத் துணியலாம்.\nஇவற்றில்,",
+            "en": "Consider the following statements about information obtainable from dimensional analysis.\n(A) It can determine the numerical value of a constant of proportionality in a physical equation.\n(B) It can determine the sign of a constant of proportionality.\n(C) It can determine the units of a constant of proportionality.\nWhich statements are true?",
             "ta": "பரிமாணப் பகுப்பினின்று பெறக்கூடிய தகவல் பற்றிய கூற்றுக்களைக் கருதுக.\n(A) ஒரு பௌதிகச் சமன்பாட்டில் தோன்றக்கூடிய விகிதசமத்துவ மாறிலியின் எண் பெறுமானத்தைத் துணியலாம்.\n(B) விகிதசமத்துவ மாறிலியின் எண் குறியைத் துணியலாம்.\n(C) விகிதசமத்துவ மாறிலியின் அலகுகளைத் துணியலாம்.\nஇவற்றில்,"
           },
           "marks": 1,
@@ -531,11 +559,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "A மாத்திரம் உண்மையானது.",
-              "B மாத்திரம் உண்மையானது.",
-              "C மாத்திரம் உண்மையானது.",
-              "B, C ஆகியன மாத்திரம் உண்மையானவை.",
-              "A, B, C ஆகிய எல்லாம் உண்மையானவை."
+              "A only",
+              "B only",
+              "C only",
+              "B and C only",
+              "All of A, B and C"
             ],
             "ta": [
               "A மாத்திரம் உண்மையானது.",
@@ -552,12 +580,13 @@
           "year": 2011,
           "number": "64",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 64 · Measurements and Dimensions",
             "ta": "வினா 64 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "வெப்பக் கடத்தாறலின் அலகு யாது?",
+            "en": "What is the unit of thermal conductivity?",
             "ta": "வெப்பக் கடத்தாறலின் அலகு யாது?"
           },
           "marks": 1,
@@ -587,12 +616,13 @@
           "year": 2010,
           "number": "62",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 62 · Measurements and Dimensions",
             "ta": "வினா 62 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "சடத்துவத் திருப்பத்தின் பரிமாணங்கள் யாவை?",
+            "en": "What are the dimensions of moment of inertia?",
             "ta": "சடத்துவத் திருப்பத்தின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -622,12 +652,13 @@
           "year": 2010,
           "number": "63",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 63 · Measurements and Dimensions",
             "ta": "வினா 63 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "வெப்பக் கணியத்தின் SI அலகு யாது?",
+            "en": "What is the SI unit of quantity of heat?",
             "ta": "வெப்பக் கணியத்தின் SI அலகு யாது?"
           },
           "marks": 1,
@@ -657,12 +688,13 @@
           "year": 2010,
           "number": "65",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 65 · Measurements and Dimensions",
             "ta": "வினா 65 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஈர்ப்பு மாறிலியின் பரிமாணங்கள் யாவை?",
+            "en": "What are the dimensions of the gravitational constant?",
             "ta": "ஈர்ப்பு மாறிலியின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -692,12 +724,13 @@
           "year": 2009,
           "number": "61",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 61 · Measurements and Dimensions",
             "ta": "வினா 61 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "மீடிறன் f உடைய போட்டனின் சக்தி E = hf ஆகும். h இன் பரிமாணங்கள் யாவை?",
+            "en": "The energy of a photon of frequency f is E = hf. What are the dimensions of h?",
             "ta": "மீடிறன் f உடைய போட்டனின் சக்தி E = hf ஆகும். h இன் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -727,12 +760,13 @@
           "year": 2008,
           "number": "60",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 60 · Measurements and Dimensions",
             "ta": "வினா 60 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "கிலோவாற்று-மணித்தியாலத்தின் பரிமாணங்கள் யாவை?",
+            "en": "What are the dimensions of a kilowatt-hour?",
             "ta": "கிலோவாற்று-மணித்தியாலத்தின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -762,12 +796,13 @@
           "year": 2007,
           "number": "58",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 58 · Measurements and Dimensions",
             "ta": "வினா 58 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பரப்பிழுவையின் SI அலகு யாது?",
+            "en": "What is the SI unit of surface tension?",
             "ta": "பரப்பிழுவையின் SI அலகு யாது?"
           },
           "marks": 1,
@@ -797,12 +832,13 @@
           "year": 2007,
           "number": "59",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 59 · Measurements and Dimensions",
             "ta": "வினா 59 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஒரு பௌதிகக் கணியத்தின் பரிமாணங்களை L³ இனால் பெருக்கும்போது வேலையின் பரிமாணங்கள் கிடைக்கும். அப்பௌதிகக் கணியம் யாது?",
+            "en": "Multiplying the dimensions of a physical quantity by L³ gives the dimensions of work. What is this quantity?",
             "ta": "ஒரு பௌதிகக் கணியத்தின் பரிமாணங்களை L³ இனால் பெருக்கும்போது வேலையின் பரிமாணங்கள் கிடைக்கும். அப்பௌதிகக் கணியம் யாது?"
           },
           "marks": 1,
@@ -811,11 +847,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "விசை",
-              "உந்தம்",
-              "அமுக்கம்",
-              "திணிவு",
-              "வேகம்"
+              "Force",
+              "Momentum",
+              "Pressure",
+              "Mass",
+              "Velocity"
             ],
             "ta": [
               "விசை",
@@ -832,12 +868,13 @@
           "year": 2006,
           "number": "57",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 57 · Measurements and Dimensions",
             "ta": "வினா 57 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வருவனவற்றில் எது ஓர் SI அலகு அன்று?",
+            "en": "Which of the following is not an SI unit?",
             "ta": "பின்வருவனவற்றில் எது ஓர் SI அலகு அன்று?"
           },
           "marks": 1,
@@ -867,12 +904,13 @@
           "year": 2005,
           "number": "55",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 55 · Measurements and Dimensions",
             "ta": "வினா 55 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஒரு கதிர்த்தொழிற்பாட்டு மாதிரியின் தேய்வு வீதம் A, நேரம் t உடன் A = A₀ exp(−λt) என மாறுகின்றது. λ இன் பரிமாணங்கள் யாவை?",
+            "en": "The decay rate A of a radioactive sample varies with time t as A = A₀ exp(−λt). What are the dimensions of λ?",
             "ta": "ஒரு கதிர்த்தொழிற்பாட்டு மாதிரியின் தேய்வு வீதம் A, நேரம் t உடன் A = A₀ exp(−λt) என மாறுகின்றது. λ இன் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -902,12 +940,13 @@
           "year": 2005,
           "number": "56",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 56 · Measurements and Dimensions",
             "ta": "வினா 56 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "C = √(k/ρ) என்ற சமன்பாட்டில் C கதியும் ρ அடர்த்தியும் ஆகும். k இன் அலகுகள் யாவை?",
+            "en": "In C = √(k/ρ), C is speed and ρ is density. What are the units of k?",
             "ta": "C = √(k/ρ) என்ற சமன்பாட்டில் C கதியும் ρ அடர்த்தியும் ஆகும். k இன் அலகுகள் யாவை?"
           },
           "marks": 1,
@@ -937,12 +976,13 @@
           "year": 2004,
           "number": "54",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 54 · Measurements and Dimensions",
             "ta": "வினா 54 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "C log(I/I₀ + 1) = qV/(kT) என்ற கோவையில் I, V என்பன முறையே மின்னோட்டம், வோல்ற்றளவு ஆகியவற்றைக் குறிக்கின்றன. C ஒரு பரிமாணமற்ற மாறிலி. kT/q என்னும் உறுப்பிற்கு,",
+            "en": "In C log(I/I₀ + 1) = qV/(kT), I and V represent electric current and voltage, respectively, and C is dimensionless. The term kT/q:",
             "ta": "C log(I/I₀ + 1) = qV/(kT) என்ற கோவையில் I, V என்பன முறையே மின்னோட்டம், வோல்ற்றளவு ஆகியவற்றைக் குறிக்கின்றன. C ஒரு பரிமாணமற்ற மாறிலி. kT/q என்னும் உறுப்பிற்கு,"
           },
           "marks": 1,
@@ -951,11 +991,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "பரிமாணங்கள் இல்லை.",
-              "தடையின் பரிமாணங்கள் உண்டு.",
-              "V⁻¹ இன் பரிமாணங்கள் உண்டு.",
-              "I இன் பரிமாணங்கள் உண்டு.",
-              "V இன் பரிமாணங்கள் உண்டு."
+              "Is dimensionless.",
+              "Has the dimensions of resistance.",
+              "Has the dimensions of V⁻¹.",
+              "Has the dimensions of I.",
+              "Has the dimensions of V."
             ],
             "ta": [
               "பரிமாணங்கள் இல்லை.",
@@ -972,12 +1012,13 @@
           "year": 2003,
           "number": "52",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 52 · Measurements and Dimensions",
             "ta": "வினா 52 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "மீடிறனின் பரிமாணங்கள் யாவை?",
+            "en": "What are the dimensions of frequency?",
             "ta": "மீடிறனின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -1007,12 +1048,13 @@
           "year": 2003,
           "number": "53",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 53 · Measurements and Dimensions",
             "ta": "வினா 53 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஒலி அலையின் செறிவு மட்டத்தின் அலகு யாது?",
+            "en": "What is the unit of the intensity level of a sound wave?",
             "ta": "ஒலி அலையின் செறிவு மட்டத்தின் அலகு யாது?"
           },
           "marks": 1,
@@ -1042,12 +1084,13 @@
           "year": 2001,
           "number": "50",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 50 · Measurements and Dimensions",
             "ta": "வினா 50 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "eV (இலத்திரன்-வோல்ற்று) என்பது,",
+            "en": "The eV (electronvolt) is:",
             "ta": "eV (இலத்திரன்-வோல்ற்று) என்பது,"
           },
           "marks": 1,
@@ -1056,11 +1099,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "வலுவின் அலகு.",
-              "சக்தியின் அலகு.",
-              "மின்னேற்றத்தின் அலகு.",
-              "வோல்ற்றளவின் அலகு.",
-              "அமுக்க வித்தியாசத்தின் அலகு."
+              "A unit of power.",
+              "A unit of energy.",
+              "A unit of electric charge.",
+              "A unit of voltage.",
+              "A unit of pressure difference."
             ],
             "ta": [
               "வலுவின் அலகு.",
@@ -1077,12 +1120,13 @@
           "year": 2001,
           "number": "51",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 51 · Measurements and Dimensions",
             "ta": "வினா 51 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "vⁱ = kaʲs என்ற சமன்பாட்டில் v வேகத்தையும் a ஆர்முடுகலையும் s இடப்பெயர்ச்சியையும் குறிக்கின்றன. k ஒரு பரிமாணமற்ற மாறிலி; i, j நிலையான்கள். சமன்பாடு பரிமாணமுறைப்படி இசைவாக இருப்பதற்கு i, j இன் பெறுமானங்கள் முறையே யாவை?",
+            "en": "In vⁱ = kaʲs, v represents velocity, a acceleration and s displacement. The constant k is dimensionless, and i and j are constants. What values of i and j, respectively, make the equation dimensionally consistent?",
             "ta": "vⁱ = kaʲs என்ற சமன்பாட்டில் v வேகத்தையும் a ஆர்முடுகலையும் s இடப்பெயர்ச்சியையும் குறிக்கின்றன. k ஒரு பரிமாணமற்ற மாறிலி; i, j நிலையான்கள். சமன்பாடு பரிமாணமுறைப்படி இசைவாக இருப்பதற்கு i, j இன் பெறுமானங்கள் முறையே யாவை?"
           },
           "marks": 1,
@@ -1112,12 +1156,13 @@
           "year": 2000,
           "number": "48",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 48 · Measurements and Dimensions",
             "ta": "வினா 48 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் அலகுகளில் ஒன்றினால் அளக்கப்படும் பௌதிகக் கணியம் மற்றையவற்றினால் அளக்கப்படும் கணியத்திலிருந்து வேறுபடுகின்றது. அவ்வலகு யாது?",
+            "en": "One of the following units measures a physical quantity different from that measured by the others. Which unit is it?",
             "ta": "பின்வரும் அலகுகளில் ஒன்றினால் அளக்கப்படும் பௌதிகக் கணியம் மற்றையவற்றினால் அளக்கப்படும் கணியத்திலிருந்து வேறுபடுகின்றது. அவ்வலகு யாது?"
           },
           "marks": 1,
@@ -1129,7 +1174,7 @@
               "eV",
               "J s⁻¹",
               "W s",
-              "கிலோவாற்று மணித்தியாலம்",
+              "Kilowatt-hour",
               "MeV"
             ],
             "ta": [
@@ -1147,12 +1192,13 @@
           "year": 2000,
           "number": "49",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 49 · Measurements and Dimensions",
             "ta": "வினா 49 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "வலுவின் பரிமாணங்கள் யாவை?",
+            "en": "What are the dimensions of power?",
             "ta": "வலுவின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -1182,12 +1228,13 @@
           "year": 1999,
           "number": "46",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 46 · Measurements and Dimensions",
             "ta": "வினா 46 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பிளாங்கின் மாறிலி h இன் அலகு யாது?",
+            "en": "What is the unit of Planck's constant h?",
             "ta": "பிளாங்கின் மாறிலி h இன் அலகு யாது?"
           },
           "marks": 1,
@@ -1217,12 +1264,13 @@
           "year": 1999,
           "number": "47",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 47 · Measurements and Dimensions",
             "ta": "வினா 47 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "கோண வேகம் கொண்டிருக்கும் பரிமாணம் யாது?",
+            "en": "What are the dimensions of angular velocity?",
             "ta": "கோண வேகம் கொண்டிருக்கும் பரிமாணம் யாது?"
           },
           "marks": 1,
@@ -1252,12 +1300,13 @@
           "year": 1998,
           "number": "44",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 44 · Measurements and Dimensions",
             "ta": "வினா 44 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "“கோண ஆர்முடுகல் × நேரம்” என்ற பெருக்கமானது எதன் பரிமாணத்தைக் கொண்டிருக்கும்?",
+            "en": "The product “angular acceleration × time” has the dimensions of:",
             "ta": "“கோண ஆர்முடுகல் × நேரம்” என்ற பெருக்கமானது எதன் பரிமாணத்தைக் கொண்டிருக்கும்?"
           },
           "marks": 1,
@@ -1266,11 +1315,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "கோணப் பெயர்ச்சி",
-              "கோண வேகம்",
-              "முறுக்கம்",
-              "சடத்துவத் திருப்பம்",
-              "வேலை"
+              "Angular displacement",
+              "Angular velocity",
+              "Torque",
+              "Moment of inertia",
+              "Work"
             ],
             "ta": [
               "கோணப் பெயர்ச்சி",
@@ -1287,12 +1336,13 @@
           "year": 1998,
           "number": "45",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 45 · Measurements and Dimensions",
             "ta": "வினா 45 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "அமுக்கத்தின் SI அலகு யாது?",
+            "en": "What is the SI unit of pressure?",
             "ta": "அமுக்கத்தின் SI அலகு யாது?"
           },
           "marks": 1,
@@ -1301,11 +1351,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "ஜூல்",
-              "நியூற்றன்",
-              "வாற்று",
-              "பஸ்கால்",
-              "ஹேற்ஸ்"
+              "Joule",
+              "Newton",
+              "Watt",
+              "Pascal",
+              "Hertz"
             ],
             "ta": [
               "ஜூல்",
@@ -1322,12 +1372,13 @@
           "year": 1997,
           "number": "42",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 42 · Measurements and Dimensions",
             "ta": "வினா 42 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வருவனவற்றுள் எது திருப்பத்தின் அலகாகும்?",
+            "en": "Which of the following is a unit of the moment of a force?",
             "ta": "பின்வருவனவற்றுள் எது திருப்பத்தின் அலகாகும்?"
           },
           "marks": 1,
@@ -1357,12 +1408,13 @@
           "year": 1997,
           "number": "43",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 43 · Measurements and Dimensions",
             "ta": "வினா 43 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "F = c₁a + c₂v/t என்ற சமன்பாட்டில் F, a, v, t என்பன முறையே விசை, ஆர்முடுகல், வேகம், நேரம் ஆகியவற்றைக் குறிக்கின்றன. c₁/c₂ என்ற விகிதம்,",
+            "en": "In F = c₁a + c₂v/t, F, a, v and t represent force, acceleration, velocity and time, respectively. The ratio c₁/c₂:",
             "ta": "F = c₁a + c₂v/t என்ற சமன்பாட்டில் F, a, v, t என்பன முறையே விசை, ஆர்முடுகல், வேகம், நேரம் ஆகியவற்றைக் குறிக்கின்றன. c₁/c₂ என்ற விகிதம்,"
           },
           "marks": 1,
@@ -1371,11 +1423,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "ஆர்முடுகலின் பரிமாணங்களைக் கொண்டுள்ளது.",
-              "திணிவின் பரிமாணங்களைக் கொண்டுள்ளது.",
-              "வேலையின் பரிமாணங்களைக் கொண்டுள்ளது.",
-              "வேகத்தின் பரிமாணங்களைக் கொண்டுள்ளது.",
-              "பரிமாணமற்றது."
+              "Has the dimensions of acceleration.",
+              "Has the dimensions of mass.",
+              "Has the dimensions of work.",
+              "Has the dimensions of velocity.",
+              "Is dimensionless."
             ],
             "ta": [
               "ஆர்முடுகலின் பரிமாணங்களைக் கொண்டுள்ளது.",
@@ -1392,12 +1444,13 @@
           "year": 1996,
           "number": "40",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 40 · Measurements and Dimensions",
             "ta": "வினா 40 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "அம்பியர்-மணி என்பது,",
+            "en": "An ampere-hour is:",
             "ta": "அம்பியர்-மணி என்பது,"
           },
           "marks": 1,
@@ -1406,11 +1459,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "ஓட்டத்தின் அலகு.",
-              "வலுவின் அலகு.",
-              "சக்தியின் அலகு.",
-              "நேரத்தின் அலகு.",
-              "ஏற்றக் கணியத்தின் அலகு."
+              "A unit of current.",
+              "A unit of power.",
+              "A unit of energy.",
+              "A unit of time.",
+              "A unit of electric charge."
             ],
             "ta": [
               "ஓட்டத்தின் அலகு.",
@@ -1427,12 +1480,13 @@
           "year": 1996,
           "number": "41",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 41 · Measurements and Dimensions",
             "ta": "வினா 41 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பௌதிகவியலில் பயன்படுத்தப்படும் (A) மின்னேற்றம், (B) திணிவு, (C) வெப்பநிலை ஆகியவற்றைக் கருதுக. இவற்றில் SI தொகுதியின் அடிப்படைக் கணியங்கள் எவை?",
+            "en": "Consider (A) electric charge, (B) mass and (C) temperature. Which are base quantities in the SI system?",
             "ta": "பௌதிகவியலில் பயன்படுத்தப்படும் (A) மின்னேற்றம், (B) திணிவு, (C) வெப்பநிலை ஆகியவற்றைக் கருதுக. இவற்றில் SI தொகுதியின் அடிப்படைக் கணியங்கள் எவை?"
           },
           "marks": 1,
@@ -1441,11 +1495,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "B மாத்திரம்",
-              "A யும் B யும் மாத்திரம்",
-              "A யும் C யும் மாத்திரம்",
-              "B யும் C யும் மாத்திரம்",
-              "A, B, C ஆகிய எல்லாம்"
+              "B only",
+              "A and B only",
+              "A and C only",
+              "B and C only",
+              "All of A, B and C"
             ],
             "ta": [
               "B மாத்திரம்",
@@ -1462,12 +1516,13 @@
           "year": 1995,
           "number": "39",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 39 · Measurements and Dimensions",
             "ta": "வினா 39 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் அலகுச் சேர்வைகளில் எது டெஸ்லாவுக்குச் சமவலுவானது?",
+            "en": "Which combination of units is equivalent to the tesla?",
             "ta": "பின்வரும் அலகுச் சேர்வைகளில் எது டெஸ்லாவுக்குச் சமவலுவானது?"
           },
           "marks": 1,
@@ -1497,12 +1552,13 @@
           "year": 1994,
           "number": "38",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 38 · Measurements and Dimensions",
             "ta": "வினா 38 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் கணியங்களில் எது அலகைக் கொண்டது?",
+            "en": "Which of the following quantities has a unit?",
             "ta": "பின்வரும் கணியங்களில் எது அலகைக் கொண்டது?"
           },
           "marks": 1,
@@ -1511,11 +1567,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "உராய்வுக் குணகம்",
-              "விகாரம்",
-              "சார் ஈர்ப்புத்தன்",
-              "முறிவுச்சுட்டி",
-              "விறைத்திறன்"
+              "Coefficient of friction",
+              "Strain",
+              "Specific gravity",
+              "Refractive index",
+              "Stiffness"
             ],
             "ta": [
               "உராய்வுக் குணகம்",
@@ -1532,12 +1588,13 @@
           "year": 1993,
           "number": "36",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 36 · Measurements and Dimensions",
             "ta": "வினா 36 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "நேரம் t இல் வாகனமொன்று நகர்ந்த தூரம் S = At²(1 + ½Bt) ஆகும். A, B என்பவற்றின் பரிமாணங்கள் முறையே யாவை?",
+            "en": "The distance travelled by a vehicle in time t is S = At²(1 + ½Bt). What are the dimensions of A and B, respectively?",
             "ta": "நேரம் t இல் வாகனமொன்று நகர்ந்த தூரம் S = At²(1 + ½Bt) ஆகும். A, B என்பவற்றின் பரிமாணங்கள் முறையே யாவை?"
           },
           "marks": 1,
@@ -1567,12 +1624,13 @@
           "year": 1993,
           "number": "37",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 37 · Measurements and Dimensions",
             "ta": "வினா 37 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "V² = gA/(2π) + 2πγ/(ρA) என்ற சமன்பாட்டில் V வேகம், g ஈர்ப்பினாலான ஆர்முடுகல், γ பரப்பிழுவை, ρ அடர்த்தி. A இன் பரிமாணங்கள் யாவை?",
+            "en": "In V² = gA/(2π) + 2πγ/(ρA), V is velocity, g is gravitational acceleration, γ is surface tension and ρ is density. What are the dimensions of A?",
             "ta": "V² = gA/(2π) + 2πγ/(ρA) என்ற சமன்பாட்டில் V வேகம், g ஈர்ப்பினாலான ஆர்முடுகல், γ பரப்பிழுவை, ρ அடர்த்தி. A இன் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -1602,12 +1660,13 @@
           "year": 1992,
           "number": "31",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 31 · Measurements and Dimensions",
             "ta": "வினா 31 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பிசுக்குமைக் குணகத்தின் SI அலகு யாது?",
+            "en": "What is the SI unit of the coefficient of viscosity?",
             "ta": "பிசுக்குமைக் குணகத்தின் SI அலகு யாது?"
           },
           "marks": 1,
@@ -1637,12 +1696,13 @@
           "year": 1992,
           "number": "32",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 32 · Measurements and Dimensions",
             "ta": "வினா 32 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "கிலோவாற்றுமணி பின்வருவனவற்றுள் எதன் அலகாகும்?",
+            "en": "A kilowatt-hour is a unit of which of the following?",
             "ta": "கிலோவாற்றுமணி பின்வருவனவற்றுள் எதன் அலகாகும்?"
           },
           "marks": 1,
@@ -1651,11 +1711,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "வலு",
-              "சக்தி",
-              "மின்னோட்டம்",
-              "வோல்ற்றளவு",
-              "நேரம்"
+              "Power",
+              "Energy",
+              "Electric current",
+              "Voltage",
+              "Time"
             ],
             "ta": [
               "வலு",
@@ -1672,12 +1732,13 @@
           "year": 1992,
           "number": "33",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 33 · Measurements and Dimensions",
             "ta": "வினா 33 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "அம்பியர்-மணித்தியாலம் என்னும் அலகினால் அளவிடப்படுவது எது?",
+            "en": "Which quantity is measured in ampere-hours?",
             "ta": "அம்பியர்-மணித்தியாலம் என்னும் அலகினால் அளவிடப்படுவது எது?"
           },
           "marks": 1,
@@ -1686,11 +1747,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "மின்கணியம்",
-              "மின்வலிமை",
-              "வலு",
-              "சக்தி",
-              "வோல்ற்றளவு"
+              "Electric charge",
+              "Electromotive force",
+              "Power",
+              "Energy",
+              "Voltage"
             ],
             "ta": [
               "மின்கணியம்",
@@ -1707,12 +1768,13 @@
           "year": 1992,
           "number": "34",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 34 · Measurements and Dimensions",
             "ta": "வினா 34 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஈர்வை, பரப்பிழுவை s ஆகியவற்றின் தாக்கத்தின் கீழ் அடர்த்தி ρ உடைய திரவத்தின் மீதுள்ள அலைநீளம் λ உடைய பரப்பு அலைக்குரிய கணியம் A = λ/B + 2πs/(ρλ) ஆகும். B ஒரு மாறிலி எனில் அதன் பரிமாணங்கள் யாவை?",
+            "en": "For surface waves of wavelength λ on a liquid of density ρ, under the effects of gravity and surface tension s, a quantity A is given by A = λ/B + 2πs/(ρλ). If B is a constant, what are its dimensions?",
             "ta": "ஈர்வை, பரப்பிழுவை s ஆகியவற்றின் தாக்கத்தின் கீழ் அடர்த்தி ρ உடைய திரவத்தின் மீதுள்ள அலைநீளம் λ உடைய பரப்பு அலைக்குரிய கணியம் A = λ/B + 2πs/(ρλ) ஆகும். B ஒரு மாறிலி எனில் அதன் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -1742,12 +1804,13 @@
           "year": 1992,
           "number": "35",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 35 · Measurements and Dimensions",
             "ta": "வினா 35 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் பௌதிகக் கணியச் சோடிகளில் எது ஒரே பரிமாணங்களை உடையது?",
+            "en": "Which pair of physical quantities has the same dimensions?",
             "ta": "பின்வரும் பௌதிகக் கணியச் சோடிகளில் எது ஒரே பரிமாணங்களை உடையது?"
           },
           "marks": 1,
@@ -1756,11 +1819,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "வேலையும் வலுவும்",
-              "தகைப்பும் விகாரமும்",
-              "யங்கின் மட்டுவும் அமுக்கமும்",
-              "பிசுக்குமைக்குணகமும் பரப்பிழுவையும்",
-              "விசையும் உந்தமும்"
+              "Work and power",
+              "Stress and strain",
+              "Young's modulus and pressure",
+              "Coefficient of viscosity and surface tension",
+              "Force and momentum"
             ],
             "ta": [
               "வேலையும் வலுவும்",
@@ -1777,12 +1840,13 @@
           "year": 1991,
           "number": "25",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 25 · Measurements and Dimensions",
             "ta": "வினா 25 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஒளி வருடமொன்றுக்குச் சமவலுவானது எது? (ஒளியின் வேகம் = 3 × 10⁸ m s⁻¹)",
+            "en": "Which of the following is equivalent to one light-year? (Speed of light = 3 × 10⁸ m s⁻¹)",
             "ta": "ஒளி வருடமொன்றுக்குச் சமவலுவானது எது? (ஒளியின் வேகம் = 3 × 10⁸ m s⁻¹)"
           },
           "marks": 1,
@@ -1812,12 +1876,13 @@
           "year": 1991,
           "number": "26",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 26 · Measurements and Dimensions",
             "ta": "வினா 26 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "சீரான ஆர்முடுகல் a இன் கீழ் அசையும் துணிக்கையொன்று நேரம் t இல் சென்ற தூரம் s = kat² எனத் தரப்படுகின்றது. மாறிலி k ஆனது,",
+            "en": "The distance travelled in time t by a particle moving with uniform acceleration a is s = kat². The constant k:",
             "ta": "சீரான ஆர்முடுகல் a இன் கீழ் அசையும் துணிக்கையொன்று நேரம் t இல் சென்ற தூரம் s = kat² எனத் தரப்படுகின்றது. மாறிலி k ஆனது,"
           },
           "marks": 1,
@@ -1826,11 +1891,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "பரிமாணம் L ஐக் கொண்டிருக்கும்.",
-              "பரிமாணம் LT ஐக் கொண்டிருக்கும்.",
-              "பரிமாணம் LT² ஐக் கொண்டிருக்கும்.",
-              "பரிமாணம் LT⁴ ஐக் கொண்டிருக்கும்.",
-              "பரிமாணம் எதனையும் கொண்டிருக்காது."
+              "Has dimension L.",
+              "Has dimensions LT.",
+              "Has dimensions LT².",
+              "Has dimensions LT⁴.",
+              "Has no dimensions."
             ],
             "ta": [
               "பரிமாணம் L ஐக் கொண்டிருக்கும்.",
@@ -1847,12 +1912,13 @@
           "year": 1991,
           "number": "27",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 27 · Measurements and Dimensions",
             "ta": "வினா 27 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "திணிவு (M), நீளம் (L), நேரம் (T), ஓட்டம் (I) ஆகிய பரிமாணங்களின் அடிப்படையில் காந்தப்பாய அடர்த்தியின் பரிமாணங்கள் யாவை?",
+            "en": "What are the dimensions of magnetic flux density in terms of mass (M), length (L), time (T) and current (I)?",
             "ta": "திணிவு (M), நீளம் (L), நேரம் (T), ஓட்டம் (I) ஆகிய பரிமாணங்களின் அடிப்படையில் காந்தப்பாய அடர்த்தியின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -1882,12 +1948,13 @@
           "year": 1991,
           "number": "28",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 28 · Measurements and Dimensions",
             "ta": "வினா 28 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "வேலையானது பின்வருவனவற்றில் எதன் பரிமாணங்களைப் போன்ற பரிமாணங்களைக் கொண்டிருக்கும்?",
+            "en": "Work has the same dimensions as which of the following?",
             "ta": "வேலையானது பின்வருவனவற்றில் எதன் பரிமாணங்களைப் போன்ற பரிமாணங்களைக் கொண்டிருக்கும்?"
           },
           "marks": 1,
@@ -1896,11 +1963,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "சக்தி",
-              "விசை",
-              "உந்தம்",
-              "வலு",
-              "கணத்தாக்கு"
+              "Energy",
+              "Force",
+              "Momentum",
+              "Power",
+              "Impulse"
             ],
             "ta": [
               "சக்தி",
@@ -1917,12 +1984,13 @@
           "year": 1991,
           "number": "29",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 29 · Measurements and Dimensions",
             "ta": "வினா 29 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "வலுவின் அலகான வாற்றுக்குச் சமவலுவானது எது?",
+            "en": "Which is equivalent to the watt, the unit of power?",
             "ta": "வலுவின் அலகான வாற்றுக்குச் சமவலுவானது எது?"
           },
           "marks": 1,
@@ -1952,12 +2020,13 @@
           "year": 1991,
           "number": "30",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 30 · Measurements and Dimensions",
             "ta": "வினா 30 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "கிலோவாற்றுமணி என்பது பின்வரும் எதன் அலகாகும்?",
+            "en": "A kilowatt-hour is a unit of:",
             "ta": "கிலோவாற்றுமணி என்பது பின்வரும் எதன் அலகாகும்?"
           },
           "marks": 1,
@@ -1966,11 +2035,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "வலு",
-              "சக்தி",
-              "ஓட்டம்",
-              "வோல்ற்றளவு",
-              "நேரம்"
+              "Power",
+              "Energy",
+              "Current",
+              "Voltage",
+              "Time"
             ],
             "ta": [
               "வலு",
@@ -1987,12 +2056,13 @@
           "year": 1990,
           "number": "24",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 24 · Measurements and Dimensions",
             "ta": "வினா 24 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் அலகுகளில் எது வோல்ற்றுக்குச் சமவலுவானது?",
+            "en": "Which of the following units is equivalent to the volt?",
             "ta": "பின்வரும் அலகுகளில் எது வோல்ற்றுக்குச் சமவலுவானது?"
           },
           "marks": 1,
@@ -2022,12 +2092,13 @@
           "year": 1989,
           "number": "22",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 22 · Measurements and Dimensions",
             "ta": "வினா 22 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் அலகுகளில் எது மின்தடையின் அலகை எழுதும் ஒரு முறையாகும்?",
+            "en": "Which of the following is a way of expressing the unit of electrical resistance?",
             "ta": "பின்வரும் அலகுகளில் எது மின்தடையின் அலகை எழுதும் ஒரு முறையாகும்?"
           },
           "marks": 1,
@@ -2057,12 +2128,13 @@
           "year": 1989,
           "number": "23",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 23 · Measurements and Dimensions",
             "ta": "வினா 23 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் சோடிகளில் எது ஒரே பரிமாணங்களைக் கொண்டது?",
+            "en": "Which pair of quantities has the same dimensions?",
             "ta": "பின்வரும் சோடிகளில் எது ஒரே பரிமாணங்களைக் கொண்டது?"
           },
           "marks": 1,
@@ -2071,11 +2143,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "ஈர்ப்பு ஒருமை, ஈர்ப்பினாலான ஆர்முடுகல்",
-              "யங்கின் மட்டு, பரப்பு இழுவை",
-              "கணத்தாக்கு, உந்தம்",
-              "விசையொன்றின் திருப்பம், உந்தம்",
-              "வேலை, வலு"
+              "Gravitational constant and gravitational acceleration",
+              "Young's modulus and surface tension",
+              "Impulse and momentum",
+              "Moment of a force and momentum",
+              "Work and power"
             ],
             "ta": [
               "ஈர்ப்பு ஒருமை, ஈர்ப்பினாலான ஆர்முடுகல்",
@@ -2092,12 +2164,13 @@
           "year": 1988,
           "number": "21",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 21 · Measurements and Dimensions",
             "ta": "வினா 21 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "வலுவின் பரிமாணங்கள் யாவை?",
+            "en": "What are the dimensions of power?",
             "ta": "வலுவின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -2127,12 +2200,13 @@
           "year": 1987,
           "number": "19",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 19 · Measurements and Dimensions",
             "ta": "வினா 19 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் கூற்றுக்களைக் கருதுக.\n(A) அமுக்கத்தின் பரிமாணங்கள் ML⁻¹T⁻² ஆகும்.\n(B) பரப்பு இழுவையின் பரிமாணங்கள் MT⁻² ஆகும்.\n(C) சாரடர்த்தி ஒரு பரிமாணமற்ற கணியமாகும்.\nமேலுள்ள கூற்றுக்களில்,",
+            "en": "Consider the following statements.\n(A) The dimensions of pressure are ML⁻¹T⁻².\n(B) The dimensions of surface tension are MT⁻².\n(C) Relative density is dimensionless.\nWhich statements are true?",
             "ta": "பின்வரும் கூற்றுக்களைக் கருதுக.\n(A) அமுக்கத்தின் பரிமாணங்கள் ML⁻¹T⁻² ஆகும்.\n(B) பரப்பு இழுவையின் பரிமாணங்கள் MT⁻² ஆகும்.\n(C) சாரடர்த்தி ஒரு பரிமாணமற்ற கணியமாகும்.\nமேலுள்ள கூற்றுக்களில்,"
           },
           "marks": 1,
@@ -2141,11 +2215,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "A மாத்திரம் உண்மையானது.",
-              "B மாத்திரம் உண்மையானது.",
-              "C மாத்திரம் உண்மையானது.",
-              "A, C மாத்திரம் உண்மையானவை.",
-              "A, B, C ஆகிய எல்லாம் உண்மையானவை."
+              "A only",
+              "B only",
+              "C only",
+              "A and C only",
+              "All of A, B and C"
             ],
             "ta": [
               "A மாத்திரம் உண்மையானது.",
@@ -2162,12 +2236,13 @@
           "year": 1987,
           "number": "20",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 20 · Measurements and Dimensions",
             "ta": "வினா 20 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பதார்த்தமொன்றின் தன்வெப்பக்கொள்ளளவு C = A + BT² ஆகும். A, B பரிமாணமுள்ள மாறிலிகள்; T வெப்பநிலை. A, B ஆகியவற்றின் அலகுகள் முறையே யாவை?",
+            "en": "The specific heat capacity of a substance is C = A + BT², where A and B are dimensional constants and T is temperature. What are the units of A and B, respectively?",
             "ta": "பதார்த்தமொன்றின் தன்வெப்பக்கொள்ளளவு C = A + BT² ஆகும். A, B பரிமாணமுள்ள மாறிலிகள்; T வெப்பநிலை. A, B ஆகியவற்றின் அலகுகள் முறையே யாவை?"
           },
           "marks": 1,
@@ -2197,12 +2272,13 @@
           "year": 1986,
           "number": "17",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 17 · Measurements and Dimensions",
             "ta": "வினா 17 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "வாயுவொன்றின் அமுக்கம் P, கனவளவு V, வெப்பநிலை T ஆகியவை (P + a/V²)V = nRT என்ற சமன்பாட்டினால் தொடர்புபடுத்தப்படுகின்றன. a வாயுவுக்குரிய மாறிலி; R அகிலவாயு ஒருமை. a இன் பரிமாணங்கள் யாவை?",
+            "en": "The pressure P, volume V and temperature T of a gas are related by (P + a/V²)V = nRT, where a is a constant for the gas and R is the universal gas constant. What are the dimensions of a?",
             "ta": "வாயுவொன்றின் அமுக்கம் P, கனவளவு V, வெப்பநிலை T ஆகியவை (P + a/V²)V = nRT என்ற சமன்பாட்டினால் தொடர்புபடுத்தப்படுகின்றன. a வாயுவுக்குரிய மாறிலி; R அகிலவாயு ஒருமை. a இன் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -2232,12 +2308,13 @@
           "year": 1986,
           "number": "18",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 18 · Measurements and Dimensions",
             "ta": "வினா 18 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஈர்ப்பு ஒருமை G இன் அலகு யாது?",
+            "en": "What is the unit of the gravitational constant G?",
             "ta": "ஈர்ப்பு ஒருமை G இன் அலகு யாது?"
           },
           "marks": 1,
@@ -2267,12 +2344,13 @@
           "year": 1985,
           "number": "15",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 15 · Measurements and Dimensions",
             "ta": "வினா 15 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வருவனவற்றில் எது மின்புல வலிமை E இற்குரிய அலகொன்றாகும்?",
+            "en": "Which of the following is a unit of electric field strength E?",
             "ta": "பின்வருவனவற்றில் எது மின்புல வலிமை E இற்குரிய அலகொன்றாகும்?"
           },
           "marks": 1,
@@ -2302,12 +2380,13 @@
           "year": 1985,
           "number": "16",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 16 · Measurements and Dimensions",
             "ta": "வினா 16 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "திண்மமொன்றின் வெப்பக்கொள்ளளவு C, வெப்பநிலை T சார்பாக C = αT + βT³ எனத் தரப்படலாம். α, β மாறிலிகள். β இன் சாத்தியமான அலகு யாது?",
+            "en": "The heat capacity C of a solid may be expressed as C = αT + βT³, where T is temperature and α and β are constants. Which is a possible unit of β?",
             "ta": "திண்மமொன்றின் வெப்பக்கொள்ளளவு C, வெப்பநிலை T சார்பாக C = αT + βT³ எனத் தரப்படலாம். α, β மாறிலிகள். β இன் சாத்தியமான அலகு யாது?"
           },
           "marks": 1,
@@ -2337,12 +2416,13 @@
           "year": 1984,
           "number": "14",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 14 · Measurements and Dimensions",
             "ta": "வினா 14 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "V₁, V₂ என்பன வோல்ற்றளவுகளையும் I₁ ஓட்டத்தையும் குறிக்கின்றன. V₁ = K₁I₁ + K₂V₂ எனில் K₁/K₂ என்னும் விகிதம்,",
+            "en": "V₁ and V₂ represent voltages, and I₁ represents current. If V₁ = K₁I₁ + K₂V₂, the ratio K₁/K₂:",
             "ta": "V₁, V₂ என்பன வோல்ற்றளவுகளையும் I₁ ஓட்டத்தையும் குறிக்கின்றன. V₁ = K₁I₁ + K₂V₂ எனில் K₁/K₂ என்னும் விகிதம்,"
           },
           "marks": 1,
@@ -2351,11 +2431,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "தடையின் அலகை உடையது.",
-              "ஓட்டத்தின் அலகை உடையது.",
-              "வோல்ற்றளவின் அலகை உடையது.",
-              "வலுவின் அலகை உடையது.",
-              "பரிமாணமில்லாதது."
+              "Has the unit of resistance.",
+              "Has the unit of current.",
+              "Has the unit of voltage.",
+              "Has the unit of power.",
+              "Is dimensionless."
             ],
             "ta": [
               "தடையின் அலகை உடையது.",
@@ -2372,12 +2452,13 @@
           "year": 1983,
           "number": "12",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 12 · Measurements and Dimensions",
             "ta": "வினா 12 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "f = k√(T/m) என்ற சமன்பாட்டில் T ஐ N இலும் m ஐ kg m⁻¹ இலும் f ஐ s⁻¹ இலும் அளவிடும்போது k = 1 ஆகும். f, T இன் அலகுகளை மாற்றாது m ஐ mg m⁻¹ இல் அளவிடும்போது k இன் பெறுமதி யாது?",
+            "en": "In f = k√(T/m), k = 1 when T is measured in N, m in kg m⁻¹ and f in s⁻¹. If m is measured in mg m⁻¹ while the units of f and T remain unchanged, what is the value of k?",
             "ta": "f = k√(T/m) என்ற சமன்பாட்டில் T ஐ N இலும் m ஐ kg m⁻¹ இலும் f ஐ s⁻¹ இலும் அளவிடும்போது k = 1 ஆகும். f, T இன் அலகுகளை மாற்றாது m ஐ mg m⁻¹ இல் அளவிடும்போது k இன் பெறுமதி யாது?"
           },
           "marks": 1,
@@ -2407,12 +2488,13 @@
           "year": 1983,
           "number": "13",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 13 · Measurements and Dimensions",
             "ta": "வினா 13 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "உராய்வு பற்றிய பரிசோதனையொன்றில் v கதியைக் கொண்டதும் a ஆரையுடையதுமான வீழும் கோளமொன்றில் தாக்கும் உராய்வு விசை F = kav² என்பதால் தரப்படுகின்றது. k இன் பரிமாணங்கள் யாவை?",
+            "en": "In an experiment on friction, the resistive force on a falling sphere of radius a and speed v is F = kav². What are the dimensions of k?",
             "ta": "உராய்வு பற்றிய பரிசோதனையொன்றில் v கதியைக் கொண்டதும் a ஆரையுடையதுமான வீழும் கோளமொன்றில் தாக்கும் உராய்வு விசை F = kav² என்பதால் தரப்படுகின்றது. k இன் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -2442,12 +2524,13 @@
           "year": 1982,
           "number": "10",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 10 · Measurements and Dimensions",
             "ta": "வினா 10 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வருவனவற்றுள் எந்தவொன்று அலகுகளைக் கொண்டுள்ளது?",
+            "en": "Which of the following has units?",
             "ta": "பின்வருவனவற்றுள் எந்தவொன்று அலகுகளைக் கொண்டுள்ளது?"
           },
           "marks": 1,
@@ -2456,11 +2539,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "உராய்வுக்குணகம்",
-              "ஏகபரிமாண விறைப்புக்குணகம் (நீட்டல் விறைப்புக்குணகம்)",
-              "சாரடர்த்தி",
-              "சார் ஈர்ப்புத்தன்",
-              "தன்வெப்பங்களின் விகிதம்"
+              "Coefficient of friction",
+              "Young's modulus (modulus of longitudinal elasticity)",
+              "Relative density",
+              "Specific gravity",
+              "Ratio of specific heat capacities"
             ],
             "ta": [
               "உராய்வுக்குணகம்",
@@ -2477,12 +2560,13 @@
           "year": 1981,
           "number": "7",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 07 · Measurements and Dimensions",
             "ta": "வினா 07 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "M₁, M₂ என்பன திணிவுகளையும் U₁, U₂ என்பன வேகங்களையும் குறிக்கின்றன. U₁ = [2M₁/(M₁ + M₂²)]U₂ என்ற சமன்பாட்டைக் கருதுக. இச்சமன்பாடு,",
+            "en": "M₁ and M₂ represent masses, and U₁ and U₂ represent velocities. Consider U₁ = [2M₁/(M₁ + M₂²)]U₂. This equation is:",
             "ta": "M₁, M₂ என்பன திணிவுகளையும் U₁, U₂ என்பன வேகங்களையும் குறிக்கின்றன. U₁ = [2M₁/(M₁ + M₂²)]U₂ என்ற சமன்பாட்டைக் கருதுக. இச்சமன்பாடு,"
           },
           "marks": 1,
@@ -2491,11 +2575,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "பரிமாணப்படி சரியானது.",
-              "தொகுதியில் 2M₁ இற்குப் பதிலாக 2M₁M₂ ஐ இடும்போது பரிமாணப்படி சரியானது.",
-              "தொகுதியில் 2M₁ இற்குப் பதிலாக 2M₁² ஐ இடும்போது பரிமாணப்படி சரியானது.",
-              "பகுதியில் M₁ + M₂² இற்குப் பதிலாக M₁² + M₂ ஐ இடும்போது பரிமாணப்படி சரியானது.",
-              "பகுதியில் M₁ + M₂² இற்குப் பதிலாக M₁ + M₂ ஐ இடும்போது பரிமாணப்படி சரியானது."
+              "Dimensionally correct.",
+              "Dimensionally correct if 2M₁ in the numerator is replaced by 2M₁M₂.",
+              "Dimensionally correct if 2M₁ in the numerator is replaced by 2M₁².",
+              "Dimensionally correct if M₁ + M₂² in the denominator is replaced by M₁² + M₂.",
+              "Dimensionally correct if M₁ + M₂² in the denominator is replaced by M₁ + M₂."
             ],
             "ta": [
               "பரிமாணப்படி சரியானது.",
@@ -2512,12 +2596,13 @@
           "year": 1981,
           "number": "8",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 08 · Measurements and Dimensions",
             "ta": "வினா 08 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "ஈர்ப்பு மாறிலி G இன் சர்வதேச முறை (SI) அலகு யாது?",
+            "en": "What is the SI unit of the gravitational constant G?",
             "ta": "ஈர்ப்பு மாறிலி G இன் சர்வதேச முறை (SI) அலகு யாது?"
           },
           "marks": 1,
@@ -2547,12 +2632,13 @@
           "year": 1981,
           "number": "9",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 09 · Measurements and Dimensions",
             "ta": "வினா 09 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "r எனும் தூரத்தினால் பிரிக்கப்பட்டுள்ள M₁, M₂ ஆகிய இரண்டு திணிவுகளுக்கும் இடையிலுள்ள விசை P இற்கான சமன்பாட்டில் ML⁻³T² என்ற பரிமாணங்களையுடைய விகிதசமத்துவ மாறிலி k உள்ளது. பின்வருவனவற்றுள் எச்சமன்பாடு இப்பரிமாணங்களுடன் இசைகின்றது?",
+            "en": "An equation for the force P between two masses M₁ and M₂ separated by a distance r contains a constant k with dimensions ML⁻³T². Which equation is dimensionally consistent?",
             "ta": "r எனும் தூரத்தினால் பிரிக்கப்பட்டுள்ள M₁, M₂ ஆகிய இரண்டு திணிவுகளுக்கும் இடையிலுள்ள விசை P இற்கான சமன்பாட்டில் ML⁻³T² என்ற பரிமாணங்களையுடைய விகிதசமத்துவ மாறிலி k உள்ளது. பின்வருவனவற்றுள் எச்சமன்பாடு இப்பரிமாணங்களுடன் இசைகின்றது?"
           },
           "marks": 1,
@@ -2582,12 +2668,13 @@
           "year": 1980,
           "number": "4",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 04 · Measurements and Dimensions",
             "ta": "வினா 04 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "சீரான ஆர்முடுகல் a ஐயும் தொடக்க வேகம் u ஐயும் கொண்ட துணிக்கையொன்று நேரம் t இல் சென்ற தூரத்தை s குறிக்கின்றது. s = k¹ᐟ²(1 + at/(2u)) எனில், கணியம் k இன் பரிமாணம் யாது?",
+            "en": "A particle has uniform acceleration a and initial velocity u. Its distance travelled in time t is s. If s = k¹ᐟ²(1 + at/(2u)), what are the dimensions of k?",
             "ta": "சீரான ஆர்முடுகல் a ஐயும் தொடக்க வேகம் u ஐயும் கொண்ட துணிக்கையொன்று நேரம் t இல் சென்ற தூரத்தை s குறிக்கின்றது. s = k¹ᐟ²(1 + at/(2u)) எனில், கணியம் k இன் பரிமாணம் யாது?"
           },
           "marks": 1,
@@ -2617,12 +2704,13 @@
           "year": 1980,
           "number": "5",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 05 · Measurements and Dimensions",
             "ta": "வினா 05 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "இரு திணிவுகளுக்கிடையே தாக்குகின்ற விசை F ஆனது m₁m₂/r² இற்கு மாத்திரம் விகிதசமம். m₁, m₂ திணிவுகளையும் r அவற்றுக்கிடையிலுள்ள தூரத்தையும் குறிக்கின்றன. விகிதசமத்துவ மாறிலியின் பரிமாணங்கள் யாவை?",
+            "en": "The force F acting between two masses is directly proportional to m₁m₂/r², where m₁ and m₂ are the masses and r is their separation. What are the dimensions of the constant of proportionality?",
             "ta": "இரு திணிவுகளுக்கிடையே தாக்குகின்ற விசை F ஆனது m₁m₂/r² இற்கு மாத்திரம் விகிதசமம். m₁, m₂ திணிவுகளையும் r அவற்றுக்கிடையிலுள்ள தூரத்தையும் குறிக்கின்றன. விகிதசமத்துவ மாறிலியின் பரிமாணங்கள் யாவை?"
           },
           "marks": 1,
@@ -2652,12 +2740,13 @@
           "year": 1980,
           "number": "6",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 06 · Measurements and Dimensions",
             "ta": "வினா 06 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "விளக்குக்குமிழொன்றின் மின்தடை R க்கும் அதனூடாகப் பாயும் மின்னோட்டம் I க்கும் இடையிலான தொடர்பு R = kI³ᐟ² ஆகும். k ஒரு மாறிலி எனில், நேர் வரியான வரைபைப் பெறுவதற்கு எதனை வரைய வேண்டும்?",
+            "en": "The resistance R of a light bulb and the current I through it are related by R = kI³ᐟ², where k is a constant. Which graph should be plotted to obtain a straight line?",
             "ta": "விளக்குக்குமிழொன்றின் மின்தடை R க்கும் அதனூடாகப் பாயும் மின்னோட்டம் I க்கும் இடையிலான தொடர்பு R = kI³ᐟ² ஆகும். k ஒரு மாறிலி எனில், நேர் வரியான வரைபைப் பெறுவதற்கு எதனை வரைய வேண்டும்?"
           },
           "marks": 1,
@@ -2666,11 +2755,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "I இற்கு எதிரே R",
-              "log I இற்கு எதிரே R",
-              "I இற்கு எதிரே R²",
-              "log I இற்கு எதிரே log R",
-              "I இற்கு எதிரே log R"
+              "R against I",
+              "R against log I",
+              "R² against I",
+              "log R against log I",
+              "log R against I"
             ],
             "ta": [
               "I இற்கு எதிரே R",
@@ -2687,12 +2776,13 @@
           "year": 1979,
           "number": "1",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 01 · Measurements and Dimensions",
             "ta": "வினா 01 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வருவன தூரங்களை அளவிடுவதற்குப் பயன்படும் அலகுகளாகும்.\n(A) மில்லி மீற்றர்   (B) மைக்ரோ மீற்றர்   (C) அங்ஸ்ரோம்\n(D) ஒளியாண்டு   (E) கிலோ மீற்றர்\nபின்வரும் சேர்மானங்களில் எது மிகப்பெரியதும் மிகச் சிறியதுமான அலகுகளைக் குறிக்கின்றது?",
+            "en": "The following units are used to measure distances.\n(A) millimetre   (B) micrometre   (C) angstrom\n(D) light-year   (E) kilometre\nWhich pair represents the largest and smallest units, respectively?",
             "ta": "பின்வருவன தூரங்களை அளவிடுவதற்குப் பயன்படும் அலகுகளாகும்.\n(A) மில்லி மீற்றர்   (B) மைக்ரோ மீற்றர்   (C) அங்ஸ்ரோம்\n(D) ஒளியாண்டு   (E) கிலோ மீற்றர்\nபின்வரும் சேர்மானங்களில் எது மிகப்பெரியதும் மிகச் சிறியதுமான அலகுகளைக் குறிக்கின்றது?"
           },
           "marks": 1,
@@ -2701,11 +2791,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "A யும் C யும்",
-              "E யும் C யும்",
-              "B யும் C யும்",
-              "D யும் C யும்",
-              "D யும் B யும்"
+              "A and C",
+              "E and C",
+              "B and C",
+              "D and C",
+              "D and B"
             ],
             "ta": [
               "A யும் C யும்",
@@ -2722,12 +2812,13 @@
           "year": 1979,
           "number": "2",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 02 · Measurements and Dimensions",
             "ta": "வினா 02 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வருவனவற்றுள் எது சக்தியின் பரிமாணங்களையுடையது?",
+            "en": "Which of the following has the dimensions of energy?",
             "ta": "பின்வருவனவற்றுள் எது சக்தியின் பரிமாணங்களையுடையது?"
           },
           "marks": 1,
@@ -2736,11 +2827,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "உந்தம்",
-              "விசை",
-              "வலு",
-              "அமுக்கம்",
-              "விசையின் திருப்பம்"
+              "Momentum",
+              "Force",
+              "Power",
+              "Pressure",
+              "Moment of a force"
             ],
             "ta": [
               "உந்தம்",
@@ -2757,12 +2848,13 @@
           "year": 1979,
           "number": "3",
           "kind": "mcq",
+          "parts": [],
           "title": {
             "en": "Question 03 · Measurements and Dimensions",
             "ta": "வினா 03 · அளவீடுகளும் பரிமாணங்களும்"
           },
           "prompt": {
-            "en": "பின்வரும் கணியங்களுள் எது பரிமாணங்கள் இல்லாதது?",
+            "en": "Which of the following quantities is dimensionless?",
             "ta": "பின்வரும் கணியங்களுள் எது பரிமாணங்கள் இல்லாதது?"
           },
           "marks": 1,
@@ -2771,11 +2863,11 @@
           "pdf": null,
           "options": {
             "en": [
-              "தன்வெப்பக்கொள்ளளவு",
-              "சாரடர்த்தி",
-              "விறைத்திறன்",
-              "மீடிறன்",
-              "கதி"
+              "Specific heat capacity",
+              "Relative density",
+              "Stiffness",
+              "Frequency",
+              "Speed"
             ],
             "ta": [
               "தன்வெப்பக்கொள்ளளவு",
@@ -2835,6 +2927,400 @@
       "total": 79,
       "pages": 7,
       "page": 1
+    },
+    "01/structured": {
+      "sections": [],
+      "questions": [
+        {
+          "id": 82,
+          "year": 2024,
+          "number": "1",
+          "kind": "structured",
+          "parts": [
+            {
+              "id": "a",
+              "prompt": {
+                "ta": "உரு (1) இல் A, B (அளவிடைகளைத் தவிர), C எனக் குறிக்கப்பட்ட பகுதிகளைப் பெயரிடுக.",
+                "en": "Name the parts labelled A, B (excluding the scales) and C in Figure (1)."
+              },
+              "image": "/review/structured/micrometer-parts.png",
+              "image_alt": {
+                "ta": "துணை வினா a தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part a"
+              }
+            },
+            {
+              "id": "b(i)",
+              "prompt": {
+                "ta": "தலைமை அளவிடையில் 1 mm இரண்டாகப் பிரிக்கப்பட்டுள்ளது. வட்ட அளவிடையில் 50 சம பிரிவுகள் உள்ளன. தீதாளின் ஒரு முழுச் சுற்றில் கதிர் தலைமை அளவிடையின் ஒரு பிரிவளவு நகர்கிறது. புரியிடையை mm இல் தருக.",
+                "en": "Each millimetre on the main scale is divided into two. The circular scale has 50 equal divisions. In one complete revolution of the thimble, the spindle moves by one main-scale division. State the pitch in mm."
+              }
+            },
+            {
+              "id": "b(ii)",
+              "prompt": {
+                "ta": "இழிவெண்ணிக்கையை mm இல் கணிக்கவும்.",
+                "en": "Calculate the least count in mm."
+              }
+            },
+            {
+              "id": "c",
+              "prompt": {
+                "ta": "பட்டடை, கதிர் ஆகியவை ஒன்றையொன்று தொடும்போது வட்ட அளவிடையின் அமைவு உரு (2) இல் காட்டப்பட்டுள்ளது. பூச்சிய வழுவை mm இல் தருக.",
+                "en": "Figure (2) shows the position of the circular scale when the anvil and spindle touch. State the zero error in mm."
+              },
+              "image": "/review/structured/zero-error.png",
+              "image_alt": {
+                "ta": "துணை வினா c தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part c"
+              }
+            },
+            {
+              "id": "d",
+              "prompt": {
+                "ta": "பூச்சிய வழுவைக் கருத்திற்கொண்ட பின் கம்பியின் விட்டத்தை அளக்கும் முறையின் இரண்டு படிகளை எழுதுக.",
+                "en": "After accounting for the zero error, describe two steps in measuring the diameter of the wire."
+              }
+            },
+            {
+              "id": "e",
+              "prompt": {
+                "ta": "பகுதி C இருப்பதன் நோக்கம் யாது?",
+                "en": "What is the purpose of part C?"
+              }
+            },
+            {
+              "id": "f(i)(1)",
+              "prompt": {
+                "ta": "கம்பியின் ஓரிடத்தில் விட்டத்தை அளந்தபோது கிடைத்த அளவிடை உரு (3) இல் காட்டப்பட்டுள்ளது. கருவியின் வாசிப்பை mm இல் தருக.",
+                "en": "Figure (3) shows the scales when the diameter is measured at one point on the wire. State the instrument reading in mm."
+              },
+              "image": "/review/structured/wire-reading.png",
+              "image_alt": {
+                "ta": "துணை வினா f(i)(1) தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part f(i)(1)"
+              }
+            },
+            {
+              "id": "f(i)(2)",
+              "prompt": {
+                "ta": "மேலுள்ள பூச்சிய வழுவைப் பயன்படுத்தி கம்பியின் சரியான விட்டத்தைத் தருக.",
+                "en": "Using the zero error above, give the corrected diameter of the wire."
+              }
+            },
+            {
+              "id": "f(ii)",
+              "prompt": {
+                "ta": "கம்பியின் குறுக்குவெட்டுப் பரப்பை mm² இல் கணிக்கவும். π = 3 என எடுக்கவும்.",
+                "en": "Calculate the cross-sectional area of the wire in mm². Take π = 3."
+              }
+            },
+            {
+              "id": "g(i)",
+              "prompt": {
+                "ta": "கம்பியின் திரவிய அடர்த்தியைக் காணத் தேவையான மற்றைய இரண்டு அளவீடுகள் யாவை?",
+                "en": "What two other measurements are needed to determine the density of the material of the wire?"
+              }
+            },
+            {
+              "id": "g(ii)",
+              "prompt": {
+                "ta": "அந்த இரண்டு அளவீடுகளையும் பெற மிகவும் பொருத்தமான கருவிகளைப் பெயரிடுக.",
+                "en": "Name the most suitable instruments for obtaining these two measurements."
+              }
+            },
+            {
+              "id": "h",
+              "prompt": {
+                "ta": "உரு (4) இல் காணப்படும் இலத்திரனியல் நுண்மானித் திருகுக் கணிசியின் இழிவெண்ணிக்கை mm இல் யாது?",
+                "en": "What is the least count, in mm, of the digital micrometer shown in Figure (4)?"
+              },
+              "image": "/review/structured/digital-micrometer.png",
+              "image_alt": {
+                "ta": "துணை வினா h தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part h"
+              }
+            }
+          ],
+          "title": {
+            "en": "Micrometer screw gauge — measuring a wire",
+            "ta": "நுண்மானித் திருகுக் கணிசி — கம்பியின் அளவீடு"
+          },
+          "prompt": {
+            "en": "A micrometer screw gauge is provided to measure the diameter of a thin, uniform wire approximately 15 cm long and of mass 200 mg. Answer the following subquestions.",
+            "ta": "ஏறத்தாழ 15 cm நீளமும் 200 mg திணிவும் உள்ள மெல்லிய சீரான கம்பியின் விட்டத்தை அளப்பதற்கு நுண்மானித் திருகுக் கணிசி வழங்கப்பட்டுள்ளது. கீழுள்ள துணை வினாக்களுக்கு விடையளிக்கவும்."
+          },
+          "marks": 20,
+          "minutes": 20,
+          "source": "",
+          "pdf": null,
+          "options": {
+            "en": [],
+            "ta": []
+          },
+          "section": null
+        },
+        {
+          "id": 83,
+          "year": null,
+          "number": "2",
+          "kind": "structured",
+          "parts": [
+            {
+              "id": "a",
+              "prompt": {
+                "ta": "தகட்டின் தடிப்பு t ஐ அளப்பதற்கு மிகவும் உகந்த கருவி யாது?",
+                "en": "Which instrument is most suitable for measuring the thickness t of the plate?"
+              },
+              "image": "/review/structured/plate.png",
+              "image_alt": {
+                "ta": "துணை வினா a தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part a"
+              }
+            },
+            {
+              "id": "b",
+              "prompt": {
+                "ta": "கருவியைப் பயன்படுத்துவதற்கு முன்னர் செய்ய வேண்டிய முக்கிய பரிசோதனை யாது?",
+                "en": "What important check should be made before using the instrument?"
+              }
+            },
+            {
+              "id": "c",
+              "prompt": {
+                "ta": "a, b, d அளவீடுகளை வேணியர் இடுக்கியால் பெற எந்தப் பகுதிகள் பயன்படும்?",
+                "en": "Which parts of a vernier caliper are used to measure a, b and d?"
+              }
+            },
+            {
+              "id": "d",
+              "prompt": {
+                "ta": "தகட்டின் திணிவு m ஐ அளப்பதற்குப் பொருத்தமான ஆய்வுகூடக் கருவி யாது?",
+                "en": "Which laboratory instrument is suitable for measuring the mass m of the plate?"
+              }
+            },
+            {
+              "id": "e",
+              "prompt": {
+                "ta": "பெற்ற அளவீடுகளைக் கொண்டு உலோகத்தின் அடர்த்திக்கான கோவையை எழுதுக.",
+                "en": "Write an expression for the density of the metal using the measurements obtained."
+              }
+            },
+            {
+              "id": "f(i)",
+              "prompt": {
+                "ta": "தடிப்புக்கான வாசிப்புகள்: 3.50, 3.51, 3.52, 3.51, 3.53 mm. கருவியின் இழிவெண்ணிக்கை யாது?",
+                "en": "The thickness readings are 3.50, 3.51, 3.52, 3.51 and 3.53 mm. What is the least count of the instrument?"
+              }
+            },
+            {
+              "id": "f(ii)",
+              "prompt": {
+                "ta": "தகட்டின் இடைத் தடிப்பைக் கணிக்கவும்.",
+                "en": "Calculate the mean thickness of the plate."
+              }
+            },
+            {
+              "id": "f(iii)",
+              "prompt": {
+                "ta": "விடையை எத்தனை தசம இடங்களுக்கு எழுதுவது பொருத்தமானது? காரணம் தருக.",
+                "en": "To how many decimal places should the answer be reported? Give a reason."
+              }
+            }
+          ],
+          "title": {
+            "en": "Density of a metal plate with a hole",
+            "ta": "துளையுள்ள உலோகத் தகட்டின் அடர்த்தி"
+          },
+          "prompt": {
+            "en": "The diagram shows a metal plate with a circular hole of diameter d. The dimensions a, b and d are a few centimetres (less than 10 cm), and the thickness t is of the order of millimetres.",
+            "ta": "விட்டம் d உடைய வட்டத் துளையுள்ள உலோகத் தகடு காட்டப்பட்டுள்ளது. a, b, d என்பவை சில சென்ரிமீற்றர் (< 10 cm) அளவிலும், தடிப்பு t மில்லிமீற்றர் அளவிலும் உள்ளன."
+          },
+          "marks": 1,
+          "minutes": 20,
+          "source": "",
+          "pdf": null,
+          "options": {
+            "en": [],
+            "ta": []
+          },
+          "section": null
+        },
+        {
+          "id": 84,
+          "year": null,
+          "number": "3",
+          "kind": "structured",
+          "parts": [
+            {
+              "id": "a",
+              "prompt": {
+                "ta": "வேணியர் இடுக்கியால் அளவீடுகளை எடுப்பதற்கு முன்னர் செய்ய வேண்டிய முதற் படி யாது?",
+                "en": "What is the first step before taking measurements with the vernier caliper?"
+              },
+              "image": "/review/structured/vessel.png",
+              "image_alt": {
+                "ta": "துணை வினா a தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part a"
+              }
+            },
+            {
+              "id": "b",
+              "prompt": {
+                "ta": "திரவியத்தின் கனவளவு V, திணிவு M ஆகியவற்றின் சார்பில் அடர்த்தி ρ க்கான கோவையை எழுதுக.",
+                "en": "Write an expression for density ρ in terms of the volume V and mass M of the material."
+              }
+            },
+            {
+              "id": "c",
+              "prompt": {
+                "ta": "வெளிவிட்டம், உள்விட்டம் ஆகியவற்றுக்கு மேலாகத் தேவையான மற்றைய அளவீடுகள் யாவை?",
+                "en": "Apart from the external and internal diameters, what other measurements are required?"
+              }
+            },
+            {
+              "id": "d",
+              "prompt": {
+                "ta": "உருக்கள் (i)–(v) ஐப் பயன்படுத்தி ஒவ்வொன்றுக்கும் வாசிப்பு, திருத்திய வாசிப்பு, அளவீட்டின் பெயர் ஆகியவற்றை அட்டவணையாக எழுதுக. கொள்கலனின் உயரம் அதன் வெளிவிட்டத்தைவிடப் பெரியது. திருத்திய (ii), (iii), (iv), (v) வாசிப்புகளை முறையே x₁, x₂, x₃, x₄ எனக் குறிக்கவும்.",
+                "en": "Using Figures (i)–(v), tabulate the reading, corrected reading and name of the measurement for each. The vessel's height is greater than its external diameter. Denote the corrected readings in (ii), (iii), (iv) and (v) by x₁, x₂, x₃ and x₄, respectively."
+              },
+              "image": "/review/structured/vernier-readings.png",
+              "image_alt": {
+                "ta": "துணை வினா d தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part d"
+              }
+            },
+            {
+              "id": "e(i)",
+              "prompt": {
+                "ta": "x₁, x₂, x₃, x₄ ஆகியவற்றின் சார்பில் கொள்கலனின் திரவியக் கனவளவு V க்கான கோவையை எழுதுக.",
+                "en": "Write an expression for the volume V of the vessel's material in terms of x₁, x₂, x₃ and x₄."
+              }
+            },
+            {
+              "id": "e(ii)",
+              "prompt": {
+                "ta": "மேலுள்ள திருத்திய வாசிப்புகளைப் பயன்படுத்தி V ஐக் கணிக்கவும். π = 3 என எடுக்கவும்.",
+                "en": "Calculate V using the corrected readings above. Take π = 3."
+              }
+            },
+            {
+              "id": "f",
+              "prompt": {
+                "ta": "இலத்திரனியல் தராசின் வாசிப்பு 9.6 g எனில் திரவியத்தின் அடர்த்தியை kg m⁻³ இல் கணிக்கவும்.",
+                "en": "If the electronic balance reads 9.6 g, calculate the density of the material in kg m⁻³."
+              }
+            }
+          ],
+          "title": {
+            "en": "Density of the material of a cylindrical vessel",
+            "ta": "உருளை வடிவக் கொள்கலனின் திரவிய அடர்த்தி"
+          },
+          "prompt": {
+            "en": "A vernier caliper and an electronic balance are provided to determine the density of the material of a small, uniform cylindrical vessel.",
+            "ta": "சிறிய சீரான உருளை வடிவக் கொள்கலனின் திரவிய அடர்த்தியைத் துணிவதற்கு ஒரு வேணியர் இடுக்கியும் ஓர் இலத்திரனியல் தராசும் வழங்கப்பட்டுள்ளன."
+          },
+          "marks": 1,
+          "minutes": 20,
+          "source": "",
+          "pdf": null,
+          "options": {
+            "en": [],
+            "ta": []
+          },
+          "section": null
+        },
+        {
+          "id": 85,
+          "year": null,
+          "number": "4",
+          "kind": "structured",
+          "parts": [
+            {
+              "id": "a",
+              "prompt": {
+                "ta": "A, B, C, D எனக் குறிக்கப்பட்ட பகுதிகளைப் பெயரிடுக.",
+                "en": "Name the parts labelled A, B, C and D."
+              },
+              "image": "/review/structured/micrometer-abcd.png",
+              "image_alt": {
+                "ta": "துணை வினா a தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part a"
+              }
+            },
+            {
+              "id": "b",
+              "prompt": {
+                "ta": "காட்டப்பட்ட திருகாணி நுண்மானியின் இழிவெண்ணிக்கையை mm இல் தருக.",
+                "en": "State the least count of the micrometer shown, in mm."
+              }
+            },
+            {
+              "id": "c(i)",
+              "prompt": {
+                "ta": "அளவீட்டின்போது பகுதி B ஆற்றும் முக்கிய தொழிற்பாடு யாது?",
+                "en": "What is the main function of part B during a measurement?"
+              }
+            },
+            {
+              "id": "c(ii)",
+              "prompt": {
+                "ta": "பகுதி B சரியாகத் தொழிற்படுவதை எவ்வாறு உறுதிசெய்வீர்?",
+                "en": "How would you check that part B is working correctly?"
+              }
+            },
+            {
+              "id": "d",
+              "prompt": {
+                "ta": "திருகாணி நுண்மானியின் பூச்சிய வழுவை எவ்வாறு துணிவீர்?",
+                "en": "How would you determine the zero error of the micrometer?"
+              }
+            },
+            {
+              "id": "e",
+              "prompt": {
+                "ta": "உருக்குப் பந்தின் விட்டத்தை அளந்தபோது அளவிடை உரு (2) இல் காட்டப்பட்டுள்ளது. பூச்சிய வழு இல்லையெனில் பந்தின் விட்டம் யாது?",
+                "en": "Figure (2) shows the scales when measuring the diameter of a steel ball. If there is no zero error, what is the diameter of the ball?"
+              },
+              "image": "/review/structured/ball-reading.png",
+              "image_alt": {
+                "ta": "துணை வினா e தொடர்பான கருவி வரைபடம்",
+                "en": "Instrument diagram for part e"
+              }
+            },
+            {
+              "id": "f",
+              "prompt": {
+                "ta": "மெல்லிய கம்பியின் விட்டத்திற்கு மேலும் திருத்தமான பெறுமானத்தை எவ்வாறு பெறுவீர்?",
+                "en": "How would you obtain a more accurate value for the diameter of a thin wire?"
+              }
+            }
+          ],
+          "title": {
+            "en": "Micrometer screw gauge — a ball and a wire",
+            "ta": "திருகாணி நுண்மானி — பந்தும் கம்பியும்"
+          },
+          "prompt": {
+            "en": "Answer the following subquestions about the micrometer screw gauge shown in the diagram.",
+            "ta": "படத்தில் காட்டப்பட்டுள்ள திருகாணி நுண்மானியைப் பற்றிய பின்வரும் துணை வினாக்களுக்கு விடையளிக்கவும்."
+          },
+          "marks": 1,
+          "minutes": 20,
+          "source": "",
+          "pdf": null,
+          "options": {
+            "en": [],
+            "ta": []
+          },
+          "section": null
+        }
+      ],
+      "years": [
+        2024
+      ],
+      "total": 4,
+      "pages": 1,
+      "page": 1
     }
   },
   "solutions": {
@@ -2847,6 +3333,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "79": {
@@ -2858,6 +3345,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "80": {
@@ -2869,6 +3357,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "78": {
@@ -2880,6 +3369,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "77": {
@@ -2891,6 +3381,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "75": {
@@ -2902,6 +3393,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "76": {
@@ -2913,6 +3405,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "73": {
@@ -2924,6 +3417,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "74": {
@@ -2935,6 +3429,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "72": {
@@ -2946,6 +3441,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "71": {
@@ -2957,6 +3453,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "69": {
@@ -2968,6 +3465,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "70": {
@@ -2979,6 +3477,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "66": {
@@ -2990,6 +3489,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "67": {
@@ -3001,6 +3501,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "64": {
@@ -3012,6 +3513,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "62": {
@@ -3023,6 +3525,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "63": {
@@ -3034,6 +3537,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "65": {
@@ -3045,6 +3549,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "61": {
@@ -3056,6 +3561,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "60": {
@@ -3067,6 +3573,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "58": {
@@ -3078,6 +3585,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "59": {
@@ -3089,6 +3597,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "57": {
@@ -3100,6 +3609,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "55": {
@@ -3111,6 +3621,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "56": {
@@ -3122,6 +3633,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "54": {
@@ -3133,6 +3645,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "52": {
@@ -3144,6 +3657,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "53": {
@@ -3155,6 +3669,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "50": {
@@ -3166,6 +3681,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "51": {
@@ -3177,6 +3693,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "48": {
@@ -3188,6 +3705,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "49": {
@@ -3199,6 +3717,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "46": {
@@ -3210,6 +3729,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "47": {
@@ -3221,6 +3741,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "44": {
@@ -3232,6 +3753,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "45": {
@@ -3243,6 +3765,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "42": {
@@ -3254,6 +3777,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "43": {
@@ -3265,6 +3789,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "40": {
@@ -3276,6 +3801,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "41": {
@@ -3287,6 +3813,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "39": {
@@ -3298,6 +3825,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "38": {
@@ -3309,6 +3837,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "36": {
@@ -3320,6 +3849,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "37": {
@@ -3331,6 +3861,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "31": {
@@ -3342,6 +3873,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "32": {
@@ -3353,6 +3885,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "33": {
@@ -3364,6 +3897,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "34": {
@@ -3375,6 +3909,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "35": {
@@ -3386,6 +3921,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "25": {
@@ -3397,6 +3933,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "26": {
@@ -3408,6 +3945,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "27": {
@@ -3419,6 +3957,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "28": {
@@ -3430,6 +3969,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "29": {
@@ -3441,6 +3981,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "30": {
@@ -3452,6 +3993,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "24": {
@@ -3463,6 +4005,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "22": {
@@ -3474,6 +4017,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "23": {
@@ -3485,6 +4029,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "21": {
@@ -3496,6 +4041,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "19": {
@@ -3507,6 +4053,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "20": {
@@ -3518,6 +4065,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "17": {
@@ -3529,6 +4077,7 @@
         "en": "Supplied answer key: 3. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "18": {
@@ -3540,6 +4089,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "15": {
@@ -3551,6 +4101,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "16": {
@@ -3562,6 +4113,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "14": {
@@ -3573,6 +4125,7 @@
         "en": "Supplied answer key: 1. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 1. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "12": {
@@ -3584,6 +4137,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "13": {
@@ -3595,6 +4149,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "10": {
@@ -3606,6 +4161,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "7": {
@@ -3617,6 +4173,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "8": {
@@ -3629,6 +4186,7 @@
         "en": "Supplied answer key: 3, 5. Either option is accepted by the supplied key. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 3, 5. வழங்கப்பட்ட விடைக்குறிப்பில் இரு தெரிவுகளும் ஏற்கப்பட்டுள்ளன. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "9": {
@@ -3640,6 +4198,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "4": {
@@ -3651,6 +4210,7 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "5": {
@@ -3662,6 +4222,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "6": {
@@ -3673,6 +4234,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "1": {
@@ -3684,6 +4246,7 @@
         "en": "Supplied answer key: 4. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 4. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "2": {
@@ -3695,6 +4258,7 @@
         "en": "Supplied answer key: 5. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 5. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
       "pdf": null
     },
     "3": {
@@ -3706,6 +4270,289 @@
         "en": "Supplied answer key: 2. A worked explanation is not included in the supplied answer sheet.",
         "ta": "வழங்கப்பட்ட விடைக்குறிப்பின்படி: 2. படிப்படியான விளக்கம் வழங்கப்பட்ட விடைத்தாளில் இல்லை."
       },
+      "parts": [],
+      "pdf": null
+    },
+    "82": {
+      "accepted_options": [],
+      "correct_option": null,
+      "solution": {
+        "en": "Reveal each subquestion answer to review your working.",
+        "ta": "ஒவ்வொரு துணை வினாவின் விடையையும் திறந்து உங்கள் செய்முறையைச் சரிபார்க்கவும்."
+      },
+      "parts": [
+        {
+          "id": "a",
+          "answer": {
+            "ta": "A: பூண். B: தீதாள். C: தீதாள் தலை / பற்றுச்சுற்றி.",
+            "en": "A: Sleeve (barrel). B: Thimble. C: Ratchet head / ratchet stop."
+          }
+        },
+        {
+          "id": "b(i)",
+          "answer": {
+            "ta": "புரியிடை = 1 mm / 2 = 0.5 mm.",
+            "en": "Pitch = 1 mm / 2 = 0.5 mm."
+          }
+        },
+        {
+          "id": "b(ii)",
+          "answer": {
+            "ta": "இழிவெண்ணிக்கை = புரியிடை / வட்ட அளவிடைப் பிரிவுகள் = 0.5 / 50 = 0.01 mm.",
+            "en": "Least count = pitch / number of circular-scale divisions = 0.5 / 50 = 0.01 mm."
+          }
+        },
+        {
+          "id": "c",
+          "answer": {
+            "ta": "பூச்சிய வழு = −0.02 mm. ஆகவே பூச்சியத் திருத்தம் = +0.02 mm. வழுவையும் திருத்தத்தையும் வேறுபடுத்துக.",
+            "en": "Zero error = −0.02 mm. Therefore, zero correction = +0.02 mm. Distinguish the error from the correction."
+          }
+        },
+        {
+          "id": "d",
+          "answer": {
+            "ta": "1. கம்பியைப் பட்டடைக்கும் கதிருக்கும் இடையில் வைத்து, பற்றுச்சுற்றியைத் திருப்பி மெதுவாகத் தொடச் செய்க; பற்றுச்சுற்றி வழுக்கத் தொடங்கியதும் நிறுத்துக.\n2. கம்பியை 90° திருப்பியும் பல இடங்களிலும் வாசிப்புகளை எடுத்து, பூச்சியத் திருத்தம் செய்து சராசரியைக் காண்க.",
+            "en": "1. Place the wire between the anvil and spindle. Turn the ratchet to bring them gently into contact with the wire, and stop when the ratchet begins to slip.\n2. Take readings at several positions along the wire and after rotating it through 90°. Apply the zero correction and calculate the mean."
+          }
+        },
+        {
+          "id": "e",
+          "answer": {
+            "ta": "அளக்கப்படும் பொருளின் மீது சீரான சிறிய விசையைப் பிரயோகிக்கவும், மேலதிக அழுத்தத்தால் கம்பி அல்லது கருவி சேதமடைவதைத் தவிர்க்கவும் பற்றுச்சுற்றி உதவுகிறது.",
+            "en": "The ratchet applies a small, consistent force to the object and prevents excessive pressure from damaging the wire or the instrument."
+          }
+        },
+        {
+          "id": "f(i)(1)",
+          "answer": {
+            "ta": "தலைமை அளவிடை = 0.50 mm; வட்ட அளவிடை = 8 × 0.01 = 0.08 mm. வாசிப்பு = 0.58 mm.",
+            "en": "Main-scale reading = 0.50 mm; circular-scale reading = 8 × 0.01 = 0.08 mm. Reading = 0.58 mm."
+          }
+        },
+        {
+          "id": "f(i)(2)",
+          "answer": {
+            "ta": "சரியான விட்டம் = வாசிப்பு − பூச்சிய வழு = 0.58 − (−0.02) = 0.60 mm.",
+            "en": "Corrected diameter = reading − zero error = 0.58 − (−0.02) = 0.60 mm."
+          }
+        },
+        {
+          "id": "f(ii)",
+          "answer": {
+            "ta": "r = 0.60 / 2 = 0.30 mm. A = πr² = 3 × (0.30)² = 0.27 mm².",
+            "en": "r = 0.60 / 2 = 0.30 mm. A = πr² = 3 × (0.30)² = 0.27 mm²."
+          }
+        },
+        {
+          "id": "g(i)",
+          "answer": {
+            "ta": "கம்பியின் நீளம் மற்றும் கம்பியின் திணிவு.",
+            "en": "The length and mass of the wire."
+          }
+        },
+        {
+          "id": "g(ii)",
+          "answer": {
+            "ta": "நீளம்: மீற்றர் சட்டம் / அரை மீற்றர் சட்டம்.\nதிணிவு: பொருத்தமான நுணுக்கமுள்ள ஆய்வுகூட இலத்திரனியல் தராசு, இரசாயனத் தராசு அல்லது நாற்சட்டத் தராசு. 200 mg கம்பிக்கு 100 mg இழிவெண்ணிக்கை கொண்ட முச்சட்டத் தராசு போதிய நுணுக்கமுடையதல்ல.",
+            "en": "Length: a metre rule or half-metre rule.\nMass: a laboratory electronic balance, chemical balance or four-beam balance of suitable precision. A triple-beam balance with a least count of 100 mg is not sufficiently precise for a 200 mg wire."
+          }
+        },
+        {
+          "id": "h",
+          "answer": {
+            "ta": "காட்சியில் mm அலகில் மூன்று தசம இடங்கள் காட்டப்படுகின்றன. இழிவெண்ணிக்கை = 0.001 mm.",
+            "en": "The display shows three decimal places in mm. Least count = 0.001 mm."
+          }
+        }
+      ],
+      "pdf": null
+    },
+    "83": {
+      "accepted_options": [],
+      "correct_option": null,
+      "solution": {
+        "en": "Reveal each subquestion answer to review your working.",
+        "ta": "ஒவ்வொரு துணை வினாவின் விடையையும் திறந்து உங்கள் செய்முறையைச் சரிபார்க்கவும்."
+      },
+      "parts": [
+        {
+          "id": "a",
+          "answer": {
+            "ta": "நுண்மானித் திருகுக் கணிசி: மில்லிமீற்றர் அளவிலான சிறிய தடிப்பை நுணுக்கமாக அளக்கலாம். வழங்கப்பட்ட கையெழுத்து விடையில் வேணியர் கருவி குறிப்பிடப்பட்டுள்ளது; பின்னுள்ள 0.01 mm வாசிப்புகளுடன் பொருந்தும் கருவி நுண்மானித் திருகுக் கணிசி ஆகும்.",
+            "en": "A micrometer screw gauge measures a small thickness of a few millimetres precisely. The supplied handwritten answer names a vernier caliper; however, a micrometer is consistent with the subsequent readings to 0.01 mm."
+          }
+        },
+        {
+          "id": "b",
+          "answer": {
+            "ta": "அளக்கும் முகங்களைச் சுத்தம் செய்து ஒன்றையொன்று மெதுவாகத் தொடச் செய்து பூச்சிய வழுவைச் சரிபார்க்க வேண்டும். வழு இருப்பின் அதன் பெறுமானத்தைக் குறித்து வாசிப்புகளில் திருத்தம் செய்ய வேண்டும்.",
+            "en": "Clean the measuring faces and bring them gently into contact to check for zero error. If an error is present, record it and correct the readings."
+          }
+        },
+        {
+          "id": "c",
+          "answer": {
+            "ta": "a: புறத்தாடைகள். b: புறத்தாடைகள். d: அகத்தாடைகள்.",
+            "en": "a: external jaws. b: external jaws. d: internal jaws."
+          }
+        },
+        {
+          "id": "d",
+          "answer": {
+            "ta": "ஆய்வுகூட இலத்திரனியல் தராசு.",
+            "en": "A laboratory electronic balance."
+          }
+        },
+        {
+          "id": "e",
+          "answer": {
+            "ta": "தகட்டின் கனவளவு V = (ab − πd²/4)t. எனவே ρ = m / [(ab − πd²/4)t]. எல்லா நீளங்களையும் ஒரே அலகில் பயன்படுத்துக.",
+            "en": "The volume of the plate is V = (ab − πd²/4)t. Therefore, ρ = m / [(ab − πd²/4)t]. Use the same unit for all lengths."
+          }
+        },
+        {
+          "id": "f(i)",
+          "answer": {
+            "ta": "இந்த வாசிப்புகளுக்குப் பயன்படுத்தப்பட்ட கருவியின் இழிவெண்ணிக்கை 0.01 mm.",
+            "en": "The least count of the instrument used for these readings is 0.01 mm."
+          }
+        },
+        {
+          "id": "f(ii)",
+          "answer": {
+            "ta": "சராசரி = (3.50 + 3.51 + 3.52 + 3.51 + 3.53) / 5 = 3.514 mm. கருவியின் நுணுக்கத்திற்கேற்ப பதிவுசெய்யப்படும் பெறுமானம் ≈ 3.51 mm.",
+            "en": "Mean = (3.50 + 3.51 + 3.52 + 3.51 + 3.53) / 5 = 3.514 mm. Rounded to the instrument's precision, the recorded value is approximately 3.51 mm."
+          }
+        },
+        {
+          "id": "f(iii)",
+          "answer": {
+            "ta": "வழங்கப்பட்ட கருவியின் இழிவெண்ணிக்கை 0.01 mm என்பதால், இந்தப் பயிற்சியில் இறுதி வாசிப்பை இரண்டு தசம இடங்களில் 3.51 mm எனப் பதிவுசெய்க. கணக்கிடும்போது இடைநிலைப் பெறுமானம் 3.514 mm ஐ வைத்திருக்கலாம்.",
+            "en": "Since the instrument has a least count of 0.01 mm, report the final reading in this exercise to two decimal places as 3.51 mm. The intermediate value 3.514 mm may be retained during calculations."
+          }
+        }
+      ],
+      "pdf": null
+    },
+    "84": {
+      "accepted_options": [],
+      "correct_option": null,
+      "solution": {
+        "en": "Reveal each subquestion answer to review your working.",
+        "ta": "ஒவ்வொரு துணை வினாவின் விடையையும் திறந்து உங்கள் செய்முறையைச் சரிபார்க்கவும்."
+      },
+      "parts": [
+        {
+          "id": "a",
+          "answer": {
+            "ta": "தாடைகளை மெதுவாக மூடி பூச்சிய வழுவைச் சரிபார்த்து, இருந்தால் அதன் பெறுமானத்தைக் குறித்துக்கொள்ள வேண்டும்.",
+            "en": "Gently close the jaws, check for zero error and record its value if present."
+          }
+        },
+        {
+          "id": "b",
+          "answer": {
+            "ta": "ρ = M / V.",
+            "en": "ρ = M / V."
+          }
+        },
+        {
+          "id": "c",
+          "answer": {
+            "ta": "கொள்கலனின் வெளி உயரம் H மற்றும் உள் ஆழம் h.",
+            "en": "The external height H and internal depth h of the vessel."
+          }
+        },
+        {
+          "id": "d",
+          "answer": {
+            "ta": "(i) வாசிப்பு +0.2 mm; இது பூச்சிய வழு; திருத்தம் −0.2 mm.\n(ii) 20.2 mm → 20.0 mm = x₁; வெளிவிட்டம்.\n(iii) 16.2 mm → 16.0 mm = x₂; உள்விட்டம்.\n(iv) 30.2 mm → 30.0 mm = x₃; உள் ஆழம்.\n(v) 35.4 mm → 35.2 mm = x₄; வெளி உயரம்.",
+            "en": "(i) Reading +0.2 mm: this is the zero error; correction −0.2 mm.\n(ii) 20.2 mm → 20.0 mm = x₁: external diameter.\n(iii) 16.2 mm → 16.0 mm = x₂: internal diameter.\n(iv) 30.2 mm → 30.0 mm = x₃: internal depth.\n(v) 35.4 mm → 35.2 mm = x₄: external height."
+          }
+        },
+        {
+          "id": "e(i)",
+          "answer": {
+            "ta": "வெளி உருளையின் கனவளவிலிருந்து உள் வெற்றிடத்தின் கனவளவைக் கழிக்கவும். V = (π/4)(x₁²x₄ − x₂²x₃).",
+            "en": "Subtract the volume of the inner cavity from the volume of the outer cylinder. V = (π/4)(x₁²x₄ − x₂²x₃)."
+          }
+        },
+        {
+          "id": "e(ii)",
+          "answer": {
+            "ta": "V = (3/4)[20.0² × 35.2 − 16.0² × 30.0] = (3/4)(14080 − 7680) = 4800 mm³ = 4.8 × 10⁻⁶ m³.",
+            "en": "V = (3/4)[20.0² × 35.2 − 16.0² × 30.0] = (3/4)(14080 − 7680) = 4800 mm³ = 4.8 × 10⁻⁶ m³."
+          }
+        },
+        {
+          "id": "f",
+          "answer": {
+            "ta": "M = 9.6 × 10⁻³ kg. ρ = (9.6 × 10⁻³)/(4.8 × 10⁻⁶) = 2.0 × 10³ kg m⁻³. வழங்கப்பட்ட கையெழுத்து விடையின் இறுதி அடுக்குக்குறி தவறானது; சரியான பெறுமானம் 2000 kg m⁻³.",
+            "en": "M = 9.6 × 10⁻³ kg. ρ = (9.6 × 10⁻³)/(4.8 × 10⁻⁶) = 2.0 × 10³ kg m⁻³. The final exponent in the supplied handwritten answer is incorrect; the correct value is 2000 kg m⁻³."
+          }
+        }
+      ],
+      "pdf": null
+    },
+    "85": {
+      "accepted_options": [],
+      "correct_option": null,
+      "solution": {
+        "en": "Reveal each subquestion answer to review your working.",
+        "ta": "ஒவ்வொரு துணை வினாவின் விடையையும் திறந்து உங்கள் செய்முறையைச் சரிபார்க்கவும்."
+      },
+      "parts": [
+        {
+          "id": "a",
+          "answer": {
+            "ta": "A: தீதாள். B: தீதாள் தலை / பற்றுச்சுற்றி. C: வட்ட அளவிடை. D: பூண்.",
+            "en": "A: Thimble. B: Ratchet head / ratchet stop. C: Circular scale. D: Sleeve (barrel)."
+          }
+        },
+        {
+          "id": "b",
+          "answer": {
+            "ta": "இழிவெண்ணிக்கை = 0.01 mm.",
+            "en": "Least count = 0.01 mm."
+          }
+        },
+        {
+          "id": "c(i)",
+          "answer": {
+            "ta": "பொருளின் மீது சீரான சிறிய அழுத்தம் பிரயோகிக்கப்படுவதை உறுதிசெய்து, அதிகமாக இறுக்கப்படுவதைத் தவிர்க்கிறது.",
+            "en": "It ensures that a small, consistent pressure is applied to the object and prevents overtightening."
+          }
+        },
+        {
+          "id": "c(ii)",
+          "answer": {
+            "ta": "அளக்கும் முகங்கள் பொருளைத் தொட்டதும் பற்றுச்சுற்றி சத்தத்துடன் வழுக்கிச் சுழல வேண்டும்; கதிர் பொருளை மேலும் இறுக்காமல் இருக்க வேண்டும்.",
+            "en": "Once the measuring faces touch the object, the ratchet should rotate with a clicking, slipping action, without the spindle tightening further against the object."
+          }
+        },
+        {
+          "id": "d",
+          "answer": {
+            "ta": "அளக்கும் முகங்களைச் சுத்தம் செய்து, அவற்றுக்கிடையில் பொருள் இல்லாமல் பற்றுச்சுற்றியால் மெதுவாகத் தொடச் செய்க. வட்ட அளவிடையின் பூச்சியம் குறிப்புக் கோட்டுடன் பொருந்துகிறதா எனப் பார்க்கவும். பொருந்தாவிடின் குறியுடன் கூடிய வாசிப்பே பூச்சிய வழு.",
+            "en": "Clean the measuring faces and use the ratchet to bring them gently into contact with no object between them. Check whether the zero of the circular scale coincides with the reference line. If it does not, the signed reading is the zero error."
+          }
+        },
+        {
+          "id": "e",
+          "answer": {
+            "ta": "தலைமை வாசிப்பு = 0.50 mm; வட்ட வாசிப்பு = 27 × 0.01 = 0.27 mm. விட்டம் = 0.77 mm.",
+            "en": "Main-scale reading = 0.50 mm; circular-scale reading = 27 × 0.01 = 0.27 mm. Diameter = 0.77 mm."
+          }
+        },
+        {
+          "id": "f",
+          "answer": {
+            "ta": "கம்பியின் பல இடங்களிலும், ஒவ்வோர் இடத்திலும் ஒன்றுக்கொன்று செங்குத்தான திசைகளிலும் விட்டங்களை அளக்கவும். ஒவ்வொரு வாசிப்புக்கும் பூச்சியத் திருத்தம் செய்து அவற்றின் சராசரியை எடுக்கவும்.",
+            "en": "Measure the diameter at several positions along the wire and in mutually perpendicular directions at each position. Apply the zero correction to each reading and calculate the mean."
+          }
+        }
+      ],
       "pdf": null
     }
   }

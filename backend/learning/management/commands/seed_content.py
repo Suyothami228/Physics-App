@@ -30,4 +30,6 @@ class Command(BaseCommand):
                 "family": question["family"], "content": question,
             })
         call_command("seed_measurement")
+        call_command("seed_velocity")
+        call_command("seed_vectors")
         self.stdout.write(self.style.SUCCESS("Content ready: existing rows preserved."))

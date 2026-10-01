@@ -1,0 +1,213 @@
+.velocity-lab {
+  display: grid;
+  gap: 18px;
+}
+.velocity-lab p {
+  line-height: 1.9;
+  margin: 0;
+  white-space: pre-line;
+}
+.velocity-scene {
+  width: 100%;
+  max-height: 350px;
+  background: linear-gradient(135deg, #142d4d, #102b36);
+  border-radius: 20px;
+  color: #e8f3ff;
+}
+.velocity-scene text {
+  fill: currentColor;
+  font: 15px sans-serif;
+}
+.velocity-settings,
+.velocity-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+.velocity-slider {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  background: #f0f5fb;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 14px;
+}
+.velocity-slider input {
+  grid-column: 1/-1;
+  width: 100%;
+  accent-color: #356cf3;
+}
+.velocity-stats > div {
+  display: grid;
+  gap: 9px;
+  padding: 18px;
+  border: 1px solid #d9e4f1;
+  border-radius: 16px;
+  background: #f7fbff;
+}
+.velocity-stats span {
+  font-size: 13px;
+  color: #4d6581;
+}
+.velocity-stats strong {
+  font-size: 21px;
+  color: #163c62;
+}
+.velocity-presets,
+.velocity-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.velocity-presets button {
+  border: 1px solid #cad9ee;
+  border-radius: 20px;
+  background: #f0f5ff;
+  padding: 10px 16px;
+  color: #234774;
+  cursor: pointer;
+}
+.velocity-presets button[aria-pressed="true"] {
+  background: #173d64;
+  color: white;
+}
+.velocity-controls label {
+  display: grid;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+  font-size: 14px;
+}
+.velocity-controls input {
+  width: 100%;
+  accent-color: #356cf3;
+}
+.velocity-insight {
+  padding: 20px;
+  background: #eaf8f2;
+  border: 1px solid #cae8db;
+  border-radius: 18px;
+  line-height: 1.8;
+}
+.velocity-insight p {
+  margin: 8px 0;
+}
+.velocity-insight small {
+  display: block;
+  color: #416657;
+  line-height: 1.7;
+}
+.velocity-idea {
+  width: 100%;
+  max-height: 190px;
+  background: #f4f8ff;
+  border-radius: 18px;
+  margin: 12px 0;
+}
+.velocity-idea text {
+  fill: #214064;
+  font: 16px sans-serif;
+}
+.velocity-orbit {
+  transform-origin: 170px 90px;
+  animation: velocity-orbit 9s linear infinite;
+}
+.velocity-trip-dot {
+  animation: velocity-trip 7s ease-in-out infinite;
+}
+@keyframes velocity-orbit {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes velocity-trip {
+  0%,
+  15% {
+    transform: translate(0, 0);
+  }
+  55% {
+    transform: translate(500px, 0);
+  }
+  80%,
+  100% {
+    transform: translate(333px, 30px);
+  }
+}
+.concept-motion-paused .velocity-idea * {
+  animation-play-state: paused !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .velocity-idea * {
+    animation: none !important;
+  }
+}
+.formula-memory {
+  margin: 20px 0 4px;
+  border: 1px solid #8ccabd;
+  border-left: 5px solid #078b74;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #e4f8f0, #eff5ff);
+  overflow: hidden;
+  box-shadow: 0 7px 24px #1239510a;
+}
+.formula-memory-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  border-bottom: 1px solid #c8e4de;
+}
+.formula-memory-heading > span {
+  font-weight: 800;
+  color: #076854;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+.formula-memory button {
+  background: #fff;
+  border: 1px solid #85bcae;
+  border-radius: 20px;
+  padding: 8px 14px;
+  color: #155d50;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+.formula-equations {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+}
+.formula-equations > div {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  color: #143f61;
+  font:
+    600 clamp(16px, 2.2vw, 23px)/1.7 ui-monospace,
+    monospace;
+  overflow-wrap: anywhere;
+}
+.formula-step {
+  font: 700 11px sans-serif;
+  color: #438978;
+  border-radius: 6px;
+  padding: 5px;
+  background: #d8eee6;
+  flex-shrink: 0;
+}
+.formula-memory small {
+  display: block;
+  padding: 0 20px 16px;
+  color: #537667;
+  line-height: 1.7;
+}
+.formula-recall {
+  padding: 20px;
+  color: #345f58;
+  line-height: 1.9;
+}

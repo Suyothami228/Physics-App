@@ -20,7 +20,7 @@ test("trajectory intersects ground across slider bounds", () => {
 });
 test("all curriculum routes resolve and invalid routes are rejected", () => {
   expect(C.chapters).toHaveLength(11);
-  expect(C.chapters.flatMap((c) => c.lessons)).toHaveLength(72);
+  expect(C.chapters.flatMap((c) => c.lessons)).toHaveLength(74);
   for (const c of C.chapters)
     for (const l of c.lessons)
       expect(parseRoute("#/chapter/" + l.id).type).toBe("lesson");

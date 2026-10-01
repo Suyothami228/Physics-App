@@ -4,7 +4,7 @@ from pathlib import Path
 from django.core.management.base import BaseCommand, CommandError
 from django.contrib.auth.models import AnonymousUser
 from django.test import RequestFactory
-from learning.models import ExamQuestion
+from learning.models import ExamQuestion, ExamSection
 from learning import exam_views
 
 
@@ -22,7 +22,8 @@ class Command(BaseCommand):
         request = factory.get('/api/exam/catalog/')
         request.user = AnonymousUser()
         payload = {'catalog': json.loads(exam_views.catalog(request).content), 'collections': {}, 'solutions': {}}
-        for chapter, kind in rows.order_by('chapter_id', 'kind').values_list('chapter_id', 'kind').distinct():
+        collections = set(rows.values_list('chapter_id', 'kind')) | set(ExamSection.objects.values_list('chapter_id', 'kind'))
+        for chapter, kind in sorted(collections):
             params = {'chapter': chapter, 'kind': kind, 'page': 1}
             result = json.loads(exam_views.questions(factory.get('/', params)).content)
             questions = list(result['questions'])

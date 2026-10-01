@@ -1,3 +1,4 @@
+import { VectorText } from "./VectorText";
 import { TravellingLab } from "./TravellingLab";
 import { SpherometerLab } from "./SpherometerLab";
 import { useEffect, useState } from "react";
@@ -5,6 +6,11 @@ import type { Lesson } from "../model";
 import { useApp } from "../state";
 import { API_ENABLED, request } from "../api";
 import measurement from "../domain/measurement.json";
+import vectors from "../domain/vectors.json";
+import { VectorArt } from "./VectorArt";
+import velocity from "../domain/velocity.json";
+import { VelocityArt } from "./VelocityArt";
+import { FormulaMemory } from "./FormulaMemory";
 import { MeasurementActivity } from "./MeasurementActivity";
 import { Outline } from "./Pages";
 import { VisualExplanation } from "./VisualExplanation";
@@ -57,8 +63,12 @@ export function ManagedLesson({
             )
           : {
               blocks:
-                (measurement as Record<string, ContentBlock[]>)[lesson.id] ??
-                [],
+                (
+                  { ...measurement, ...velocity, ...vectors } as Record<
+                    string,
+                    ContentBlock[]
+                  >
+                )[lesson.id] ?? [],
             };
         if (active)
           setBlocks(
@@ -135,9 +145,10 @@ export function ManagedLesson({
           ))}
         </div>
         {stage === "learn" &&
-          filtered.some(
-            (b) => b.presentation && b.presentation !== "plain",
-          ) && (
+          (["02/velocity", "02/vectors"].includes(lesson.id) ||
+            filtered.some(
+              (b) => b.presentation && b.presentation !== "plain",
+            )) && (
             <button
               className="text-link motion-control"
               aria-pressed={motionPaused}
@@ -188,7 +199,13 @@ export function ManagedLesson({
                     ? T("CHANGE IT. OBSERVE IT.", "மாற்றுக. அவதானிக்கவும்.")
                     : T("THE IDEA", "கருத்து")}
             </span>
-            <h2>{block[("title_" + language) as "title_en" | "title_ta"]}</h2>
+            <h2><VectorText text={block[("title_" + language) as "title_en" | "title_ta"]} /></h2>
+            {lesson.id === "02/velocity" && stage === "learn" && (
+              <VelocityArt concept={block.key} />
+            )}
+            {lesson.id === "02/vectors" && stage === "learn" && (
+              <VectorArt concept={block.key} />
+            )}
             {(block.body_en || block.body_ta) &&
               (block.presentation === "table" ? (
                 <UnitReference block={block} />
@@ -199,9 +216,12 @@ export function ManagedLesson({
                   {block[language === "ta" ? "body_ta" : "body_en"]}
                 </p>
               ))}
-            {block.formula && (
-              <div className="lesson-formula">{block.formula}</div>
-            )}
+            {block.formula &&
+              (["02/velocity", "02/vectors"].includes(lesson.id) ? (
+                <FormulaMemory formula={block.formula} />
+              ) : (
+                <div className="lesson-formula">{block.formula}</div>
+              ))}
             {block.kind === "activity" && (
               <MeasurementActivity kind={block.activity ?? ""} />
             )}{" "}
@@ -280,7 +300,7 @@ function QuickCheck({ block }: { block: ContentBlock }) {
                 setChecked(false);
               }}
             />
-            {o}
+            <VectorText text={o} />
           </label>
         ))}
       </fieldset>

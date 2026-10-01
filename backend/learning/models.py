@@ -69,6 +69,8 @@ from django.core.exceptions import ValidationError
 class LessonBlock(models.Model):
     KINDS = [('theory', 'Explanation'), ('example', 'Worked example'), ('activity', 'Interactive activity'), ('check', 'Quick check')]
     ACTIVITIES = [('', 'None'), ('units', 'Unit converter'), ('vernier', 'Vernier calliper'), ('uncertainty', 'Repeated measurements'), ('vectors', 'Vector components'), ('pendulum', 'Pendulum investigation'), ('particles', 'Ideal gas particles'), ('angles', 'Angle ratios'), ('dimension-builder', 'Dimension builder'), ('dimension-equations', 'Equation detective'), ('dimension-scaling', 'Pendulum scaling'), ('dimension-conversion', 'SI-CGS dimension converter'), ('error-target', 'Bias and scatter'), ('error-relative', 'Relative uncertainty'), ('error-propagation', 'Uncertainty propagation'), ('vernier-3d', '3D vernier caliper lab'), ('micrometer-3d', '3D micrometer lab'), ('spherometer-3d', '3D spherometer lab'), ('travelling-3d', '3D travelling microscope lab')]
+    ACTIVITIES += [("vector-sort", "Scalar/vector sorting"), ("vector-addition", "Vector addition lab"), ("vector-paths", "Vector paths")]
+    ACTIVITIES += [('velocity-journey', 'Velocity: journey studio'), ('velocity-circle', 'Velocity: circular motion'), ('velocity-acceleration', 'Velocity: acceleration and gravity')]
     lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE, related_name='blocks')
     key = models.SlugField(max_length=80, help_text='Stable identifier within this lesson, e.g. si-units.')
     instrument = models.CharField(max_length=30, blank=True, choices=[('', 'General lesson'), ('ruler', 'Metre rule'), ('vernier', 'Vernier caliper'), ('micrometer', 'Micrometer'), ('spherometer', 'Spherometer'), ('travelling', 'Travelling microscope'), ('balance', 'Balance'), ('stopwatch', 'Stopwatch'), ('thermometer', 'Thermometer')], help_text='For Measuring Instruments: choose the instrument page where this block belongs.')
@@ -151,6 +153,7 @@ def validate_exam_image(value):
         raise ValidationError('Upload a PNG or JPEG image.')
 
 class ExamSection(models.Model):
+    kind = models.CharField(max_length=12, default='mcq', choices=[('mcq','MCQ'),('structured','Structured'),('essay','Essay')])
     chapter = models.ForeignKey(Chapter, on_delete=models.PROTECT, related_name='exam_sections')
     slug = models.SlugField()
     title_en = models.CharField(max_length=200)
@@ -162,6 +165,7 @@ class ExamSection(models.Model):
         return f'{self.chapter_id} · {self.title_en}'
 
 class ExamQuestion(models.Model):
+    structured_parts = models.JSONField(default=list, blank=True, help_text='Ordered subquestions: id, prompt {en,ta}, answer {en,ta}, optional image and image_alt {en,ta}.')
     chapter = models.ForeignKey(Chapter, on_delete=models.PROTECT, related_name='exam_questions')
     section = models.ForeignKey(ExamSection, null=True, blank=True, on_delete=models.PROTECT, related_name='questions')
     position = models.PositiveSmallIntegerField(default=0)
@@ -169,7 +173,7 @@ class ExamQuestion(models.Model):
     question_image = models.FileField(upload_to='exam/images/', blank=True, validators=[FileExtensionValidator(['png','jpg','jpeg']), validate_exam_image])
     accepted_options = models.JSONField(default=list, blank=True, help_text='Optional list of accepted MCQ option numbers, e.g. [3, 5]. Leave empty for a single correct option.')
     kind = models.CharField(max_length=12, choices=[('mcq','MCQ'),('structured','Structured'),('essay','Essay')])
-    year = models.PositiveSmallIntegerField(validators=[MinValueValidator(1970), MaxValueValidator(2100)])
+    year = models.PositiveSmallIntegerField(null=True, blank=True, validators=[MinValueValidator(1970), MaxValueValidator(2100)])
     paper = models.CharField(max_length=120, help_text='For example: GCE A/L Physics Paper I, Tamil medium')
     number = models.CharField(max_length=30, help_text='Original question number, including subpart if applicable')
     title_en = models.CharField(max_length=200)
@@ -193,8 +197,22 @@ class ExamQuestion(models.Model):
         ordering = ['position','-year','paper','number','id']
 
     def clean(self):
+        if not isinstance(self.structured_parts, list):
+            raise ValidationError({'structured_parts':'Use a list of subquestions.'})
+        ids = set()
+        for part in self.structured_parts:
+            if not isinstance(part, dict) or not isinstance(part.get('id'), str) or not part['id'] or part['id'] in ids:
+                raise ValidationError({'structured_parts':'Each subquestion needs a unique text id.'})
+            ids.add(part['id'])
+            for field in ('prompt','answer'):
+                if not isinstance(part.get(field), dict) or not all(isinstance(part[field].get(lang), str) and part[field][lang].strip() for lang in ('en','ta')):
+                    raise ValidationError({'structured_parts':f'Each subquestion needs {field} text for en and ta.'})
+            if part.get('image') and (not isinstance(part['image'],str) or not part['image'].startswith('/review/structured/') or '..' in part['image']):
+                raise ValidationError({'structured_parts':'Use a local /review/structured/ diagram path.'})
         if self.section_id and self.section.chapter_id != self.chapter_id:
             raise ValidationError({'section':'Choose a section belonging to this chapter.'})
+        if self.section_id and self.section.kind != self.kind:
+            raise ValidationError({'section':'Choose a section matching this question type.'})
         if self.accepted_options is None:
             self.accepted_options = []
         if not isinstance(self.accepted_options, list) or any(type(n) is not int or not 1 <= n <= 5 for n in self.accepted_options):

@@ -1,4 +1,6 @@
 import { TravellingLab } from "./TravellingLab";
+import { VectorLab } from "./VectorLab";
+import { VelocityLab } from "./VelocityLab";
 import { SpherometerLab } from "./SpherometerLab";
 import { Caliper3D } from "./Caliper3D";
 import { MicrometerLab } from "./MicrometerLab";
@@ -12,6 +14,8 @@ import {
   ParticleExperiment,
 } from "./IntroductionExperiments";
 export function MeasurementActivity({ kind }: { kind: string }) {
+  if (kind.startsWith("vector-")) return <VectorLab kind={kind} />;
+  if (kind.startsWith("velocity-")) return <VelocityLab kind={kind} />;
   if (kind === "travelling-3d") return <TravellingLab />;
   if (kind === "spherometer-3d") return <SpherometerLab />;
   if (kind === "micrometer-3d") return <MicrometerLab />;

@@ -1,4 +1,8 @@
-type ReviewQuestion = { id: number; year: number; section: string | null };
+type ReviewQuestion = {
+  id: number;
+  year: number | null;
+  section: string | null;
+};
 type Collection = {
   questions: ReviewQuestion[];
   sections: {
@@ -44,12 +48,16 @@ export function selectReviewData(snapshot: Snapshot, path: string): unknown {
   let questions = collection.questions.filter(
     (q) => !params.get("section") || q.section === params.get("section"),
   );
-  const years = [...new Set(questions.map((q) => q.year))].sort(
-    (a, b) => b - a,
-  );
+  const years = [
+    ...new Set(
+      questions
+        .map((q) => q.year)
+        .filter((year): year is number => year !== null),
+    ),
+  ].sort((a, b) => b - a);
   if (params.get("year"))
     questions = questions.filter((q) => q.year === Number(params.get("year")));
-  questions = [...questions].sort((a, b) => b.year - a.year);
+  questions = [...questions].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
   const pages = Math.max(1, Math.ceil(questions.length / 12));
   const page = Math.max(1, Math.min(pages, Number(params.get("page")) || 1));
   return {

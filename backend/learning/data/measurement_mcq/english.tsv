@@ -1,0 +1,81 @@
+1	The following units are used to measure distances.\n(A) millimetre   (B) micrometre   (C) angstrom\n(D) light-year   (E) kilometre\nWhich pair represents the largest and smallest units, respectively?	A and C|E and C|B and C|D and C|D and B
+2	Which of the following has the dimensions of energy?	Momentum|Force|Power|Pressure|Moment of a force
+3	Which of the following quantities is dimensionless?	Specific heat capacity|Relative density|Stiffness|Frequency|Speed
+4	A particle has uniform acceleration a and initial velocity u. Its distance travelled in time t is s. If s = k¹ᐟ²(1 + at/(2u)), what are the dimensions of k?	LT|L²|L|LT⁻²|L¹ᐟ²
+5	The force F acting between two masses is directly proportional to m₁m₂/r², where m₁ and m₂ are the masses and r is their separation. What are the dimensions of the constant of proportionality?	M²L²|M²L²T⁻²|MLT⁻²|M⁻¹L³T⁻²|MLT⁻¹
+6	The resistance R of a light bulb and the current I through it are related by R = kI³ᐟ², where k is a constant. Which graph should be plotted to obtain a straight line?	R against I|R against log I|R² against I|log R against log I|log R against I
+7	M₁ and M₂ represent masses, and U₁ and U₂ represent velocities. Consider U₁ = [2M₁/(M₁ + M₂²)]U₂. This equation is:	Dimensionally correct.|Dimensionally correct if 2M₁ in the numerator is replaced by 2M₁M₂.|Dimensionally correct if 2M₁ in the numerator is replaced by 2M₁².|Dimensionally correct if M₁ + M₂² in the denominator is replaced by M₁² + M₂.|Dimensionally correct if M₁ + M₂² in the denominator is replaced by M₁ + M₂.
+8	What is the SI unit of the gravitational constant G?	m s⁻²|J m kg⁻¹|m³ kg⁻¹ s⁻²|m² kg⁻¹ s⁻²|N m² kg⁻²
+9	An equation for the force P between two masses M₁ and M₂ separated by a distance r contains a constant k with dimensions ML⁻³T². Which equation is dimensionally consistent?	P = k(M₁ + M₂)/r²|P = M₁M₂/(kr²)|P = kM₁M₂/r²|P = kM₁M₂r²|P = kM₁M₂/r
+10	Which of the following has units?	Coefficient of friction|Young's modulus (modulus of longitudinal elasticity)|Relative density|Specific gravity|Ratio of specific heat capacities
+11	What are the dimensions of the universal gravitational constant G?	
+12	In f = k√(T/m), k = 1 when T is measured in N, m in kg m⁻¹ and f in s⁻¹. If m is measured in mg m⁻¹ while the units of f and T remain unchanged, what is the value of k?	10⁻³|10⁻³ᐟ²|1|10³ᐟ²|10³
+13	In an experiment on friction, the resistive force on a falling sphere of radius a and speed v is F = kav². What are the dimensions of k?	ML⁻¹T⁻¹|ML⁻²|ML⁻²T⁻¹|ML⁻¹T⁻²|ML⁻¹T
+14	V₁ and V₂ represent voltages, and I₁ represents current. If V₁ = K₁I₁ + K₂V₂, the ratio K₁/K₂:	Has the unit of resistance.|Has the unit of current.|Has the unit of voltage.|Has the unit of power.|Is dimensionless.
+15	Which of the following is a unit of electric field strength E?	C m⁻¹|A m⁻¹|N m⁻¹|N C⁻¹|N V⁻¹
+16	The heat capacity C of a solid may be expressed as C = αT + βT³, where T is temperature and α and β are constants. Which is a possible unit of β?	J K³|J K|J|J K⁻²|J K⁻⁴
+17	The pressure P, volume V and temperature T of a gas are related by (P + a/V²)V = nRT, where a is a constant for the gas and R is the universal gas constant. What are the dimensions of a?	ML²T⁻²|ML⁵T⁻¹|ML⁵T⁻²|ML⁴T⁻³|ML⁶T⁻²
+18	What is the unit of the gravitational constant G?	N m⁻¹|N kg⁻¹|N m kg⁻²|N m² kg⁻¹|N m² kg⁻²
+19	Consider the following statements.\n(A) The dimensions of pressure are ML⁻¹T⁻².\n(B) The dimensions of surface tension are MT⁻².\n(C) Relative density is dimensionless.\nWhich statements are true?	A only|B only|C only|A and C only|All of A, B and C
+20	The specific heat capacity of a substance is C = A + BT², where A and B are dimensional constants and T is temperature. What are the units of A and B, respectively?	J °C⁻¹ ; J °C⁻³|J kg⁻¹ °C⁻¹ ; J kg⁻¹ °C⁻³|J kg⁻¹ °C⁻¹ ; J kg⁻¹ °C⁻²|J kg⁻¹ ; J kg⁻¹ °C⁻²|J kg °C⁻¹ ; J kg °C⁻³
+21	What are the dimensions of power?	ML²T²|ML²T⁻³|MLT⁻²|MLT⁻³|L²T⁻²
+22	Which of the following is a way of expressing the unit of electrical resistance?	J A⁻²|J A⁻² s⁻¹|J A⁻¹ s⁻¹|J A⁻¹ s⁻¹ m⁻¹|J⁻¹ A² s²
+23	Which pair of quantities has the same dimensions?	Gravitational constant and gravitational acceleration|Young's modulus and surface tension|Impulse and momentum|Moment of a force and momentum|Work and power
+24	Which of the following units is equivalent to the volt?	J m⁻¹|N C⁻¹|J s|N m⁻¹|J C⁻¹
+25	Which of the following is equivalent to one light-year? (Speed of light = 3 × 10⁸ m s⁻¹)	3 × 10⁸ × 365 × 24 × 3.6 km|3 × 10⁸ × 365 × 24 × 3600 km|3 × 10⁸ × 365 × 3.6 km|365 × 24 × 3.6 s|365 × 24 × 3600 s
+26	The distance travelled in time t by a particle moving with uniform acceleration a is s = kat². The constant k:	Has dimension L.|Has dimensions LT.|Has dimensions LT².|Has dimensions LT⁴.|Has no dimensions.
+27	What are the dimensions of magnetic flux density in terms of mass (M), length (L), time (T) and current (I)?	M²L²IT⁻²|ML⁻²I⁻¹T⁻¹|MLIT|MI⁻¹T⁻²|ML²IT
+28	Work has the same dimensions as which of the following?	Energy|Force|Momentum|Power|Impulse
+29	Which is equivalent to the watt, the unit of power?	N m s⁻²|N s m⁻¹|N m s|N m s⁻¹|N m² s
+30	A kilowatt-hour is a unit of:	Power|Energy|Current|Voltage|Time
+31	What is the SI unit of the coefficient of viscosity?	kg m⁻² s⁻²|kg m⁻¹ s⁻¹|kg m⁻¹ s⁻²|kg m⁻² s⁻¹|kg m⁻² s
+32	A kilowatt-hour is a unit of which of the following?	Power|Energy|Electric current|Voltage|Time
+33	Which quantity is measured in ampere-hours?	Electric charge|Electromotive force|Power|Energy|Voltage
+34	For surface waves of wavelength λ on a liquid of density ρ, under the effects of gravity and surface tension s, a quantity A is given by A = λ/B + 2πs/(ρλ). If B is a constant, what are its dimensions?	L/T|L²/T²|T²/L|ML²/T²|L²/T
+35	Which pair of physical quantities has the same dimensions?	Work and power|Stress and strain|Young's modulus and pressure|Coefficient of viscosity and surface tension|Force and momentum
+36	The distance travelled by a vehicle in time t is S = At²(1 + ½Bt). What are the dimensions of A and B, respectively?	LT² ; L¹ᐟ²T¹ᐟ²|T² ; T³|LT⁻² ; T⁻¹|LT⁻² ; (LT⁻³)¹ᐟ²|L ; L
+37	In V² = gA/(2π) + 2πγ/(ρA), V is velocity, g is gravitational acceleration, γ is surface tension and ρ is density. What are the dimensions of A?	L|LT|LT⁻¹|LT⁻²|L²
+38	Which of the following quantities has a unit?	Coefficient of friction|Strain|Specific gravity|Refractive index|Stiffness
+39	Which combination of units is equivalent to the tesla?	m/(C s)|N s/C|N/(C m)|N s/(C m)|N s/m
+40	An ampere-hour is:	A unit of current.|A unit of power.|A unit of energy.|A unit of time.|A unit of electric charge.
+41	Consider (A) electric charge, (B) mass and (C) temperature. Which are base quantities in the SI system?	B only|A and B only|A and C only|B and C only|All of A, B and C
+42	Which of the following is a unit of the moment of a force?	N m⁻²|N m⁻¹|N m|N m²|N² m
+43	In F = c₁a + c₂v/t, F, a, v and t represent force, acceleration, velocity and time, respectively. The ratio c₁/c₂:	Has the dimensions of acceleration.|Has the dimensions of mass.|Has the dimensions of work.|Has the dimensions of velocity.|Is dimensionless.
+44	The product “angular acceleration × time” has the dimensions of:	Angular displacement|Angular velocity|Torque|Moment of inertia|Work
+45	What is the SI unit of pressure?	Joule|Newton|Watt|Pascal|Hertz
+46	What is the unit of Planck's constant h?	J s⁻¹|J s|J s⁻²|J⁻¹ s|J⁻¹ s⁻¹
+47	What are the dimensions of angular velocity?	LT⁻¹|T⁻¹|LT⁻²|T|L⁻¹T⁻¹
+48	One of the following units measures a physical quantity different from that measured by the others. Which unit is it?	eV|J s⁻¹|W s|Kilowatt-hour|MeV
+49	What are the dimensions of power?	ML²T³|ML²T⁻²|MLT⁻³|ML²T⁻³|ML⁻²T⁻³
+50	The eV (electronvolt) is:	A unit of power.|A unit of energy.|A unit of electric charge.|A unit of voltage.|A unit of pressure difference.
+51	In vⁱ = kaʲs, v represents velocity, a acceleration and s displacement. The constant k is dimensionless, and i and j are constants. What values of i and j, respectively, make the equation dimensionally consistent?	1, 1|1, 2|2, 1|2, 2|2, 3
+52	What are the dimensions of frequency?	LT⁻¹|Hz|L⁻¹|T⁻¹|ML⁻¹
+53	What is the unit of the intensity level of a sound wave?	Hz|W|J m⁻²|W m⁻²|dB
+54	In C log(I/I₀ + 1) = qV/(kT), I and V represent electric current and voltage, respectively, and C is dimensionless. The term kT/q:	Is dimensionless.|Has the dimensions of resistance.|Has the dimensions of V⁻¹.|Has the dimensions of I.|Has the dimensions of V.
+55	The decay rate A of a radioactive sample varies with time t as A = A₀ exp(−λt). What are the dimensions of λ?	T|T⁻¹|MT|M⁻¹T|MT⁻¹
+56	In C = √(k/ρ), C is speed and ρ is density. What are the units of k?	kg m s⁻²|kg¹ᐟ² s|kg m s⁻¹|kg m⁻¹ s⁻²|kg m¹ᐟ² s
+57	Which of the following is not an SI unit?	kg|m|s|A|k
+58	What is the SI unit of surface tension?	N|N m⁻¹|N m|N m⁻²|N m²
+59	Multiplying the dimensions of a physical quantity by L³ gives the dimensions of work. What is this quantity?	Force|Momentum|Pressure|Mass|Velocity
+60	What are the dimensions of a kilowatt-hour?	ML²T⁻²|MLT⁻¹|ML²T⁻³|T|T⁻¹
+61	The energy of a photon of frequency f is E = hf. What are the dimensions of h?	ML²T⁻¹|ML⁻¹T⁻²|ML⁻²T⁻¹|ML²T⁻²|ML⁻³T⁻¹
+62	What are the dimensions of moment of inertia?	ML²|ML|M|L|MLT⁻¹
+63	What is the SI unit of quantity of heat?	cal|W|K|J|cd
+64	What is the unit of thermal conductivity?	J m⁻¹ K⁻¹|W m⁻¹ K⁻¹|W m⁻² K⁻¹|J m⁻² K⁻¹|W m⁻² K⁻¹
+65	What are the dimensions of the gravitational constant?	M⁻¹L²|M²LT⁻¹|M⁻¹L³T⁻²|M²LT⁻¹|MLT⁻²
+66	Which of the following is not defined as a base unit in the SI system?	m|N|kg|s|K
+67	Consider the following statements about information obtainable from dimensional analysis.\n(A) It can determine the numerical value of a constant of proportionality in a physical equation.\n(B) It can determine the sign of a constant of proportionality.\n(C) It can determine the units of a constant of proportionality.\nWhich statements are true?	A only|B only|C only|B and C only|All of A, B and C
+68	The dimensional equation for a = krⁿvᵐ is LT⁻² = Lⁿ(L/T)ᵐ, where k is dimensionless. What is the corresponding physical equation?	
+69	Considering their units, which of the following quantities differs from the others?	Elastic potential energy of a spring|Mechanical compression energy|Internal energy|Work|Power
+70	Which of the following quantities are dimensionless?\n(A) Relative velocity   (B) Relative density   (C) Specific gravity	A only|A and B only|B and C only|A and C only|All of A, B and C
+71	An electronvolt (eV) is:	A unit of charge.|A unit of pressure.|A unit of capacitance.|A unit of energy.|A unit of electric field intensity.
+72	The physical quantities a, b, c and d have different dimensions, and k is dimensionless.\n(A) ka³ = b   (B) d = ac   (C) a = kb\nWhich of these relations can be dimensionally valid?	B only|C only|A and B only|A and C only|All of A, B and C
+73	What is the unit of pressure?	kg m s⁻²|kg m² s⁻²|kg m⁻¹ s⁻²|kg m² s⁻²|kg m⁻² s⁻² A⁻¹
+74	X, Y and Z are three physical quantities with different dimensions. Another quantity P is formed as P = AX + BY + CZ. Which expression has dimensions different from those of the others?	AX|AX − CZ|(AX)(CZ)/(BY)|(BY)²/P|(BY)(CZ)
+75	Which of the following is not a base unit?	m|J|cd|K|mol
+76	Which gives the dimensions of the gravitational constant G?	L²M⁻¹T⁻¹|L²M⁻²|L²M⁻²T⁻¹|L³M⁻¹T⁻²|L³M⁻²T⁻²
+77	What are the dimensions of Planck's constant?	M²LT|M²LT⁻¹|MLT²|MLT⁻¹|ML²T⁻¹
+78	Which pair of physical quantities has the same dimensions?	Stress and strain|Work and energy|Velocity and displacement|Weight and mass|Torque and angular momentum
+79	An electronvolt (eV) is:	A unit of energy.|A unit of power.|A unit of charge.|A unit of voltage.|A unit of force.
+80	The speed of a liquid of viscosity η flowing through a horizontal tube of internal radius a and length l under a pressure difference Δp may be written as v = CaⁿΔp/(ηl), where C is dimensionless. What is the value of n?	½|1|2|3|4
+81	Which physical quantity has a unit but no dimensions?	Planck's constant|Surface tension|Energy|Relative velocity|Sound intensity level

@@ -1,0 +1,64 @@
+[
+  {
+    "key": "measurement-structured-2024-wire",
+    "title": "Micrometer screw gauge — measuring a wire",
+    "prompt": "A micrometer screw gauge is provided to measure the diameter of a thin, uniform wire approximately 15 cm long and of mass 200 mg. Answer the following subquestions.",
+    "parts": [
+      {"id":"a", "prompt":"Name the parts labelled A, B (excluding the scales) and C in Figure (1).", "answer":"A: Sleeve (barrel). B: Thimble. C: Ratchet head / ratchet stop."},
+      {"id":"b(i)", "prompt":"Each millimetre on the main scale is divided into two. The circular scale has 50 equal divisions. In one complete revolution of the thimble, the spindle moves by one main-scale division. State the pitch in mm.", "answer":"Pitch = 1 mm / 2 = 0.5 mm."},
+      {"id":"b(ii)", "prompt":"Calculate the least count in mm.", "answer":"Least count = pitch / number of circular-scale divisions = 0.5 / 50 = 0.01 mm."},
+      {"id":"c", "prompt":"Figure (2) shows the position of the circular scale when the anvil and spindle touch. State the zero error in mm.", "answer":"Zero error = −0.02 mm. Therefore, zero correction = +0.02 mm. Distinguish the error from the correction."},
+      {"id":"d", "prompt":"After accounting for the zero error, describe two steps in measuring the diameter of the wire.", "answer":"1. Place the wire between the anvil and spindle. Turn the ratchet to bring them gently into contact with the wire, and stop when the ratchet begins to slip.\n2. Take readings at several positions along the wire and after rotating it through 90°. Apply the zero correction and calculate the mean."},
+      {"id":"e", "prompt":"What is the purpose of part C?", "answer":"The ratchet applies a small, consistent force to the object and prevents excessive pressure from damaging the wire or the instrument."},
+      {"id":"f(i)(1)", "prompt":"Figure (3) shows the scales when the diameter is measured at one point on the wire. State the instrument reading in mm.", "answer":"Main-scale reading = 0.50 mm; circular-scale reading = 8 × 0.01 = 0.08 mm. Reading = 0.58 mm."},
+      {"id":"f(i)(2)", "prompt":"Using the zero error above, give the corrected diameter of the wire.", "answer":"Corrected diameter = reading − zero error = 0.58 − (−0.02) = 0.60 mm."},
+      {"id":"f(ii)", "prompt":"Calculate the cross-sectional area of the wire in mm². Take π = 3.", "answer":"r = 0.60 / 2 = 0.30 mm. A = πr² = 3 × (0.30)² = 0.27 mm²."},
+      {"id":"g(i)", "prompt":"What two other measurements are needed to determine the density of the material of the wire?", "answer":"The length and mass of the wire."},
+      {"id":"g(ii)", "prompt":"Name the most suitable instruments for obtaining these two measurements.", "answer":"Length: a metre rule or half-metre rule.\nMass: a laboratory electronic balance, chemical balance or four-beam balance of suitable precision. A triple-beam balance with a least count of 100 mg is not sufficiently precise for a 200 mg wire."},
+      {"id":"h", "prompt":"What is the least count, in mm, of the digital micrometer shown in Figure (4)?", "answer":"The display shows three decimal places in mm. Least count = 0.001 mm."}
+    ]
+  },
+  {
+    "key":"measurement-structured-plate",
+    "title":"Density of a metal plate with a hole",
+    "prompt":"The diagram shows a metal plate with a circular hole of diameter d. The dimensions a, b and d are a few centimetres (less than 10 cm), and the thickness t is of the order of millimetres.",
+    "parts":[
+      {"id":"a", "prompt":"Which instrument is most suitable for measuring the thickness t of the plate?", "answer":"A micrometer screw gauge measures a small thickness of a few millimetres precisely. The supplied handwritten answer names a vernier caliper; however, a micrometer is consistent with the subsequent readings to 0.01 mm."},
+      {"id":"b", "prompt":"What important check should be made before using the instrument?", "answer":"Clean the measuring faces and bring them gently into contact to check for zero error. If an error is present, record it and correct the readings."},
+      {"id":"c", "prompt":"Which parts of a vernier caliper are used to measure a, b and d?", "answer":"a: external jaws. b: external jaws. d: internal jaws."},
+      {"id":"d", "prompt":"Which laboratory instrument is suitable for measuring the mass m of the plate?", "answer":"A laboratory electronic balance."},
+      {"id":"e", "prompt":"Write an expression for the density of the metal using the measurements obtained.", "answer":"The volume of the plate is V = (ab − πd²/4)t. Therefore, ρ = m / [(ab − πd²/4)t]. Use the same unit for all lengths."},
+      {"id":"f(i)", "prompt":"The thickness readings are 3.50, 3.51, 3.52, 3.51 and 3.53 mm. What is the least count of the instrument?", "answer":"The least count of the instrument used for these readings is 0.01 mm."},
+      {"id":"f(ii)", "prompt":"Calculate the mean thickness of the plate.", "answer":"Mean = (3.50 + 3.51 + 3.52 + 3.51 + 3.53) / 5 = 3.514 mm. Rounded to the instrument's precision, the recorded value is approximately 3.51 mm."},
+      {"id":"f(iii)", "prompt":"To how many decimal places should the answer be reported? Give a reason.", "answer":"Since the instrument has a least count of 0.01 mm, report the final reading in this exercise to two decimal places as 3.51 mm. The intermediate value 3.514 mm may be retained during calculations."}
+    ]
+  },
+  {
+    "key":"measurement-structured-vessel",
+    "title":"Density of the material of a cylindrical vessel",
+    "prompt":"A vernier caliper and an electronic balance are provided to determine the density of the material of a small, uniform cylindrical vessel.",
+    "parts":[
+      {"id":"a", "prompt":"What is the first step before taking measurements with the vernier caliper?", "answer":"Gently close the jaws, check for zero error and record its value if present."},
+      {"id":"b", "prompt":"Write an expression for density ρ in terms of the volume V and mass M of the material.", "answer":"ρ = M / V."},
+      {"id":"c", "prompt":"Apart from the external and internal diameters, what other measurements are required?", "answer":"The external height H and internal depth h of the vessel."},
+      {"id":"d", "prompt":"Using Figures (i)–(v), tabulate the reading, corrected reading and name of the measurement for each. The vessel's height is greater than its external diameter. Denote the corrected readings in (ii), (iii), (iv) and (v) by x₁, x₂, x₃ and x₄, respectively.", "answer":"(i) Reading +0.2 mm: this is the zero error; correction −0.2 mm.\n(ii) 20.2 mm → 20.0 mm = x₁: external diameter.\n(iii) 16.2 mm → 16.0 mm = x₂: internal diameter.\n(iv) 30.2 mm → 30.0 mm = x₃: internal depth.\n(v) 35.4 mm → 35.2 mm = x₄: external height."},
+      {"id":"e(i)", "prompt":"Write an expression for the volume V of the vessel's material in terms of x₁, x₂, x₃ and x₄.", "answer":"Subtract the volume of the inner cavity from the volume of the outer cylinder. V = (π/4)(x₁²x₄ − x₂²x₃)."},
+      {"id":"e(ii)", "prompt":"Calculate V using the corrected readings above. Take π = 3.", "answer":"V = (3/4)[20.0² × 35.2 − 16.0² × 30.0] = (3/4)(14080 − 7680) = 4800 mm³ = 4.8 × 10⁻⁶ m³."},
+      {"id":"f", "prompt":"If the electronic balance reads 9.6 g, calculate the density of the material in kg m⁻³.", "answer":"M = 9.6 × 10⁻³ kg. ρ = (9.6 × 10⁻³)/(4.8 × 10⁻⁶) = 2.0 × 10³ kg m⁻³. The final exponent in the supplied handwritten answer is incorrect; the correct value is 2000 kg m⁻³."}
+    ]
+  },
+  {
+    "key":"measurement-structured-ball",
+    "title":"Micrometer screw gauge — a ball and a wire",
+    "prompt":"Answer the following subquestions about the micrometer screw gauge shown in the diagram.",
+    "parts":[
+      {"id":"a", "prompt":"Name the parts labelled A, B, C and D.", "answer":"A: Thimble. B: Ratchet head / ratchet stop. C: Circular scale. D: Sleeve (barrel)."},
+      {"id":"b", "prompt":"State the least count of the micrometer shown, in mm.", "answer":"Least count = 0.01 mm."},
+      {"id":"c(i)", "prompt":"What is the main function of part B during a measurement?", "answer":"It ensures that a small, consistent pressure is applied to the object and prevents overtightening."},
+      {"id":"c(ii)", "prompt":"How would you check that part B is working correctly?", "answer":"Once the measuring faces touch the object, the ratchet should rotate with a clicking, slipping action, without the spindle tightening further against the object."},
+      {"id":"d", "prompt":"How would you determine the zero error of the micrometer?", "answer":"Clean the measuring faces and use the ratchet to bring them gently into contact with no object between them. Check whether the zero of the circular scale coincides with the reference line. If it does not, the signed reading is the zero error."},
+      {"id":"e", "prompt":"Figure (2) shows the scales when measuring the diameter of a steel ball. If there is no zero error, what is the diameter of the ball?", "answer":"Main-scale reading = 0.50 mm; circular-scale reading = 27 × 0.01 = 0.27 mm. Diameter = 0.77 mm."},
+      {"id":"f", "prompt":"How would you obtain a more accurate value for the diameter of a thin wire?", "answer":"Measure the diameter at several positions along the wire and in mutually perpendicular directions at each position. Apply the zero correction to each reading and calculate the mean."}
+    ]
+  }
+]

@@ -502,3 +502,17 @@
 .exam-question-reference { display:flex; justify-content:flex-end; padding:8px 22px 14px; color:var(--muted, #64748b); font-size:12px; }
 .exam-question .exam-preserve { line-height:2; font-size:17px; overflow-wrap:anywhere; }
 .exam-option { white-space:pre-wrap; line-height:1.8; }
+
+.structured-hint { background: #eef8fa; padding: 1rem; border-radius: 12px; color: #22566a; }
+.structured-part { border: 1px solid #d9e6ed; border-radius: 18px; padding: clamp(14px,3vw,26px); margin: 20px 0; background: #fff; }
+.structured-part h3 { color: #076e82; margin-top: 0; }
+.structured-part textarea { display: block; width: 100%; min-height: 100px; margin: 10px 0 16px; padding: 12px; border: 1px solid #bacdd6; border-radius: 10px; font: inherit; box-sizing: border-box; }
+.structured-diagram { display: flex; align-items: center; flex-direction: column; gap: 8px; margin: 18px 0; padding: 10px; border-radius: 12px; background: #f8fafb; }
+.structured-diagram img { max-width: 100%; max-height: 520px; object-fit: contain; }
+.structured-photo { padding: 22px; border-radius: 18px; background: #eef4ff; border: 1px solid #c7d8f6; }
+.structured-photo label { display: block; margin: 14px 0; }
+.structured-photo select,.structured-photo input[type=file] { display: block; max-width: 100%; margin-top: 8px; }
+.structured-photo .answer-photo { display: block; max-width: 100%; max-height: 380px; object-fit: contain; margin: 14px 0; }
+.structured-workspace button { padding: 10px 16px; border: 1px solid #a2c9d1; border-radius: 10px; cursor: pointer; font: inherit; background: #eaf7f7; color: #164d60; }
+.structured-workspace button:disabled { opacity: .55; cursor: not-allowed; }
+.structured-workspace .exam-preserve { line-height: 1.95; overflow-wrap: anywhere; }

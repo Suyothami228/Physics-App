@@ -19,7 +19,8 @@
           "ta": "பௌதிகவியல் அறிமுகம்",
           "en": "Introduction to physics",
           "index": 1,
-          "available": false
+          "available": true,
+          "content_status": "published"
         },
         {
           "id": "01/quantities",
@@ -27,7 +28,8 @@
           "ta": "பௌதிகக் கணியங்களும் அலகுகளும்",
           "en": "Physical quantities & units",
           "index": 2,
-          "available": false
+          "available": true,
+          "content_status": "published"
         },
         {
           "id": "01/dimensions",
@@ -35,7 +37,8 @@
           "ta": "பரிமாணங்கள்",
           "en": "Dimensions",
           "index": 3,
-          "available": false
+          "available": true,
+          "content_status": "published"
         },
         {
           "id": "01/uncertainty",
@@ -43,7 +46,8 @@
           "ta": "அளவீட்டு வழுக்கள்",
           "en": "Measurement uncertainty",
           "index": 4,
-          "available": false
+          "available": true,
+          "content_status": "published"
         },
         {
           "id": "01/instruments",
@@ -51,7 +55,8 @@
           "ta": "அளவீட்டு உபகரணங்கள்",
           "en": "Measuring instruments",
           "index": 5,
-          "available": false
+          "available": true,
+          "content_status": "published"
         },
         {
           "id": "01/vectors",
@@ -59,7 +64,8 @@
           "ta": "காவிக் கணியங்கள்",
           "en": "Vectors",
           "index": 6,
-          "available": false
+          "available": true,
+          "content_status": "published"
         }
       ]
     },
@@ -77,11 +83,27 @@
       "source": "https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=263",
       "lessons": [
         {
+          "id": "02/vectors",
+          "slug": "vectors",
+          "ta": "காவிகளும் எண்ணிகளும்",
+          "en": "Vectors and Scalars",
+          "index": 1,
+          "available": true
+        },
+        {
+          "id": "02/velocity",
+          "slug": "velocity",
+          "ta": "வேகம்",
+          "en": "Velocity",
+          "index": 2,
+          "available": true
+        },
+        {
           "id": "02/motion",
           "slug": "motion",
           "ta": "நேர்கோட்டு இயக்கம்",
           "en": "Linear motion",
-          "index": 1,
+          "index": 3,
           "available": false
         },
         {
@@ -89,7 +111,7 @@
           "slug": "projectile",
           "ta": "எறிய இயக்கம்",
           "en": "Projectile motion",
-          "index": 2,
+          "index": 4,
           "available": true
         },
         {
@@ -97,7 +119,7 @@
           "slug": "forces",
           "ta": "விசைகளும் விளையுளும்",
           "en": "Forces & resultants",
-          "index": 3,
+          "index": 5,
           "available": false
         },
         {
@@ -105,7 +127,7 @@
           "slug": "newton",
           "ta": "நியூட்டனின் இயக்க விதிகள்",
           "en": "Newton’s laws",
-          "index": 4,
+          "index": 6,
           "available": false
         },
         {
@@ -113,7 +135,7 @@
           "slug": "momentum",
           "ta": "உந்தமும் மோதுகைகளும்",
           "en": "Momentum & collisions",
-          "index": 5,
+          "index": 7,
           "available": false
         },
         {
@@ -121,7 +143,7 @@
           "slug": "equilibrium",
           "ta": "சமநிலையும் புவியீர்ப்பு மையமும்",
           "en": "Equilibrium & centre of gravity",
-          "index": 6,
+          "index": 8,
           "available": false
         },
         {
@@ -129,7 +151,7 @@
           "slug": "energy",
           "ta": "வேலை, சக்தி மற்றும் வலு",
           "en": "Work, energy & power",
-          "index": 7,
+          "index": 9,
           "available": false
         },
         {
@@ -137,7 +159,7 @@
           "slug": "rotation",
           "ta": "சுழற்சி இயக்கமும் கோண உந்தமும்",
           "en": "Rotation & angular momentum",
-          "index": 8,
+          "index": 10,
           "available": false
         },
         {
@@ -145,7 +167,7 @@
           "slug": "hydrostatics",
           "ta": "நீர் நிலையியல்",
           "en": "Hydrostatics",
-          "index": 9,
+          "index": 11,
           "available": false
         },
         {
@@ -153,7 +175,7 @@
           "slug": "fluids",
           "ta": "பாயிகளின் இயக்கம்",
           "en": "Fluid dynamics",
-          "index": 10,
+          "index": 12,
           "available": false
         }
       ]

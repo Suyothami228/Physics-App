@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from django.core.files import File
 from django.core.management.base import BaseCommand, CommandError
+from django.core.management import call_command
 from django.db import transaction
 from learning.models import Chapter, ExamSection, ExamQuestion
 
@@ -46,4 +47,5 @@ class Command(BaseCommand):
             with (base/row['image']).open('rb') as image:
                 q.question_image.save(f'{key}.png',File(image),save=False)
             q.full_clean();q.save();count+=1
+        call_command('translate_measurement_questions', stdout=self.stdout)
         self.stdout.write(self.style.SUCCESS(f'{count} questions imported/upgraded; {81-count} existing questions preserved. Q11 and Q68 require clearer source choices before publication.'))

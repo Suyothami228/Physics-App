@@ -6,6 +6,20 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from .models import Chapter, ExamQuestion, validate_exam_pdf
 
 class ExamPrepTests(TestCase):
+    def test_empty_mcq_section_is_visible_and_accepts_questions(self):
+        from .models import ExamSection
+        section = ExamSection.objects.create(chapter=self.chapter, kind='mcq', slug='measuring-instruments', title_en='Measuring Instruments', title_ta='அளவிடும் கருவிகள்')
+        data = self.client.get('/api/exam/questions/?chapter=01&kind=mcq').json()
+        self.assertEqual(data['sections'][0]['slug'], 'measuring-instruments')
+        self.assertEqual(data['sections'][0]['total'], 0)
+        self.assertEqual(self.client.get('/api/exam/questions/?chapter=01&kind=essay').json()['sections'], [])
+        self.question.section = section
+        self.question.full_clean()
+        self.question.save()
+        data = self.client.get('/api/exam/questions/?chapter=01&kind=mcq&section=measuring-instruments').json()
+        self.assertEqual(data['total'], 1)
+        self.assertEqual(data['questions'][0]['id'], self.question.pk)
+
     def setUp(self):
         self.media = tempfile.TemporaryDirectory()
         self.addCleanup(self.media.cleanup)
@@ -153,7 +167,7 @@ class ExamPrepTests(TestCase):
         q.prompt_en='Read the original Tamil question below and select the matching option number.'
         q.options_en='Option 1\nOption 2\nOption 3\nOption 4\nOption 5';q.save()
         call_command('import_measurement_mcq',upgrade_scans=True,verbosity=0)
-        q.refresh_from_db();self.assertEqual(q.prompt_en,'');self.assertNotIn('தெரிவு 1',q.options_ta)
+        q.refresh_from_db();self.assertIn('units are used to measure distances',q.prompt_en);self.assertNotIn('தெரிவு 1',q.options_ta)
         q.prompt_ta='Educator typed edit';q.save()
         call_command('import_measurement_mcq',upgrade_scans=True,verbosity=0)
         q.refresh_from_db();self.assertEqual(q.prompt_ta,'Educator typed edit')

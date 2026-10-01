@@ -22,14 +22,14 @@ class LearningTests(TestCase):
         Chapter.objects.filter(pk='01').update(title_ta='தமிழ் ஆசிரியர் திருத்தம்')
         call_command('seed_content', verbosity=0)
         self.assertEqual(Chapter.objects.count(), 11)
-        self.assertEqual(Lesson.objects.count(), 72)
+        self.assertEqual(Lesson.objects.count(), 74)
         self.assertEqual(Question.objects.count(), 90)
         self.assertEqual(Chapter.objects.get(pk='01').title_ta, 'தமிழ் ஆசிரியர் திருத்தம்')
 
     def test_curriculum_and_questions_have_no_answers(self):
         data = self.client.get('/api/curriculum/').json()
         self.assertEqual(len(data['chapters']), 11)
-        self.assertEqual(data['total'], 72)
+        self.assertEqual(data['total'], 74)
         q = self.client.get('/api/questions/').json()['questions'][0]
         for private in ['value', 'correct', 'explain', 'tolerance']:
             self.assertNotIn(private, q)
@@ -107,7 +107,7 @@ class ContentTests(TestCase):
         self.assertEqual(self.client.get('/api/lessons/01/quantities/').json()['blocks'],[])
         row=self.client.get('/api/curriculum/').json()['chapters'][0]['lessons'][1]
         self.assertFalse(row['available'])
-        self.assertEqual(LessonBlock.objects.count(),118)
+        self.assertEqual(LessonBlock.objects.count(),162)
 
     def test_admin_forms_update_titles_and_descriptions_without_json(self):
         from .admin import ChapterForm

@@ -14,7 +14,10 @@ urlpatterns = [
 ]
 
 from learning import exam_views
+from learning import photo_marking
 urlpatterns += [
+    path('api/exam/photo-marking/', photo_marking.status),
+    path('api/exam/photo-marking/<int:pk>/', photo_marking.mark),
     path('media/<path:name>', exam_views.stored_document),
     path('api/exam/catalog/', exam_views.catalog),
     path('api/exam/questions/', exam_views.questions),

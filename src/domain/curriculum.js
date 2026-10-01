@@ -35,6 +35,8 @@ const model = (() => {
       "F = ma",
       "#356cf3",
       [
+        ["vectors", "காவிகளும் எண்ணிகளும்", "Vectors and Scalars"],
+        ["velocity", "வேகம்", "Velocity"],
         ["motion", "நேர்கோட்டு இயக்கம்", "Linear motion"],
         ["projectile", "எறிய இயக்கம்", "Projectile motion"],
         ["forces", "விசைகளும் விளையுளும்", "Forces & resultants"],
@@ -288,7 +290,8 @@ const model = (() => {
         ta,
         en,
         index: index + 1,
-        available: id === "02" && slug === "projectile",
+        available:
+          id === "02" && ["projectile", "velocity", "vectors"].includes(slug),
       })),
     }),
   );

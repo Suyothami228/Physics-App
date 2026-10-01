@@ -130,6 +130,7 @@ class ExamQuestionAdmin(admin.ModelAdmin):
         ('Organisation', {'fields': ['chapter','section','kind','year','paper','number','position']}),
         ('Question', {'fields': ['title_en','title_ta','prompt_en','prompt_ta','question_image','question_pdf','source_url',('marks','minutes')]}),
         ('MCQ options', {'fields': ['options_en','options_ta','correct_option','accepted_options']}),
+        ('Structured subquestions', {'fields': ['structured_parts']}),
         ('Solution / marking scheme', {'fields': ['solution_en','solution_ta','marking_pdf','updated_at']}),
         ('Review and publish', {'fields': ['confirm_review','published']}),
     ]
@@ -137,7 +138,7 @@ class ExamQuestionAdmin(admin.ModelAdmin):
 
 @admin.register(ExamSection)
 class ExamSectionAdmin(admin.ModelAdmin):
-    list_display = ['title_en','title_ta','chapter','slug']
-    list_filter = ['chapter']
+    list_display = ['title_en','title_ta','chapter','kind','slug']
+    list_filter = ['chapter','kind']
     search_fields = ['title_en','title_ta']
     prepopulated_fields = {'slug': ('title_en',)}

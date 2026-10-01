@@ -4,6 +4,11 @@ import { useApp } from "../state";
 import { API_ENABLED } from "../api";
 import { readExamReview } from "../exam-review";
 import { Practice } from "./Practice";
+import {
+  StructuredQuestion,
+  type StructuredPart,
+  type PartAnswer,
+} from "./StructuredQuestion";
 import "../styles/exam.css";
 
 type Kind = "mcq" | "structured" | "essay";
@@ -47,8 +52,9 @@ const kinds: {
 ];
 type Count = { chapter_id: string; kind: Kind; total: number };
 type PaperQuestion = {
+  parts?: StructuredPart[];
   id: number;
-  year: number;
+  year: number | null;
   paper: string;
   number: string;
   kind: Kind;
@@ -62,6 +68,7 @@ type PaperQuestion = {
   options: { en: string[]; ta: string[] };
 };
 type Solution = {
+  parts?: PartAnswer[];
   accepted_options?: number[];
   correct_option: number | null;
   solution: Bilingual;
@@ -540,6 +547,45 @@ function QuestionCard({
       setBusy(false);
     }
   }
+  if (q.kind === "structured" && q.parts?.length)
+    return (
+      <article className="exam-question">
+        <button
+          className="exam-question-toggle"
+          aria-expanded={open}
+          aria-controls={`exam-q-${q.id}`}
+          onClick={() => setOpen(!open)}
+        >
+          <span>
+            {T("Question", "வினா")} {q.number} · {q.title[language]}
+          </span>
+          <small>
+            {q.parts.length} {T("parts", "துணை வினாக்கள்")}
+          </small>
+          <b>{open ? "−" : "+"}</b>
+        </button>
+        {open && (
+          <div className="exam-question-body" id={`exam-q-${q.id}`}>
+            <p className="exam-preserve">{q.prompt[language]}</p>
+            <StructuredQuestion
+              questionId={q.id}
+              parts={q.parts}
+              loadAnswers={async () =>
+                (await read<Solution>(`/api/exam/solutions/${q.id}/`)).parts ||
+                []
+              }
+            />
+          </div>
+        )}
+        <footer className="exam-question-reference">
+          <small>
+            {q.year
+              ? `${T("Year", "ஆண்டு")} · ${q.year}`
+              : T("Year not specified", "ஆண்டு குறிப்பிடப்படவில்லை")}
+          </small>
+        </footer>
+      </article>
+    );
   return (
     <article className="exam-question">
       <button
