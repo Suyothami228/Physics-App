@@ -69,6 +69,7 @@ from django.core.exceptions import ValidationError
 class LessonBlock(models.Model):
     KINDS = [('theory', 'Explanation'), ('example', 'Worked example'), ('activity', 'Interactive activity'), ('check', 'Quick check')]
     ACTIVITIES = [('', 'None'), ('units', 'Unit converter'), ('vernier', 'Vernier calliper'), ('uncertainty', 'Repeated measurements'), ('vectors', 'Vector components'), ('pendulum', 'Pendulum investigation'), ('particles', 'Ideal gas particles'), ('angles', 'Angle ratios'), ('dimension-builder', 'Dimension builder'), ('dimension-equations', 'Equation detective'), ('dimension-scaling', 'Pendulum scaling'), ('dimension-conversion', 'SI-CGS dimension converter'), ('error-target', 'Bias and scatter'), ('error-relative', 'Relative uncertainty'), ('error-propagation', 'Uncertainty propagation'), ('vernier-3d', '3D vernier caliper lab'), ('micrometer-3d', '3D micrometer lab'), ('spherometer-3d', '3D spherometer lab'), ('travelling-3d', '3D travelling microscope lab')]
+    ACTIVITIES += [("relative-ships", "Relative velocity: ships"), ("relative-river", "Relative velocity: river")]
     ACTIVITIES += [("graph-lines", "Graph: lines"), ("graph-curves", "Graph: curves"), ("graph-transform", "Graph: axis transformations"), ("graph-motion", "Graph: velocity-time")]
     ACTIVITIES += [("vector-sort", "Scalar/vector sorting"), ("vector-addition", "Vector addition lab"), ("vector-paths", "Vector paths")]
     ACTIVITIES += [('velocity-journey', 'Velocity: journey studio'), ('velocity-circle', 'Velocity: circular motion'), ('velocity-acceleration', 'Velocity: acceleration and gravity')]
@@ -84,6 +85,9 @@ class LessonBlock(models.Model):
     body_en = models.TextField(blank=True, help_text='For visual layouts: separate cards with a blank line. Each card starts with a short heading, then a new line and its explanation.')
     body_ta = models.TextField(blank=True)
     formula = models.CharField(max_length=300, blank=True)
+    explainer = models.CharField(max_length=40, blank=True, choices=[('', 'None'), ('relative-observer', 'Manim: changing the observer'), ('relative-river', 'Manim: river crossing strategies')])
+    video_url = models.URLField(blank=True, help_text='Optional hosted video URL; overrides the built-in explainer. Upload/render videos separately.')
+    video_steps = models.JSONField(default=list, blank=True, help_text='Optional captions: [{"time":0,"en":"English caption","ta":"Tamil caption"}]. Times in seconds, ascending. Leave empty for built-in captions.')
     activity = models.CharField(max_length=30, choices=ACTIVITIES, blank=True)
     options_en = models.TextField(blank=True, help_text='For quick checks: one option per line, 2 to 5 options.')
     options_ta = models.TextField(blank=True)
@@ -96,6 +100,13 @@ class LessonBlock(models.Model):
         constraints = [models.UniqueConstraint(fields=['lesson', 'key'], name='unique_lesson_block')]
 
     def clean(self):
+        if not isinstance(self.video_steps,list):
+            raise ValidationError({'video_steps':'Use a list of timed bilingual captions.'})
+        previous=-1
+        for step in self.video_steps:
+            if not isinstance(step,dict) or not isinstance(step.get('time'),(int,float)) or isinstance(step.get('time'),bool) or not 0 <= step['time'] < 86400 or step['time'] <= previous or not all(isinstance(step.get(lang),str) and step[lang].strip() for lang in ['en','ta']):
+                raise ValidationError({'video_steps':'Each caption needs increasing non-negative time, en and ta text.'})
+            previous=step['time']
         if self.presentation != 'plain':
             import re
             en=[x for x in re.split(r'\n\s*\n',self.body_en.strip()) if x.strip()]

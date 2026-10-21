@@ -207,3 +207,8 @@ educator edits are preserved. `seed_content` also calls this command.
 
 Use `ANIMATION-GUIDE.md` for the shared mathematical animation direction,
 colour meanings, accessibility requirements and instrument-specific exceptions.
+# Relative velocity lesson
+
+Mechanics → Relative velocity includes bilingual explanations, seven quick checks, a ship observer lab and a river-crossing lab. The source terminology uses தொடர்பு வேகம் (சார்பு வேகம்). The river model assumes uniform current and constant boat speed relative to water; its playback is time-compressed. Original reference unit/diagram inconsistencies are corrected in the lesson.
+
+After pulling this version, run `python manage.py migrate` and `python manage.py seed_relative` from `backend` with your normal database environment. This adds the lesson after Graphs without replacing educator edits. `seed_content` also includes it. Static educator previews bundle the same bilingual content. The interactive activity choices in admin are `relative-ships` and `relative-river`.

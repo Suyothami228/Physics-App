@@ -38,6 +38,7 @@ const model = (() => {
         ["vectors", "காவிகளும் எண்ணிகளும்", "Vectors and Scalars"],
         ["velocity", "வேகம்", "Velocity"],
         ["graphs", "வரைபுகள்", "Graphs"],
+        ["relative", "தொடர்பு வேகம்", "Relative velocity"],
         ["motion", "நேர்கோட்டு இயக்கம்", "Linear motion"],
         ["projectile", "எறிய இயக்கம்", "Projectile motion"],
         ["forces", "விசைகளும் விளையுளும்", "Forces & resultants"],
@@ -292,7 +293,7 @@ const model = (() => {
         en,
         index: index + 1,
         available:
-          id === "02" && ["projectile", "velocity", "vectors", "graphs"].includes(slug),
+          id === "02" && ["projectile", "velocity", "vectors", "graphs", "relative"].includes(slug),
       })),
     }),
   );

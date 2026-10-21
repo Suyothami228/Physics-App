@@ -60,7 +60,7 @@ class LessonInline(admin.TabularInline):
 class BlockInline(admin.StackedInline):
     model=LessonBlock
     extra=0
-    fields=[('key','position','kind','published'),('title_en','title_ta'),'instrument','presentation','body_en','body_ta','formula','activity','options_en','options_ta','correct_option','explanation_en','explanation_ta']
+    fields=[('key','position','kind','published'),('title_en','title_ta'),'instrument','presentation','body_en','body_ta','formula','explainer','video_url','video_steps','activity','options_en','options_ta','correct_option','explanation_en','explanation_ta']
 
 @admin.register(Chapter)
 class ChapterAdmin(admin.ModelAdmin):

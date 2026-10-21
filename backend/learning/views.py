@@ -152,6 +152,6 @@ def lesson_content(request, lesson_id):
     blocks=[]
     if lesson.content_status == 'published':
         for block in lesson.blocks.filter(published=True):
-            blocks.append({name:getattr(block,name) for name in ['id','key','instrument','position','kind','title_en','title_ta','body_en','body_ta','presentation','formula','activity','options_en','options_ta','correct_option','explanation_en','explanation_ta']})
+            blocks.append({name:getattr(block,name) for name in ['id','key','instrument','position','kind','title_en','title_ta','body_en','body_ta','presentation','formula','explainer','video_url','video_steps','activity','options_en','options_ta','correct_option','explanation_en','explanation_ta']})
     return JsonResponse({'id':lesson.id,'status':lesson.content_status,'blocks':blocks})
 

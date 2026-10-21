@@ -6,6 +6,10 @@ import type { Lesson } from "../model";
 import { useApp } from "../state";
 import { API_ENABLED, request } from "../api";
 import measurement from "../domain/measurement.json";
+import relative from "../domain/relative.json";
+import { RelativeConcept } from "./RelativeConcept";
+import { ManimExplainer } from "./ManimExplainer";
+import type { VideoStep } from "../domain/explainers";
 import graphs from "../domain/graphs.json";
 import { GraphConcept } from "./GraphConcept";
 import vectors from "../domain/vectors.json";
@@ -29,6 +33,9 @@ export type ContentBlock = {
   body_en?: string;
   body_ta?: string;
   formula?: string;
+  explainer?: string;
+  video_url?: string;
+  video_steps?: VideoStep[];
   presentation?: string;
   activity?: string;
   options_en?: string;
@@ -71,6 +78,7 @@ export function ManagedLesson({
                     ...velocity,
                     ...vectors,
                     ...graphs,
+                    ...relative,
                   } as Record<string, ContentBlock[]>
                 )[lesson.id] ?? [],
             };
@@ -149,7 +157,9 @@ export function ManagedLesson({
           ))}
         </div>
         {stage === "learn" &&
-          (["02/velocity", "02/vectors", "02/graphs"].includes(lesson.id) ||
+          (["02/velocity", "02/vectors", "02/graphs", "02/relative"].includes(
+            lesson.id,
+          ) ||
             filtered.some(
               (b) => b.presentation && b.presentation !== "plain",
             )) && (
@@ -217,6 +227,19 @@ export function ManagedLesson({
             {lesson.id === "02/graphs" && stage === "learn" && (
               <GraphConcept concept={block.key} />
             )}
+            {lesson.id === "02/relative" &&
+              stage === "learn" &&
+              ["relative-opposite"].includes(block.key) && (
+                <RelativeConcept concept={block.key} paused={motionPaused} />
+              )}
+            {stage === "learn" && (block.explainer || block.video_url) && (
+              <ManimExplainer
+                name={block.explainer}
+                url={block.video_url}
+                steps={block.video_steps}
+                paused={motionPaused}
+              />
+            )}
             {(block.body_en || block.body_ta) &&
               (block.presentation === "table" ? (
                 <UnitReference block={block} />
@@ -228,9 +251,12 @@ export function ManagedLesson({
                 </p>
               ))}
             {block.formula &&
-              (["02/velocity", "02/vectors", "02/graphs"].includes(
-                lesson.id,
-              ) ? (
+              ([
+                "02/velocity",
+                "02/vectors",
+                "02/graphs",
+                "02/relative",
+              ].includes(lesson.id) ? (
                 <FormulaMemory formula={block.formula} />
               ) : (
                 <div className="lesson-formula">{block.formula}</div>

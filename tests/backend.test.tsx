@@ -65,7 +65,7 @@ beforeEach(() => {
       }
       const responses: Record<string, unknown> = {
         "/api/session/": { user: { id: 1, username: "learner" } },
-        "/api/curriculum/": { chapters: [...C.chapters], total: 75 },
+        "/api/curriculum/": { chapters: [...C.chapters], total: 76 },
         "/api/questions/": { questions: [publicQuestion] },
         "/api/attempts/": { attempts: rows },
       };

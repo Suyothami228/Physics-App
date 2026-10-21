@@ -1,4 +1,5 @@
 import { TravellingLab } from "./TravellingLab";
+import { RelativeLab } from "./RelativeLab";
 import { GraphLab } from "./GraphLab";
 import { VectorLab } from "./VectorLab";
 import { VelocityLab } from "./VelocityLab";
@@ -15,6 +16,7 @@ import {
   ParticleExperiment,
 } from "./IntroductionExperiments";
 export function MeasurementActivity({ kind }: { kind: string }) {
+  if (kind.startsWith("relative-")) return <RelativeLab kind={kind} />;
   if (kind.startsWith("graph-")) return <GraphLab kind={kind} />;
   if (kind.startsWith("vector-")) return <VectorLab kind={kind} />;
   if (kind.startsWith("velocity-")) return <VelocityLab kind={kind} />;

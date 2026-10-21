@@ -1,0 +1,64 @@
+.relative-stage {
+  overflow-x: auto;
+  border-radius: 20px;
+  max-width: 100%;
+}
+.relative-stage .math-plot {
+  min-width: 620px;
+}
+.relative-stage:focus-visible {
+  outline: 3px solid #e6a800;
+  outline-offset: 3px;
+}
+.relative-stage text {
+  font-size: 17px;
+}
+.math-lab button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.relative-concept line {
+  transition:
+    x2 0.6s ease,
+    y2 0.6s ease;
+}
+.relative-concept circle {
+  transition: cx 0.6s ease;
+}
+.concept-motion-paused .relative-concept * {
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .relative-concept * {
+    transition: none;
+  }
+}
+.relative-3d {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+.relative-3d-canvas {
+  width: 100%;
+  height: clamp(300px, 46vw, 480px);
+  background: #101923;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.relative-3d-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+.relative-playbar {
+  padding: 16px;
+  background: #e5f4f8;
+  border-radius: 16px;
+}
+.relative-playbar button:first-child {
+  background: #116b85;
+  color: white;
+  font-weight: 750;
+  padding: 14px 26px;
+}

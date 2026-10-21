@@ -1,0 +1,4 @@
+camera:
+  background_color: '#101923'
+  resolution: (1280, 720)
+  fps: 24

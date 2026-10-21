@@ -1,0 +1,83 @@
+.manim-explainer {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  background: #edf5f9;
+  border: 1px solid #c5dce7;
+  border-radius: 20px;
+  margin: 18px 0;
+  min-width: 0;
+}
+.manim-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  color: #144a60;
+}
+.manim-heading span {
+  font-size: 13px;
+}
+.manim-explainer video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #101923;
+  border-radius: 14px;
+}
+.manim-caption {
+  margin: 0;
+  padding: 18px;
+  background: #112735;
+  color: #f0f6ff;
+  border-left: 4px solid #58c4dd;
+  border-radius: 12px;
+  line-height: 1.9;
+  min-height: 90px;
+}
+.manim-steps {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.manim-steps button {
+  display: grid;
+  gap: 3px;
+  min-width: 52px;
+  padding: 10px;
+  border: 1px solid #bdd3df;
+  background: white;
+  border-radius: 12px;
+  color: #153e50;
+  cursor: pointer;
+}
+.manim-steps span {
+  font-size: 11px;
+}
+.manim-steps [aria-current] {
+  background: #145b73;
+  color: white;
+}
+.manim-explainer li {
+  margin: 12px 0;
+  line-height: 1.8;
+}
+.manim-explainer button:focus-visible {
+  outline: 3px solid #e6a800;
+  outline-offset: 3px;
+}
+.manim-explainer .math-preset-row button {
+  border: 1px solid #b8d3df;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: white;
+  color: #174358;
+  cursor: pointer;
+}
+.manim-explainer .math-preset-row button:first-child {
+  background: #176982;
+  color: white;
+}
+.manim-explainer button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
