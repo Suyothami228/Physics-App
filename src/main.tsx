@@ -4,6 +4,7 @@ import App from "./App";
 import { BackendGate } from "./components/BackendGate";
 import "./styles/shell.css";
 import "./styles/lesson.css";
+import "./styles/animation-theme.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BackendGate>

@@ -1,4 +1,5 @@
 import { TravellingLab } from "./TravellingLab";
+import { GraphLab } from "./GraphLab";
 import { VectorLab } from "./VectorLab";
 import { VelocityLab } from "./VelocityLab";
 import { SpherometerLab } from "./SpherometerLab";
@@ -14,6 +15,7 @@ import {
   ParticleExperiment,
 } from "./IntroductionExperiments";
 export function MeasurementActivity({ kind }: { kind: string }) {
+  if (kind.startsWith("graph-")) return <GraphLab kind={kind} />;
   if (kind.startsWith("vector-")) return <VectorLab kind={kind} />;
   if (kind.startsWith("velocity-")) return <VelocityLab kind={kind} />;
   if (kind === "travelling-3d") return <TravellingLab />;

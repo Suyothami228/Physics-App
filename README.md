@@ -194,3 +194,16 @@ The Exam Question add/edit form includes **Photo → editable question**. Select
 OCR runs locally in the browser using Tesseract.js 6.0.1 (Apache-2.0). Its loader and worker are vendored under `backend/learning/static/learning/vendor/`; the first extraction downloads versioned core files from jsDelivr and Tamil/English language models from tessdata.projectnaptha.com. An internet connection is required for uncached OCR assets. Photos are not sent to an external OCR service. Run `node scripts/check-ocr.cjs` for an optional Tamil-image extraction smoke check after `npm ci`. Keep the vendored files and license in sync with the pinned npm dependency when upgrading. Production must serve Django collected static files.
 
 Uploaded source photos are private admin references. The learner API does not expose them or internal paper/author metadata; cards show typed questions, actual answer choices and a small year reference. Keep backups of source files and database content. OCR does not reliably recover mathematical layout or determine correct answers, and does not automatically publish questions.
+
+### Mechanics: Graphs
+
+The bilingual Graphs lesson (`#/chapter/02/graphs`) follows Velocity. It includes
+interactive straight lines, curve branches, coordinate transformations and a
+velocity-time motion lab, plus eight quick checks. Source blocks are in
+`backend/seed/graphs.json`; the matching frontend seed supports static review.
+Run `python backend/manage.py migrate` and `python backend/manage.py seed_graphs`
+against the configured database to add the admin-editable version. Existing
+educator edits are preserved. `seed_content` also calls this command.
+
+Use `ANIMATION-GUIDE.md` for the shared mathematical animation direction,
+colour meanings, accessibility requirements and instrument-specific exceptions.

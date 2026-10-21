@@ -6,6 +6,8 @@ import type { Lesson } from "../model";
 import { useApp } from "../state";
 import { API_ENABLED, request } from "../api";
 import measurement from "../domain/measurement.json";
+import graphs from "../domain/graphs.json";
+import { GraphConcept } from "./GraphConcept";
 import vectors from "../domain/vectors.json";
 import { VectorArt } from "./VectorArt";
 import velocity from "../domain/velocity.json";
@@ -64,10 +66,12 @@ export function ManagedLesson({
           : {
               blocks:
                 (
-                  { ...measurement, ...velocity, ...vectors } as Record<
-                    string,
-                    ContentBlock[]
-                  >
+                  {
+                    ...measurement,
+                    ...velocity,
+                    ...vectors,
+                    ...graphs,
+                  } as Record<string, ContentBlock[]>
                 )[lesson.id] ?? [],
             };
         if (active)
@@ -145,7 +149,7 @@ export function ManagedLesson({
           ))}
         </div>
         {stage === "learn" &&
-          (["02/velocity", "02/vectors"].includes(lesson.id) ||
+          (["02/velocity", "02/vectors", "02/graphs"].includes(lesson.id) ||
             filtered.some(
               (b) => b.presentation && b.presentation !== "plain",
             )) && (
@@ -199,12 +203,19 @@ export function ManagedLesson({
                     ? T("CHANGE IT. OBSERVE IT.", "மாற்றுக. அவதானிக்கவும்.")
                     : T("THE IDEA", "கருத்து")}
             </span>
-            <h2><VectorText text={block[("title_" + language) as "title_en" | "title_ta"]} /></h2>
+            <h2>
+              <VectorText
+                text={block[("title_" + language) as "title_en" | "title_ta"]}
+              />
+            </h2>
             {lesson.id === "02/velocity" && stage === "learn" && (
               <VelocityArt concept={block.key} />
             )}
             {lesson.id === "02/vectors" && stage === "learn" && (
               <VectorArt concept={block.key} />
+            )}
+            {lesson.id === "02/graphs" && stage === "learn" && (
+              <GraphConcept concept={block.key} />
             )}
             {(block.body_en || block.body_ta) &&
               (block.presentation === "table" ? (
@@ -217,7 +228,9 @@ export function ManagedLesson({
                 </p>
               ))}
             {block.formula &&
-              (["02/velocity", "02/vectors"].includes(lesson.id) ? (
+              (["02/velocity", "02/vectors", "02/graphs"].includes(
+                lesson.id,
+              ) ? (
                 <FormulaMemory formula={block.formula} />
               ) : (
                 <div className="lesson-formula">{block.formula}</div>

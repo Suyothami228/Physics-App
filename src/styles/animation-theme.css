@@ -1,0 +1,51 @@
+/* Shared explanatory-animation palette. Preserve real instrument geometry/materials. */
+:root {
+  --motion-stage: #10141e;
+  --motion-grid: #263140;
+  --motion-primary: #58c4dd;
+  --motion-focus: #ffff00;
+  --motion-positive: #83c167;
+  --motion-negative: #ff8080;
+  --motion-text: #eef4ff;
+}
+.managed-lesson
+  :is(.velocity-scene, .vector-board, .velocity-idea, .vector-concept) {
+  background: var(--motion-stage);
+  color: var(--motion-text);
+  border: 1px solid #2c3444;
+}
+.managed-lesson :is(.velocity-idea, .vector-concept) text {
+  fill: var(--motion-text);
+}
+.managed-lesson :is(.velocity-idea, .vector-concept) foreignObject {
+  color: var(--motion-text);
+}
+.managed-lesson
+  :is(.velocity-scene, .vector-board, .velocity-idea, .vector-concept)
+  [stroke="#356cf3"],
+.managed-lesson :is(.velocity-idea, .vector-concept) [stroke="#5774f7"] {
+  stroke: var(--motion-primary);
+}
+.managed-lesson :is(.velocity-idea, .vector-concept) [stroke="#0f9b78"] {
+  stroke: var(--motion-positive);
+}
+.managed-lesson :is(.experiment-stage) {
+  background: var(--motion-stage);
+  border: 1px solid #2c3444;
+  color: var(--motion-text);
+}
+.managed-lesson .experiment-stage svg text {
+  fill: var(--motion-text);
+}
+.managed-lesson :is(.vector-lab, .velocity-lab) input[type="range"] {
+  accent-color: #177e98;
+}
+.managed-lesson :is(.vector-readout, .velocity-stats) > div {
+  border-top: 3px solid #177e98;
+}
+@media (prefers-reduced-motion: reduce) {
+  .managed-lesson :is(.vector-trace, .velocity-idea *) {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -32,4 +32,5 @@ class Command(BaseCommand):
         call_command("seed_measurement")
         call_command("seed_velocity")
         call_command("seed_vectors")
+        call_command("seed_graphs")
         self.stdout.write(self.style.SUCCESS("Content ready: existing rows preserved."))
