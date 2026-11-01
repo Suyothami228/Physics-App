@@ -2,6 +2,39 @@ from django.conf import settings
 from django.db import models
 
 
+class ContentRevision(models.Model):
+    target = models.CharField(max_length=160, db_index=True)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)
+    created_at = models.DateTimeField(auto_now_add=True)
+    before = models.JSONField()
+    after = models.JSONField()
+    reason = models.CharField(max_length=500)
+
+    class Meta:
+        permissions = [('publish_wording', 'Publish educator wording corrections'), ('manage_feedback', 'Manage educator technical feedback')]
+        ordering = ['-id']
+
+
+class EducatorFeedback(models.Model):
+    target = models.CharField(max_length=160, db_index=True)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)
+    created_at = models.DateTimeField(auto_now_add=True)
+    category = models.CharField(max_length=20, choices=[('correct','Correct'),('add','Add'),('remove','Remove'),('technical','Technical issue')])
+    message = models.TextField()
+    timestamp = models.PositiveIntegerField(null=True, blank=True, help_text='Optional video time in seconds')
+    status = models.CharField(max_length=20, default='open', choices=[('open','Open'),('progress','In progress'),('clarification','Needs clarification'),('resolved','Resolved')])
+
+    class Meta:
+        ordering = ['-id']
+
+
+class FeedbackReply(models.Model):
+    feedback = models.ForeignKey(EducatorFeedback, on_delete=models.CASCADE, related_name='replies')
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)
+    created_at = models.DateTimeField(auto_now_add=True)
+    message = models.TextField()
+
+
 class Chapter(models.Model):
     id = models.CharField(primary_key=True, max_length=8)
     title_en = models.CharField(max_length=200)
@@ -69,6 +102,7 @@ from django.core.exceptions import ValidationError
 class LessonBlock(models.Model):
     KINDS = [('theory', 'Explanation'), ('example', 'Worked example'), ('activity', 'Interactive activity'), ('check', 'Quick check')]
     ACTIVITIES = [('', 'None'), ('units', 'Unit converter'), ('vernier', 'Vernier calliper'), ('uncertainty', 'Repeated measurements'), ('vectors', 'Vector components'), ('pendulum', 'Pendulum investigation'), ('particles', 'Ideal gas particles'), ('angles', 'Angle ratios'), ('dimension-builder', 'Dimension builder'), ('dimension-equations', 'Equation detective'), ('dimension-scaling', 'Pendulum scaling'), ('dimension-conversion', 'SI-CGS dimension converter'), ('error-target', 'Bias and scatter'), ('error-relative', 'Relative uncertainty'), ('error-propagation', 'Uncertainty propagation'), ('vernier-3d', '3D vernier caliper lab'), ('micrometer-3d', '3D micrometer lab'), ('spherometer-3d', '3D spherometer lab'), ('travelling-3d', '3D travelling microscope lab')]
+    ACTIVITIES += [("statics-resultant","Statics: resultant"),("statics-components","Statics: components"),("statics-tension","Statics: 3D hanging load"),("statics-couple","Statics: two-force equilibrium")]
     ACTIVITIES += [("relative-ships", "Relative velocity: ships"), ("relative-river", "Relative velocity: river")]
     ACTIVITIES += [("graph-lines", "Graph: lines"), ("graph-curves", "Graph: curves"), ("graph-transform", "Graph: axis transformations"), ("graph-motion", "Graph: velocity-time")]
     ACTIVITIES += [("vector-sort", "Scalar/vector sorting"), ("vector-addition", "Vector addition lab"), ("vector-paths", "Vector paths")]

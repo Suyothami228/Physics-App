@@ -1,8 +1,14 @@
 from django.contrib import admin
 from django.urls import path
 from learning import views
+from learning import review_views
 
 urlpatterns = [
+    path('api/review/clock/', review_views.revision_clock),
+    path('api/review/content/', review_views.content),
+    path('api/review/rollback/<int:pk>/', review_views.rollback),
+    path('api/review/feedback/', review_views.feedback),
+    path('api/review/feedback/<int:pk>/', review_views.reply),
     path("api/lessons/<path:lesson_id>/", views.lesson_content),
     path("admin/", admin.site.urls),
     path("api/health/", views.health),

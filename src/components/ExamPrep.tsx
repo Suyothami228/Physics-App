@@ -4,6 +4,7 @@ import { useApp } from "../state";
 import { API_ENABLED } from "../api";
 import { readExamReview } from "../exam-review";
 import { Practice } from "./Practice";
+import { EducatorReview, usePublishedContent } from "./EducatorReview";
 import {
   StructuredQuestion,
   type StructuredPart,
@@ -321,6 +322,7 @@ function QuestionLibrary({
   section?: string;
 }) {
   const [showAll, setShowAll] = useState(false);
+  const publishedRevision = usePublishedContent();
   const { T, language } = useApp();
   const [year, setYear] = useState("");
   const [page, setPage] = useState(1);
@@ -351,6 +353,19 @@ function QuestionLibrary({
       });
     return () => controller.abort();
   }, [chapter.id, kind, section, year, page, retry]);
+  useEffect(() => {
+    if (!publishedRevision || !API_ENABLED) return;
+    const controller = new AbortController();
+    read<Results>(
+      `/api/exam/questions/?chapter=${chapter.id}&kind=${kind}&year=${year}&page=${page}&section=${encodeURIComponent(section || "")}`,
+      controller.signal,
+    )
+      .then((result) => {
+        if (!controller.signal.aborted) setData(result);
+      })
+      .catch(() => {});
+    return () => controller.abort();
+  }, [publishedRevision, chapter.id, kind, section, year, page]);
   const sections = data.sections || [];
   const showSections = !section && !showAll && sections.length > 0;
   return (
@@ -535,6 +550,19 @@ function QuestionCard({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(false);
   const [checked, setChecked] = useState(false);
+  const publishedRevision = usePublishedContent();
+  useEffect(() => {
+    if (!publishedRevision || !solution || !API_ENABLED) return;
+    let active = true;
+    void read<Solution>(`/api/exam/solutions/${q.id}/`)
+      .then((value) => {
+        if (active) setSolution(value);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [publishedRevision, q.id]);
   async function reveal(check: boolean) {
     setBusy(true);
     setError(false);
@@ -550,6 +578,7 @@ function QuestionCard({
   if (q.kind === "structured" && q.parts?.length)
     return (
       <article className="exam-question">
+        <EducatorReview target={"exam:" + q.id} />
         <button
           className="exam-question-toggle"
           aria-expanded={open}
@@ -588,6 +617,7 @@ function QuestionCard({
     );
   return (
     <article className="exam-question">
+      <EducatorReview target={"exam:" + q.id} />
       <button
         className="exam-question-toggle"
         aria-expanded={open}

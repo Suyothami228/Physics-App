@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useApp } from "../state";
 import { API_ENABLED } from "../api";
+import { usePublishedContent } from "./EducatorReview";
 import type { Bilingual } from "../model";
 
 export type StructuredPart = {
@@ -22,6 +23,19 @@ export function StructuredQuestion({
 }) {
   const { T, language } = useApp();
   const [answers, setAnswers] = useState<PartAnswer[]>([]);
+  const publishedRevision = usePublishedContent();
+  useEffect(() => {
+    if (!publishedRevision || !answers.length || !API_ENABLED) return;
+    let active = true;
+    void loadAnswers()
+      .then((value) => {
+        if (active) setAnswers(value);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [publishedRevision, questionId]);
   const [visible, setVisible] = useState<Record<string, boolean>>({});
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);

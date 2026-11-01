@@ -6,6 +6,46 @@ admin.site.site_header = 'Iyal Physics · Content studio'
 admin.site.site_title = 'Iyal admin'
 admin.site.index_title = 'Manage chapters, lessons and learning activities'
 
+# Account administration is reserved for superusers, even if staff receive
+# unrelated content permissions later.
+from django.contrib.auth import get_user_model
+from django.contrib.auth.models import Group
+from django.contrib.auth.admin import UserAdmin, GroupAdmin
+
+class SuperuserOnly:
+    def has_module_permission(self, request): return request.user.is_superuser
+    def has_view_permission(self, request, obj=None): return request.user.is_superuser
+    def has_add_permission(self, request): return request.user.is_superuser
+    def has_change_permission(self, request, obj=None): return request.user.is_superuser
+    def has_delete_permission(self, request, obj=None): return request.user.is_superuser
+
+admin.site.unregister(get_user_model())
+admin.site.unregister(Group)
+@admin.register(get_user_model())
+class AccountAdmin(SuperuserOnly, UserAdmin): pass
+@admin.register(Group)
+class ReviewGroupAdmin(SuperuserOnly, GroupAdmin): pass
+
+from .models import ContentRevision, EducatorFeedback
+@admin.register(ContentRevision)
+class RevisionAdmin(admin.ModelAdmin):
+    list_display = ['target','author','created_at','reason']
+    search_fields = ['target','reason']
+    readonly_fields = [f.name for f in ContentRevision._meta.fields]
+    def has_add_permission(self, request): return False
+    def has_change_permission(self, request, obj=None): return False
+    def has_delete_permission(self, request, obj=None): return False
+
+@admin.register(EducatorFeedback)
+class FeedbackAdmin(admin.ModelAdmin):
+    list_display = ['target','category','status','author','created_at']
+    list_filter = ['status','category']
+    search_fields = ['target','message']
+    readonly_fields = [f.name for f in EducatorFeedback._meta.fields]
+    def has_add_permission(self, request): return False
+    def has_change_permission(self, request, obj=None): return False
+    def has_delete_permission(self, request, obj=None): return False
+
 class ChapterForm(forms.ModelForm):
     description_en = forms.CharField(widget=forms.Textarea(attrs={'rows':3}), required=False)
     description_ta = forms.CharField(widget=forms.Textarea(attrs={'rows':3}), required=False)

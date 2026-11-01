@@ -1,0 +1,129 @@
+.review-launch {
+  border: 1px solid #a5cec7;
+  border-radius: 20px;
+  background: #eaf9f5;
+  color: #136957;
+  padding: 9px 14px;
+  margin: 8px 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+}
+.review-panel {
+  position: fixed;
+  inset: 0 0 0 auto;
+  margin: 0;
+  width: min(760px, 100vw);
+  max-width: 100vw;
+  height: 100dvh;
+  max-height: 100dvh;
+  box-sizing: border-box;
+  border: 0;
+  padding: 26px;
+  background: #f8fbfc;
+  color: #173349;
+  overflow: auto;
+  box-shadow: -12px 0 50px #17334933;
+}
+.review-panel::backdrop {
+  background: #10273588;
+  backdrop-filter: blur(3px);
+}
+.review-panel header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.review-panel header h2 {
+  margin: 8px 0;
+}
+.review-panel header small {
+  color: #147966;
+  letter-spacing: 0.12em;
+}
+.review-panel header button {
+  align-self: flex-start;
+  font-size: 1.5rem;
+}
+.review-panel nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+.review-panel button {
+  border: 1px solid #bfd1db;
+  background: white;
+  color: #173349;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font: inherit;
+}
+.review-panel button[aria-pressed="true"],
+.review-panel .review-primary {
+  background: #147966;
+  color: white;
+  border-color: #147966;
+}
+.review-panel button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+.review-panel label {
+  display: grid;
+  gap: 7px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.review-panel input,
+.review-panel textarea,
+.review-panel select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #b4c6d1;
+  border-radius: 9px;
+  background: white;
+  color: #173349;
+  font: inherit;
+  line-height: 1.65;
+}
+.review-panel textarea {
+  resize: vertical;
+}
+.review-panel :focus-visible {
+  outline: 3px solid #f2b52a;
+  outline-offset: 3px;
+}
+.review-panel article {
+  padding: 18px;
+  background: white;
+  border: 1px solid #d6e4eb;
+  border-radius: 14px;
+  margin: 15px 0;
+}
+.review-panel p {
+  line-height: 1.7;
+}
+.review-callout,
+.review-success {
+  padding: 14px;
+  background: #e2f5ed;
+  border-radius: 10px;
+}
+.review-error {
+  padding: 14px;
+  background: #ffe8e8;
+  color: #9d2525;
+}
+.review-prose {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.review-panel blockquote {
+  border-left: 3px solid #60bba7;
+  margin: 12px 0;
+  padding: 8px 16px;
+  background: #f1faf7;
+}

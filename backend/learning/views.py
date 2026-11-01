@@ -42,7 +42,7 @@ def session(request):
         login(request, user)
     elif request.method == "DELETE":
         logout(request)
-    user = {"id": request.user.pk, "username": request.user.get_username()} if request.user.is_authenticated else None
+    user = {"id": request.user.pk, "username": request.user.get_username(), "educator": request.user.has_perm('learning.publish_wording'), "manage_feedback": request.user.has_perm('learning.manage_feedback'), "superadmin": request.user.is_superuser} if request.user.is_authenticated else None
     return JsonResponse({"user": user})
 
 

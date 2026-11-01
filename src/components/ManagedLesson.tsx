@@ -1,4 +1,5 @@
 import { VectorText } from "./VectorText";
+import { EducatorReview, usePublishedContent } from "./EducatorReview";
 import { TravellingLab } from "./TravellingLab";
 import { SpherometerLab } from "./SpherometerLab";
 import { useEffect, useState } from "react";
@@ -6,6 +7,8 @@ import type { Lesson } from "../model";
 import { useApp } from "../state";
 import { API_ENABLED, request } from "../api";
 import measurement from "../domain/measurement.json";
+import statics from "../domain/statics.json";
+import { StaticsConcept } from "./StaticsLab";
 import relative from "../domain/relative.json";
 import { RelativeConcept } from "./RelativeConcept";
 import { ManimExplainer } from "./ManimExplainer";
@@ -60,9 +63,10 @@ export function ManagedLesson({
   const [stage, setStage] = useState("learn");
   const [motionPaused, setMotionPaused] = useState(false);
   const [reload, setReload] = useState(0);
+  const publishedRevision = usePublishedContent();
   useEffect(() => {
     let active = true;
-    setLoading(true);
+    if (!publishedRevision) setLoading(true);
     setError("");
     async function load() {
       try {
@@ -79,6 +83,7 @@ export function ManagedLesson({
                     ...vectors,
                     ...graphs,
                     ...relative,
+                    ...statics,
                   } as Record<string, ContentBlock[]>
                 )[lesson.id] ?? [],
             };
@@ -105,7 +110,7 @@ export function ManagedLesson({
     return () => {
       active = false;
     };
-  }, [lesson.id, reload, instrument]);
+  }, [lesson.id, reload, instrument, publishedRevision]);
   if (loading)
     return <p role="status">{T("Loading lesson…", "பாடம் ஏற்றப்படுகிறது…")}</p>;
   if (error)
@@ -121,7 +126,12 @@ export function ManagedLesson({
       </div>
     );
   if (!blocks.length && !instrument)
-    return hideEmpty ? null : <Outline lesson={lesson} />;
+    return (
+      <>
+        <EducatorReview target={"lesson:" + lesson.id} />
+        {!hideEmpty && <Outline lesson={lesson} />}
+      </>
+    );
   const filtered = blocks.filter((b) =>
     stage === "learn"
       ? ["theory", "example"].includes(b.kind)
@@ -157,9 +167,13 @@ export function ManagedLesson({
           ))}
         </div>
         {stage === "learn" &&
-          (["02/velocity", "02/vectors", "02/graphs", "02/relative"].includes(
-            lesson.id,
-          ) ||
+          ([
+            "02/velocity",
+            "02/vectors",
+            "02/graphs",
+            "02/relative",
+            "02/statics",
+          ].includes(lesson.id) ||
             filtered.some(
               (b) => b.presentation && b.presentation !== "plain",
             )) && (
@@ -186,6 +200,13 @@ export function ManagedLesson({
           "கற்றல் பதிப்பு · தமிழ் கலைச்சொற்களும் பாடத்திட்டப் பொருத்தமும் ஆசிரியர் மீளாய்வில் உள்ளன.",
         )}
       </p>
+      <EducatorReview
+        target={"lesson:" + lesson.id}
+        label={T(
+          "Edit lesson title / comment",
+          "பாடத் தலைப்பைத் திருத்துக / கருத்திடுக",
+        )}
+      />
       {instrument === "vernier" && stage === "learn" && blocks.length > 0 && (
         <CaliperAnatomy />
       )}
@@ -204,6 +225,7 @@ export function ManagedLesson({
             className={"content-block block-" + block.kind}
             key={block.key}
           >
+            {block.id && <EducatorReview target={"block:" + block.id} />}
             <span className="eyebrow">
               {block.kind === "example"
                 ? T("WORKED EXAMPLE", "விளக்கிய எடுத்துக்காட்டு")
@@ -218,6 +240,9 @@ export function ManagedLesson({
                 text={block[("title_" + language) as "title_en" | "title_ta"]}
               />
             </h2>
+            {lesson.id === "02/statics" && stage === "learn" && (
+              <StaticsConcept concept={block.key} paused={motionPaused} />
+            )}
             {lesson.id === "02/velocity" && stage === "learn" && (
               <VelocityArt concept={block.key} />
             )}
@@ -256,13 +281,17 @@ export function ManagedLesson({
                 "02/vectors",
                 "02/graphs",
                 "02/relative",
+                "02/statics",
               ].includes(lesson.id) ? (
                 <FormulaMemory formula={block.formula} />
               ) : (
                 <div className="lesson-formula">{block.formula}</div>
               ))}
             {block.kind === "activity" && (
-              <MeasurementActivity kind={block.activity ?? ""} />
+              <MeasurementActivity
+                kind={block.activity ?? ""}
+                paused={motionPaused}
+              />
             )}{" "}
             {block.kind === "check" && <QuickCheck block={block} />}
           </article>

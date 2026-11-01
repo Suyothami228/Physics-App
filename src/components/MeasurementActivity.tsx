@@ -1,4 +1,5 @@
 import { TravellingLab } from "./TravellingLab";
+import { StaticsLab } from "./StaticsLab";
 import { RelativeLab } from "./RelativeLab";
 import { GraphLab } from "./GraphLab";
 import { VectorLab } from "./VectorLab";
@@ -15,7 +16,15 @@ import {
   PendulumInvestigation,
   ParticleExperiment,
 } from "./IntroductionExperiments";
-export function MeasurementActivity({ kind }: { kind: string }) {
+export function MeasurementActivity({
+  kind,
+  paused = false,
+}: {
+  kind: string;
+  paused?: boolean;
+}) {
+  if (kind.startsWith("statics-"))
+    return <StaticsLab kind={kind} paused={paused} />;
   if (kind.startsWith("relative-")) return <RelativeLab kind={kind} />;
   if (kind.startsWith("graph-")) return <GraphLab kind={kind} />;
   if (kind.startsWith("vector-")) return <VectorLab kind={kind} />;

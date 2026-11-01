@@ -212,3 +212,12 @@ colour meanings, accessibility requirements and instrument-specific exceptions.
 Mechanics → Relative velocity includes bilingual explanations, seven quick checks, a ship observer lab and a river-crossing lab. The source terminology uses தொடர்பு வேகம் (சார்பு வேகம்). The river model assumes uniform current and constant boat speed relative to water; its playback is time-compressed. Original reference unit/diagram inconsistencies are corrected in the lesson.
 
 After pulling this version, run `python manage.py migrate` and `python manage.py seed_relative` from `backend` with your normal database environment. This adds the lesson after Graphs without replacing educator edits. `seed_content` also includes it. Static educator previews bundle the same bilingual content. The interactive activity choices in admin are `relative-ships` and `relative-river`.
+# Educator review
+
+Educators can publish Tamil/English wording corrections directly to connected student views and leave timestamped animation requests in the shared admin inbox. Super admins manage accounts and restore previous wording. See [educator setup and hosting instructions](docs/educator-review.md). Shared live editing requires the Django/MariaDB backend; the static Vercel preview alone cannot persist review changes.
+
+## Mechanics: Statics
+
+The bilingual Statics lesson (`#/chapter/02/statics`) follows Relative velocity. It includes force addition, components, nine worked examples, two-force equilibrium, the force triangle and Lami's theorem, with four interactive labs and seven quick checks. The hanging-load lab uses a rotatable Three.js model; vector construction and couple rotation are explanatory animations, not time-dependent dynamics predictions.
+
+Run `python manage.py migrate` and `python manage.py seed_statics` from `backend` with the configured database environment. Repeat seeding preserves educator edits. `seed_content` includes the same command. Matching content in `backend/seed/statics.json` and `src/domain/statics.json` supports database-backed and static previews; keep both synchronized when changing starter content. Numeric calculations and the nine examples are checked in `tests/statics.test.tsx`; database publication and edit preservation are checked in `learning.test_statics`.

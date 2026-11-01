@@ -22,14 +22,14 @@ class LearningTests(TestCase):
         Chapter.objects.filter(pk='01').update(title_ta='தமிழ் ஆசிரியர் திருத்தம்')
         call_command('seed_content', verbosity=0)
         self.assertEqual(Chapter.objects.count(), 11)
-        self.assertEqual(Lesson.objects.count(), 76)
+        self.assertEqual(Lesson.objects.count(), 77)
         self.assertEqual(Question.objects.count(), 90)
         self.assertEqual(Chapter.objects.get(pk='01').title_ta, 'தமிழ் ஆசிரியர் திருத்தம்')
 
     def test_curriculum_and_questions_have_no_answers(self):
         data = self.client.get('/api/curriculum/').json()
         self.assertEqual(len(data['chapters']), 11)
-        self.assertEqual(data['total'], 76)
+        self.assertEqual(data['total'], 77)
         q = self.client.get('/api/questions/').json()['questions'][0]
         for private in ['value', 'correct', 'explain', 'tolerance']:
             self.assertNotIn(private, q)

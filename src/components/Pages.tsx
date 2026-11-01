@@ -1,4 +1,5 @@
 import "../styles/exam.css";
+import { EducatorReview } from "./EducatorReview";
 import { useState, type CSSProperties } from "react";
 import { C, B, link, type Chapter, type Lesson } from "../model";
 import { useApp } from "../state";
@@ -302,6 +303,13 @@ export function ChapterPage({ chapter: c }: { chapter: Chapter }) {
             {c.id} · {c.lessons.length} {T("SUBCHAPTERS", "உட்பாடங்கள்")}
           </p>
           <h1>{c[language]}</h1>
+          <EducatorReview
+            target={"chapter:" + c.id}
+            label={T(
+              "Edit chapter title / comment",
+              "அத்தியாயத் தலைப்பைத் திருத்துக / கருத்திடுக",
+            )}
+          />
           <p>{c.description[language]}</p>
         </div>
         <div>

@@ -8,7 +8,13 @@ import {
 } from "./model";
 
 export const API_ENABLED = import.meta.env.VITE_API_ENABLED === "true";
-export type Account = { id: number; username: string };
+export type Account = {
+  id: number;
+  username: string;
+  educator?: boolean;
+  manage_feedback?: boolean;
+  superadmin?: boolean;
+};
 const remoteQuestions = new Map<string, Question>();
 
 export async function request<T>(
@@ -23,16 +29,20 @@ export async function request<T>(
       ?.split("=")
       .slice(1)
       .join("=") ?? "";
-  const response = await fetch(`/api/${path}/`, {
-    method,
-    credentials: "same-origin",
-    signal: AbortSignal.timeout(15000),
-    headers: {
-      "Content-Type": "application/json",
-      "X-CSRFToken": decodeURIComponent(csrf),
+  const [route, query] = path.split("?", 2);
+  const response = await fetch(
+    `/api/${route}/${query === undefined ? "" : "?" + query}`,
+    {
+      method,
+      credentials: "same-origin",
+      signal: AbortSignal.timeout(15000),
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRFToken": decodeURIComponent(csrf),
+      },
+      ...(body === undefined ? {} : { body: JSON.stringify(body) }),
     },
-    ...(body === undefined ? {} : { body: JSON.stringify(body) }),
-  });
+  );
   if (!response.ok) {
     const data = await response.json().catch(() => null);
     throw new Error(

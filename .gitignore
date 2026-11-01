@@ -19,3 +19,6 @@ LOCAL-ACCESS.md
 backend/media/
 .npm-cache/
 *.traineddata
+
+# Local document renders and temporary review files.
+tmp/

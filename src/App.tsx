@@ -1,4 +1,10 @@
 import { ExamPrep } from "./components/ExamPrep";
+import {
+  EducatorReview,
+  ReviewSync,
+  usePublishedContent,
+} from "./components/EducatorReview";
+import { C, type Chapter } from "./model";
 import { useEffect, useRef, useState } from "react";
 import { parseRoute, link } from "./model";
 import { useApp } from "./state";
@@ -27,6 +33,24 @@ export default function App() {
     account,
   } = useApp();
   const [hash, setHash] = useState(location.hash);
+  const publishedRevision = usePublishedContent();
+  const [, redrawCurriculum] = useState(0);
+  useEffect(() => {
+    if (!publishedRevision || !API_ENABLED) return;
+    let active = true;
+    void request<{ chapters: Chapter[]; total: number }>("curriculum")
+      .then((data) => {
+        if (active) {
+          C.chapters.splice(0, C.chapters.length, ...data.chapters);
+          C.total = data.total;
+          redrawCurriculum((n) => n + 1);
+        }
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [publishedRevision]);
   const main = useRef<HTMLElement>(null);
   const route = parseRoute(hash);
   const lessonId = route.type === "lesson" ? route.lesson.id : null;
@@ -111,12 +135,17 @@ export default function App() {
         </div>
       </aside>
       <div className="app-body">
+        <ReviewSync />
         <header className="topbar">
           <span className="top-crumb">
             {T("Your learning space", "உங்கள் கற்றல் வெளி")} / A/L Physics
           </span>
           <div className="top-actions">
             <span className="beta">PROTOTYPE</span>
+            <EducatorReview />
+            {account?.superadmin && (
+              <a href="/admin/auth/user/">Manage accounts</a>
+            )}
             {account && (
               <button
                 onClick={async () => {

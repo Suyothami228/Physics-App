@@ -1,0 +1,135 @@
+.statics-lab {
+  margin: 18px 0;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid #d4e3eb;
+  background: linear-gradient(125deg, #f0f8fc, #f3faf4);
+}
+.statics-toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.statics-toolbar button,
+.statics-lab .math-preset-row button {
+  font: inherit;
+  font-size: 0.86rem;
+  background: white;
+  color: #163f53;
+  border: 1px solid #b9ced7;
+  border-radius: 10px;
+  padding: 10px 13px;
+  cursor: pointer;
+}
+.statics-toolbar button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.statics-toolbar button:focus-visible,
+.statics-lab input:focus-visible,
+.statics-lab select:focus-visible {
+  outline: 3px solid #e9b92c;
+  outline-offset: 3px;
+}
+.statics-pill {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #197562;
+}
+.statics-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 18px;
+}
+.statics-controls select {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #b9ced7;
+  border-radius: 10px;
+  background: white;
+  font: inherit;
+}
+.statics-controls label {
+  display: grid;
+  gap: 8px;
+}
+.statics-plot {
+  max-height: 420px;
+}
+.statics-readouts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  background: #102938;
+  color: #fff;
+  border-radius: 14px;
+  padding: 18px;
+}
+.statics-readouts strong {
+  font-size: 1.2rem;
+  color: #f2e88c;
+}
+.statics-readouts span {
+  grid-column: 1/-1;
+  font-size: 0.88rem;
+}
+.statics-force-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 8px;
+}
+.statics-force-list label {
+  padding: 10px;
+  border-radius: 10px;
+  background: #152635;
+  color: white;
+  cursor: pointer;
+}
+.statics-force-list small {
+  display: block;
+  margin-top: 5px;
+  color: #ccdae6;
+}
+.statics-note {
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: #536779;
+}
+.statics-lami {
+  border-left: 4px solid #54bba7;
+  background: white;
+  padding: 0 18px;
+  border-radius: 8px;
+}
+.statics-three > div[role="img"] {
+  height: 360px;
+  background: #101923;
+  border-radius: 18px;
+  overflow: hidden;
+  touch-action: none;
+}
+.statics-three canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.statics-three p {
+  font-size: 0.8rem;
+  color: #536779;
+}
+.statics-three .math-preset-row {
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .statics-lab {
+    padding: 10px;
+  }
+  .statics-readouts strong {
+    font-size: 1rem;
+  }
+  .statics-three > div[role="img"] {
+    height: 290px;
+  }
+}

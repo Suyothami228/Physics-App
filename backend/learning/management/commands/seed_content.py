@@ -34,4 +34,5 @@ class Command(BaseCommand):
         call_command("seed_vectors")
         call_command("seed_graphs")
         call_command("seed_relative")
+        call_command("seed_statics")
         self.stdout.write(self.style.SUCCESS("Content ready: existing rows preserved."))
